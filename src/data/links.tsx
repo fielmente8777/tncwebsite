@@ -190,6 +190,28 @@ export const NaveLinks: NveLinksProps[] = [
   },
 ];
 
+
+export const NavbarUpperLinks = [
+  {
+    name:"Surrey : +1 (236) 818 5558",
+    href:"tel:+1 (236) 818 5558",
+    // icon:<PhoneIcon/>
+  },
+  {
+    name:"Mississauga : +1 (647) 9320060",
+    href:"tel:+1 (647) 9320060",
+    // icon:<PhoneIcon/>
+  },
+  {
+    name:"book Appointment",
+    href:"#",
+  },
+  {
+    name:"Start Assessments",
+    href:"#",
+  }
+]
+
 export const FooterLinks: FooterLinksProps[] = [
   {
     title: "company",

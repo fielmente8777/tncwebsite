@@ -2,24 +2,48 @@
 import Image from "next/image";
 import { Container } from "../sectionComponents";
 import Link from "next/link";
-import { NaveLinks } from "@/data/links";
+import { NavbarUpperLinks, NaveLinks } from "@/data/links";
 import { DropDownIcon, OutlinePhone } from "@/data/icons";
 import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const pathName = usePathname();
   return (
-    <header className="max_screen">
+    <header className="max_screen bg-black">
+      {/* top header */}
       <div className="bg-[#c1282a]">
         <Container>
           <div className="flex items-center justify-between py-2">
-
+            <div className="flex items-center gap-5">
+              {NavbarUpperLinks.slice(0, 2).map((link, index) => {
+                return (
+                  <Link href={link.href} key={index} className="text-white flex items-center gap-2">
+                    <OutlinePhone className="w-6 h-6 fill-white" fill="white" /> {link.name}
+                  </Link>
+                );
+              })}
+            </div>
+            <div className="flex items-center gap-5">
+              {NavbarUpperLinks.slice(2, NavbarUpperLinks.length).map(
+                (link, index) => {
+                  return (
+                    <Link
+                      href={link.href}
+                      key={index}
+                      className="capitalize bg-white flex items-center rounded-full px-4 py-2 text-black font-medium hover:bg-blue-500 hover:text-white duration-300 transition-all ease-in-out"
+                    >
+                      {link.name}
+                    </Link>
+                  );
+                }
+              )}
+            </div>
           </div>
         </Container>
       </div>
+      {/* bottom header */}
       <Container>
-
-        <nav className="flex items-center justify-between py-3">
+        <nav className="flex items-center justify-center gap-10 py-3">
           <div className="">
             <Link href={"/"} className="flex items-center">
               <Image
@@ -33,19 +57,18 @@ const Navbar = () => {
             </Link>
           </div>
           <ul className="lg:flex hidden item-center gap-10">
-            {NaveLinks?.slice(1, NaveLinks.length).map((link, index) => {
+            {NaveLinks?.map((link, index) => {
               // const id = index + 1;
               return (
                 <li key={index} className="relative nav">
                   <Link
                     href={link.href ? link.href : "#"}
-                    className="relative text-nowrap py-2 capitalize flex items-center gap-1 text-light font-semibold description1"
+                    className="relative text-nowrap py-2 capitalize flex items-center gap-1 text-white font-semibold description1"
                   >
                     {link.name}
-                    <span className="span-border"></span>
                     {link.subLinks && (
-                      <span className="group-hover:rotate-180 duration-300 transition-all ease-in-out">
-                        <DropDownIcon />
+                      <span className="group-hover:rotate-180 text-white duration-300 transition-all ease-in-out">
+                        <DropDownIcon fill="white" />
                       </span>
                     )}
                   </Link>
@@ -57,7 +80,7 @@ const Navbar = () => {
                             <span className="relative group nav-2" key={index}>
                               <Link
                                 href={subLink.href ? subLink.href : "#"}
-                                className={`w-full text-nowrap py-2 px-4 flex items-center gap-1 group capitalize text-light font-semibold description1 hover:bg-gray-200 ${pathName === subLink.href ? "bg-gray-200" : ""}`}
+                                className={`w-full text-nowrap py-2 px-4 flex items-center gap-1 group capitalize text-white font-semibold description1 hover:bg-gray-200 ${pathName === subLink.href ? "bg-gray-200" : ""}`}
                               >
                                 {subLink.name}
                                 {subLink.subLinks && (
@@ -78,7 +101,7 @@ const Navbar = () => {
                                                 ? nestedSubLink.href
                                                 : "#"
                                             }
-                                            className={`w-full text-nowrap py-2 px-4 flex items-center text-light font-semibold description1 gap-1 group capitalize hover:bg-gray-200 ${pathName === subLink.href ? "bg-gray-200" : ""}`}
+                                            className={`w-full text-nowrap py-2 px-4 flex items-center text-white font-semibold description1 gap-1 group capitalize hover:bg-gray-200 ${pathName === subLink.href ? "bg-gray-200" : ""}`}
                                           >
                                             {nestedSubLink.name}
                                           </Link>
@@ -98,16 +121,6 @@ const Navbar = () => {
               );
             })}
           </ul>
-          <Link
-            href={"tel:438-855-4446"}
-            target="_blank"
-            className="px-4 py-2 hover:box-shadow flex items-center gap-1 border border-primary bg-white text-primary rounded-lg hover:bg-primary hover:text-white duration-300 transition-all ease-in-out"
-          >
-            <span className="">
-              <OutlinePhone className="fill-current stroke-currentColor w-7 aspect-square" />
-            </span>
-            438-855-4446
-          </Link>
         </nav>
       </Container>
     </header>
