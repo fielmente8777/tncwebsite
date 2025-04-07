@@ -9,14 +9,12 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#183F62",
-        secondary: "#FFA500",
-        tertiary: "#F2B203",
-        light: "#606060",
-        light1: "#6D6D6D",
-        dark: "#363636",
-        normal: "#393939",
-        extra: "#FFFEED",
+        primary: "#FF4F47",
+        secondary: "#1C1B1F",
+        tertiary: "#6C6B6F",
+        quaternary: "#045cb4",
+        light: "#CECECE",
+        bg1: "#F1F7ED",
       },
     },
   },

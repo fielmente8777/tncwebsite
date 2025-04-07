@@ -1,51 +1,79 @@
-import { FooterLinks, SocialLinks } from "@/data/links";
-import { SectionWithContainer } from "../sectionComponents";
+import { FooterLinks } from "@/data/links";
+import { Container, SectionWithContainer } from "../sectionComponents";
 import Link from "next/link";
 import Image from "next/image";
+import { ArrowRightIcon } from "@/data/icons";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
-    <footer className="max_screen bg-primary text-white">
-      <SectionWithContainer>
-        <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 lg:gap-36 w-full">
+    <footer className="max_screen relative pt-44">
+      <div className="absolute top-6 left-0 w-full">
+        <Container className="bg-[#29313C] text-white ">
+          <div className="md:px-20 px-4 md:py-14 py-6 w-full grid md:grid-cols-5 grid-cols-1 items-center gap-4">
+            <div className="w-full flex flex-col gap-4 md:col-span-4 col-span-2">
+              <h2 className="md:text-2xl text-lg">Are you looking for</h2>
+              <h3 className="md:text-[2.0625rem]/[1.125rem] text-2xl font-semibold">
+                Licensed Canadian Immigration Consultant?
+              </h3>
+              <p>
+                Need A Consultation? Call us:{" "}
+                <Link href={"tel:+12368185558"}>+1 (236) 818 5558</Link> or
+                Email us:{" "}
+                <Link href={"mailto:info@tncimmigration.com"}>
+                  info@tncimmigration.com
+                </Link>
+              </p>
+            </div>
+            <div className="w-full flex gap-4 md:col-span-1">
+              <Link
+                href="/contact-us"
+                className="w-max border border-white px-4 py-2 capitalize font-medium rounded-[1px] hover:bg-white hover:text-black duration-300 transition-all ease-in-out flex items-center gap-2"
+              >
+                contact us{" "}
+                <span className="">
+                  <ArrowRightIcon className="hover:fill-black" />
+                </span>
+              </Link>
+            </div>
+          </div>
+        </Container>
+      </div>
+      <SectionWithContainer sectionClassName="bg-black text-white md:!pt-24">
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 lg:gap-24 w-full">
           <div className="w-full flex justify-center flex-col items-center gap-6">
             <Link href="/">
-              <Image src="/logo2.png" alt="logo" width={123.2} height={64} />
+              <Image src="/logo.png" alt="logo" width={250} height={64} />
             </Link>
-            <p className="heading4 text-center">
-              One Shot Marketing delivers results-driven digital marketing
-              solutions to elevate your brand.{" "}
-            </p>
-            <ul className="w-full flex justify-center items-center gap-4">
-              {SocialLinks.map((link, index) => (
-                <li key={index} className="">
-                  <Link
-                    href={link.href}
-                    target="_blank"
-                    className="hover:text-white hover:box-shadow active:scale-95 duration-300 transition-all ease-in-out text-primary bg-white w-10 rounded aspect-square hover:bg-secondary flex justify-center items-center"
-                  >
-                    <span className="sr-only">{link.name}</span>
-                    {link.icon}
-                  </Link>
-                </li>
-              ))}
-            </ul>
           </div>
           {FooterLinks.map((link, index) => (
             <div key={index} className="flex flex-col gap-6">
-              <h2 className="text-secondary text-lg capitalize">
+              <h2 className={` text-lg capitalize text-primary font-semibold`}>
                 {link.title}
               </h2>
-              <ul className="flex flex-col gap-4">
+              <ul className="flex flex-col gap-2">
                 {link.links?.map((sublink, index) => (
-                  <li key={index}>
+                  <li key={index} className="flex flex-col gap-2">
+                    {sublink.title && (
+                      <h3 className="font-semibold text-primary">
+                        {sublink.title}
+                      </h3>
+                    )}
                     <Link
-                      href={sublink.href}
-                      className="hover:text-secondary capitalize"
+                      href={sublink.href ? sublink.href : ""}
+                      className=" capitalize"
                     >
                       {sublink.name}
                     </Link>
+                    {sublink.links && (
+                      <div className="flex items-center gap-2">
+                        {sublink.links?.map((slink, index) => (
+                          <Link href={slink.href ? slink.href : ""} target="_blank" key={index} className="flex items-center justify-center md:w-10 w-8 hover:text-primary aspect-square">
+                            {slink.icon}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
                   </li>
                 ))}
               </ul>
@@ -53,29 +81,18 @@ const Footer = () => {
           ))}
         </div>
       </SectionWithContainer>
-      <SectionWithContainer sectionClassName="bg-dark !py-4">
-        <div className="flex max-lg:flex-col  max-lg:justify-center justify-between items-center">
-          <div className="flex max-lg:flex-col justify-center items-center gap-2">
-            <p className="text-center">
-              © {currentYear} One Shot Marketing, Canada
-            </p>
-            <p className="text-center">• All rights reserved</p>
-            <p className="text-center">
-              • Design & Developed by{" "}
-              <Link href="/https://eazotel.com" className="font-bold">
-                Eazotel
-              </Link>
-            </p>
-          </div>
-          <ul className="flex max-lg:flex-col justify-center items-center gap-2">
-            <li className="">
-              <Link href="/privacy-policy" className="capitalize hover:text-secondary description1">Privacy policy</Link>
-            </li>
-            <li className="">•</li>
-            <li className="">
-              <Link href="/terms-and-conditions" className="capitalize hover:text-secondary description1">terms & conditions</Link>
-            </li>
-          </ul>
+      <SectionWithContainer sectionClassName="bg-primary text-white !py-4">
+        <div className="flex max-lg:flex-col justify-center items-center gap-2">
+          <p className="text-center font-semibold">
+            © {currentYear} All Right Reserved TNC Immigration.
+          </p>
+          <p className="text-center font-semibold">
+            {" "}
+            Marketing Partner:{" "}
+            <Link href="https://oneshotmarketing.ca/" className="font-bold">
+              oneshotmarketing
+            </Link>
+          </p>
         </div>
       </SectionWithContainer>
     </footer>

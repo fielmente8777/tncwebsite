@@ -1,8 +1,9 @@
 import { JSX } from "react";
-import { FacebookIcon, InstagramIcon, LinkedInIcon } from "./icons";
+import { FaFacebook, FaTiktok, FaYoutube, FaInstagram } from "react-icons/fa";
+import { IoLogoLinkedin } from "react-icons/io";
 
-
-export const imagesLink ="https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/OneShotMarketingWebsite/"
+export const imagesLink =
+  "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/OneShotMarketingWebsite/";
 
 interface NveLinksProps {
   name: string;
@@ -14,8 +15,15 @@ interface NveLinksProps {
 interface FooterLinksProps {
   title: string;
   links: {
+    title?: string;
     name: string;
-    href: string;
+    href?: string;
+    icon?: JSX.Element;
+    links?: {
+      name: string;
+      href: string;
+      icon: JSX.Element;
+    }[];
   }[];
 }
 
@@ -24,6 +32,34 @@ interface SocialLinksProps {
   href: string;
   icon: JSX.Element;
 }
+
+export const SocialLinks: SocialLinksProps[] = [
+  {
+    name: "facebook",
+    href: "https://www.facebook.com/TNCImmigration/",
+    icon: <FaFacebook />,
+  },
+  {
+    name: "tiktok",
+    href: "https://www.tiktok.com/@tncimmigration.rhea?lang=en",
+    icon: <FaTiktok />,
+  },
+  {
+    name: "linkedin",
+    href: "https://ca.linkedin.com/in/rhea-patel-a194391b0",
+    icon: <IoLogoLinkedin />,
+  },
+  {
+    name: "youtube",
+    href: "https://www.youtube.com/c/TrueNorthConsultancy",
+    icon: <FaYoutube />,
+  },
+  {
+    name: "instagram",
+    href: "https://www.instagram.com/tncimmigration/?hl=en",
+    icon: <FaInstagram />,
+  },
+];
 
 export const NaveLinks: NveLinksProps[] = [
   {
@@ -35,12 +71,22 @@ export const NaveLinks: NveLinksProps[] = [
     href: "/about-us",
   },
   {
-    name: "Industries we Serve",
-    href: "/industries-we-serve",
+    name: "our services",
+    href: "/services",
     subLinks: [
       {
-        name: "hotel industry",
-        href: "/industries-we-serve/hotel-industry",
+        name: "temporary residence",
+        href: "/temporary-residence",
+        subLinks: [
+          {
+            name: "visitor visa",
+            href: "/visitor-visa",
+          },
+          {
+            name: "study permit",
+            href: "/study-permit",
+          },
+        ],
       },
       {
         name: "restaurant Industry",
@@ -190,112 +236,104 @@ export const NaveLinks: NveLinksProps[] = [
   },
 ];
 
-
 export const NavbarUpperLinks = [
   {
-    name:"Surrey : +1 (236) 818 5558",
-    href:"tel:+1 (236) 818 5558",
+    name: "Surrey : +1 (236) 818 5558",
+    href: "tel:+1 (236) 818 5558",
     // icon:<PhoneIcon/>
   },
   {
-    name:"Mississauga : +1 (647) 9320060",
-    href:"tel:+1 (647) 9320060",
+    name: "Mississauga : +1 (647) 9320060",
+    href: "tel:+1 (647) 9320060",
     // icon:<PhoneIcon/>
   },
   {
-    name:"book Appointment",
-    href:"#",
+    name: "book Appointment",
+    href: "#",
   },
   {
-    name:"Start Assessments",
-    href:"#",
-  }
-]
+    name: "Start Assessments",
+    href: "#",
+  },
+];
 
 export const FooterLinks: FooterLinksProps[] = [
   {
-    title: "company",
+    title: "Quick Links",
     links: [
+      {
+        name: "Home",
+        href: "/about-us",
+      },
       {
         name: "about us",
         href: "/about-us",
       },
       {
-        name: "Industries we Serve",
+        name: "Assessment",
         href: "/industries-we-serve",
       },
       {
-        name: "services",
+        name: "Provincial Attestation Letters",
         href: "/services",
       },
       {
-        name: "contact us",
+        name: "Book Appointment",
         href: "/contact-us",
       },
       {
-        name: "our work",
+        name: "FAQs",
+        href: "/our-work",
+      },
+      {
+        name: "Score Calculator",
+        href: "/our-work",
+      },
+      {
+        name: "Contact Us",
         href: "/our-work",
       },
     ],
   },
   {
-    title: "industries solution",
+    title: "",
     links: [
       {
-        name: "hotel digital marketing",
-        href: "/services/hotel-industry",
+        title: "Surrey,BC",
+        name: "15957 84 Ave #303, Surrey, BC V4N 0W7, Canada",
+        // href: "/services/hotel-industry",
       },
       {
-        name: "restaurant digital marketing",
-        href: "/services/restaurant-industry",
+        title: "Mississauga,Ontario",
+        name: "1030 Kamato Rd #210, Mississauga, ON L4W 2W4",
       },
       {
-        name: "beauty digital marketing",
-        href: "/services/beauty-industry",
-      },
-      {
-        name: "clothing digital marketing",
-        href: "/services/clothing-industry",
+        title: "Kelowna, BC",
+        name: "201 – 2903 Pandosy Street Kelowna B.C V1Y 1W1",
       },
     ],
   },
   {
-    title: "contact",
+    title: "",
     links: [
       {
+        title: "Contact Us",
         name: "3064 Hurontario St. Mississauga, Ontario",
         href: "/contact-us",
       },
       {
-        name: "148 St Surrey, BC V3S 3E8, Canada",
-        href: "/contact-us",
+        name: "+1 236 818 5558",
+        href: "/tel:+1 236 818 5558",
       },
       {
-        name: "+1 (438) 855-4446",
-        href: "/tel:+14388554446",
+        name: "info@tncimmigration.com",
+        href: "/mailto:info@tncimmigration.com",
       },
       {
-        name: "info@oneshotmarketing.ca",
-        href: "/mailto:info@oneshotmarketing.ca",
+        title: "Our Social Links",
+        name: "",
+        links: SocialLinks,
       },
     ],
-  },
-];
-
-export const SocialLinks: SocialLinksProps[] = [
-  {
-    name: "facebook",
-    href: "https://www.facebook.com/",
-    icon: <FacebookIcon />,
-  },
-  {
-    name: "instagram",
-    href: "https://www.instagram.com/",
-    icon: <InstagramIcon />,
-  },
-  {
-    name: "linkedin",
-    href: "https://www.linkedin.com/",
-    icon: <LinkedInIcon />,
   },
 ];
