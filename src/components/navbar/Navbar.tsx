@@ -13,7 +13,7 @@ const Navbar = () => {
       {/* top header */}
       <div className="bg-[#c1282a]">
         <Container>
-          <div className="flex items-center justify-between py-2">
+          <div className="flex items-center justify-between py-2 md:py-4">
             <div className="flex items-center gap-5">
               {NavbarUpperLinks.slice(0, 2).map((link, index) => {
                 return (

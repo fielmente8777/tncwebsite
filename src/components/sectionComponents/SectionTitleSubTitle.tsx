@@ -15,7 +15,7 @@ const SectionTitleSubTitle: React.FC<SectionTitleDescProps> = ({
   return (
     <div className={`flex flex-col gap-4 w-full`}>
       <h2
-        className={`text-xl font-semibold text-secondary uppercase ${titleClassName} ${textCenter ? "text-center" : ""}`}
+        className={`text-xl font-semibold text-white uppercase ${titleClassName} ${textCenter ? "text-center" : ""}`}
         dangerouslySetInnerHTML={{ __html: title }}
       ></h2>
       <h3

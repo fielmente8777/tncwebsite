@@ -13,8 +13,10 @@ import SliderSwip from "./SliderSwip";
 import { ServiceCard } from "./Cards";
 import Whatsapp from "./ContactButton/WhatsApp";
 import Call from "./ContactButton/Call";
+import Bannner from './banner/Bannner';
 
 export {
+  Bannner,
   LinkButton,
   OnlyButton,
   Section,

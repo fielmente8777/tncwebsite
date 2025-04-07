@@ -1,19 +1,16 @@
 import { homePageData } from "@/data/pagedata";
-import { TwoColSection, TwoColSection2 } from "@/components";
-import TrustedBrand from "./components/TrustedBrand";
-import FeaturedServices from "./components/FeaturedServices";
-import IndustriesServe from "./components/IndustriesServe";
-import ServiceSection from "./components/ServiceSection";
+import Reviews from "./components/Reviews";
+import Services from "./components/Services";
+import { Bannner } from "@/components";
 
 export default function Home() {
   return (
     <main>
-      {/* <TrustedBrand {...homePageData.trustedTopBrands} />
-      <FeaturedServices {...homePageData.featuredServices} />
-      <TwoColSection {...homePageData.experience} btnCss />
-      <IndustriesServe {...homePageData.industries} />
-      <TwoColSection2 {...homePageData.featuredClient} /> */}
-      <ServiceSection />
+      <Bannner {...homePageData.bannnerData} />
+      <div className="lg:-mt-[9rem]">
+        <Services cards={homePageData.services} />
+      </div>
+      <Reviews />
     </main>
   );
 }
