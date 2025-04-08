@@ -121,6 +121,28 @@ export const NaveLinks: NveLinksProps[] = [
     ],
   },
   {
+    name:"Our locations",
+    href: "#",
+    subLinks: [
+      {
+        name: "Surrey, BC",
+        href: "/surrey",
+      },
+      {
+        name: "Mississauga, ON",
+        href: "/mississauga",
+      },
+      {
+        name: "Kelowna, BC",
+        href: "/kelowna-bc",
+      }
+    ],
+  },
+  {
+    name:"FAQs",
+    href: "/faqs",
+  },
+  {
     name: "Contact Us",
     href: "/contact-us",
   },
