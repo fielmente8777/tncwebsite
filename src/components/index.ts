@@ -13,7 +13,8 @@ import SliderSwip from "./SliderSwip";
 import { ServiceCard } from "./Cards";
 import Whatsapp from "./ContactButton/WhatsApp";
 import Call from "./ContactButton/Call";
-import Bannner from './banner/Bannner';
+import Bannner from "./banner/Bannner";
+import Accordion from "./Cards/Accordion";
 
 export {
   Bannner,
@@ -32,4 +33,5 @@ export {
   Whatsapp,
   Call,
   TwoColSection2,
+  Accordion,
 };

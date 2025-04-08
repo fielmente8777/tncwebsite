@@ -107,126 +107,16 @@ export const NaveLinks: NveLinksProps[] = [
     ],
   },
   {
-    name: "Services",
-    href: "/services",
+    name: "Score Calculator",
+    href: "#",
     subLinks: [
       {
-        name: "hotel industry",
-        // href: "/services/hotel-industry",
-        subLinks: [
-          {
-            name: "performance marketing",
-            href: "/services/hotel-industry/performance-marketing",
-          },
-          {
-            name: "social media marketing",
-            href: "/services/hotel-industry/social-media-marketing",
-          },
-          {
-            name: "website design & development",
-            href: "/services/hotel-industry/website-design-and-development",
-          },
-          {
-            name: "search engine optimization",
-            href: "/services/hotel-industry/search-engine-optimization",
-          },
-          {
-            name: "OTA listing - optimization and management",
-            href: "/services/hotel-industry/ota-listing-optimization-and-management",
-          },
-        ],
+        name: "BC PNP Score Calculator",
+        href: "/bc-pnp-score-calculator",
       },
       {
-        name: "restaurant Industry",
-        // href: "/services/restaurant-industry",
-        subLinks: [
-          {
-            name: "website design & development",
-            href: "/services/restaurant-industry/website-design-and-development",
-          },
-          {
-            name: "search engine optimization",
-            href: "/services/restaurant-industry/search-engine-optimization",
-          },
-          {
-            name: "social media marketing",
-            href: "/services/restaurant-industry/social-media-marketing",
-          },
-          {
-            name: "performance marketing",
-            href: "/services/restaurant-industry/performance-marketing",
-          },
-        ],
-      },
-      {
-        name: "immigration Industry",
-        // href: "/services/immigration-industry",
-        subLinks: [
-          {
-            name: "website design & development",
-            href: "/services/immigration-industry/website-design-and-development",
-          },
-          {
-            name: "search engine optimization",
-            href: "/services/immigration-industry/search-engine-optimization",
-          },
-          {
-            name: "social media marketing",
-            href: "/services/immigration-industry/social-media-marketing",
-          },
-          {
-            name: "performance marketing",
-            href: "/services/immigration-industry/performance-marketing",
-          },
-        ],
-      },
-      {
-        name: "beauty Industry",
-        // href: "/services/beauty-industry",
-        subLinks: [
-          {
-            name: "website design & development",
-            href: "/services/beauty-industry/website-design-and-development",
-          },
-          {
-            name: "performance marketing",
-            href: "/services/beauty-industry/performance-marketing",
-          },
-          {
-            name: "CRM",
-            href: "/services/beauty-industry/crm",
-          },
-          {
-            name: "social media marketing",
-            href: "/services/beauty-industry/social-media-marketing",
-          },
-        ],
-      },
-      {
-        name: "clothing Industry",
-        // href: "/services/clothing-industry",
-        subLinks: [
-          {
-            name: "website design & development",
-            href: "/services/clothing-industry/website-design-and-development",
-          },
-          {
-            name: "search engine optimization",
-            href: "/services/clothing-industry/search-engine-optimization",
-          },
-          {
-            name: "CRM",
-            href: "/services/clothing-industry/crm",
-          },
-          {
-            name: "social media marketing",
-            href: "/services/clothing-industry/social-media-marketing",
-          },
-          {
-            name: "performance marketing",
-            href: "/services/clothing-industry/performance-marketing",
-          },
-        ],
+        name: "FSW Score Calculator",
+        href: "/fsw-score-calculator",
       },
     ],
   },

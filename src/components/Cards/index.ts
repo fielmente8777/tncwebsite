@@ -1,2 +1,3 @@
-import ServiceCard from './ServiceCard';
-export {ServiceCard};
+import ServiceCard from "./ServiceCard";
+import Accordion from "./Accordion";
+export { ServiceCard, Accordion };
