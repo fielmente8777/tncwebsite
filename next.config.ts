@@ -10,6 +10,11 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "eazotel-client-webp-image.s3.ap-south-1.amazonaws.com",
       },
+      {
+        protocol: 'https',
+        hostname: 'tncimmigration.com',
+        pathname: '/wp-content/uploads/**',
+      }
     ],
     dangerouslyAllowSVG: true,
   },

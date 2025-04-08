@@ -57,6 +57,36 @@ export const ArrowRightIcon = ({ ...props }) => (
   </svg>
 );
 
+export const FacebookIcon = ({ ...props }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={28}
+    height={28}
+    viewBox="0 0 28 28"
+    fill="none"
+    {...props}
+  >
+    <g clipPath="url(#clip0_1_3203)">
+      <path
+        d="M15.556 18.222h3.333l1.333-5.333h-4.666v-2.667c0-1.373 0-2.666 2.666-2.666h2v-4.48c-.434-.058-2.076-.187-3.81-.187-3.62 0-6.19 2.21-6.19 6.267v3.733h-4v5.333h4v11.334h5.334V18.222z"
+        fill="currentColor"
+      />
+    </g>
+    <defs>
+      <clipPath id="clip0_1_3203">
+        <rect
+          x={0.666718}
+          y={0.66687}
+          width={26.6667}
+          height={26.6667}
+          rx={4}
+          fill="#fff"
+        />
+      </clipPath>
+    </defs>
+  </svg>
+);
+
 export const ArrowUpIcon = ({ ...props }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"

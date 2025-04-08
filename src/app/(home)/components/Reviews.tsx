@@ -9,7 +9,7 @@ interface reviewProps {
   name: string;
   review: string;
   date: string;
-  src: string;
+  src?: string;
   gicon: string;
   rating: string;
   verify: string;
@@ -17,90 +17,82 @@ interface reviewProps {
 const Reviews = () => {
   const data = [
     {
-      name: "Saif Bahish",
+      name: "Parishma Memon",
       review:
-        "This place was a rare find for me. They manufacture their own moldings and have decent prices. Their staff are extremely friendly and helpful.",
-      date: "2024-05-19",
-      src: "/saif.PNG",
+        "Excellent service.Very helpful people with so much hardwork. Always there to clear doubts.I always get positive response and all my applications until now got approved. Thanks a lot to Tanya,Megha and Rhea.",
+      date: "2024-03-30",
+      // src: "/saif.PNG",
       gicon: "",
       rating: "",
       verify: "",
     },
     {
-      name: "G",
+      name: "Samuel Hammond",
       review:
-        "Great product, good prices and the staff were easy to deal with. Definitely recommending them to my friends.",
-      date: "2023-09-18",
-      src: "/g.PNG",
+        "My experience with TNC was nothing but excellent. Thanks to Sejal and the entire team, my wife's open work permit was approved so fast. They exceeded my expectation and I will recommend TNC to anyone who wants to apply any type of visa to Canada whether you are in or out of Canada. I am bringing more business from Africa so team TNC please get ready. Thank you.",
+      date: "2024-03-27",
+      // src: "/g.PNG",
       gicon: "",
       rating: "",
       verify: "",
     },
     {
-      name: "Kevin O'Rourke",
-      review: "It was a great and quick service! Thanks",
-      date: "2023-04-27",
-      src: "/kevin.PNG",
+      name: "Vanessa Mutoni",
+      review:
+        "I highly recommend TNC True North Consultancy LTD business. I was completely impressed with their professionalism and customer service. Their staff is not only friendly but also highly skilled. They are reliable, honest and operate with integrity. They always took time to answer questions I may have. I recommend their services to whoever is looking for help with an immigration matter. Thank you again TNC!!",
+      date: "2024-03-22",
+      // src: "/kevin.PNG",
       gicon: "",
       rating: "",
       verify: "",
     },
     {
-      name: "Shernell Holder",
+      name: "Sarabjit Kaur",
       review:
-        "best product ever in the world, great service from staff and management. High recommended.",
-      date: "2022-05-26",
-      src: "/shern.PNG",
+        "One of the best immigration services providing place. My sister’s visitor to study permit approved with in 15 days inside Canada. I am really thankful to Tania mam for answering me every query quick and whenever i called and texted her she explained me in detail. I really thankful to her for this approval and her hard work. Thankyou so much Tania Mam and whole TNC Immigration team.😁🙏🏻",
+      date: "2024-03-22",
+      // src: "/shern.PNG",
+      gicon: "",
+      rating: "",
+      verify: "",
+    },
+    
+    {
+      name: "sukan thapa",
+      review:
+        "I would like to thank you for hard work and dedication at the end success. In future i will recommended to my friends great works thank you TNC. I really appreciate your contribution...",
+      date: "2024-03-22",
+      // src: "/syd.PNG",
       gicon: "",
       rating: "",
       verify: "",
     },
     {
-      name: "Murtuza Akhtar",
+      name: "Naaz k",
       review:
-        "Skilled people, with good knowledge of the products. A complete package for housing is easily available in here. Highly recommended.",
-      date: "2022-05-14",
-      src: "/murt.PNG",
+        "I applied for my parents and sister's visitor visa with them. My parents were previously refused 4 times and my sister had just graduated high school. I contacted many immigration agents but everyone mentioned that the file is weak and that i should not apply right now but one day i finally saw TNC's social media and their content really gave me hope to re-apply. I spoke to Megha about the case and she made me feel like its worth giving a shot. Later, Simran answered all the questions we had and was very efficient in the paperwork. In just 2 weeks my entire family was approved! I would highly recommend their services to everyone. They know what they are doing and have the capability to change lives for the better!!",
+      date: "2024-03-18",
+      // src: "/seraj.PNG",
       gicon: "",
       rating: "",
       verify: "",
     },
     {
-      name: "Syed Hamza",
+      name: "G Kaur",
       review:
-        "A highly professional environment with an admirable experienced staff! range of products maintaining the aura of modern and classical architecture are available to build your dream house. My personal recommendation is to pay a visit; you'll never regret it.",
-      date: "2022-05-14",
-      src: "/syd.PNG",
+        "I am extremely delighted to be writing this review. I would really like to thank Megha for helping me get my work permit. She was professional and knowledgeable. My case was handled efficiently and i received timely updates. Simran made sure that each and every important information was highlighted in the right manner. Their team is genuine, polite and always ready to help. I highly recommend them for any kind of immigration services.",
+      date: "2024-03-18",
+      // src: "/nau.PNG",
       gicon: "",
       rating: "",
       verify: "",
     },
     {
-      name: "Seraj Haqique",
+      name: "Latif Ssenyonjo",
       review:
-        "Manufacturer of world-class architectural mouldings at a very affordable price. I got custom made mouldings for my dream house. The owner of the business personally helped me with very innovative and latest designs as per my requirements. Thanks",
-      date: "2022-05-13",
-      src: "/seraj.PNG",
-      gicon: "",
-      rating: "",
-      verify: "",
-    },
-    {
-      name: "Naushad Akhtar",
-      review:
-        "Wide range and very durable products. Friendly staff and very good customer service",
-      date: "2021-12-03",
-      src: "/nau.PNG",
-      gicon: "",
-      rating: "",
-      verify: "",
-    },
-    {
-      name: "Syed Jafri",
-      review:
-        "Friendly, professional, highly knowledgeable and eager to assist you beyond your expectation. I was astonished upon their product knowledge when I had some difficult design questions for my highly customizable product. They delivered it on time, with great precisions. I would highly recommend to visit their store for all your future stucco purchases.",
-      date: "2021-12-01",
-      src: "/sydaf.PNG",
+        "Thanks TNC..wonderful work accomplished...Really met my expectations as recommended..Thanks for the great work.My case Manager Simran,Megha..Really wonderful people in helping us..5 people (family)for the approvals..looking forward to work with you more",
+      date: "2024-03-15",
+      // src: "/sydaf.PNG",
       gicon: "",
       rating: "",
       verify: "",
@@ -112,7 +104,7 @@ const Reviews = () => {
         <h2 className="text-secondary text-center font-bold mediumHeading">
           Our Reviews
         </h2>
-        <div className="flex max-lg:flex-col items-center justify-center gap-4">
+        <div className="flex w-full max-lg:flex-col items-center justify-center gap-4">
           <div className="md:w-[15%] flex flex-col gap-2 items-center">
             <h3 className="text-secondary text-center uppercase font-bold">
               excellent
@@ -133,10 +125,10 @@ const Reviews = () => {
             </p>
             <Image src="/google.svg" alt="alt" width={100} height={50} />
           </div>
-          <div className="md:w-[70%] w-full">
+          <div className="md:w-[85%] w-full">
             <SliderSwip
               data={data}
-              modules={[Navigation,Autoplay]}
+              modules={[Navigation, Autoplay]}
               autoplay={{ delay: 3000 }}
               navigation={{
                 nextEl: ".location_next",
@@ -159,7 +151,7 @@ const Reviews = () => {
                 },
               }}
               classNameSwiper="w-full"
-              classNameSwiperSlide="py-2"
+              classNameSwiperSlide="p-2"
             >
               {(item) => <Card {...item} />}
             </SliderSwip>
@@ -185,12 +177,33 @@ export const Card: React.FC<reviewProps> = ({
   return (
     <div className="w-full flex-col h-full min-h-[220px] gap-3 text-[#333333] p-4 rounded-sm bg-white shadow-xl">
       <div className="flex gap-8 mb-3 items-center">
-        <Image src={src} alt="alt" width={50} height={50} />
+        {src ? (
+          <Image src={src} alt={name} width={50} height={50} />
+        ) : (
+            <div
+            className="flex items-center justify-center rounded-full heading3 font-bold text-white"
+            style={{
+              backgroundColor: `hsl(${Array.from(name || "")
+              .reduce((acc, char) => acc + char.charCodeAt(0), 0) % 360}, 70%, 50%)`,
+              width: "50px",
+              height: "50px",
+            }}
+            >
+            {name.slice(0, 1).toUpperCase()}
+            </div>
+        )}
+
         <div className="flex flex-col ">
           <h3 className="description3 font-bold">{name}</h3>
           <p className="">{date}</p>
         </div>
-        <Image src={"/gico.svg"} alt="alt" width={20} height={20} className="ml-auto" />
+        <Image
+          src={"/gico.svg"}
+          alt="logo GOOGLE"
+          width={20}
+          height={20}
+          className="ml-auto"
+        />
       </div>
       <div className="flex gap-2">
         {[1, 2, 3, 4, 5].map((item) => (
@@ -202,10 +215,10 @@ export const Card: React.FC<reviewProps> = ({
             height={20}
           />
         ))}
-        <Image src={"/ver.svg"} alt="alt" width={20} height={20} />
+        <Image src={"/ver.svg"} alt="tick logo" width={20} height={20} />
       </div>
       <p className="description3 !leading-5 mt-4">
-        {review.slice(0, readMore ? review.length : 100)} 
+        {review.slice(0, readMore ? review.length : 100)}
         {review.length > 120 && !readMore && " ..."}
         {review.length > 120 && (
           <b onClick={() => setReadMore(!readMore)}>

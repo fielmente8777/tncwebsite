@@ -15,7 +15,7 @@ interface Props {
 const Services: React.FC<Props> = ({ cards }) => {
   return (
     <SectionWithContainer>
-      <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4">
+      <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 md:gap-10">
         {cards.map((card, index) => (
           <ServiceCard2
             key={index}
