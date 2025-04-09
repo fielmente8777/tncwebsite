@@ -15,9 +15,12 @@ import Whatsapp from "./ContactButton/WhatsApp";
 import Call from "./ContactButton/Call";
 import Bannner from "./banner/Bannner";
 import Accordion from "./Cards/Accordion";
+import Reviews from "./Cards/Reviews";
+import CommanBanner from './banner/CommanBanner';
 
 export {
   Bannner,
+  CommanBanner,
   LinkButton,
   OnlyButton,
   Section,
@@ -34,4 +37,5 @@ export {
   Call,
   TwoColSection2,
   Accordion,
+  Reviews,
 };

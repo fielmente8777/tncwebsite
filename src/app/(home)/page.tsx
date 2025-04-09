@@ -1,7 +1,6 @@
 import { homePageData } from "@/data/pagedata";
-import Reviews from "./components/Reviews";
 import Services from "./components/Services";
-import { Bannner } from "@/components";
+import { Bannner, Reviews } from "@/components";
 
 export default function Home() {
   return (

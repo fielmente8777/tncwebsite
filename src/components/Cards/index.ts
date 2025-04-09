@@ -1,3 +1,4 @@
 import ServiceCard from "./ServiceCard";
 import Accordion from "./Accordion";
-export { ServiceCard, Accordion };
+import Reviews from "./Reviews";
+export { ServiceCard, Accordion, Reviews };

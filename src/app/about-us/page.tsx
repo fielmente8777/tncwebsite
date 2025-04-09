@@ -1,8 +1,11 @@
+import { CommanBanner } from "@/components";
+import { AboutPageData } from "@/data/pagedata";
+
 const page = () => {
     return (
-        <div>
-            Enter
-        </div>
+        <main>
+            <CommanBanner {...AboutPageData.bannerData} />
+        </main>
     );
 }
 

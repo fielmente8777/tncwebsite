@@ -11,8 +11,8 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   const [openNewsLetter, setOpenNewsLetter] = useState(true);
   return (
-    <footer className="max_screen relative pt-44">
-      <div className="absolute top-6 left-0 w-full">
+    <footer className="max_screen md:relative pt-44">
+      <div className="md:absolute top-6 left-0 w-full">
         <Container className="bg-[#29313C] text-white ">
           <div className="md:px-20 px-4 md:py-14 py-6 w-full grid md:grid-cols-5 grid-cols-1 items-center gap-4">
             <div className="w-full flex flex-col gap-4 md:col-span-4 col-span-2">

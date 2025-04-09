@@ -13,12 +13,23 @@ const Navbar = () => {
       {/* top header */}
       <div className="bg-[#c1282a]">
         <Container>
-          <div className="flex items-center justify-between py-2 md:py-4">
+          <div className="flex items-center max-sm:flex-col justify-between py-2 md:py-4">
             <div className="flex items-center gap-5">
               {NavbarUpperLinks.slice(0, 2).map((link, index) => {
                 return (
-                  <Link href={link.href} key={index} className="text-white flex items-center gap-2">
-                    <OutlinePhone className="w-6 h-6 fill-white" fill="white" /> {link.name}
+                  <Link
+                    href={link.href}
+                    key={index}
+                    className="text-white flex items-center gap-2 md:text-base text-sm font-medium"
+                  >
+                    <span className="">
+                      {" "}
+                      <OutlinePhone
+                        className="w-6 h-6 fill-white"
+                        fill="white"
+                      />
+                    </span>{" "}
+                    {link.name}
                   </Link>
                 );
               })}
