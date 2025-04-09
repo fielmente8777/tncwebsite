@@ -1,11 +1,15 @@
+"use client";
 import { FooterLinks } from "@/data/links";
 import { Container, SectionWithContainer } from "../sectionComponents";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRightIcon } from "@/data/icons";
+import { useState } from "react";
+import NewsLetterPopUP from "../popup/NewsLetterPopUP";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const [openNewsLetter, setOpenNewsLetter] = useState(true);
   return (
     <footer className="max_screen relative pt-44">
       <div className="absolute top-6 left-0 w-full">
@@ -68,7 +72,12 @@ const Footer = () => {
                     {sublink.links && (
                       <div className="flex items-center gap-2">
                         {sublink.links?.map((slink, index) => (
-                          <Link href={slink.href ? slink.href : ""} target="_blank" key={index} className="flex items-center justify-center md:w-10 w-8 hover:text-primary aspect-square">
+                          <Link
+                            href={slink.href ? slink.href : ""}
+                            target="_blank"
+                            key={index}
+                            className="flex items-center justify-center md:w-10 w-8 hover:text-primary aspect-square"
+                          >
                             {slink.icon}
                           </Link>
                         ))}
@@ -95,6 +104,10 @@ const Footer = () => {
           </p>
         </div>
       </SectionWithContainer>
+      <NewsLetterPopUP
+        openNewsLetter={openNewsLetter}
+        setOpenNewsLetter={setOpenNewsLetter}
+      />
     </footer>
   );
 };

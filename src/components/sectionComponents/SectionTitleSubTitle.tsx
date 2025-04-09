@@ -1,6 +1,6 @@
 interface SectionTitleDescProps {
   title: string;
-  subTitle: string;
+  subTitle?: string;
   textCenter?: boolean;
   titleClassName?: string;
   subTitleClassName?: string;
@@ -18,10 +18,12 @@ const SectionTitleSubTitle: React.FC<SectionTitleDescProps> = ({
         className={`text-xl font-semibold text-white  ${titleClassName} ${textCenter ? "text-center" : ""}`}
         dangerouslySetInnerHTML={{ __html: title }}
       ></h2>
-      <h3
-        className={`largeHeading text-white  ${textCenter ? "text-center" : ""} ${subTitleClassName} `}
-        dangerouslySetInnerHTML={{ __html: subTitle }}
-      ></h3>
+      {subTitle && (
+        <h3
+          className={`largeHeading text-white  ${textCenter ? "text-center" : ""} ${subTitleClassName} `}
+          dangerouslySetInnerHTML={{ __html: subTitle }}
+        ></h3>
+      )}
     </div>
   );
 };

@@ -1,14 +1,24 @@
-import React from 'react'
+import Image from "next/image";
+import React from "react";
 
 interface CommanBannerProps {
-    title: string;
+  title: string;
+  src: string;
 }
 
-// CommanBanner component to display a banner with a title
-const CommanBanner: React.FC<CommanBannerProps> = ({ title }) => {
-    return (
-        <div className='bg-image h-[30vh] overflow-hidden flex justify-center items-center text-4xl text-white font-bold' >{title}</div>
-    )
-}
+const CommanBanner: React.FC<CommanBannerProps> = ({ title, src }) => {
+  return (
+    <section className="max-scree">
+      <div className="relative md:aspect-[4/.8] aspect-[4/3.5] w-full">
+        <Image src={src} alt={title} className="object-cover" fill />
+        <div className="absolute inset-0 w-full h-full bg-black/50 flex items-center justify-center">
+          <div className="text-center">
+            <h1 className="md:text-4xl text-3xl font-bold text-white capitalize">{title}</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
 
-export default CommanBanner
+export default CommanBanner;
