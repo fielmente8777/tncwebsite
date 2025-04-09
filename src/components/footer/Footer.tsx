@@ -43,6 +43,7 @@ const Footer = () => {
           </div>
         </Container>
       </div>
+
       <SectionWithContainer sectionClassName="bg-black text-white md:!pt-24">
         <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 lg:gap-24 w-full">
           <div className="w-full flex justify-center flex-col items-center gap-6">
@@ -90,6 +91,7 @@ const Footer = () => {
           ))}
         </div>
       </SectionWithContainer>
+
       <SectionWithContainer sectionClassName="bg-primary text-white !py-4">
         <div className="flex max-lg:flex-col justify-center items-center gap-2">
           <p className="text-center font-semibold">
@@ -104,6 +106,7 @@ const Footer = () => {
           </p>
         </div>
       </SectionWithContainer>
+
       <NewsLetterPopUP
         openNewsLetter={openNewsLetter}
         setOpenNewsLetter={setOpenNewsLetter}

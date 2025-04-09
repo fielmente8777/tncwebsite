@@ -1,5 +1,7 @@
+import { title } from "process";
 import {
   FlagPolingIcon,
+  InstagramIconSecond,
   PermanentResidenceIcon,
   SponsorshipIcon,
   TemporaryResidenceIcon,
@@ -69,6 +71,141 @@ export const homePageData = {
       src: "/img/im1.webp",
     },
   ],
+  social: {
+    title: "Our Social media",
+    content: [
+      {
+        image: {
+          src: "/img/social-1.webp",
+        },
+        link: {
+          href: "",
+        },
+      },
+      {
+        image: {
+          src: "/img/social-2.webp",
+        },
+        link: {
+          href: "",
+        },
+      },
+      {
+        image: {
+          src: "/img/social-3.webp",
+        },
+        link: {
+          href: "",
+        },
+      },
+      {
+        image: {
+          src: "/img/social-5.webp",
+        },
+        link: {
+          href: "",
+        },
+      },
+      {
+        image: {
+          src: "/img/social-6.webp",
+        },
+        link: {
+          href: "",
+        },
+      },
+      {
+        image: {
+          src: "/img/social-7.webp",
+        },
+        link: {
+          href: "",
+        },
+      },
+      {
+        image: {
+          src: "/img/social-8.webp",
+        },
+        link: {
+          href: "",
+        },
+      },
+      {
+        image: {
+          src: "/img/social-9.webp",
+        },
+        link: {
+          href: "",
+        },
+      },
+      {
+        image: {
+          src: "/img/social-10.webp",
+        },
+        link: {
+          href: "",
+        },
+      },
+      {
+        image: {
+          src: "/img/social-11.webp",
+        },
+        link: {
+          href: "",
+        },
+      },
+      {
+        image: {
+          src: "/img/social-12.webp",
+        },
+        link: {
+          href: "",
+        },
+      },
+      {
+        image: {
+          src: "/img/social-13.webp",
+        },
+        link: {
+          href: "",
+        },
+      },
+      {
+        image: {
+          src: "/img/social-14.webp",
+        },
+        link: {
+          href: "",
+        },
+      },
+      {
+        image: {
+          src: "/img/social-15.webp",
+        },
+        link: {
+          href: "",
+        },
+      },
+      {
+        image: {
+          src: "/img/social-16.webp",
+        },
+        link: {
+          href: "",
+        },
+      },
+    ],
+    buttons: [
+      {
+        label: "Load More",
+      },
+      {
+        label: "Follow on Instagram",
+        icon: <InstagramIconSecond className="w-1" />,
+        href: "https://www.instagram.com/tncimmigration/",
+      },
+    ],
+  },
   typeOfServices: {
     title: "Services",
     subTitle: "Our Services",
@@ -182,79 +319,79 @@ export const AboutPageData = {
     ],
   },
   images: ["", "", ""],
-  teamMembers:{
-    title:"Team Members",
-    desc:"Our Group of Qualified and Trained Professionals are here to assist you in every Step",
-    cards:[
+  teamMembers: {
+    title: "Team Members",
+    desc: "Our Group of Qualified and Trained Professionals are here to assist you in every Step",
+    cards: [
       {
-        name:"Rhea Patel",
-        src:"/img/team/rhea.webp",
-        post:"RCIC",
+        name: "Rhea Patel",
+        src: "/img/team/rhea.webp",
+        post: "RCIC",
       },
       {
-        name:"TJ Singh",
-        src:"/img/team/tj.webp",
-        post:"RCIC",      
+        name: "TJ Singh",
+        src: "/img/team/tj.webp",
+        post: "RCIC",
       },
       {
-        name:"Prabhleen Sandhu",
-        src:"/img/team/prabhleen.webp",
-        post:"RCIC",
+        name: "Prabhleen Sandhu",
+        src: "/img/team/prabhleen.webp",
+        post: "RCIC",
       },
       {
-        name:"Bijay Luitel",
-        src:"/img/team/bijay.webp",
-        post:"RCIC",
+        name: "Bijay Luitel",
+        src: "/img/team/bijay.webp",
+        post: "RCIC",
       },
       {
-        name:"Richa Bhardwaj",
-        src:"/img/team/richa.webp",
-        post:"Legal Associate",
+        name: "Richa Bhardwaj",
+        src: "/img/team/richa.webp",
+        post: "Legal Associate",
       },
       {
-        name:"Megha Sharma",
-        src:"/img/team/megha.webp",
+        name: "Megha Sharma",
+        src: "/img/team/megha.webp",
       },
       {
-        name:"Simran Kaur",
-        src:"/img/team/simran.webp",
+        name: "Simran Kaur",
+        src: "/img/team/simran.webp",
       },
       {
-        name:"Tania Kakkar",
-        src:"/img/team/tania.webp",
+        name: "Tania Kakkar",
+        src: "/img/team/tania.webp",
       },
       {
-        name:"Harminder Kaur",
-        src:"/img/team/harminder.webp",
+        name: "Harminder Kaur",
+        src: "/img/team/harminder.webp",
       },
       {
-        name:"Deep Simran Kaur",
-        src:"/img/team/deep.webp",
+        name: "Deep Simran Kaur",
+        src: "/img/team/deep.webp",
       },
       {
-        name:"Maneet Longia",
-        src:"/img/team/maneet.webp",
+        name: "Maneet Longia",
+        src: "/img/team/maneet.webp",
       },
       {
-        name:"Gaby Kaur",
-        src:"/img/team/gaby.webp",
+        name: "Gaby Kaur",
+        src: "/img/team/gaby.webp",
       },
       {
-        name:"Dilman Singh",
-        src:"/img/team/dilman.webp",
+        name: "Dilman Singh",
+        src: "/img/team/dilman.webp",
       },
       {
-        name:"Amanpreet Singh",
-        src:"/img/team/aman.webp",
+        name: "Amanpreet Singh",
+        src: "/img/team/aman.webp",
       },
       {
-        name:"Kasturi",
-        src:"/img/team/kasturi.webp",
+        name: "Kasturi",
+        src: "/img/team/kasturi.webp",
       },
       {
-        name:"Sejal Oberoi",
-        src:"/img/team/sejal.webp",
-      }
-    ]
-  }
+        name: "Sejal Oberoi",
+        src: "/img/team/sejal.webp",
+      },
+    ],
+  },
 };
