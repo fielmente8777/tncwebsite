@@ -4,6 +4,7 @@ import { Bannner, Reviews } from "@/components";
 import AboutUs from "./components/AboutUs";
 import OurSocailMedia from "./components/OurSocailMedia";
 import OurServices from "./components/OurServices";
+import TncImmigration from "./components/TncImmigration";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <AboutUs {...homePageData?.about} />
         <OurSocailMedia {...homePageData?.social} />
         <OurServices />
+        <TncImmigration />
       </div>
       <Reviews />
     </main>
