@@ -10,13 +10,13 @@ import {
 import { Navbar, MobileNav } from "./navbar";
 import Footer from "./footer/Footer";
 import SliderSwip from "./SliderSwip";
-import { ServiceCard } from "./Cards";
+import { ServiceCard, TeamMemberCard } from "./Cards";
 import Whatsapp from "./ContactButton/WhatsApp";
 import Call from "./ContactButton/Call";
 import Bannner from "./banner/Bannner";
 import Accordion from "./Cards/Accordion";
 import Reviews from "./Cards/Reviews";
-import CommanBanner from './banner/CommanBanner';
+import CommanBanner from "./banner/CommanBanner";
 
 export {
   Bannner,
@@ -38,4 +38,5 @@ export {
   TwoColSection2,
   Accordion,
   Reviews,
+  TeamMemberCard,
 };

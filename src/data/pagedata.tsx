@@ -4,6 +4,7 @@ import {
   SponsorshipIcon,
   TemporaryResidenceIcon,
 } from "./icons";
+import { imagesLink } from "./links";
 
 export const homePageData = {
   bannnerData: {
@@ -169,11 +170,11 @@ export const homePageData = {
 export const AboutPageData = {
   bannerData: {
     title: "About Us",
-    src: "",
+    src: imagesLink + "bg-slider-02.webp",
   },
   about: {
     title: "TNC True North Consultancy",
-    src: "",
+    src: imagesLink + "ad5.webp",
     desc: [
       "TNC True North Consultancy Ltd. is one of the leading immigration consulting firms in the Lower Mainland of BC, Canada with offices to serve our clients at their best convenience.",
       "Our main office is based in the heart of Surrey and is easily accessible to our clients. We at True North Consultancy Ltd. handle independent clients from Asia, Europe, Africa and Latin America. We are a Certified Canadian Immigration Consultant Firm (CICC) and are in good standing with CICC which can safeguard your peace of mind. We are competent and up to date with immigration rules and regulations.",
@@ -181,80 +182,310 @@ export const AboutPageData = {
       "We at TNC specialize in the following: work permits, study permits, visitor visas, express entry, intra company transfer, labour market impact assessments (LMIA), provincial nominee programs (PNP), spousal sponsorships, permanent residency (PR), citizenship and other immigration related services. You can reach out to us with your immigration inquiry and a professional will be in touch with you.",
     ],
   },
-  images: ["", "", ""],
-  teamMembers:{
-    title:"Team Members",
-    desc:"Our Group of Qualified and Trained Professionals are here to assist you in every Step",
-    cards:[
+  images: [imagesLink + "ad6.webp", imagesLink + "ad4.webp", imagesLink + "ad3.webp"],
+  teamMembers: {
+    title: "Team Members",
+    desc: "Our Group of Qualified and Trained Professionals are here to assist you in every Step",
+    cards: [
       {
-        name:"Rhea Patel",
-        src:"/img/team/rhea.webp",
-        post:"RCIC",
+        name: "Rhea Patel",
+        src: imagesLink + "tm1.webp",
+        post: "RCIC",
       },
       {
-        name:"TJ Singh",
-        src:"/img/team/tj.webp",
-        post:"RCIC",      
+        name: "TJ Singh",
+        src: imagesLink + "tm2.webp",
+        post: "RCIC",
       },
       {
-        name:"Prabhleen Sandhu",
-        src:"/img/team/prabhleen.webp",
-        post:"RCIC",
+        name: "Prabhleen Sandhu",
+        src: imagesLink + "tm3.webp",
+        post: "RCIC",
       },
       {
-        name:"Bijay Luitel",
-        src:"/img/team/bijay.webp",
-        post:"RCIC",
+        name: "Bijay Luitel",
+        src: imagesLink + "tm4.webp",
+        post: "RCIC",
       },
       {
-        name:"Richa Bhardwaj",
-        src:"/img/team/richa.webp",
-        post:"Legal Associate",
+        name: "Richa Bhardwaj",
+        src: imagesLink + "tm5.webp",
+        post: "Legal Associate",
       },
       {
-        name:"Megha Sharma",
-        src:"/img/team/megha.webp",
+        name: "Megha Sharma",
+        src: imagesLink + "tm6.webp",
       },
       {
-        name:"Simran Kaur",
-        src:"/img/team/simran.webp",
+        name: "Simran Kaur",
+        src: imagesLink + "tm7.webp",
       },
       {
-        name:"Tania Kakkar",
-        src:"/img/team/tania.webp",
+        name: "Tania Kakkar",
+        src: imagesLink + "tm8.webp",
       },
       {
-        name:"Harminder Kaur",
-        src:"/img/team/harminder.webp",
+        name: "Harminder Kaur",
+        src: imagesLink + "tm9.webp",
       },
       {
-        name:"Deep Simran Kaur",
-        src:"/img/team/deep.webp",
+        name: "Deep Simran Kaur",
+        src: imagesLink + "tm10.webp",
       },
       {
-        name:"Maneet Longia",
-        src:"/img/team/maneet.webp",
+        name: "Maneet Longia",
+        src: imagesLink + "tm11.webp",
       },
       {
-        name:"Gaby Kaur",
-        src:"/img/team/gaby.webp",
+        name: "Gaby Kaur",
+        src: imagesLink + "tm12.webp",
       },
       {
-        name:"Dilman Singh",
-        src:"/img/team/dilman.webp",
+        name: "Dilman Singh",
+        src: imagesLink + "tm13.webp",
       },
       {
-        name:"Amanpreet Singh",
-        src:"/img/team/aman.webp",
+        name: "Amanpreet Singh",
+        src: imagesLink + "tm14.webp",
       },
       {
-        name:"Kasturi",
-        src:"/img/team/kasturi.webp",
+        name: "Kasturi",
+        src: imagesLink + "tm15.webp",
       },
-      {
-        name:"Sejal Oberoi",
-        src:"/img/team/sejal.webp",
-      }
-    ]
-  }
+    ],
+  },
+};
+
+export const servicePageData = {
+  banner: {
+    src: "",
+    title: "",
+  },
+  services: [
+    {
+      title: "Permanent Residence",
+      cards: [
+        {
+          icon: "",
+          title: "Federal Skilled Worker",
+          links: [
+            {
+              name: "Book Consultation",
+              href: "",
+            },
+            {
+              name: "Read More",
+              href: "",
+            },
+          ],
+        },
+        {
+          icon: "",
+          title: "Federal Skilled Trade Workers",
+          links: [
+            {
+              name: "Book Consultation",
+              href: "",
+            },
+            {
+              name: "Read More",
+              href: "",
+            },
+          ],
+        },
+        {
+          icon: "",
+          title: "Canadian Experience Class",
+          links: [
+            {
+              name: "Book Consultation",
+              href: "",
+            },
+            {
+              name: "Read More",
+              href: "",
+            },
+          ],
+        },
+        {
+          icon: "",
+          title: "Provincial Nominee Programs",
+          links: [
+            {
+              name: "Book Consultation",
+              href: "",
+            },
+            {
+              name: "Read More",
+              href: "",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      title: "Temporary Residence",
+      cards: [
+        {
+          icon: "",
+          title: "Study Permit",
+          links: [
+            {
+              name: "Book Consultation",
+              href: "",
+            },
+            {
+              name: "Read More",
+              href: "",
+            },
+          ],
+        },
+        {
+          icon: "",
+          title: "Intra-Company Transfer",
+          links: [
+            {
+              name: "Book Consultation",
+              href: "",
+            },
+            {
+              name: "Read More",
+              href: "",
+            },
+          ],
+        },
+        {
+          icon: "",
+          title: "Work Permit",
+          links: [
+            {
+              name: "Book Consultation",
+              href: "",
+            },
+            {
+              name: "Read More",
+              href: "",
+            },
+          ],
+        },
+        {
+          icon: "",
+          title: "Super Visa",
+          links: [
+            {
+              name: "Book Consultation",
+              href: "",
+            },
+            {
+              name: "Read More",
+              href: "",
+            },
+          ],
+        },
+        {
+          icon: "",
+          title: "LMIA Exemptions",
+          links: [
+            {
+              name: "Book Consultation",
+              href: "",
+            },
+            {
+              name: "Read More",
+              href: "",
+            },
+          ],
+        },
+        {
+          icon: "",
+          title: "Visitor",
+          links: [
+            {
+              name: "Book Consultation",
+              href: "",
+            },
+            {
+              name: "Read More",
+              href: "",
+            },
+          ],
+        },
+        {
+          icon: "",
+          title: "Post-Graduate Work Permits",
+          links: [
+            {
+              name: "Book Consultation",
+              href: "",
+            },
+            {
+              name: "Read More",
+              href: "",
+            },
+          ],
+        },
+      ],
+    },
+    {
+      title: "Family & Sponsorship Applications",
+      cards: [
+        {
+          icon: "",
+          title: "Spousal PR Sponsorship",
+          links: [
+            {
+              name: "Book Consultation",
+              href: "",
+            },
+            {
+              name: "Read More",
+              href: "",
+            },
+          ],
+        },
+        {
+          icon: "",
+          title: "Child Or Other Dependent Sponsorship",
+          links: [
+            {
+              name: "Book Consultation",
+              href: "",
+            },
+            {
+              name: "Read More",
+              href: "",
+            },
+          ],
+        },
+        {
+          icon: "",
+          title: "Spousal Work Permit",
+          links: [
+            {
+              name: "Book Consultation",
+              href: "",
+            },
+            {
+              name: "Read More",
+              href: "",
+            },
+          ],
+        },
+        {
+          icon: "",
+          title: "Parents, Grandparents Sponsorship",
+          links: [
+            {
+              name: "Book Consultation",
+              href: "",
+            },
+            {
+              name: "Read More",
+              href: "",
+            },
+          ],
+        },
+      ],
+    },
+  ],
 };

@@ -3,7 +3,7 @@ import { FaFacebook, FaTiktok, FaYoutube, FaInstagram } from "react-icons/fa";
 import { IoLogoLinkedin } from "react-icons/io";
 
 export const imagesLink =
-  "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/OneShotMarketingWebsite/";
+  "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/";
 
 interface NveLinksProps {
   name: string;
@@ -86,24 +86,94 @@ export const NaveLinks: NveLinksProps[] = [
             name: "study permit",
             href: "/study-permit",
           },
+          {
+            name: "work permit",
+            href: "/work-permit",
+          },
+          {
+            name: "spousal Work Permit",
+            href: "/spousal-work-permit",
+          },
+          {
+            name: "LMIA For Employers",
+            href: "/lmia-for-employers",
+          },
         ],
       },
       {
-        name: "restaurant Industry",
-        href: "/industries-we-serve/restaurant-industry",
+        name: "Temporary Resident Visas Continued",
+        href: "#",
+        subLinks: [
+          {
+            name: "Visitor to Student conversion",
+            href: "/visitor-to-student-conversion",
+          },
+          {
+            name: "Post Grad Open Work Permit",
+            href: "/post-grad-open-work-permit",
+          },
+        ],
       },
       {
-        name: "immigration Industry",
-        href: "/industries-we-serve/immigration-industry",
+        name: "Family Class",
+        href: "#",
+        subLinks: [
+          {
+            name: "Spousal and Common law",
+            href: "/spousal-and-common-law",
+          },
+          {
+            name: "parents, Grandparents Sponsorship",
+            href: "/parents-grandparents-sponsorship",
+          },
+          {
+            name: "last living Relative program",
+            href: "/last-living-relative-program",
+          },
+          {
+            name: "child or other Dependent Sponsorship",
+            href: "/child-or-other-dependent-sponsorship",
+          },
+          {
+            name: "Orphan program",
+            href: "/orphan-program",
+          },
+        ],
       },
       {
-        name: "beauty Industry",
-        href: "/industries-we-serve/beauty-industry",
+        name: "Economic Class (PR)",
+        href: "#",
+        subLinks: [
+          {
+            name: "home childcare program",
+            href: "/home-childcare-program",
+          },
+          {
+            name: "Agripilot program",
+            href: "/agripilot-program",
+          },
+        ]
       },
       {
-        name: "clothing Industry",
-        href: "/industries-we-serve/clothing-industry",
+        name: "Express Entry",
+        href: "/express-entry",
       },
+      {
+        name:"procedural Fairness Letters",
+        href:"/procedural-fairness-letters"
+      },
+      {
+        name:"sponsor your sibling for PR",
+        href:"sponsor-your-sibling-for-pr",
+      },
+      {
+        name:"LMIA For Employers",
+        href:"lmia-for-employers",
+      },
+      {
+        name:"Spousal Sponsorship",
+        href:"/spousal-sponsorship",
+      }
     ],
   },
   {
@@ -121,7 +191,7 @@ export const NaveLinks: NveLinksProps[] = [
     ],
   },
   {
-    name:"Our locations",
+    name: "Our locations",
     href: "#",
     subLinks: [
       {
@@ -135,11 +205,11 @@ export const NaveLinks: NveLinksProps[] = [
       {
         name: "Kelowna, BC",
         href: "/kelowna-bc",
-      }
+      },
     ],
   },
   {
-    name:"FAQs",
+    name: "FAQs",
     href: "/faqs",
   },
   {

@@ -9,7 +9,7 @@ import NewsLetterPopUP from "../popup/NewsLetterPopUP";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-  const [openNewsLetter, setOpenNewsLetter] = useState(true);
+  const [openNewsLetter, setOpenNewsLetter] = useState(false);
   return (
     <footer className="max_screen md:relative pt-44">
       <div className="md:absolute top-6 left-0 w-full">

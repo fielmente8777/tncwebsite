@@ -2,11 +2,12 @@ import { SectionWithContainer } from "@/components";
 import CommanBanner from "@/components/banner/CommanBanner";
 import { FacebookIcon } from "@/data/icons";
 import FormSection from "./components/FormSection";
+import { imagesLink } from "@/data/links";
 
 const page = () => {
   return (
     <div>
-      <CommanBanner title="Contact Us" src="https://tncimmigration.com/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-24-at-23.35.17-2.jpeg" />
+      <CommanBanner title="Contact Us" src={imagesLink + "bg-slider-02.webp"} />
       <SectionWithContainer>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <div className="flex gap-4">
