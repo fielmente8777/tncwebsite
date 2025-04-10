@@ -398,8 +398,8 @@ export const AboutPageData = {
 
 export const servicePageData = {
   banner: {
-    src: "",
-    title: "",
+    src: imagesLink + "bg-slider-02.webp",
+    title: "our services",
   },
   services: [
     {

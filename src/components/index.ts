@@ -10,7 +10,7 @@ import {
 import { Navbar, MobileNav } from "./navbar";
 import Footer from "./footer/Footer";
 import SliderSwip from "./SliderSwip";
-import { ServiceCard, TeamMemberCard } from "./Cards";
+import { ServiceCard, TeamMemberCard, ServiceCard3 } from "./Cards";
 import Whatsapp from "./ContactButton/WhatsApp";
 import Call from "./ContactButton/Call";
 import Bannner from "./banner/Bannner";
@@ -39,4 +39,5 @@ export {
   Accordion,
   Reviews,
   TeamMemberCard,
+  ServiceCard3,
 };

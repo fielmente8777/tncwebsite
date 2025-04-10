@@ -5,7 +5,7 @@ const OurServices = () => {
   return (
     <div
       style={{
-        backgroundImage: `url("/img/bg-section-02.webp")`,
+        backgroundImage: `url("/tnc/bg-section-02.webp")`,
       }}
       className="h-[1068.21px]"
     >
