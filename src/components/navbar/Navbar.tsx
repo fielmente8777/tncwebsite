@@ -5,9 +5,24 @@ import Link from "next/link";
 import { NavbarUpperLinks, NaveLinks } from "@/data/links";
 import { DropDownIcon, OutlinePhone } from "@/data/icons";
 import { usePathname } from "next/navigation";
+import MobileNav from "./MobileNav";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
   const pathName = usePathname();
+  const [mobileMenu, setMobileMenu] = useState(false);
+
+  useEffect(() => {
+    if (mobileMenu) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, [mobileMenu]);
+
   return (
     <header className="max_screen bg-black">
       {/* top header */}
@@ -134,6 +149,7 @@ const Navbar = () => {
           </ul>
         </nav>
       </Container>
+      <MobileNav mobileMenu={mobileMenu} setMobileMenu={setMobileMenu} />
     </header>
   );
 };
