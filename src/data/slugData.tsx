@@ -118,5 +118,47 @@ export const slugPageData = [
     ],
     mapSrc: "",
   },
-  
+  {
+    slug: "visitor-visa",
+    banner: {
+      title: "Visitor Visa to Canada",
+      src: "",
+    },
+    htm:"true",
+    pageData1: `
+    <div>
+    <p>
+      Are you dreaming of exploring the beauty and opportunities that Canada has
+      to offer? We’re here to make your journey smooth and hassle-free with our
+      expert immigration services. Whether you’re planning a family vacation, a
+      business trip, or seeking new horizons, our Visitor Visa services are
+      designed to cater to your unique needs.
+    </p>
+    <h6>
+      <strong>Visitor Visa to Canada:</strong>
+    </h6>
+    <p>
+      <strong>Overview:</strong>
+    </p>
+    <p>
+      A Visitor visa, also known as a Temporary Resident Visa (TRV), allows
+      individuals to enter Canada for a temporary stay. This could include
+      tourism, family visits, business meetings, or any other purpose that
+      doesn’t involve long-term residency.
+    </p>{" "}
+    </div>
+    <div>
+     <img
+      decoding="async"
+      width={640}
+      height={344}
+      src="https://tncimmigration.com/wp-content/uploads/2023/12/amna123@@-9-1-1024x551.jpg"
+      className="attachment-large size-large wp-image-8898"
+      alt=""
+      srcSet="https://tncimmigration.com/wp-content/uploads/2023/12/amna123@@-9-1-1024x551.jpg 1024w, https://tncimmigration.com/wp-content/uploads/2023/12/amna123@@-9-1-300x162.jpg 300w, https://tncimmigration.com/wp-content/uploads/2023/12/amna123@@-9-1-768x414.jpg 768w, https://tncimmigration.com/wp-content/uploads/2023/12/amna123@@-9-1-600x323.jpg 600w, https://tncimmigration.com/wp-content/uploads/2023/12/amna123@@-9-1.jpg 1300w"
+      sizes="(max-width: 640px) 100vw, 640px"
+    />
+    </div>
+`,
+  },
 ];

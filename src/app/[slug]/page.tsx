@@ -37,6 +37,7 @@ const Page = async ({ params }: Params) => {
           ))}
         </div>
       )}
+      {pageData?.htm && <pageData data={pageData} /> }
     </>
   );
 };
