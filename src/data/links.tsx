@@ -167,12 +167,43 @@ export const NaveLinks: NveLinksProps[] = [
         href:"sponsor-your-sibling-for-pr",
       },
       {
-        name:"LMIA For Employers",
-        href:"lmia-for-employers",
-      },
-      {
         name:"Spousal Sponsorship",
         href:"/spousal-sponsorship",
+      },
+      {
+        name:"Spousal open work permit",
+        href:"/spousal-open-work-permit",
+      },
+      {
+        name:"Post Grad Open Work Permit",
+        href:"/post-grad-open-work-permit",
+      },
+      {
+        name:"Extension within canada",
+        href:"/extension-within-canada",
+      },
+      {
+        name:"other services",
+        href:"#",
+        subLinks: [
+          {
+            name:"PR Renewal",
+            href:"/pr-renewal",
+          },
+          {
+            name:"citizenship application",
+            href:"/citizenship-application",
+          },
+          {
+            name:"citizenship hand down",
+            href:"/citizenship-hand-down",
+          },
+          {
+            name:"canada recovering lost",
+            href:"/canada-recovering-lost",
+          },
+          
+        ]
       }
     ],
   },

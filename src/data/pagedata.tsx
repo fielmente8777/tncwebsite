@@ -1,5 +1,6 @@
 import {
   FlagPolingIcon,
+  InstagramIconSecond,
   PermanentResidenceIcon,
   SponsorshipIcon,
   TemporaryResidenceIcon,
@@ -70,10 +71,145 @@ export const homePageData = {
       src: "/img/im1.webp",
     },
   ],
+  social: {
+    title: "Our Social media",
+    content: [
+      {
+        image: {
+          src: "/tnc/social-1.webp",
+        },
+        link: {
+          href: "",
+        },
+      },
+      {
+        image: {
+          src: "/tnc/social-2.webp",
+        },
+        link: {
+          href: "",
+        },
+      },
+      {
+        image: {
+          src: "/tnc/social-3.webp",
+        },
+        link: {
+          href: "",
+        },
+      },
+      {
+        image: {
+          src: "/tnc/social-5.webp",
+        },
+        link: {
+          href: "",
+        },
+      },
+      {
+        image: {
+          src: "/tnc/social-6.webp",
+        },
+        link: {
+          href: "",
+        },
+      },
+      {
+        image: {
+          src: "/tnc/social-7.webp",
+        },
+        link: {
+          href: "",
+        },
+      },
+      {
+        image: {
+          src: "/tnc/social-8.webp",
+        },
+        link: {
+          href: "",
+        },
+      },
+      {
+        image: {
+          src: "/tnc/social-9.webp",
+        },
+        link: {
+          href: "",
+        },
+      },
+      {
+        image: {
+          src: "/tnc/social-10.webp",
+        },
+        link: {
+          href: "",
+        },
+      },
+      {
+        image: {
+          src: "/tnc/social-11.webp",
+        },
+        link: {
+          href: "",
+        },
+      },
+      {
+        image: {
+          src: "/tnc/social-12.webp",
+        },
+        link: {
+          href: "",
+        },
+      },
+      {
+        image: {
+          src: "/tnc/social-13.webp",
+        },
+        link: {
+          href: "",
+        },
+      },
+      {
+        image: {
+          src: "/tnc/social-14.webp",
+        },
+        link: {
+          href: "",
+        },
+      },
+      {
+        image: {
+          src: "/tnc/social-15.webp",
+        },
+        link: {
+          href: "",
+        },
+      },
+      {
+        image: {
+          src: "/tnc/social-16.webp",
+        },
+        link: {
+          href: "",
+        },
+      },
+    ],
+    buttons: [
+      {
+        label: "Load More",
+      },
+      {
+        label: "Follow on Instagram",
+        icon: <InstagramIconSecond className="w-1" />,
+        href: "https://www.instagram.com/tncimmigration/",
+      },
+    ],
+  },
   typeOfServices: {
     title: "Services",
     subTitle: "Our Services",
-    bgSrc: "/img/bnr2.webp",
+    bgSrc: "/tnc/bnr2.webp",
     cards: [
       {
         src: "",
@@ -182,7 +318,11 @@ export const AboutPageData = {
       "We at TNC specialize in the following: work permits, study permits, visitor visas, express entry, intra company transfer, labour market impact assessments (LMIA), provincial nominee programs (PNP), spousal sponsorships, permanent residency (PR), citizenship and other immigration related services. You can reach out to us with your immigration inquiry and a professional will be in touch with you.",
     ],
   },
-  images: [imagesLink + "ad6.webp", imagesLink + "ad4.webp", imagesLink + "ad3.webp"],
+  images: [
+    imagesLink + "ad6.webp",
+    imagesLink + "ad4.webp",
+    imagesLink + "ad3.webp",
+  ],
   teamMembers: {
     title: "Team Members",
     desc: "Our Group of Qualified and Trained Professionals are here to assist you in every Step",

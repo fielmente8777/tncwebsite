@@ -56,7 +56,7 @@ const Reviews = () => {
       rating: "",
       verify: "",
     },
-    
+
     {
       name: "sukan thapa",
       review:
@@ -99,63 +99,58 @@ const Reviews = () => {
     },
   ];
   return (
-    <SectionWithContainer>
-      <div className="flex flex-col gap-4 w-full">
-        <h2 className="text-secondary text-center font-bold mediumHeading">
-          Our Reviews
-        </h2>
-        <div className="flex w-full max-lg:flex-col items-center justify-center gap-4">
-          <div className="md:w-[15%] flex flex-col gap-2 items-center">
-            <h3 className="text-secondary text-center uppercase font-bold">
-              excellent
-            </h3>
-            <div className="flex gap-1 items-center justify-center">
-              {[1, 2, 3, 4, 5].map((item) => (
-                <Image
-                  key={item}
-                  src={"/star.svg"}
-                  alt="alt"
-                  width={20}
-                  height={20}
-                />
-              ))}
-            </div>
-            <p className="text-center description2">
-              Based on <b>18 reviews</b>
-            </p>
-            <Image src="/google.svg" alt="alt" width={100} height={50} />
+    <SectionWithContainer sectionClassName="!py-4">
+      <div className="flex w-full max-lg:flex-col items-center justify-center gap-4">
+        <div className="md:w-[15%] flex flex-col gap-2 items-center">
+          <h3 className="text-secondary text-center uppercase font-bold">
+            excellent
+          </h3>
+          <div className="flex gap-1 items-center justify-center">
+            {[1, 2, 3, 4, 5].map((item) => (
+              <Image
+                key={item}
+                src={"/star.svg"}
+                alt="alt"
+                width={20}
+                height={20}
+              />
+            ))}
           </div>
-          <div className="md:w-[85%] w-full">
-            <SliderSwip
-              data={data}
-              modules={[Navigation, Autoplay]}
-              autoplay={{ delay: 3000 }}
-              navigation={{
-                nextEl: ".location_next",
-                prevEl: ".location_prev",
-              }}
-              slidesPerView={1}
-              spaceBetween={8}
-              breakpoints={{
-                1024: {
-                  slidesPerView: 3,
-                  spaceBetween: 10,
-                },
-                768: {
-                  slidesPerView: 2,
-                  spaceBetween: 10,
-                },
-                640: {
-                  slidesPerView: 1,
-                  spaceBetween: 10,
-                },
-              }}
-              classNameSwiper="w-full"
-              classNameSwiperSlide="p-2"
-            >
-              {(item) => <Card {...item} />}
-            </SliderSwip>
-          </div>
+          <p className="text-center description2">
+            Based on <b>370 reviews</b>
+          </p>
+          <Image src="/google.svg" alt="alt" width={100} height={50} />
+        </div>
+        <div className="md:w-[85%] w-full">
+          <SliderSwip
+            data={data}
+            modules={[Navigation, Autoplay]}
+            autoplay={{ delay: 3000 }}
+            navigation={{
+              nextEl: ".location_next",
+              prevEl: ".location_prev",
+            }}
+            slidesPerView={1}
+            spaceBetween={8}
+            breakpoints={{
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+              },
+              640: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+              },
+            }}
+            classNameSwiper="w-full"
+            classNameSwiperSlide="p-2"
+          >
+            {(item) => <Card {...item} />}
+          </SliderSwip>
         </div>
       </div>
     </SectionWithContainer>
@@ -180,22 +175,26 @@ export const Card: React.FC<reviewProps> = ({
         {src ? (
           <Image src={src} alt={name} width={50} height={50} />
         ) : (
-            <div
+          <div
             className="flex items-center justify-center rounded-full heading3 font-bold text-white"
             style={{
-              backgroundColor: `hsl(${Array.from(name || "")
-              .reduce((acc, char) => acc + char.charCodeAt(0), 0) % 360}, 70%, 50%)`,
+              backgroundColor: `hsl(${
+                Array.from(name || "").reduce(
+                  (acc, char) => acc + char.charCodeAt(0),
+                  0
+                ) % 360
+              }, 70%, 50%)`,
               width: "50px",
               height: "50px",
             }}
-            >
+          >
             {name.slice(0, 1).toUpperCase()}
-            </div>
+          </div>
         )}
 
         <div className="flex flex-col ">
-          <h3 className="description3 font-bold">{name}</h3>
-          <p className="">{date}</p>
+          <h3 className="description1 font-bold">{name}</h3>
+          <p className="description3">{date}</p>
         </div>
         <Image
           src={"/gico.svg"}
@@ -217,7 +216,7 @@ export const Card: React.FC<reviewProps> = ({
         ))}
         <Image src={"/ver.svg"} alt="tick logo" width={20} height={20} />
       </div>
-      <p className="description3 !leading-5 mt-4">
+      <p className="description2 !leading-5 mt-4">
         {review.slice(0, readMore ? review.length : 100)}
         {review.length > 120 && !readMore && " ..."}
         {review.length > 120 && (

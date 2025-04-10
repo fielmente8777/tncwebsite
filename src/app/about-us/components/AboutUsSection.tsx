@@ -19,7 +19,7 @@ const AboutUsSection: React.FC<Props> = ({ title, src, desc }) => {
           ))}
         </div>
         <div className=" w-full">
-          <div className="w-full md:aspect-[4/2.5] aspect-[4/3.5] relative">
+          <div className="w-full md:aspect-[4/2.5] aspect-[4/3.5] relative box-shadow2 rounded-2xl">
             <Image src={src} alt={title} fill className="object-cover rounded-2xl" />
           </div>
         </div>

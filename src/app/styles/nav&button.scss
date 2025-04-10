@@ -23,24 +23,30 @@
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         display: flex;
         flex-direction: column;
-        border-radius: 0.25rem;
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.5s ease-in-out;
         z-index: 10;
+        // a {
+        //     padding: 0.5rem 1rem;
+        //     text-decoration: none;
+        //     transition: background-color 0.3s ease-in-out;
+        //     display: flex;
+        //     align-items: center;
+        //     justify-content: space-between;
+        // }
+    }
+    &:hover .nav-1 {
+        max-height: 500px;
+        overflow: visible;
         a {
             padding: 0.5rem 1rem;
-            color: #333;
             text-decoration: none;
             transition: background-color 0.3s ease-in-out;
             display: flex;
             align-items: center;
             justify-content: space-between;
         }
-    }
-    &:hover .nav-1 {
-        max-height: 500px;
-        overflow: visible;
     }
     &:hover {
         .span-border {
@@ -58,19 +64,14 @@
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         display: flex;
         flex-direction: column;
-        border-radius: 0.25rem;
         max-width: 0;
         overflow: hidden;
         transition: max-width 0.5s ease-in-out;
         z-index: 10;
         a {
             padding: 0.5rem 1rem;
-            color: #333;
             text-decoration: none;
             transition: background-color 0.3s ease-in-out;
-            &:hover {
-                background-color: #f2f2f2;
-            }
         }
     }
     &:hover .nav-link{
