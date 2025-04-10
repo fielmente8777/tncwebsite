@@ -1,3 +1,4 @@
+import { imagesLink } from "@/data/links";
 import Image from "next/image";
 import { useCallback, useEffect, useRef } from "react";
 import { IoClose } from "react-icons/io5";
@@ -58,7 +59,9 @@ const NewsLetterPopUP: React.FC<NewsLetterPopUPProps> = ({
               />
             </div>
             <div className="flex flex-col gap-4 w-full">
-              <h2 className="text-lg font-semibold text-black">Join Us & Stay Updated! 📢</h2>
+              <h2 className="text-lg font-semibold text-black">
+                Join Us & Stay Updated! 📢
+              </h2>
               <p className="">
                 Subscribe now to get the latest updates on Canadian immigration
                 and expert tips from TNC Immigration. Don&apos;t miss out on
@@ -83,8 +86,8 @@ const NewsLetterPopUP: React.FC<NewsLetterPopUPProps> = ({
           </div>
           <div className="relative w-full md:aspect-square">
             <Image
-              src="https://tncimmigration.com/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-24-at-23.35.17-2.jpeg"
-              alt=""
+              src={imagesLink + "popup.jpg"}
+              alt="avatar"
               fill
               className="object-cover"
             />

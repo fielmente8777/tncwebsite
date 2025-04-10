@@ -13,7 +13,7 @@ export const homePageData = {
     subTitle: "Gateway to Your Canadian Dream",
     description:
       "Unlock your brand’s potential with digital strategies that deliver results.",
-    src: "/img/bnr.webp",
+    src: "/tnc/bnr.webp",
     links: [
       {
         name: "View Services",
@@ -47,28 +47,28 @@ export const homePageData = {
       title: "Temporary Residence",
       name: "read more",
       href: "",
-      src: "/img/im2.webp",
+      src: "/tnc/im2.webp",
     },
     {
       icon: <PermanentResidenceIcon />,
       title: "Permanent Residence",
       name: "read more",
       href: "",
-      src: "/img/im3.webp",
+      src: "/tnc/im3.webp",
     },
     {
       icon: <SponsorshipIcon />,
       title: "Family & Sponsorship",
       name: "read more",
       href: "",
-      src: "/img/im4.webp",
+      src: "/tnc/im4.webp",
     },
     {
       icon: <FlagPolingIcon />,
       title: "FlagPoling Application",
       name: "read more",
       href: "",
-      src: "/img/im1.webp",
+      src: "/tnc/im1.webp",
     },
   ],
   social: {
@@ -76,7 +76,7 @@ export const homePageData = {
     content: [
       {
         image: {
-          src: "/tnc/social-1.webp",
+          src: imagesLink + "social-1.webp",
         },
         link: {
           href: "",
@@ -84,7 +84,7 @@ export const homePageData = {
       },
       {
         image: {
-          src: "/tnc/social-2.webp",
+          src: imagesLink + "social-2.webp",
         },
         link: {
           href: "",
@@ -92,7 +92,7 @@ export const homePageData = {
       },
       {
         image: {
-          src: "/tnc/social-3.webp",
+          src: imagesLink + "social-3.webp",
         },
         link: {
           href: "",
@@ -100,7 +100,7 @@ export const homePageData = {
       },
       {
         image: {
-          src: "/tnc/social-5.webp",
+          src: imagesLink + "social-5.webp",
         },
         link: {
           href: "",
@@ -108,7 +108,7 @@ export const homePageData = {
       },
       {
         image: {
-          src: "/tnc/social-6.webp",
+          src: imagesLink + "social-6.webp",
         },
         link: {
           href: "",
@@ -116,7 +116,7 @@ export const homePageData = {
       },
       {
         image: {
-          src: "/tnc/social-7.webp",
+          src: imagesLink + "social-7.webp",
         },
         link: {
           href: "",
@@ -124,7 +124,7 @@ export const homePageData = {
       },
       {
         image: {
-          src: "/tnc/social-8.webp",
+          src: imagesLink + "social-8.webp",
         },
         link: {
           href: "",
@@ -132,7 +132,7 @@ export const homePageData = {
       },
       {
         image: {
-          src: "/tnc/social-9.webp",
+          src: imagesLink + "social-9.webp",
         },
         link: {
           href: "",
@@ -140,7 +140,7 @@ export const homePageData = {
       },
       {
         image: {
-          src: "/tnc/social-10.webp",
+          src: imagesLink + "social-10.webp",
         },
         link: {
           href: "",
@@ -148,7 +148,7 @@ export const homePageData = {
       },
       {
         image: {
-          src: "/tnc/social-11.webp",
+          src: imagesLink + "social-11.webp",
         },
         link: {
           href: "",
@@ -156,7 +156,7 @@ export const homePageData = {
       },
       {
         image: {
-          src: "/tnc/social-12.webp",
+          src: imagesLink + "social-12.webp",
         },
         link: {
           href: "",
@@ -164,7 +164,7 @@ export const homePageData = {
       },
       {
         image: {
-          src: "/tnc/social-13.webp",
+          src: imagesLink + "social-13.webp",
         },
         link: {
           href: "",
@@ -172,7 +172,7 @@ export const homePageData = {
       },
       {
         image: {
-          src: "/tnc/social-14.webp",
+          src: imagesLink + "social-14.webp",
         },
         link: {
           href: "",
@@ -180,7 +180,7 @@ export const homePageData = {
       },
       {
         image: {
-          src: "/tnc/social-15.webp",
+          src: imagesLink + "social-15.webp",
         },
         link: {
           href: "",
@@ -188,7 +188,7 @@ export const homePageData = {
       },
       {
         image: {
-          src: "/tnc/social-16.webp",
+          src: imagesLink + "social-16.webp",
         },
         link: {
           href: "",
@@ -209,7 +209,7 @@ export const homePageData = {
   typeOfServices: {
     title: "Services",
     subTitle: "Our Services",
-    bgSrc: "/tnc/bnr2.webp",
+    bgSrc: imagesLink + "bnr2.webp",
     cards: [
       {
         src: "",
