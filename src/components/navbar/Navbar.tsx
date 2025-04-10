@@ -112,7 +112,7 @@ const Navbar = () => {
                                                 ? nestedSubLink.href
                                                 : "#"
                                             }
-                                            className={`w-full text-nowrap py-2 px-4 flex items-center font-semibold description1 gap-1 group capitalize hover:bg-[#29313C] hover:text-white ${pathName === subLink.href ? "bg-[#29313C] text-white" : ""}`}
+                                            className={`w-full text-nowrap py-2 px-4 flex items-center font-semibold description1 gap-1 group capitalize hover:bg-[#29313C] hover:text-white ${pathName === nestedSubLink.href ? "bg-[#29313C] text-white" : ""}`}
                                           >
                                             {nestedSubLink.name}
                                           </Link>
