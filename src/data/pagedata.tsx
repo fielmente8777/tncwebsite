@@ -29,15 +29,15 @@ export const homePageData = {
     title: "About Us",
     subTitle: "We’re Trusted Immigration Consultant",
     desc: "Our legal professionals take their time to understand the needs of our clients. We ensure that our clients are dealt professionally and provided all the suitable options. We provide immigration services to our clients inside Canada and also cater to our clients globally. We pride ourselves in providing professional services to a diversity of clients.",
-    src: "",
+    src: "/img1.PNG",
     links: [
       {
         name: "Read More",
-        href: "",
+        href: "/about-us",
       },
       {
         name: "book Appointment",
-        href: "",
+        href: "https://calendly.com/tncbooking/",
       },
     ],
   },
@@ -628,4 +628,273 @@ export const servicePageData = {
       ],
     },
   ],
+};
+
+export const temporaryResidence = {
+  bannerData: {
+    title: "Temporary Residence",
+    src: imagesLink + "bg-slider-02.webp",
+  },
+
+  application: {
+    title: "Various Temporary Residence Applications",
+    card: [
+      {
+        title: "Study Permit",
+        image: {
+          src: "/tnc/service-1.webp",
+          alt: "",
+          // className: "aspect-[4/4]",
+        },
+        buttons: [
+          {
+            label: "Read More",
+            href: "/study-permit",
+          },
+          {
+            label: "Assessment",
+            href: "/start-assessment",
+            className: "bg-prime-red",
+          },
+        ],
+      },
+      {
+        title: "Work Permit",
+        image: {
+          src: "/tnc/service-2.webp",
+          alt: "",
+        },
+        buttons: [
+          {
+            label: "Read More",
+            href: "/work-permit",
+          },
+          {
+            label: "Assessment",
+            href: "/start-assessment",
+            className: "bg-prime-red",
+          },
+        ],
+      },
+      {
+        title: "Spousal Open Work Permit",
+        image: {
+          src: "/tnc/service-3.webp",
+          alt: "",
+        },
+        buttons: [
+          {
+            label: "Read More",
+            href: "/spousal-open-work-permit",
+          },
+          {
+            label: "Assessment",
+            href: "/start-assessment",
+            className: "bg-prime-red",
+          },
+        ],
+      },
+      {
+        title: "Visitor",
+        image: {
+          src: "/tnc/service-4.webp",
+          alt: "",
+        },
+        buttons: [
+          {
+            label: "Read More",
+            href: "/visitor-visa",
+          },
+          {
+            label: "Assessment",
+            href: "/start-assessment",
+            className: "bg-prime-red",
+          },
+        ],
+      },
+      {
+        title: "LMIA Exemptions",
+        image: {
+          src: "/tnc/service-5.webp",
+          alt: "",
+        },
+        buttons: [
+          {
+            label: "Read More",
+            href: "/lmia-for-employers",
+          },
+          {
+            label: "Assessment",
+            href: "/start-assessment",
+            className: "bg-prime-red",
+          },
+        ],
+      },
+      {
+        title: "Post-Graduate Work Permits",
+        image: {
+          src: "/tnc/service-6.webp",
+
+          alt: "",
+        },
+        buttons: [
+          {
+            label: "Read More",
+            href: "/post-grad-open-work-permit",
+          },
+          {
+            label: "Assessment",
+            href: "/start-assessment",
+            className: "bg-prime-red",
+          },
+        ],
+      },
+      {
+        title: "Super Visa",
+        image: {
+          src: "/tnc/service-6.webp",
+          alt: "",
+        },
+        buttons: [
+          {
+            label: "Read More",
+            href: "/super-visa",
+          },
+          {
+            label: "Assessment",
+            href: "/start-assessment",
+            className: "bg-prime-red",
+          },
+        ],
+      },
+      {
+        title: "Spousal Open Work Permit",
+        image: {
+          src: "/tnc/service-6.webp",
+          alt: "",
+        },
+        buttons: [
+          {
+            label: "Read More",
+            href: "/spousal-open-work-permit",
+          },
+          {
+            label: "Assessment",
+            href: "/start-assessment",
+            className: "bg-prime-red",
+          },
+        ],
+      },
+    ],
+  },
+};
+
+export const FaqPageData = {
+  bannerData: {
+    title: "FAQs",
+    src: imagesLink + "bg-slider-02.webp",
+  },
+  faqSection: {
+    title: "FAQs",
+    subTitle: "Frequently asked immigration questions",
+    images: [imagesLink+"ad1.webp", imagesLink+"ad16.webp"],
+    faqs: [
+      {
+        question: "What services does TNC Immigration offer?",
+        answer: [
+          "TNC Immigration provides a range of services including visa applications, permanent residency consultations, study permits, work permits, family sponsorships, and citizenship applications.",
+        ],
+      },
+      {
+        question: "Where are TNC Immigration's offices located?",
+        answer: [
+          "TNC Immigration has multiple locations across Canada, including Toronto (Mississauga) & Vancouver (Surrey, Kelowna)  Please visit our website for specific addresses and contact details.",
+        ],
+      },
+      {
+        question: "What types of visas can TNC Immigration help with?",
+        answer: [
+          "We assist with various visa applications including tourist visas, student visas, work visas, and business visas.",
+        ],
+      },
+      {
+        question: "How long does the visa application process take?",
+        answer: [
+          "The processing time varies depending on the type of visa and the applicant's circumstances. On average, it can take anywhere from a few weeks to several months. Our consultants will provide a more accurate timeline based on your specific case.",
+          "Permanent Residency",
+          "Q: What are the different pathways to permanent residency in Canada?",
+          "A: There are several pathways including Express Entry, Provincial Nominee Programs (PNP), Family Sponsorship, and the Canadian Experience Class (CEC). Our consultants will help determine the best pathway for you.",
+        ],
+      },
+      {
+        question:
+          "What are the different pathways to permanent residency in Canada?",
+        answer: [
+          "There are several pathways including Express Entry, Provincial Nominee Programs (PNP), Family Sponsorship, and the Canadian Experience Class (CEC). Our consultants will help determine the best pathway for you.",
+        ],
+      },
+      {
+        question: "Can TNC Immigration assist with Express Entry applications?",
+        answer: [
+          "Yes, we offer comprehensive support for Express Entry applications, including eligibility assessment, document preparation, and application submission.",
+        ],
+      },
+      {
+        question: "How can TNC Immigration help with obtaining a study permit?",
+        answer: [
+          "We assist with every step of the study permit process, from selecting the right institution to preparing and submitting your application, and providing post-arrival support in Canada",
+        ],
+      },
+      {
+        question: "What are the requirements for a study permit in Canada?",
+        answer: [
+          "Requirements include a letter of acceptance from a Canadian educational institution, proof of sufficient funds, a valid passport, and sometimes additional documentation depending on your home country.",
+        ],
+      },
+      {
+        question: "What types of work permits are available?",
+        answer: [
+          "There are several types of work permits including employer-specific work permits, open work permits, and post-graduation work permits. Our consultants can help you determine which one suits your situation.",
+        ],
+      },
+      {
+        question:
+          "How can TNC Immigration assist with obtaining a work permit?",
+        answer: [
+          "We provide guidance on eligibility, help gather necessary documentation, and submit your application. We also offer support throughout the entire process to ensure a smooth experience.",
+        ],
+      },
+      {
+        question: "Who can I sponsor for immigration to Canada?",
+        answer: [
+          "You can sponsor your spouse, common-law partner, dependent children, parents, and grandparents. There are specific eligibility criteria that must be met for each category.",
+        ],
+      },
+      {
+        question: "What are the requirements for Canadian citizenship?",
+        answer: [
+          "Requirements include being a permanent resident, having lived in Canada for at least 3 out of the last 5 years, passing a citizenship test, and demonstrating proficiency in English or French.",
+        ],
+      },
+      {
+        question:
+          "How can TNC Immigration help with my citizenship application?",
+        answer: [
+          "We offer assistance with eligibility assessment, document preparation, application submission, and preparation for the citizenship test.",
+        ],
+      },
+      {
+        question: "How can I book a consultation with TNC Immigration?",
+        answer: [
+          "You can book a consultation by visiting our website, calling our office, or emailing us. We offer both in-person and virtual consultations to accommodate your needs.",
+        ],
+      },
+      {
+        question: "What should I bring to my consultation?",
+        answer: [
+          "Please bring any relevant documents such as your passport, previous visa or immigration application details, educational credentials, and any correspondence with immigration authorities.",
+        ],
+      },
+    ],
+  },
 };

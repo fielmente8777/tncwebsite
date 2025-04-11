@@ -1,11 +1,9 @@
 "use client";
 import { DropDownIcon } from "@/data/icons";
 import { NaveLinks } from "@/data/links";
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { AiOutlineClose } from "react-icons/ai";
 
 interface MobileNavProps {
   mobileMenu: boolean;
@@ -17,31 +15,11 @@ const MobileNav: React.FC<MobileNavProps> = ({ mobileMenu, setMobileMenu }) => {
   const pathName = usePathname();
   return (
     <div
-      className={`fixed inset-0 z-50 bg-black/80 transition-all duration-300 ${mobileMenu ? "translate-x-0" : "-translate-x-full"}`}
+      className={`fixed top-[13rem] left-0 w-full h-screen z-50 bg-black/80 transition-all duration-300 ${mobileMenu ? "translate-x-0" : "-translate-x-full"}`}
     >
       <div className="w-full h-full relative">
-        <button
-          onClick={() => setMobileMenu(false)}
-          className="absolute top-8 right-4 z-20 cursor-pointer"
-        >
-          <AiOutlineClose size={25} color="#183f62" />
-        </button>
         <div className="w-full h-full bg-white py-4 ps-4">
-          <nav className="flex flex-col gap-2 h-full w-full  font-semibold text-primary">
-            <div className="mb-4">
-              <Link
-                href={"/"}
-                className="flex items-center relative md:h-[4rem] h-[2.5rem] md:aspect-[4/1] aspect-[3/1.5]"
-              >
-                <Image
-                  src="/logo.png"
-                  alt="one shot logo"
-                  priority={true}
-                  quality={100}
-                  fill
-                />
-              </Link>
-            </div>
+          <nav className="flex flex-col gap-2 h-full w-full  font-semibold text-[#29313C]">
             <ul className="flex flex-col gap-4 h-[100vh] overflow-y-scroll pe-3">
               {NaveLinks.map((link, index) => {
                 return (

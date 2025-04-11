@@ -13,55 +13,53 @@ const OurServicesData = [
     buttons: [
       {
         label: "Book Consultation",
-        href: "/",
+        href: "https://calendly.com/tncbooking/consultation60",
       },
       {
         label: "Read More",
-        href: "/",
+        href: "/study-permit",
         className: "bg-prime-red",
       },
     ],
   },
   {
-    title: "Study Permit",
+    title: "Work Permit",
     image: {
       src: "/tnc/service-2.webp",
-
       alt: "",
     },
     buttons: [
       {
         label: "Book Consultation",
-        href: "/",
+        href: "https://calendly.com/tncbooking/consultation60",
       },
       {
         label: "Read More",
-        href: "/",
+        href: "/work-permit",
         className: "bg-prime-red",
       },
     ],
   },
   {
-    title: "Study Permit",
+    title: "FlagPoling",
     image: {
       src: "/tnc/service-3.webp",
-
       alt: "",
     },
     buttons: [
       {
         label: "Book Consultation",
-        href: "/",
+        href: "https://calendly.com/tncbooking/consultation60",
       },
       {
         label: "Read More",
-        href: "/",
+        href: "/flagpoling",
         className: "bg-prime-red",
       },
     ],
   },
   {
-    title: "Study Permit",
+    title: "Visitor Visa",
     image: {
       src: "/tnc/service-4.webp",
       alt: "",
@@ -69,17 +67,17 @@ const OurServicesData = [
     buttons: [
       {
         label: "Book Consultation",
-        href: "/",
+        href: "https://calendly.com/tncbooking/consultation60",
       },
       {
         label: "Read More",
-        href: "/",
+        href: "/visitor-visa",
         className: "bg-prime-red",
       },
     ],
   },
   {
-    title: "Study Permit",
+    title: "Family Sponsorship",
     image: {
       src: "/tnc/service-5.webp",
 
@@ -88,17 +86,17 @@ const OurServicesData = [
     buttons: [
       {
         label: "Book Consultation",
-        href: "/",
+        href: "https://calendly.com/tncbooking/consultation60",
       },
       {
         label: "Read More",
-        href: "/",
+        href: "/family-sponsorship",
         className: "bg-prime-red",
       },
     ],
   },
   {
-    title: "Study Permit",
+    title: "Spousal Sponsorship",
     image: {
       src: "/tnc/service-6.webp",
 
@@ -107,11 +105,11 @@ const OurServicesData = [
     buttons: [
       {
         label: "Book Consultation",
-        href: "/",
+        href: "https://calendly.com/tncbooking/consultation60",
       },
       {
         label: "Read More",
-        href: "/",
+        href: "/spousal-sponsorship",
         className: "bg-prime-red",
       },
     ],
@@ -124,7 +122,7 @@ const OurServices = () => {
       style={{
         backgroundImage: `url("/tnc/bg-section-02.webp")`,
       }}
-      className="h-[1068.21px] bg-cover bg-center"
+      className="md:h-[1068.21px] max-lg:w-full max-lg:aspect-square bg-cover bg-center"
     >
       <div>
         <div className="pt-10">
@@ -140,7 +138,7 @@ const OurServices = () => {
         </div>
 
         <SectionWithContainer>
-          <div className="grid grid-cols-3 mx-auto gap-2">
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mx-auto md:gap-2 gap-4">
             {OurServicesData?.map((data, index) => (
               <div key={index}>
                 <ServiceCard2 {...data} />

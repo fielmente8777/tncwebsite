@@ -7,6 +7,7 @@ import { DropDownIcon, OutlinePhone } from "@/data/icons";
 import { usePathname } from "next/navigation";
 import MobileNav from "./MobileNav";
 import { useEffect, useState } from "react";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
 const Navbar = () => {
   const pathName = usePathname();
@@ -69,7 +70,7 @@ const Navbar = () => {
       </div>
       {/* bottom header */}
       <Container>
-        <nav className="flex items-center justify-center gap-10 py-3">
+        <nav className="flex items-center max-lg:justify-between justify-center gap-10 py-3">
           <div className="">
             <Link href={"/"} className="flex items-center">
               <Image
@@ -82,6 +83,11 @@ const Navbar = () => {
               />
             </Link>
           </div>
+          <div className="lg:hidden block">
+            <button onClick={() => setMobileMenu(!mobileMenu)} className={`p-2 bg-white rounded-sm shadow-md`}>
+              {!mobileMenu ? <AiOutlineMenu /> : <AiOutlineClose />}
+            </button>
+          </div>
           <ul className="lg:flex hidden item-center gap-10">
             {NaveLinks?.map((link, index) => {
               // const id = index + 1;
@@ -89,7 +95,7 @@ const Navbar = () => {
                 <li key={index} className="relative nav">
                   <Link
                     href={link.href ? link.href : "#"}
-                    className="relative text-nowrap py-2 capitalize flex items-center gap-1 text-white font-semibold description1"
+                    className={`relative hover:text-primary text-nowrap py-2 capitalize flex items-center gap-1  font-semibold description1 ${pathName === link.href ? "text-primary" : "text-white"}`}
                   >
                     {link.name}
                     {link.subLinks && (
