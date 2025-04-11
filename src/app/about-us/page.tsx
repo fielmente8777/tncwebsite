@@ -41,6 +41,11 @@ const page = () => {
       </Section>
 
       <TeamMember {...AboutPageData.teamMembers} />
+      <SectionWithContainer>
+        <h3 className="heading text-center font-semibold text-gray-700">
+          Happy Customers
+        </h3>
+      </SectionWithContainer>
       <Reviews />
     </main>
   );

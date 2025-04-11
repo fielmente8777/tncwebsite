@@ -21,7 +21,7 @@ const Services: React.FC<Props> = ({ cards }) => {
             key={index}
             icon={card.icon}
             title={card.title}
-            href={card.href}
+            href={"#"}
             src={card.src}
             name={card.name}
             level={2}

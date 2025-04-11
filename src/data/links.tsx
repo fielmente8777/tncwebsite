@@ -258,7 +258,7 @@ export const NavbarUpperLinks = [
   },
   {
     name: "book Appointment",
-    href: "#",
+    href: "https://calendly.com/tncconsult",
   },
   {
     name: "Start Assessments",

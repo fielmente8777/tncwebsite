@@ -3,10 +3,11 @@ export const slugPageData = [
     slug: "surrey",
     banner: {
       title: "Surrey, BC",
-      src: "",
+      src: "/tnc/bnr2.webp",
     },
     welcom: [
       {
+        src: "/tnc/bnr3.webp",
         title: "Welcome to TNC Immigration - Surrey Office",
         desc: [
           "Located in the heart of Surrey, our flagship office is your trusted destination for expert immigration services. At TNC Immigration, we pride ourselves on being a leading immigration consultancy firm, helping individuals, families, and businesses achieve their Canadian dreams.",
@@ -16,16 +17,16 @@ export const slugPageData = [
         links: [
           {
             name: "get direction",
-            href: "",
+            href: "#",
           },
           {
             name: "+1(236)8185558",
-            href: "",
+            href: "tel:+1(236)8185558",
           },
         ],
       },
       {
-        src: "",
+        src: "/tnc/bnr4.webp",
         desc: [
           "Led by industry experts and supported by a dedicated team of professionals, our Surrey office is committed to making your immigration process smooth, efficient, and stress-free. Whether you’re an independent applicant looking to start a new chapter in Canada or a family hoping to reunite with loved ones, we’re here to guide you every step of the way.",
           "As a Certified Canadian Immigration Consultant Firm (CICC), TNC Immigration adheres to the highest standards of professionalism and integrity.",
@@ -33,16 +34,18 @@ export const slugPageData = [
         ],
       },
     ],
-    mapSrc: "",
+    mapsrc:
+      "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5218.729027478942!2d-122.780239!3d49.155689!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485d1688ebdcbdd%3A0x66e0142ce7faea66!2sTNC%20True%20North%20Consultancy%20LTD!5e0!3m2!1sen!2sus!4v1744382152496!5m2!1sen!2sus",
   },
   {
     slug: "mississauga",
     banner: {
       title: "Mississauga,On",
-      src: "",
+      src: "/bgim.PNG",
     },
     welcom: [
       {
+        src: "/b1.PNG",
         title: "Welcome to TNC Immigration – Mississauga Location",
         desc: [
           "At TNC Immigration, we are dedicated to providing exceptional immigration consulting services to individuals and families looking to build their future in Canada. Our Mississauga office, strategically located in the vibrant heart of this diverse city, is here to serve clients across the Greater Toronto Area and beyond.",
@@ -60,7 +63,7 @@ export const slugPageData = [
         ],
       },
       {
-        src: "",
+        src: "/b2.PNG",
         title: "What We Offer",
         desc: [
           "Work Permits: Helping you secure employment opportunities in Canada.Study Permits: Supporting students in pursuing their academic dreams.Express Entry & PR Applications: Streamlining pathways to permanent residency.",
@@ -70,16 +73,18 @@ export const slugPageData = [
         ],
       },
     ],
-    mapSrc: "",
+    mapsrc:
+      "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5775.055516189693!2d-79.645035!3d43.637187!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b35d0f508fa57%3A0xf05d20a5c1362219!2sTNC%20True%20north%20Consultancy!5e0!3m2!1sen!2sus!4v1744383151957!5m2!1sen!2sus",
   },
   {
     slug: "kelowna-bc",
     banner: {
       title: "kelowna, bc",
-      src: "",
+      src: "/bgim.PNG",
     },
     welcom: [
       {
+        src: "/b3.PNG",
         title: "Welcome to TNC Immigration –Kelowna Location",
         desc: [
           "At TNC Immigration, we are excited to extend our trusted immigration consulting services to the vibrant city of Kelowna, British Columbia. Known for its stunning landscapes, welcoming community, and thriving opportunities, Kelowna serves as the perfect place to offer our expert guidance and personalized solutions to individuals and families pursuing their Canadian dreams.",
@@ -116,7 +121,8 @@ export const slugPageData = [
         ],
       },
     ],
-    mapSrc: "",
+    mapsrc:
+      "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10287.292478256546!2d-119.4909052883606!3d49.86456717930727!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537d8bfb410e5c37%3A0x7ff8bf25ae55ebad!2sTNC%20True%20North%20Consultancy%20LTD!5e0!3m2!1sen!2sus!4v1744383251948!5m2!1sen!2sus",
   },
   {
     slug: "visitor-visa",
@@ -126,7 +132,7 @@ export const slugPageData = [
     },
     banner: {
       title: "Visitor Visa to Canada",
-      src: "",
+      src: "/bgim.PNG",
     },
     htm: "true",
     pageData1: `
@@ -281,7 +287,7 @@ export const slugPageData = [
     },
     banner: {
       title: "Study Permit",
-      src: "",
+      src: "/bgim.PNG",
     },
     htm: "true",
     pageData1: `
@@ -425,7 +431,7 @@ export const slugPageData = [
     },
     banner: {
       title: "Work Permit",
-      src: "",
+      src: "/bgim.PNG",
     },
     htm: "true",
     links: [
@@ -508,7 +514,7 @@ export const slugPageData = [
     },
     banner: {
       title: "Spousal Work Permit",
-      src: "",
+      src: "/bgim.PNG",
     },
     htm: "true",
     links: [
@@ -565,7 +571,7 @@ export const slugPageData = [
     },
     banner: {
       title: "LMIA FOR EMPLOYERS",
-      src: "",
+      src: "/bgim.PNG",
     },
     htm: "true",
     links: [
@@ -653,7 +659,7 @@ export const slugPageData = [
     },
     banner: {
       title: "Visitor to Study conversion",
-      src: "",
+      src: "/bgim.PNG",
     },
     htm: "true",
     links: [
@@ -729,7 +735,7 @@ export const slugPageData = [
     },
     banner: {
       title: "Post-Graduate Open Work Permits",
-      src: "",
+      src: "/bgim.PNG",
     },
     htm: "true",
     links: [
@@ -798,7 +804,7 @@ export const slugPageData = [
     },
     banner: {
       title: "Spousal and Common Law",
-      src: "",
+      src: "/bgim.PNG",
     },
     htm: "true",
     links: [
@@ -870,7 +876,7 @@ export const slugPageData = [
     },
     banner: {
       title: "parents & Grandparents Program",
-      src: "",
+      src: "/bgim.PNG",
     },
     htm: "true",
     links: [
@@ -957,7 +963,7 @@ Financial Documentation:</h3>
     },
     banner: {
       title: "Last Living Relative program",
-      src: "",
+      src: "/bgim.PNG",
     },
     htm: "true",
     links: [
@@ -1013,7 +1019,7 @@ Financial Documentation:</h3>
     },
     banner: {
       title: "Child Or Other Dependent Sponsorship",
-      src: "",
+      src: "/bgim.PNG",
     },
     htm: "true",
     links: [
@@ -1113,7 +1119,7 @@ To be eligible for child or other dependent sponsorship, you must meet the follo
     },
     banner: {
       title: "Orphan program",
-      src: "",
+      src: "/bgim.PNG",
     },
     htm: "true",
     links: [
@@ -1172,7 +1178,7 @@ To be eligible for child or other dependent sponsorship, you must meet the follo
     },
     banner: {
       title: "Home childcare program",
-      src: "",
+      src: "/bgim.PNG",
     },
     htm: "true",
     links: [
@@ -1239,7 +1245,7 @@ To be eligible for child or other dependent sponsorship, you must meet the follo
     },
     banner: {
       title: "Agripilot program",
-      src: "",
+      src: "/bgim.PNG",
     },
     htm: "true",
     links: [
@@ -1315,7 +1321,7 @@ Applicants must secure a job offer from a designated Canadian agricultural emplo
     },
     banner: {
       title: "Express Entry",
-      src: "",
+      src: "/bgim.PNG",
     },
     htm: "true",
     links: [
@@ -1402,7 +1408,7 @@ Applicants must secure a job offer from a designated Canadian agricultural emplo
     },
     banner: {
       title: "PROCEDURAL FAIRNESS LETTERS",
-      src: "",
+      src: "/bgim.PNG",
     },
     htm: "true",
     // links: [
@@ -1475,7 +1481,7 @@ Applicants must secure a job offer from a designated Canadian agricultural emplo
     },
     banner: {
       title: "SPONSOR YOUR SIBLINGS FOR PR",
-      src: "",
+      src: "/bgim.PNG",
     },
     htm: "true",
     // links: [
@@ -1560,7 +1566,7 @@ You are a Canadian citizen, a permanent resident in Canada, or registered under 
     },
     banner: {
       title: "SPOUSAL SPONSORSHIP",
-      src: "",
+      src: "/bgim.PNG",
     },
     htm: "true",
     // links: [
@@ -1647,7 +1653,7 @@ You are a Canadian citizen, a permanent resident in Canada, or registered under 
     },
     banner: {
       title: "Spousal Open Work Permit",
-      src: "",
+      src: "/bgim.PNG",
     },
     htm: "true",
     links: [
@@ -1692,7 +1698,7 @@ There are various situations in which an applicant may receive a Procedural Fair
     },
     banner: {
       title: "EXTENSIONS WITHIN CANADA",
-      src: "",
+      src: "/bgim.PNG",
     },
     htm: "true",
     // links: [
@@ -1767,7 +1773,7 @@ There are various situations in which an applicant may receive a Procedural Fair
     },
     banner: {
       title: "PR renewal",
-      src: "",
+      src: "/bgim.PNG",
     },
     htm: "true",
     // links: [
@@ -1845,7 +1851,7 @@ There are various situations in which an applicant may receive a Procedural Fair
     },
     banner: {
       title: "Citizenship Application",
-      src: "",
+      src: "/bgim.PNG",
     },
     htm: "true",
     links: [
@@ -1908,7 +1914,7 @@ There are various situations in which an applicant may receive a Procedural Fair
     },
     banner: {
       title: "Citizenship Application",
-      src: "",
+      src: "/bgim.PNG",
     },
     htm: "true",
     links: [
@@ -1966,7 +1972,7 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
     },
     banner: {
       title: "Canada Recovering Lost",
-      src: "",
+      src: "/bgim.PNG",
     },
     htm: "true",
     links: [
@@ -2038,7 +2044,7 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
     },
     banner: {
       title: "SUPER VISA",
-      src: "",
+      src: "/bgim.PNG",
     },
     htm: "true",
     links: [
@@ -2120,7 +2126,7 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
       },
     ],
     form: true,
-    pageData1:`
+    pageData1: `
     <p>Are you a skilled professional looking to build your career and life in Canada? The Federal Skilled Worker (FSW) Program might be the pathway for you. Designed to attract individuals with valuable skills and experience, this program is a key component of Canada’s immigration system, aiming to contribute to the country’s economic growth and diversity. Selection of skilled workers as permanent residents is based on various factors, including:</p>
     <h3>Eligibility Criteria</h3>
     <p>To be eligible for the Federal Skilled Worker Program, applicants must meet the following criteria:</p>
@@ -2136,7 +2142,7 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
     sizes="(max-width: 640px) 100vw, 640px"
   />
     </div>`,
-pageData2:`
+    pageData2: `
   <h3>1. Work Experience</h3>
 <p>You must have at least one year (1,560 hours) of continuous full-time or an equal amount in part-time paid work experience in a skilled occupation within the last 10 years. This experience should be classified under one of the eligible National Occupational Classification (NOC) codes.</p>
 
@@ -2170,7 +2176,7 @@ pageData2:`
 
 <h2>Start Your Journey Today with TNC Immigration</h2>
 <p>The Federal Skilled Worker Program offers a pathway for skilled professionals to make Canada their home. Begin your journey by assessing your eligibility and taking the necessary steps to create a better future for yourself and your family in this welcoming and diverse country.</p>
-`
+`,
   },
   {
     slug: "federal-skilled-trade-workers",
@@ -2194,5 +2200,5 @@ pageData2:`
       },
     ],
     form: true,
-  }
+  },
 ];

@@ -25,13 +25,20 @@ const Bannner: React.FC<bannnerData> = ({
         <Image src={src} alt={title} fill className="object-cover" />
         <div className="absolute inset-0 w-full h-full bg-black/50 flex items-center justify-center">
           <Container>
-            <SectionTitleSubTitle title={title} subTitle={subTitle} subTitleClassName="text-white" />
+            <div className="max-w-xl">
+              <SectionTitleSubTitle
+                title={title}
+                subTitle={subTitle}
+                subTitleClassName="text-white"
+              />
+            </div>
             <p className="heading4 text-white">{description}</p>
             <ul className="flex items-center gap-2 mt-4">
               {links.map((link, index) => (
                 <li key={index} className="flex items-center gap-1">
-                  <Link href={link.href}>{link.name}</Link>
-                  {index !== links.length - 1 && <span>|</span>}
+                  <Link href={link.href} className={`${index === 0 ? "bg-prime-red hover:bg-blue-600" : "bg-black hover:bg-prime-red"} px-4 py-2 rounded-full text-white duration-300 transition-all ease-in-out`}>
+                    {link.name}
+                  </Link>
                 </li>
               ))}
             </ul>

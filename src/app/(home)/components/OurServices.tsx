@@ -17,7 +17,7 @@ const OurServicesData = [
       },
       {
         label: "Read More",
-        href: "/study-permit",
+        href: "#",
         className: "bg-prime-red",
       },
     ],
@@ -35,7 +35,7 @@ const OurServicesData = [
       },
       {
         label: "Read More",
-        href: "/work-permit",
+        href: "#",
         className: "bg-prime-red",
       },
     ],
@@ -53,7 +53,7 @@ const OurServicesData = [
       },
       {
         label: "Read More",
-        href: "/flagpoling",
+        href: "#",
         className: "bg-prime-red",
       },
     ],
@@ -71,7 +71,8 @@ const OurServicesData = [
       },
       {
         label: "Read More",
-        href: "/visitor-visa",
+        href: "#",
+        // href: "/visitor-visa",
         className: "bg-prime-red",
       },
     ],
@@ -80,7 +81,6 @@ const OurServicesData = [
     title: "Family Sponsorship",
     image: {
       src: "/tnc/service-5.webp",
-
       alt: "",
     },
     buttons: [
@@ -90,7 +90,8 @@ const OurServicesData = [
       },
       {
         label: "Read More",
-        href: "/family-sponsorship",
+        href: "#",
+        // href: "/family-sponsorship",
         className: "bg-prime-red",
       },
     ],
@@ -99,7 +100,6 @@ const OurServicesData = [
     title: "Spousal Sponsorship",
     image: {
       src: "/tnc/service-6.webp",
-
       alt: "",
     },
     buttons: [
@@ -109,7 +109,8 @@ const OurServicesData = [
       },
       {
         label: "Read More",
-        href: "/spousal-sponsorship",
+        href: "#",
+        // href: "/spousal-sponsorship",
         className: "bg-prime-red",
       },
     ],
