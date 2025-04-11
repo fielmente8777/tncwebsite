@@ -6,7 +6,7 @@ const page = () => {
 
     return (
         <div>
-            <CommanBanner title="BC PNP SCORE CALCULATOR" />
+            <CommanBanner title="BC PNP SCORE CALCULATOR" src='/tnc/bnr3.webp' />
             <Calculator />
         </div>
     )
