@@ -29,7 +29,7 @@ export const homePageData = {
     title: "About Us",
     subTitle: "We’re Trusted Immigration Consultant",
     desc: "Our legal professionals take their time to understand the needs of our clients. We ensure that our clients are dealt professionally and provided all the suitable options. We provide immigration services to our clients inside Canada and also cater to our clients globally. We pride ourselves in providing professional services to a diversity of clients.",
-    src: "/img1.PNG",
+    src: "/img1.png",
     links: [
       {
         name: "Read More",

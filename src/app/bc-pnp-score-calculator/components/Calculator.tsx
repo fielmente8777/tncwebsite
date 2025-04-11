@@ -89,7 +89,9 @@ const Calculator = () => {
 
     useEffect(() => {
         calculateScore()
-    }, [formData,])
+    }, [formData]);
+
+
     return (
         <SectionWithContainer>
             <div className='max-w-4xl mx-auto'>
