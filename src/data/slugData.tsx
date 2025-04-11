@@ -2098,4 +2098,101 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
     `,
     form: true,
   },
+  {
+    slug: "federal-skilled-worker",
+    meta: {
+      title: "Federal Skilled Worker - TNC immigration",
+      desc: "Federal Skilled Worker Are you a skilled professional looking to build your career and life in Canada? The Federal Skilled Worker (FSW) Program might be the pathway for you. Designed to attract individuals with valuable skills and experience, this program is a key component of Canada’s immigration system, aiming to contribute to the country’s economic",
+    },
+    banner: {
+      title: "SUPER VISA",
+      src: "/bgim.PNG",
+    },
+    htm: "true",
+    links: [
+      {
+        name: "+1(236)818 5558",
+        link: "tel:+1(236)818 5558",
+      },
+      {
+        name: "Mail us",
+        link: "mailto:info@tncimmigration.com",
+      },
+    ],
+    form: true,
+    pageData1:`
+    <p>Are you a skilled professional looking to build your career and life in Canada? The Federal Skilled Worker (FSW) Program might be the pathway for you. Designed to attract individuals with valuable skills and experience, this program is a key component of Canada’s immigration system, aiming to contribute to the country’s economic growth and diversity. Selection of skilled workers as permanent residents is based on various factors, including:</p>
+    <h3>Eligibility Criteria</h3>
+    <p>To be eligible for the Federal Skilled Worker Program, applicants must meet the following criteria:</p>
+    <div className="elementor-widget-container">
+  <img
+    fetchpriority="high"
+    decoding="async"
+    width={640}
+    height={344}
+    src="https://tncimmigration.com/wp-content/uploads/2023/12/amna123@@-12-1-1024x551.jpg"
+    className="attachment-large size-large wp-image-8917"
+    alt="avt"
+    sizes="(max-width: 640px) 100vw, 640px"
+  />
+    </div>`,
+pageData2:`
+  <h3>1. Work Experience</h3>
+<p>You must have at least one year (1,560 hours) of continuous full-time or an equal amount in part-time paid work experience in a skilled occupation within the last 10 years. This experience should be classified under one of the eligible National Occupational Classification (NOC) codes.</p>
+
+  <h3>2. Language Proficiency</h3>
+<p>Demonstrate your language proficiency in either English or French by taking an approved language test. The results will be used to assess your ability to communicate effectively in a work setting.</p>
+
+  <h3>3. Education</h3>
+<p>Possess an educational credential assessment (ECA) to ensure that your foreign education is equivalent to Canadian standards. This evaluation is necessary for educational qualifications obtained outside of Canada.
+</p>
+  <h3>4. Admissibility</h3>
+<p>You must be admissible to Canada, meaning you should not pose a security risk, have a criminal record, or have any serious health issues.<p>
+
+  <h3>5. Points System</h3>
+<p>Applicants are evaluated using a points system, considering factors such as age, education, work experience, language proficiency, and adaptability. The Comprehensive Ranking System (CRS) determines your overall score, and higher scores increase your chances of receiving an Invitation to Apply (ITA) for permanent residence.</p>
+
+  <h2>Application Process</h2>
+<h3>Step 1: Express Entry Profile</h3>
+<p>Create an Express Entry profile, providing accurate and detailed information about your skills, work experience, language proficiency, and other relevant details.</p>
+
+<h3>Step 2: Receive an Invitation to Apply (ITA)</h3>
+<p>If your profile is selected in the regular draws conducted by Immigration, Refugees and Citizenship Canada (IRCC), you will receive an ITA to apply for permanent residence.</p>
+
+<h3>Step 3: Submit Documents and Pay Fees</h3>
+<p>Once you receive an ITA, submit all required documents, including police certificates, medical exams, and proof of funds. Pay the necessary application fees at this stage.</p>
+
+<h3>Step 4: Application Review</h3>
+<p>IRCC will review your application, ensuring all documents are accurate and complete. The processing time varies, but the goal is to process applications as efficiently as possible.</p>
+
+<h3>Step 5: Permanent Residence</h3>
+<p>If your application is approved, you will receive your confirmation of permanent residence, and you can then make plans to move to Canada and start your new life as a permanent resident.</p>
+
+<h2>Start Your Journey Today with TNC Immigration</h2>
+<p>The Federal Skilled Worker Program offers a pathway for skilled professionals to make Canada their home. Begin your journey by assessing your eligibility and taking the necessary steps to create a better future for yourself and your family in this welcoming and diverse country.</p>
+`
+  },
+  {
+    slug: "federal-skilled-trade-workers",
+    meta: {
+      title: "Federal Skilled Worker - TNC immigration",
+      desc: "Federal Skilled Worker Are you a skilled professional looking to build your career and life in Canada? The Federal Skilled Worker (FSW) Program might be the pathway for you. Designed to attract individuals with valuable skills and experience, this program is a key component of Canada’s immigration system, aiming to contribute to the country’s economic",
+    },
+    banner: {
+      title: "SUPER VISA",
+      src: "/bgim.PNG",
+    },
+    htm: "true",
+    links: [
+      {
+        name: "+1(236)818 5558",
+        link: "tel:+1(236)818 5558",
+      },
+      {
+        name: "Mail us",
+        link: "mailto:info@tncimmigration.com",
+      },
+    ],
+    form: true,
+  }
 ];

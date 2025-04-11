@@ -18,17 +18,17 @@ const ServiceCard3: React.FC<ServiceCardProps> = ({
 }) => {
   const Tag = `h${level}` as keyof JSX.IntrinsicElements;
   return (
-    <div className="w-full bg-white flex flex-col items-center justify-center gap-4 py-6 px-4">
-      <div className="relative aspect-square w-full">
+    <div className="w-full bg-white flex flex-col items-center box-shadow2 justify-center gap-4 py-6 px-2 border-t-[6px] border-l-[6px] border-prime-red hover:border-t-0 hover:border-l-0 hover:border-b-[6px] hover:border-r-[6px] hover:border-prime-light-blue transition-all ease-in-out duration-300">
+      <div className="relative aspect-[4/2] md:aspect-[4/1] w-full">
         <Image src={icon} alt={title} fill className="object-contain" />
       </div>
-      <Tag className="heading2 text-center font-semibold text-black px-10">
+      <Tag className="heading4 w-full text-center font-semibold text-black px-10">
         {title}
       </Tag>
-      <ul className="flex items-center gap-2 mt-4">
-        {links.map((link, index) => (
-          <li key={index} className="flex items-center gap-1">
-            <Link href={link.href}>{link.name}</Link>
+      <ul className="flex flex-col gap-2 mt-4">
+        {links.map((link, i) => (
+          <li key={i} className="flex items-center gap-1">
+            <Link href={link.href} className={` text-sm  text-nowrap ${i === 0 ? "bg-prime-red hover:bg-prime-light-blue" : "bg-prime-light-blue hover:bg-prime-red"} px-4 py-2 text-white`}>{link.name}</Link>
           </li>
         ))}
       </ul>
