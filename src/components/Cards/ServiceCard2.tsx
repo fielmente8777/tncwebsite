@@ -9,6 +9,7 @@ export interface ServiceCardProps {
     className?: string;
   };
   // level?: 1 | 2 | 3 | 4 | 5 | 6;
+  aspectRatio?: string;
   buttons: {
     label: string;
     href: string;
@@ -21,14 +22,15 @@ const ServiceCard2: React.FC<ServiceCardProps> = ({
   image,
   buttons,
   className,
+  aspectRatio = "",
 }) => {
   // const Tag = `h${level}` as keyof JSX.IntrinsicElements;
   return (
     <div
-      className={`w-full bg-white p-3 ${className ? className : "rounded-xl"}`}
+      className={`w-full flex flex-col gap-2 bg-white p-3 ${className ? className : "rounded-xl"}`}
     >
       <div
-        className={`relative w-full  mx-auto ${image?.className ? image?.className : "aspect-[5/3]"}`}
+        className={`relative w-full  mx-auto ${aspectRatio ? aspectRatio : "aspect-[5/3]"}`}
       >
         <Image
           src={image?.src}
@@ -39,26 +41,22 @@ const ServiceCard2: React.FC<ServiceCardProps> = ({
       </div>
 
       <div>
-        <h2 className="text-center text-xl font-bold">{title}</h2>
+        <h3 className="text-center text-xl font-bold">{title}</h3>
 
         <div className="flex items-center justify-center gap-2 mt-2">
           {buttons?.map((btn, index) => {
             if (btn.href) {
               return (
-                <LinkButton href={btn?.href} key={index}>
-                  <button
-                    className={`rounded-full text-white px-4 py-2 text-sm ${btn?.className ? btn?.className : "bg-prime-light-blue"}`}
-                  >
-                    {btn?.label}
-                  </button>
+                <LinkButton
+                  href={btn?.href}
+                  key={index}
+                  className={`rounded-full text-white px-4 py-2 text-sm ${btn?.className ? `${btn?.className} hover:bg-prime-light-blue` : "bg-prime-light-blue hover:bg-prime-red"}`}
+                >
+                  {btn?.label}
                 </LinkButton>
               );
             } else {
-              return (
-                <OnlyButton key={index}>
-                  <button>{btn?.label}</button>
-                </OnlyButton>
-              );
+              return <OnlyButton key={index}>{btn?.label}</OnlyButton>;
             }
           })}
         </div>

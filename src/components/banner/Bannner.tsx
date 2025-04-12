@@ -5,7 +5,7 @@ import Link from "next/link";
 interface bannnerData {
   title: string;
   subTitle: string;
-  description: string;
+  description?: string;
   src: string;
   links: {
     name: string;

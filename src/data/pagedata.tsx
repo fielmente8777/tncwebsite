@@ -11,8 +11,6 @@ export const homePageData = {
   bannnerData: {
     title: "Your Trusted Immigration Partner",
     subTitle: "Gateway to Your Canadian Dream",
-    description:
-      "Unlock your brand’s potential with digital strategies that deliver results.",
     src: "/tnc/bnr.webp",
     links: [
       {
@@ -47,28 +45,28 @@ export const homePageData = {
       title: "Temporary Residence",
       name: "read more",
       href: "/temporary-residence",
-      src: "/tnc/im2.webp",
+      src: imagesLink + "im2.webp",
     },
     {
       icon: <PermanentResidenceIcon />,
       title: "Permanent Residence",
       name: "read more",
-      href: "",
-      src: "/tnc/im3.webp",
+      href: "/permanent-residence",
+      src: imagesLink + "im3.webp",
     },
     {
       icon: <SponsorshipIcon />,
       title: "Family & Sponsorship",
       name: "read more",
-      href: "",
-      src: "/tnc/im4.webp",
+      href: "/family-sponsorship",
+      src: imagesLink + "im4.webp",
     },
     {
       icon: <FlagPolingIcon />,
       title: "FlagPoling Application",
       name: "read more",
-      href: "",
-      src: "/tnc/im1.webp",
+      href: "flagpoling",
+      src: imagesLink + "im1.webp",
     },
   ],
   social: {
@@ -795,6 +793,144 @@ export const temporaryResidence = {
     ],
   },
 };
+export const familySponsorship = {
+  bannerData: {
+    title: "Family & Sponsorship",
+    src: imagesLink + "bg-slider-02.webp",
+  },
+
+  application: {
+    title: "Family & Sponsorship Applications",
+    card: [
+      {
+        title: "Spousal PR Sponsorship",
+        image: {
+          src: imagesLink + "f1.webp",
+          alt: "",
+        },
+        buttons: [
+          {
+            label: "Read More",
+            href: "/spousal-pr-sponsorship",
+            className: "bg-prime-red",
+          },
+        ],
+      },
+      {
+        title: "Spousal Work Permit",
+        image: {
+          src: imagesLink + "f2.webp",
+          alt: "",
+          className: "aspect-[5/6]"
+        },
+        buttons: [
+          {
+            label: "Read More",
+            href: "/spousal-work-permit",
+            className: "bg-prime-red",
+          },
+        ],
+      },
+      {
+        title: "Child Or Other Dependent Sponsorship",
+        image: {
+          src: imagesLink + "f3.webp",
+          alt: "",
+        },
+        buttons: [
+          {
+            label: "Read More",
+            href: "/child-or-other-dependent-sponsorship",
+            className: "bg-prime-red",
+          },
+        ],
+      },
+      {
+        title: "Parents, Grandparents Sponsorship",
+        image: {
+          src: imagesLink + "f4.webp",
+          alt: "",
+        },
+        buttons: [
+          {
+            label: "Read More",
+            href: "/parents-grandparents-sponsorship",
+            className: "bg-prime-red",
+          },
+        ],
+      },
+    ],
+  },
+};
+export const permanentResidence = {
+  bannerData: {
+    title: "Permanent Residence",
+    src: imagesLink + "bg-slider-02.webp",
+  },
+
+  application: {
+    title: "Permanent Residence",
+    card: [
+      {
+        title: "Federal Skilled Worker",
+        image: {
+          src: imagesLink + "p1.webp",
+          alt: "",
+        },
+        buttons: [
+          {
+            label: "Read More",
+            href: "/federal-skilled-worker",
+            className: "bg-prime-red",
+          },
+        ],
+      },
+      {
+        title: "Federal Skilled Trade Workers",
+        image: {
+          src: imagesLink + "p2.webp",
+          alt: "",
+          className: "aspect-[5/6]"
+        },
+        buttons: [
+          {
+            label: "Read More",
+            href: "/federal-skilled-trade-workers",
+            className: "bg-prime-red",
+          },
+        ],
+      },
+      {
+        title: "Canadian Experience Class",
+        image: {
+          src: imagesLink + "p3.webp",
+          alt: "",
+        },
+        buttons: [
+          {
+            label: "Read More",
+            href: "/canadian-experience-class",
+            className: "bg-prime-red",
+          },
+        ],
+      },
+      {
+        title: "Provincial Nominee Programs",
+        image: {
+          src: imagesLink + "p4.webp",
+          alt: "",
+        },
+        buttons: [
+          {
+            label: "Read More",
+            href: "/provincial-nominee-programs",
+            className: "bg-prime-red",
+          },
+        ],
+      },
+    ],
+  },
+};
 
 export const FaqPageData = {
   bannerData: {
@@ -804,7 +940,7 @@ export const FaqPageData = {
   faqSection: {
     title: "FAQs",
     subTitle: "Frequently asked immigration questions",
-    images: [imagesLink+"ad1.webp", imagesLink+"ad16.webp"],
+    images: [imagesLink + "ad1.webp", imagesLink + "ad16.webp"],
     faqs: [
       {
         question: "What services does TNC Immigration offer?",
