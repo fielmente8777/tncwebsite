@@ -2,6 +2,7 @@ import { TwoColSection } from "@/components";
 import CommanBanner from "@/components/banner/CommanBanner";
 import { slugPageData } from "@/data/slugData";
 import PageData from "./components/PgaeData";
+import Map from "@/components/maps/Map";
 interface Params {
   params: Promise<{
     slug: string;
@@ -76,6 +77,7 @@ const Page = async ({ params }: Params) => {
         </div>
       )}
       {pageData?.pageData1 && <PageData pageData={pageData} />}
+      {pageData?.mapsrc && <Map src={pageData.mapsrc} />}
     </>
   );
 };

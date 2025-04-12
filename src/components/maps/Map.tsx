@@ -7,10 +7,9 @@ const Map = ({
 }) => {
   return (
     <>
-      <div className="relative aspect-square md:aspect-[4/1.35] border-2 border-[#29422C]">
+      <div className="relative aspect-square md:aspect-[4/1.35] ">
         <LazyLoadedMap src={src} />
       </div>
-      <div className="flex flex-col items-center justify-center mt-4"></div>
     </>
   );
 };

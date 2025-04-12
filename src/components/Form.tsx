@@ -3,13 +3,14 @@
 import axios from "axios";
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
-// import {
-//   CallOrange,
-//   MailOrange,
-//   MessageOrange,
-//   UserOrange,
-// } from "@/icons/icons";
-// import { countries } from "@/db/countryCode";
+
+const service = [
+  "select service",
+  "Study Visa",
+  "visit visa",
+  "Business Visa",
+  "family visa",
+];
 
 const Form = () => {
   const router = useRouter();
@@ -154,25 +155,27 @@ const Form = () => {
           )}
         </div>
         <div className="flex items-center gap-3 border border-secondary bg-white">
-
           <select
             id="selection"
             // value={selectedOption}
             // onChange={handleSelectChange}
 
             required
-            className="w-full p-2 rounded-sm outline-none px-6 text-black/40"
+            className="w-full p-2 capitalize rounded-sm outline-none px-6 text-black/40"
           >
-            <option value="">Select an option</option>
-            <option value="option1">Option 1</option>
-            <option value="option2">Option 2</option>
-            <option value="option3">Option 3</option>
+            <option value="" disabled selected hidden >
+              Select your service
+            </option>
+            {service.map((service,i) => (
+              <option key={i} value={service} className="text-black capitalize">
+                {service}
+              </option>
+            ))}
           </select>
           {/* {selectErrorMessage && (
             <p className="text-red-500">{selectErrorMessage}</p>
           )} */}
         </div>
-
 
         {errorMessage && <p className="text-red-500">{errorMessage}</p>}
         <div className="flex gap-3 border border-secondary bg-white">
@@ -183,7 +186,7 @@ const Form = () => {
             placeholder="Message"
             value={userMessage}
             onChange={(e) => setUserMessage(e.target.value)}
-            rows={10}
+            rows={5}
             className="w-full p-2 rounded-sm resize-none outline-none"
           />
         </div>
@@ -194,8 +197,6 @@ const Form = () => {
           {formRes ? "Loading...." : "Contact us"}
         </button>
       </div>
-
-
     </form>
   );
 };
