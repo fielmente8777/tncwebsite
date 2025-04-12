@@ -17,7 +17,7 @@ const OurServicesData = [
       },
       {
         label: "Read More",
-        href: "#",
+        href: "/study-permit",
         className: "bg-prime-red",
       },
     ],
@@ -35,7 +35,7 @@ const OurServicesData = [
       },
       {
         label: "Read More",
-        href: "#",
+        href: "/work-permit",
         className: "bg-prime-red",
       },
     ],
@@ -53,7 +53,7 @@ const OurServicesData = [
       },
       {
         label: "Read More",
-        href: "#",
+        href: "/flagpoling",
         className: "bg-prime-red",
       },
     ],
@@ -71,8 +71,7 @@ const OurServicesData = [
       },
       {
         label: "Read More",
-        href: "#",
-        // href: "/visitor-visa",
+        href: "/visitor-visa",
         className: "bg-prime-red",
       },
     ],
@@ -90,8 +89,7 @@ const OurServicesData = [
       },
       {
         label: "Read More",
-        href: "#",
-        // href: "/family-sponsorship",
+        href: "/sponsor-your-siblings-for-pr",
         className: "bg-prime-red",
       },
     ],
@@ -109,8 +107,7 @@ const OurServicesData = [
       },
       {
         label: "Read More",
-        href: "#",
-        // href: "/spousal-sponsorship",
+        href: "/spousal-sponsorship",
         className: "bg-prime-red",
       },
     ],

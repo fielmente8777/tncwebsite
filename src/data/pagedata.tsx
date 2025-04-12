@@ -404,7 +404,7 @@ export const servicePageData = {
       title: "Permanent Residence",
       cards: [
         {
-          icon: "/tnc/icon/icon.webp",
+          icon: imagesLink + "icon/Icon.webp",
           title: "Federal Skilled Worker",
           links: [
             {
@@ -418,7 +418,7 @@ export const servicePageData = {
           ],
         },
         {
-          icon: "/tnc/icon/icon.webp",
+          icon: imagesLink + "icon/Icon.webp",
           title: "Federal Skilled Trade Workers",
           links: [
             {
@@ -433,7 +433,7 @@ export const servicePageData = {
           ],
         },
         {
-          icon: "/tnc/icon/icon.webp",
+          icon: imagesLink + "icon/Icon.webp",
           title: "Canadian Experience Class",
           links: [
             {
@@ -448,7 +448,7 @@ export const servicePageData = {
           ],
         },
         {
-          icon: "/tnc/icon/icon.webp",
+          icon: imagesLink + "icon/Icon.webp",
           title: "Provincial Nominee Programs",
           links: [
             {
@@ -468,7 +468,7 @@ export const servicePageData = {
       title: "Temporary Residence",
       cards: [
         {
-          icon: "/tnc/icon/Symbol.webp",
+          icon: imagesLink + "icon/Symbol.webp",
           title: "Study Permit",
           links: [
             {
@@ -482,7 +482,7 @@ export const servicePageData = {
           ],
         },
         {
-          icon: "/tnc/icon/Symbol2.webp",
+          icon: imagesLink + "icon/Symbol2.webp",
           title: "Intra-Company Transfer",
           links: [
             {
@@ -497,7 +497,7 @@ export const servicePageData = {
           ],
         },
         {
-          icon: "/tnc/icon/Icon2.webp",
+          icon: imagesLink + "icon/Icon2.webp",
           title: "Work Permit",
           links: [
             {
@@ -511,7 +511,7 @@ export const servicePageData = {
           ],
         },
         {
-          icon: "/tnc/icon/Icon2.webp",
+          icon: imagesLink + "icon/Icon2.webp",
           title: "Super Visa",
           links: [
             {
@@ -525,7 +525,7 @@ export const servicePageData = {
           ],
         },
         {
-          icon: "/tnc/icon/Icon3.webp",
+          icon: imagesLink + "icon/Icon3.webp",
           title: "LMIA Exemptions",
           links: [
             {
@@ -539,7 +539,7 @@ export const servicePageData = {
           ],
         },
         {
-          icon: "/tnc/icon/Icon4.webp",
+          icon: imagesLink + "icon/Icon4.webp",
           title: "Visitor",
           links: [
             {
@@ -553,7 +553,7 @@ export const servicePageData = {
           ],
         },
         {
-          icon: "/tnc/icon/Symbol3.webp",
+          icon: imagesLink + "icon/Symbol3.webp",
           title: "Post-Graduate Work Permits",
           links: [
             {
@@ -572,7 +572,7 @@ export const servicePageData = {
       title: "Family & Sponsorship Applications",
       cards: [
         {
-          icon: "/tnc/icon/Symbol4.webp",
+          icon: imagesLink + "icon/Symbol4.webp",
           title: "Spousal PR Sponsorship",
           links: [
             {
@@ -587,7 +587,7 @@ export const servicePageData = {
           ],
         },
         {
-          icon: "/tnc/icon/Symbol5.webp",
+          icon: imagesLink + "icon/Symbol5.webp",
           title: "Child Or Other Dependent Sponsorship",
           links: [
             {
@@ -601,7 +601,7 @@ export const servicePageData = {
           ],
         },
         {
-          icon: "/tnc/icon/Icon5.webp",
+          icon: imagesLink + "icon/Icon5.webp",
           title: "Spousal Work Permit",
           links: [
             {
@@ -616,7 +616,7 @@ export const servicePageData = {
           ],
         },
         {
-          icon: "/tnc/icon/Icon6.webp",
+          icon: imagesLink + "icon/Icon6.webp",
           title: "Parents, Grandparents Sponsorship",
           links: [
             {
@@ -781,7 +781,7 @@ export const temporaryResidence = {
         buttons: [
           {
             label: "Read More",
-            href: "/spousal-open-work-permit",
+            href: "/spousal-open-work-permit-2",
           },
           {
             label: "Assessment",
@@ -793,6 +793,7 @@ export const temporaryResidence = {
     ],
   },
 };
+
 export const familySponsorship = {
   bannerData: {
     title: "Family & Sponsorship",
@@ -821,7 +822,7 @@ export const familySponsorship = {
         image: {
           src: imagesLink + "f2.webp",
           alt: "",
-          className: "aspect-[5/6]"
+          className: "aspect-[5/6]",
         },
         buttons: [
           {
@@ -862,6 +863,7 @@ export const familySponsorship = {
     ],
   },
 };
+
 export const permanentResidence = {
   bannerData: {
     title: "Permanent Residence",
@@ -890,7 +892,7 @@ export const permanentResidence = {
         image: {
           src: imagesLink + "p2.webp",
           alt: "",
-          className: "aspect-[5/6]"
+          className: "aspect-[5/6]",
         },
         buttons: [
           {

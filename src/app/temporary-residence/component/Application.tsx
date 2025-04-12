@@ -24,7 +24,7 @@ const Application: React.FC<application> = ({ title, card }) => {
         <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
           {card.map((item, index) => (
             <div className="box-shadow2 w-full" key={index}>
-              <ServiceCard2 {...item} />
+              <ServiceCard2 {...item} aspectRatio={"aspect-[5/4.6]"}/>
             </div>
           ))}
         </div>

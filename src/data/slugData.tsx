@@ -1646,7 +1646,7 @@ You are a Canadian citizen, a permanent resident in Canada, or registered under 
     `,
   },
   {
-    slug: "spousal-open-work-permit",
+    slug: "spousal-open-work-permit-2",
     meta: {
       title: "Spousal Open Work Permit￼ - TNC immigration",
       desc: "Spousal Open Work Permit Spousal Open Work Permit In the immigration process, it's not uncommon for immigration officers to have significant questions or concerns regarding an applicant's submission, potentially leading to a refusal of their application. In such instances, officers typically communicate their doubts or inquiries through official correspondence, often delivered via email. These correspondences",
