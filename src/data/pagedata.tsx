@@ -11,8 +11,6 @@ export const homePageData = {
   bannnerData: {
     title: "Your Trusted Immigration Partner",
     subTitle: "Gateway to Your Canadian Dream",
-    description:
-      "Unlock your brand’s potential with digital strategies that deliver results.",
     src: "/tnc/bnr.webp",
     links: [
       {
@@ -47,28 +45,28 @@ export const homePageData = {
       title: "Temporary Residence",
       name: "read more",
       href: "/temporary-residence",
-      src: "/tnc/im2.webp",
+      src: imagesLink + "im2.webp",
     },
     {
       icon: <PermanentResidenceIcon />,
       title: "Permanent Residence",
       name: "read more",
-      href: "",
-      src: "/tnc/im3.webp",
+      href: "/permanent-residence",
+      src:  imagesLink + "im3.webp",
     },
     {
       icon: <SponsorshipIcon />,
       title: "Family & Sponsorship",
       name: "read more",
-      href: "",
-      src: "/tnc/im4.webp",
+      href: "family-and-sponsorship",
+      src: imagesLink + "im4.webp",
     },
     {
       icon: <FlagPolingIcon />,
       title: "FlagPoling Application",
       name: "read more",
-      href: "",
-      src: "/tnc/im1.webp",
+      href: "flagpoling",
+      src: imagesLink + "im1.webp",
     },
   ],
   social: {
