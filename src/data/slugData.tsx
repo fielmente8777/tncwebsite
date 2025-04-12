@@ -1,3 +1,5 @@
+import { imagesLink } from "./links";
+
 export const slugPageData = [
   {
     slug: "surrey",
@@ -2436,6 +2438,260 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
     alt=""
   />
   </div>    `,
-    pageData2:``
+    pageData2:`
+    <p>Provinces and territories (PTs) administering Provincial Nominee Programs (PNPs) have the authority to nominate candidates through the Express Entry pool. This process supplements their ability to nominate foreign nationals through the traditional paper-based method or Express Entry.</p>
+
+    <p>If your NOC TEER Code and profile is qualified for Express Entry, then having a PNP nomination from a province like BC can give add an additional 600 points to your current Express Entry CRS score.</p>
+
+    <p>For more details, you can reach out to our team of qualified consultants.</p>`,
+  },
+  {
+    slug: "spousal-pr-sponsorship",
+    meta: {
+      title: "Spousal PR Sponsorship - TNC immigration",
+      desc: "Spousal PR Sponsorship Spousal PR Sponsorship Embark on the journey of bringing your loved ones to Canada through the Spousal Sponsorship program, a compassionate initiative by the Canadian government. This program allows both citizens and permanent residents to sponsor their foreign national spouse, common-law partner, or conjugal partner to join them in Canada and obtain",
+    },
+    banner: {
+      title: "Spousal PR Sponsorship",
+      src: "/bgim.PNG",
+    },
+    htm: "true",
+    links: [
+      {
+        name: "+1(236)818 5558",
+        link: "tel:+1(236)818 5558",
+      },
+      {
+        name: "Mail us",
+        link: "mailto:info@tncimmigration.com",
+      },
+    ],
+    form: true,
+    pageData1:`
+    <h2>Spousal PR Sponsorship</h2>
+    <p>Embark on the journey of bringing your loved ones to Canada through the Spousal Sponsorship program, a compassionate initiative by the Canadian government. This program allows both citizens and permanent residents to sponsor their foreign national spouse, common-law partner, or conjugal partner to join them in Canada and obtain permanent residency. Each year, Canada warmly welcomes approximately 80,000 new applicants.</p>
+
+    <p><b>Eligibility Criteria for Spousal Sponsorship: Opening Doors to Reunite Families</b></p>
+
+    <p>As a potential sponsor, you are eligible if you meet the following criteria:</p>
+    <ul>
+    <li>You are at least 18 years of age.</li>
+    <li>You are a Canadian citizen, a permanent resident in Canada, or registered under</li>
+    </ul>
+    <div className="elementor-widget-container">
+    <img
+    fetchpriority="high"
+    decoding="async"
+    width={640}
+    height={344}
+    src="https://tncimmigration.com/wp-content/uploads/2023/12/amna123@@-18-1-1024x551.jpg"
+    className="attachment-large size-large wp-image-8929"
+    alt=""
+    />
+    </div>`,
+    pageData2:`
+    <ul>
+    <li>You live in Canada or plan to return to Canada if you are a Canadian citizen abroad.</li>
+    <li>You are not receiving social assistance, except for disability reasons.</li>
+    <li>You are financially independent and can meet the basic needs of yourself, your spouse/partner, and any dependent children.</li>
+    <li>Sponsors must be capable of providing complete financial support to their partner without relying on social assistance.</li>
+    </ul>
+    <h4>Not Sure About Eligibility? Contact Us for a Free Consultation!</h4>
+    <p>If you have questions about your eligibility for Spousal Sponsorship, contact us for a free consultation. We are here to assist you in navigating the process successfully.</p>
+
+    <h4>Spousal Sponsorship Requirements: A Commitment to Support</h4>
+    <p>Sponsors must provide comprehensive financial support for the basic needs of the sponsored person and any dependent children. This commitment, outlined in an undertaking, covers various aspects, including housing, utility bills, food, personal hygiene products, clothing, daily essentials, and any uncovered medical expenses.</p>
+
+    <p>The sponsorship obligations commence upon signing the undertaking and extend for a period of three years from the day your partner receives permanent residency. Note that undertakings cannot be canceled or withdrawn after IRCC approval.</p>
+
+    <h4>Income Requirements to Sponsor Your Spouse or Partner: Financial Preconditions</h4>
+    <p>While specific income requirements do not exist, sponsors must demonstrate sufficient income and necessary assets to support their spouse upon arrival. Sponsorship during bankruptcy or while receiving government support (excluding disability benefits) is not possible.</p>
+
+    <h4>Get Consultation: Discover More About Costs and Eligibility</h4>
+    <p>To learn more about costs or assess your eligibility for spousal sponsorship, contact us for a complimentary consultation. Our team is ready to provide the information you need.</p>`,
+  },
+  {
+    slug: "intra-company-transfer",
+    meta: {
+      title: "INTRA COMPANY TRANSFER - TNC immigration",
+      desc: "INTRA COMPANY TRANSFER Intra-company transfer The Intra Company Transfer (ICT) program, nestled within the International Mobility Program, is a unique immigration pathway that empowers qualified foreign business owners to seamlessly transfer their enterprises to Canada while obtaining a work permit. This avenue not only facilitates business growth but also paves the way for eventual permanent",
+    },
+    banner: {
+      title: "INTRA COMPANY TRANSFER",
+      src: "/bgim.PNG",
+    },
+    htm: "true",
+    links: [
+      {
+        name: "+1(236)818 5558",
+        link: "tel:+1(236)818 5558",
+      },
+      {
+        name: "Mail us",
+        link: "mailto:info@tncimmigration.com",
+      },
+    ],
+    form: true,
+    pageData1: `
+    <h2>Intra-company transfer</h2>
+    <p>The Intra Company Transfer (ICT) program, nestled within the International Mobility Program, is a unique immigration pathway that empowers qualified foreign business owners to seamlessly transfer their enterprises to Canada while obtaining a work permit. This avenue not only facilitates business growth but also paves the way for eventual permanent residence (PR). Moreover, it extends benefits to the principal applicant’s family, with spouses gaining an open work permit and children obtaining study permits in most cases.</p>
+    <div>
+    <img
+    fetchpriority="high"
+    decoding="async"
+    width={640}
+    height={344}
+    src="https://tncimmigration.com/wp-content/uploads/2023/12/concept-human-resources-support-global-global-network-1024x683.jpg"
+    className="attachment-large size-large wp-image-8929"
+    alt="avt"
+    />
+    </div>
+    `,
+    pageData2: `
+    <h2>Who Qualifies for the ICT Program?</h2>
+    <p>The ICT program is tailored to attract established companies worldwide, benefitting three categories of individuals:</p>
+
+    <h4>1.Business Owners, Entrepreneurs, and Shareholders:</h4>
+    <p>Holding executive positions in successful companies, these individuals intend to perform similar roles in Canada.</p>
+
+    <h4>2. Senior and Functional Managers</h4>
+    <p>Individuals in managerial positions in foreign companies seeking to occupy equivalent roles in Canada.</p>
+
+    <h2>Key Employees with Specialized Knowledge:</h2>
+    <p>Those possessing advanced and unique specialized knowledge crucial for business operations.</p>
+
+    <h3>Intra-Company Transfer Canada Requirements</h3>
+    <h4>1.Operational History:</h4>
+    <p>The home company must operate for at least 12 months (preferably 3 years) before expansion to Canada.</p>
+
+    <h4>2.Financial Soundness:</h4>
+    <p>The home company should be financially robust, capable of supporting foreign operations in Canada.</p>
+
+    <h4>3.Applicant's Engagement:</h4>
+    <p>The applicant must have worked with the home company for at least 12 months in the past three years.</p>
+
+    <h4>4.Relationship with the Canadian Company:</h4>
+    <p>The home company must be related to the Canadian company as a parent, subsidiary, or affiliate.</p>
+
+    <h4>5.Viable Canadian Operations:</h4>
+    <p>The Canadian operations must be viable, leading to job creation for Canadians.</p>
+
+    <h2>Additional Checks for Initial Expansion:</h2>
+    <h4>1.Solid Business Plan:</h4>
+    <p>A comprehensive business plan demonstrating viability, revenue generation, and job creation in Canada.</p>
+
+    <h4>2.Executive or Managerial Requirement:</h4>
+    <p>The company must prove the necessity of an executive or manager for the Canadian expansion.</p>
+
+    <h4>3.Investment Amount for Initial Expansion</h4>
+    <p>While there’s no set minimum investment, financially sound companies are expected. A suggested benchmark includes annual gross sales exceeding $250,000 and access to liquid funds of at least $100,000 to cover initial operational costs.</p>
+
+    <h3>Applying for Intra Company Transfer Work Permit</h3>
+    <h4>1.Company Registration:</h4>
+    <p>Register the company in Canada as a parent, subsidiary, or affiliate.</p>
+
+    <h4>2.Business Plan Preparation:</h4>
+    <p>Develop a detailed business plan covering proposed activities, market research, profitability strategies, hiring plans, and cash flow projections.</p>
+
+    <h4>3.Document Collection:</h4>
+    <p>Gather required documents, including bank statements, articles of incorporation, and evidence of investment funds.</p>
+
+    <h4>4.Work Permit Application:</h4>
+    <p>Submit the work permit application and await the decision.</p>`,
+  },
+  {
+    slug: "spousal-open-work-permit",
+    meta: {
+      title: "SPOUSAL OPEN WORK PERMIT - TNC immigration",
+      desc: "SPOUSAL OPEN WORK PERMIT Introduction to Spousal Open Work Permits The Spousal Sponsorship Open Work Permit in Canada permits the spouse or common-law partner of a Canadian citizen or permanent resident to engage in employment within the country. This permit's duration aligns with that of the sponsoring spouse's or partner's work permit.Primarily, this permit facilitates",
+    },
+    banner: {
+      title: "SPOUSAL OPEN WORK PERMIT",
+      src: "/bgim.PNG",
+    },
+    htm: "true",
+    links: [
+      {
+        name: "+1(236)818 5558",
+        link: "tel:+1(236)818 5558",
+      },
+      {
+        name: "Mail us",
+        link: "mailto:info@tncimmigration.com",
+      },
+    ],
+    form: true,
+    pageData1:`
+    <h2>Introduction to Spousal Open Work Permits</h2>
+    <p>The Spousal Sponsorship Open Work Permit in Canada permits the spouse or common-law partner of a Canadian citizen or permanent resident to engage in employment within the country. This permit’s duration aligns with that of the sponsoring spouse’s or partner’s work permit.</p>
+
+    <p>Primarily, this permit facilitates the sponsored spouse or partner to work while their application for permanent residence undergoes processing.</p>
+
+    <p>It’s important to note that eligibility for an open work permit is not confined to sponsorship applications by Canadian permanent residents or citizens. If your spouse is presently employed or pursuing studies in Canada, you may qualify</p>
+    <div>
+    <img
+    fatchpriority="high"
+    src=${imagesLink+ "ad7.webp"}
+    alt="avt"
+    />
+    </div>`,
+    pageData2:`
+    <h3>Eligibility for Spousal Open Work Permits</h3>
+    <p>The primary applicant, whether a spouse or partner, must hold temporary resident status in Canada, either as a student or a worker, and possess a valid study or work permit. It is essential that the spouse or partner is currently residing in Canada.</p>
+
+    <p>The spousal open work permit in Canada provides significant flexibility, enabling the holder to work for any employer without the need for a Labor Market Impact Assessment (LMIA).</p>
+
+    <h4></h4>Duration:
+    <p>Typically, the spousal open work permit aligns with the validity period of the primary applicant’s study or work permit.</p>
+
+    <p>One of the primary advantages of this permit is its ability to enhance family income, contributing to a more comfortable life in Canada. However, it is crucial to ensure that both the primary applicant and the spouse meet all requirements before initiating the application process.</p>
+
+    <h3>For Spouses/Partners of Canadian Citizens or Permanent Residents:</h3>
+    <p>The Spousal Sponsorship Open Work Permit for Canada permits the spouse or common-law partner of a Canadian citizen or permanent resident to work in Canada. This permit is valid for the same duration as the sponsoring spouse or partner’s work permit. Its primary purpose is to enable the sponsored spouse or partner to work while their permanent residence application is under processing.</p>
+
+    <h3>For Spouses/Partners of Temporary Residents in Canada:</h3>
+    <p>A spouse open work permit allows the spouse of specific temporary Canadian permit holders to work anywhere in Canada, for any employer, with minimal restrictions.</p>
+
+    <h3>Guide to Applying for a Spousal Open Work Permit in Canada</h3>
+    <p>Securing a spousal work permit in Canada is a manageable process when you adhere to the necessary steps and furnish the required documentation.</p>
+
+    <h4>1. Confirm Eligibility</h4>
+    <p>Before initiating the application, ensure that both the principal applicant and the spouse meet the eligibility criteria.</p>
+
+    <h4>2. Compile Essential Documents:</h4>
+    <p>Gather pertinent documents, such as copies of the principal applicant’s study or work permit, marriage certificate, and proof of relationship.</p>
+
+    <h4>3. Complete Form IMM 1295:</h4>
+    <p>Access the application form on the Immigration, Refugees, and Citizenship Canada (IRCC) website and fill out form IMM 1295.</p>
+
+    <h4>4. Remit the Fee:</h4>
+    <p>Confirm the current fee (as of my last update, CAD 255) by checking the IRCC website, and proceed to pay the required amount.</p>
+
+    <h4>5. Submit the Application</h4>
+    <p>Choose between online or paper applications, with online submissions generally enjoying faster processing times.</p>
+
+    <h4>6. Await a Decision:</h4>
+    <p>Processing times may vary, but you can monitor the status of your application through the online portal.</p>
+
+    <h4>7. Receive the Work Permit</h4>
+    <p>Upon approval, the spouse will be granted a work permit, providing the flexibility to work for any employer in Canada.</p>
+
+    <p>It’s imperative to remember that, while the spousal open work permit in Canada offers adaptability, it is essential to uphold its validity and adhere to all specified conditions. Stay informed about the latest requirements and guidelines by consulting the official IRCC website.</p>
+
+    <h3>Benefits of Spousal Open Work Permits</h3>
+    <h4>1.Career Opportunities</h4>
+    <p>Spousal open work permits provide the accompanying spouse or partner with the freedom to explore various job opportunities and careers in Canada, contributing to their professional development.
+    </p>
+    <h4>2.Financial Flexibility:</h4>
+    <p>The additional income from the working spouse or partner can enhance the family’s financial stability and overall quality of life.</p>
+
+    <h4>3.Family Unity</h4>
+    <p>Spousal open work permits enable families to stay together while one member studies, works, or seeks permanent residence in Canada.</p>
+
+    <h4>4.Integration and Cultural Exchange</h4>
+    <p>Working in Canada allows the accompanying spouse or partner to immerse themselves in Canadian society, fostering cultural exchange and integration.</p>
+
+    <h4>5.Versatility</h4>
+    <p>Unlike employer-specific work permits, spousal open work permits are not tied to a particular job or employer, providing flexibility to change jobs or pursue self-employment ventures.</p>`
   }
 ];
