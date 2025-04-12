@@ -2,17 +2,9 @@
 
 import axios from "axios";
 import React, { useState } from "react";
-import { useRouter } from "next/navigation";
-// import {
-//   CallOrange,
-//   MailOrange,
-//   MessageOrange,
-//   UserOrange,
-// } from "@/icons/icons";
-// import { countries } from "@/db/countryCode";
+
 
 const Form3 = () => {
-  const router = useRouter();
   const [userName, setUserName] = useState("");
   const [userEmail, setUserEmail] = useState("");
   const [userMessage, setUserMessage] = useState("");

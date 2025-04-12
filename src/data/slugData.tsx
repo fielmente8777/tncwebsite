@@ -2240,7 +2240,7 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
       desc: "Federal Skilled Worker Are you a skilled professional looking to build your career and life in Canada? The Federal Skilled Worker (FSW) Program might be the pathway for you. Designed to attract individuals with valuable skills and experience, this program is a key component of Canada’s immigration system, aiming to contribute to the country’s economic",
     },
     banner: {
-      title: "SUPER VISA",
+      title: "Federal Skilled Trades Program",
       src: "/bgim.PNG",
     },
     htm: "true",
@@ -2255,5 +2255,70 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
       },
     ],
     form: true,
+    pageData1: `
+    <p>The Federal Skilled Trades Program (FSTP) is a Canadian immigration initiative aimed at attracting skilled tradespeople to address gaps in the country’s labor market. This guide outlines the eligibility requirements, benefits, and application process for the Federal Skilled Trades Program.</p>
+
+    <h2>Eligibility Requirements</h2>
+    <p>To qualify for the Federal Skilled Trades Program, applicants must meet the following criteria:</p>
+    <div className="elementor-widget-container">
+    <img
+    fetchpriority="high"
+    decoding="async"
+    width={640}
+    height={344}
+    src="https://tncimmigration.com/wp-content/uploads/2023/12/amna123@@-13-1-1024x551.png"
+    className="attachment-large size-large wp-image-8921"
+    alt="avt"
+    sizes="(max-width: 640px) 100vw, 640px"
+    />
+    </div> `,
+    pageData2: `
+    <h3>1. Work Experience</h3>
+    <p>Have a minimum of two years of full-time work experience in a skilled trade listed in the National Occupational Classification (NOC) system.</p>
+
+    <h3>2. In-Demand Trade</h3>
+      <p>The work experience must be in a skilled trade that is in demand in Canada. You can reach out to our team to see if your occupation falls under this program.</p>
+
+    <h3>3. Language Proficiency</h3>
+      <p>Meet the minimum language requirements in either English or French.</p>
+
+     <h3> 4. Job Offer or Certification:</h3>
+      <p>Have either a job offer from a Canadian employer or a certificate of qualification from a Canadian province or territory.</p>
+
+      <p><b>If these criteria are met, individuals may be eligible to apply for the Federal Skilled Trades Program.</b></p>
+      <h2>Benefits of the Federal Skilled Trades Program</h2>
+        <h3>1.Permanent Residency</h3>
+        <p>Successful applicants are granted permanent residency in Canada, allowing them to live and work in the country indefinitely.</p>
+
+        <h3>2.Access to Healthcare and Social Services</h3>
+        <p>As permanent residents, individuals gain access to Canada’s healthcare and social services.</p>
+
+        <h3>3.Citizenship Eligibility</h3>
+        <p>After a specific period as a permanent resident, there may be eligibility to apply for Canadian citizenship.</p>
+
+        <h3>4.Family Sponsorship</h3>
+        <p>Permanent residents may have the opportunity to sponsor their spouse, children, or other family members to join them in Canada.</p>
+
+        Application Process
+        <p>The application process for the Federal Skilled Trades Program involves the following steps:</p>
+
+        <h3>Step 1: Determine Your Eligibility</h3>
+        Ensure that you meet the program’s eligibility criteria. Seek guidance from an immigration lawyer or consultant if needed.
+
+        <h3>Step 2: Complete an Express Entry Profile</h3>
+        <p>Create an Express Entry profile on the Immigration, Refugees, and Citizenship Canada (IRCC) website, providing details about education, work experience, language proficiency, and other personal information.</p>
+
+        <h3>Step 3: Receive an Invitation to Apply (ITA)</h3>
+        <p>If accepted, candidates enter a pool. Those scoring high in the Comprehensive Ranking System (CRS) receive an Invitation to Apply (ITA) for permanent residency.</p>
+
+        <h3>Step 4: Submit Application and Pay Fee</h3>
+        <p>Upon receiving an ITA, submit the permanent residency application and pay the processing fee.</p>
+
+        <h3>Step 5: Wait for a Decision</h3>
+        <p>IRCC reviews the application and decides whether to approve permanent residency. Successful applicants are granted permanent residency in Canada.</p>
+
+        <h3>Conclusion</h3>
+          <p>The Federal Skilled Trades Program offers a pathway for skilled tradespeople to immigrate to Canada and contribute to its labor market. By following these steps and providing necessary documentation, individuals can pursue permanent residency in Canada through this program</p>
+    `,
   },
 ];

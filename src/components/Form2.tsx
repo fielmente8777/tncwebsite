@@ -2,7 +2,6 @@
 
 import axios from "axios";
 import React, { useState } from "react";
-import { useRouter } from "next/navigation";
 
 const ServicesData = [
   {
@@ -48,7 +47,6 @@ const ServicesData = [
 ];
 
 const Form2 = () => {
-  const router = useRouter();
   const [userName, setUserName] = useState("");
   const [userEmail, setUserEmail] = useState("");
   const [userMessage, setUserMessage] = useState("");
@@ -139,7 +137,7 @@ const Form2 = () => {
           <div className="flex justify-center">
             <HandShakeIcon />
             <p className="text-sm text-center max-w-96">
-              Greetings! Kindly provide your requirements below, and we'll get
+              Greetings! Kindly provide your requirements below, and we&#39;ll get
               back to you shortly.
             </p>
           </div>
