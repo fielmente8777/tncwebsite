@@ -46,7 +46,7 @@ export const homePageData = {
       icon: <TemporaryResidenceIcon />,
       title: "Temporary Residence",
       name: "read more",
-      href: "#",
+      href: "/temporary-residence",
       src: "/tnc/im2.webp",
     },
     {

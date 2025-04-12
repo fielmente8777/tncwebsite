@@ -24,7 +24,10 @@ const PgaeData: React.FC<PageProps> = ({ pageData }) => {
           className="flex flex-col gap-3 w-full data_pass"
           dangerouslySetInnerHTML={{ __html: pageData.pageData1 }}
         ></div>
-        <div className=""></div>
+        {/* form */}
+        <div className="">
+          {/* form */}
+        </div>
       </div>
       {pageData.pageData2 && (
         <div
