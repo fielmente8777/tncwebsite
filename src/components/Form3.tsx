@@ -57,7 +57,7 @@ const Form3 = () => {
       const { data } = await axios.post(
         "https://nexon.eazotel.com/eazotel/addcontacts",
         {
-          Domain: "abhijeet", // Replace with your actual domain value
+          Domain: "sumit", // Replace with your actual domain value
           // Domain: "",
           email: userEmail,
           Name: userName,
@@ -80,7 +80,7 @@ const Form3 = () => {
         setUserPhone("");
         // setCountryCode("+91"); // Reset country code
         setFormRes(false);
-        router.push("/thank-you/");
+        // router.push("/thank-you/");
       } else {
         setFormRes(false);
         alert("Something went wrong!");
@@ -91,111 +91,73 @@ const Form3 = () => {
   };
 
   return (
-    <form
-      onSubmit={handleSubmit}
-      className="flex flex-col gap-4 max-md:mt-6 text-base w-full bg-bgclr text-white"
-      id="contact"
-    >
-      <div className="flex flex-col gap-6 border p-5">
-        <div className="flex items-center gap-3 border border-secondary bg-white">
-          <label htmlFor="Name" className="ps-2">
-            {/* <UserOrange /> */}
+    <form onSubmit={handleSubmit} className="" id="contact">
+      <div className="flex flex-col gap-10 p-5">
+        <div className="flex flex-col gap-2">
+          <label htmlFor="" className="text-gray-600 text-sm">
+            Your Name
           </label>
           <input
             id="Name"
             type="text"
-            placeholder="Name"
             value={userName}
             onChange={(e) => setUserName(e.target.value)}
             required
-            className="w-full h-max p-2 outline-none bg-transparent"
+            className="w-full p-3 border outline-none border-gray-400 focus:border-prime-red"
           />
         </div>
-        <div className="flex items-center gap-3 border border-secondary bg-white">
-          <label htmlFor="Name" className="ps-2">
-            {/* <CallOrange /> */}
-          </label>
-          {/* <select
-            value={countryCode}
-            onChange={(e) => setCountryCode(e.target.value)}
-            required
-            className="text-sm text-[#222] outline-none p-2 rounded-sm"
-          >
-            {countries.map((country) => (
-              <option key={country.code} value={country.code}>
-                {country.code}
-              </option>
-            ))}
-          </select> */}
-          <input
-            type="text"
-            placeholder="Phone"
-            value={userPhone}
-            onChange={handlePhoneChange}
-            required
-            maxLength={10}
-            className="w-full  p-2 rounded-sm outline-none"
-          />
-        </div>
-        <div className="flex items-center gap-3 border border-secondary bg-white">
-          <label htmlFor="Name" className="ps-2">
-            {/* <MailOrange /> */}
+
+        <div className="flex flex-col gap-2">
+          <label htmlFor="Name" className="text-gray-600 text-sm">
+            Your Email
           </label>
           <input
             type="text"
-            placeholder="Email"
             value={userEmail}
             onChange={handleEmailChange}
             required
-            className="w-full p-2 rounded-sm outline-none"
+            className="w-full p-3 border outline-none border-gray-400 focus:border-prime-red"
           />
           {emailErrorMessage && (
             <p className="text-red-500">{emailErrorMessage}</p>
           )}
         </div>
-        <div className="flex items-center gap-3 border border-secondary bg-white">
 
-          <select
-            id="selection"
-            // value={selectedOption}
-            // onChange={handleSelectChange}
-
-            required
-            className="w-full p-2 rounded-sm outline-none px-6 text-black/40"
-          >
-            <option value="">Select an option</option>
-            <option value="option1">Option 1</option>
-            <option value="option2">Option 2</option>
-            <option value="option3">Option 3</option>
-          </select>
-          {/* {selectErrorMessage && (
-            <p className="text-red-500">{selectErrorMessage}</p>
-          )} */}
-        </div>
-
-
-        {errorMessage && <p className="text-red-500">{errorMessage}</p>}
-        <div className="flex gap-3 border border-secondary bg-white">
-          <label htmlFor="Name" className="ps-2">
-            {/* <MessageOrange /> */}
+        <div className="flex flex-col gap-2">
+          <label htmlFor="Name" className="text-gray-600 text-sm">
+            Your Phone
           </label>
-          <textarea
-            placeholder="Message"
-            value={userMessage}
-            onChange={(e) => setUserMessage(e.target.value)}
-            rows={10}
-            className="w-full p-2 rounded-sm resize-none outline-none"
+
+          <input
+            type="text"
+            value={userPhone}
+            onChange={handlePhoneChange}
+            required
+            maxLength={10}
+            className="w-full p-3 border outline-none border-gray-400 focus:border-prime-red"
           />
         </div>
+
+        {errorMessage && <p className="text-red-500">{errorMessage}</p>}
+        <div className="flex flex-col gap-2">
+          <label htmlFor="Name" className="text-gray-600 text-sm">
+            Your Message
+          </label>
+          <textarea
+            value={userMessage}
+            onChange={(e) => setUserMessage(e.target.value)}
+            rows={6}
+            className="w-full p-3 border outline-none border-gray-400 focus:border-prime-red"
+          />
+        </div>
+
         <button
           type="submit"
-          className="bg-primary w-full mx-auto text-sm text-white px-5 py-3 font-normal capitalize hover:bg-primary/80 duration-500 rounded-sm border"
+          className="bg-prime-red w-fit text-lg text-white px-6 py-3 font-normal capitalize hover:bg-prime-red/90 duration-500 rounded-lg border"
         >
-          {formRes ? "Loading...." : "Contact us"}
+          {formRes ? "Loading...." : "Submit"}
         </button>
       </div>
-
-
     </form>
   );
 };

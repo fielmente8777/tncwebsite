@@ -1,6 +1,6 @@
+import { InstaIcon } from "@/app/(home)/components/OurSocailMedia";
 import {
   FlagPolingIcon,
-  InstagramIconSecond,
   PermanentResidenceIcon,
   SponsorshipIcon,
   TemporaryResidenceIcon,
@@ -65,7 +65,7 @@ export const homePageData = {
       icon: <FlagPolingIcon />,
       title: "FlagPoling Application",
       name: "read more",
-      href: "flagpoling",
+      href: "/flagpoling",
       src: imagesLink + "im1.webp",
     },
   ],
@@ -77,7 +77,7 @@ export const homePageData = {
           src: imagesLink + "social-1.webp",
         },
         link: {
-          href: "",
+          href: "https://www.instagram.com/p/DCAcvoDSiAH/",
         },
       },
       {
@@ -85,7 +85,7 @@ export const homePageData = {
           src: imagesLink + "social-2.webp",
         },
         link: {
-          href: "",
+          href: "https://www.instagram.com/reel/DB_8ivVSdAq/",
         },
       },
       {
@@ -93,7 +93,15 @@ export const homePageData = {
           src: imagesLink + "social-3.webp",
         },
         link: {
-          href: "",
+          href: "https://www.instagram.com/p/DB9W_PFPn_t/",
+        },
+      },
+      {
+        image: {
+          src: imagesLink + "social-4.webp",
+        },
+        link: {
+          href: "https://www.instagram.com/p/DB9MrEjzJe1/",
         },
       },
       {
@@ -101,7 +109,7 @@ export const homePageData = {
           src: imagesLink + "social-5.webp",
         },
         link: {
-          href: "",
+          href: "https://www.instagram.com/reel/DB64EVTSpyJ/",
         },
       },
       {
@@ -109,7 +117,7 @@ export const homePageData = {
           src: imagesLink + "social-6.webp",
         },
         link: {
-          href: "",
+          href: "https://www.instagram.com/p/DB6rVOWz5RH/",
         },
       },
       {
@@ -117,7 +125,7 @@ export const homePageData = {
           src: imagesLink + "social-7.webp",
         },
         link: {
-          href: "",
+          href: "https://www.instagram.com/p/DB4ACi1Pjdu/",
         },
       },
       {
@@ -125,7 +133,7 @@ export const homePageData = {
           src: imagesLink + "social-8.webp",
         },
         link: {
-          href: "",
+          href: "https://www.instagram.com/p/DB3_r9vya0M/",
         },
       },
       {
@@ -133,7 +141,7 @@ export const homePageData = {
           src: imagesLink + "social-9.webp",
         },
         link: {
-          href: "",
+          href: "https://www.instagram.com/p/DB1gL3xyZWT/",
         },
       },
       {
@@ -141,7 +149,7 @@ export const homePageData = {
           src: imagesLink + "social-10.webp",
         },
         link: {
-          href: "",
+          href: "https://www.instagram.com/reel/DB1QSwhPO8m/",
         },
       },
       {
@@ -149,7 +157,7 @@ export const homePageData = {
           src: imagesLink + "social-11.webp",
         },
         link: {
-          href: "",
+          href: "https://www.instagram.com/p/DBz01elS9D7/",
         },
       },
       {
@@ -157,7 +165,7 @@ export const homePageData = {
           src: imagesLink + "social-12.webp",
         },
         link: {
-          href: "",
+          href: "https://www.instagram.com/p/DBzrd3zxt_y/",
         },
       },
       {
@@ -165,7 +173,7 @@ export const homePageData = {
           src: imagesLink + "social-13.webp",
         },
         link: {
-          href: "",
+          href: "https://www.instagram.com/reel/DBy0VJ3PbZB/",
         },
       },
       {
@@ -173,7 +181,7 @@ export const homePageData = {
           src: imagesLink + "social-14.webp",
         },
         link: {
-          href: "",
+          href: "https://www.instagram.com/reel/DBxJYQmy6BS/",
         },
       },
       {
@@ -181,7 +189,7 @@ export const homePageData = {
           src: imagesLink + "social-15.webp",
         },
         link: {
-          href: "",
+          href: "https://www.instagram.com/reel/DBwQFDiPuJ2/",
         },
       },
       {
@@ -189,7 +197,7 @@ export const homePageData = {
           src: imagesLink + "social-16.webp",
         },
         link: {
-          href: "",
+          href: "https://www.instagram.com/reel/DBuoQtNSIK6/",
         },
       },
     ],
@@ -199,7 +207,7 @@ export const homePageData = {
       },
       {
         label: "Follow on Instagram",
-        icon: <InstagramIconSecond className="w-1" />,
+        icon: <InstaIcon className="w-1" />,
         href: "https://www.instagram.com/tncimmigration/",
       },
     ],

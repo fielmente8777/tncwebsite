@@ -1312,7 +1312,6 @@ Applicants must secure a job offer from a designated Canadian agricultural emplo
 <p>Navigating immigration pathways can be complex, but TNC Immigration Canada is here to assist you every step of the way. Our team of experienced consultants can help you determine your eligibility, secure a valid job offer, and guide you through the application process for the Agripilot Program.</p>
 `,
   },
-
   {
     slug: "express-entry",
     meta: {

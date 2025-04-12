@@ -1,4 +1,5 @@
 import { SectionWithContainer } from "@/components";
+import Form2 from "@/components/Form2";
 import React from "react";
 
 interface PageProps {
@@ -26,7 +27,15 @@ const PgaeData: React.FC<PageProps> = ({ pageData }) => {
         ></div>
         {/* form */}
         <div className="">
-          {/* form */}
+          <Form2 />
+          <div className="max-w-[340px] mx-auto mt-4">
+            <button
+              type="submit"
+              className="bg-prime-red w-full mx-auto text-sm text-white px-5 py-3 font-normal capitalize hover:bg-black duration-500 border shadow-lg rounded-md"
+            >
+              {"CLICK HERE BOOK CONSULATION TODAY"}
+            </button>
+          </div>
         </div>
       </div>
       {pageData.pageData2 && (

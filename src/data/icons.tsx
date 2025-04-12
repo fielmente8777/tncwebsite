@@ -684,3 +684,114 @@ export const Submission = ({ ...props }) => (
     </defs>
   </svg>
 );
+
+export const DrawerConsulationIcon = ({ ...props }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={41}
+      height={41}
+      viewBox="0 0 41 41"
+      fill="none"
+      {...props}
+    >
+      <g clipPath="url(#clip0_224_6130)">
+        <mask
+          id="a"
+          style={{
+            maskType: "luminance",
+          }}
+          maskUnits="userSpaceOnUse"
+          x={0}
+          y={0}
+          width={41}
+          height={41}
+        >
+          <path d="M.613.55h40v40h-40v-40z" fill="#fff" />
+        </mask>
+        <g mask="url(#a)">
+          <path
+            d="M20.613 40.55c11.046 0 20-8.953 20-20 0-11.045-8.954-20-20-20s-20 8.955-20 20c0 11.047 8.954 20 20 20z"
+            fill="#E0F4FF"
+          />
+          <mask
+            id="b"
+            style={{
+              maskType: "luminance",
+            }}
+            maskUnits="userSpaceOnUse"
+            x={7}
+            y={7}
+            width={27}
+            height={27}
+          >
+            <path d="M7.613 7.55h26v26h-26v-26z" fill="#fff" />
+          </mask>
+          <g mask="url(#b)">
+            <path
+              d="M25.434 24.406c-.842.732-1.89 1.643-3.796 1.643h-1.14c-1.377 0-2.631-.491-3.528-1.382-.876-.87-1.36-2.061-1.36-3.354v-1.529c0-1.293.483-2.484 1.36-3.355.897-.891 2.15-1.382 3.529-1.382h1.139c1.907 0 2.954.911 3.796 1.643.873.759 1.627 1.415 3.635 1.415.306 0 .613-.024.916-.072l-.007-.017a6.74 6.74 0 00-.423-.851l-1.344-2.282c-1.232-2.094-3.51-3.383-5.974-3.383H19.55c-2.464 0-4.742 1.29-5.974 3.383l-1.344 2.282a6.655 6.655 0 000 6.767l1.344 2.282c1.232 2.094 3.51 3.383 5.974 3.383h2.686c2.464 0 4.742-1.29 5.974-3.383l1.344-2.282a6.74 6.74 0 00.423-.851l.007-.018a5.859 5.859 0 00-.916-.071c-2.008 0-2.762.655-3.635 1.415v-.001zm-3.796-7.974h-1.14c-2.096 0-3.475 1.47-3.475 3.351v1.529c0 1.881 1.378 3.351 3.476 3.351h1.139c3.056 0 2.817-3.057 7.432-3.057.437 0 .874.039 1.305.117.14-.777.14-1.574 0-2.351-.43.078-.867.117-1.305.117-4.615-.001-4.375-3.058-7.431-3.058l-.001.001z"
+              fill="#006BFF"
+            />
+            <path
+              d="M33.025 22.839a6.495 6.495 0 00-2.65-1.117l-.005.023a6.647 6.647 0 01-.386 1.317 5.11 5.11 0 012.192.885l-.006.02a11.483 11.483 0 01-1.646 3.279 11.88 11.88 0 01-9.665 4.908 11.96 11.96 0 01-4.606-.911 11.81 11.81 0 01-3.762-2.488 11.549 11.549 0 01-2.536-3.69 11.35 11.35 0 01-.93-4.518 11.35 11.35 0 01.93-4.518 11.56 11.56 0 012.536-3.69 11.81 11.81 0 013.762-2.488 11.96 11.96 0 014.606-.911 11.88 11.88 0 019.665 4.908 11.457 11.457 0 011.652 3.299 5.098 5.098 0 01-2.192.885c.174.424.304.866.386 1.318l.004.02a6.495 6.495 0 002.651-1.116c.756-.55.61-1.168.495-1.536-1.667-5.31-6.705-9.167-12.66-9.167-7.317 0-13.247 5.818-13.247 12.994s5.93 12.994 13.246 12.994c5.957 0 10.995-3.858 12.661-9.165.115-.365.262-.986-.495-1.535z"
+              fill="#006BFF"
+            />
+            <path
+              d="M29.983 18.03a5.868 5.868 0 01-.916.072c-2.008 0-2.762-.656-3.635-1.415-.842-.732-1.889-1.642-3.796-1.642h-1.139c-1.378 0-2.632.49-3.529 1.382-.876.87-1.359 2.06-1.359 3.354v1.529c0 1.293.482 2.484 1.36 3.355.896.89 2.15 1.382 3.528 1.382h1.14c1.906 0 2.953-.911 3.795-1.642.873-.76 1.627-1.415 3.635-1.415.307 0 .613.024.916.07.174-.423.303-.865.385-1.316l.004-.023a7.303 7.303 0 00-1.305-.117c-4.615 0-4.375 3.057-7.43 3.057h-1.14c-2.097 0-3.476-1.47-3.476-3.351v-1.53c0-1.88 1.38-3.35 3.477-3.35h1.14c3.055 0 2.815 3.057 7.43 3.057.438 0 .875-.039 1.305-.117l-.004-.021a6.583 6.583 0 00-.386-1.317v-.002z"
+              fill="#0AE8F0"
+            />
+            <path
+              d="M29.983 18.03a5.868 5.868 0 01-.916.072c-2.008 0-2.762-.656-3.635-1.415-.842-.732-1.889-1.642-3.796-1.642h-1.139c-1.378 0-2.632.49-3.529 1.382-.876.87-1.359 2.06-1.359 3.354v1.529c0 1.293.482 2.484 1.36 3.355.896.89 2.15 1.382 3.528 1.382h1.14c1.906 0 2.953-.911 3.795-1.642.873-.76 1.627-1.415 3.635-1.415.307 0 .613.024.916.07.174-.423.303-.865.385-1.316l.004-.023a7.303 7.303 0 00-1.305-.117c-4.615 0-4.375 3.057-7.43 3.057h-1.14c-2.097 0-3.476-1.47-3.476-3.351v-1.53c0-1.88 1.38-3.35 3.477-3.35h1.14c3.055 0 2.815 3.057 7.43 3.057.438 0 .875-.039 1.305-.117l-.004-.021a6.583 6.583 0 00-.386-1.317v-.002z"
+              fill="#0AE8F0"
+            />
+          </g>
+        </g>
+      </g>
+      <defs>
+        <clipPath id="clip0_224_6130">
+          <path fill="#fff" transform="translate(.613 .55)" d="M0 0H40V40H0z" />
+        </clipPath>
+      </defs>
+    </svg>
+  );
+};
+
+export const DrawerNoteBook = ({ ...props }) => {
+  return (
+    <svg
+      width={41}
+      height={41}
+      viewBox="0 0 41 41"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlnsXlink="http://www.w3.org/1999/xlink"
+      {...props}
+    >
+      <rect
+        x={0.613281}
+        y={0.550781}
+        width={40}
+        height={40}
+        rx={20}
+        fill="url(#pattern0_224_6171)"
+      />
+      <defs>
+        <pattern
+          id="pattern0_224_6171"
+          patternContentUnits="objectBoundingBox"
+          width={1}
+          height={1}
+        >
+          <use xlinkHref="#image0_224_6171" transform="scale(.02273)" />
+        </pattern>
+        <image
+          id="image0_224_6171"
+          width={44}
+          height={44}
+          preserveAspectRatio="none"
+          xlinkHref="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wAARCAAsACwDASIAAhEBAxEB/8QAHAAAAgIDAQEAAAAAAAAAAAAABggEAwcAAQUJ/8QAOBAAAQMDAwEEBQoHAAAAAAAAAQIDBAURBgAHIRIxIlEUYXEIExUyFiNBY3OxwdEXQlRXkZKTlf/EABgBAQEBAQEAAAAAAAAAAAAAAAUEAwEC/8QAHxEAAgICAgMBAAAAAAAAAAAAAQIAAxEEIRMiMUES/9oADAMBAAIRAxEAPwD6iSYlOiMqcdix0pH2SefR2aHJk5p5RDMSOyj7pJV+Grq7OMqYpAP0bZ6QPT9Z0ue4m4u4uSbzObdbcro1I+G0xupVSsVlpb1veKshtpCTybcknxPIt3laddQv6YZMWo11ChmGTM89Kb36E/4jU2HOaZUA9EjvI+6SFfhpevmf7Q/9QsR/4q/113AdxNwsX3ki7ebiPUes/Fqa5UaZWKOytjvNqs404gm3ZyCPR237tLVowwRK2qRhgiNPGiU6WylxqLHUk/ZJ49HZq34XC/lGP9Sf00O0KcYsxKCfo3D0ken6jos0RdX1Nj5BbqupsfIBqUVKJPaTc6V6sRTN9ozeRgQKhVS5h8NPkqTI8vKeuVd1tzqHSo+N/wC/YWqqkUw5zqLWST1J9R0oe5NexvBfaVy5rP5srHsbzDGY8OJVmVONoK21kONh1AuhYHPqtf5Qu0pDAERxSGAIgxhmzsPJsmg0yft1ulQIchRS5UpmS3aYAST1K797cW4557Doqa3d20xrcTGnoNHyWu07FVfNdGZh0yILD0gpHu1uKVd0gixUBxfi4KdC26szHtsWcXwKjZzOx7AsyjuVmq5LMnuzJDsRKE9LEZRv0e9SRyBzcdouFGmz22P7tOY/XZ1FVjG1OPqS7ieJKT0qmLHKahLH8RJupKTe9yTcElfZ6jSpUUqBHaDcaPNBlLimZOaRa6QepXqGjPRu2RkCF7hGQJCqdNRUWbHuuJ+Sr8vVoLrmOMTGvLVSnsTGOrqCJDSXEE+IBBF9ZB1xSQoWIuPA6xqvavj2JhTsNVx7ExhPxmkVRthubSoMxuOnpZRIjIWGxxwkEcDgdnhr2IdPdldLbDXdHHAslI0Y+RjXv5dq/j0DVyUhIsBYeA1u23x4iUtuceIkOmU1FOZsO84r5Svy9Wput1uoGYscmHMxY5M//9k="
+        />
+      </defs>
+    </svg>
+  );
+};
