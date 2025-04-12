@@ -2321,4 +2321,81 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
           <p>The Federal Skilled Trades Program offers a pathway for skilled tradespeople to immigrate to Canada and contribute to its labor market. By following these steps and providing necessary documentation, individuals can pursue permanent residency in Canada through this program</p>
     `,
   },
+  {
+    slug: "canadian-experience-class",
+    meta: {
+      title: "Canadian Experience Class - TNC immigration",
+      desc: "Canadian Experience Class Canadian Experience Class The Canadian Experience Class (CEC) serves as an immigration initiative designed to assist temporary foreign workers and international students in applying their Canadian work experience and education toward their permanent residency (PR) application. This program facilitates the transition from temporary to permanent status, recognizing the duration that international students",
+    },
+    banner: {
+      title: "Canadian Experience Class",
+      src: "/bgim.PNG",
+    },
+    htm: "true",
+    links: [
+      {
+        name: "+1(236)818 5558",
+        link: "tel:+1(236)818 5558",
+      },
+      {
+        name: "Mail us",
+        link: "mailto:info@tncimmigration.com",
+      },
+    ],
+    form: true,
+    pageData1: `
+      <h2>Canadian Experience Class</h2>
+      <p>The Canadian Experience Class (CEC) serves as an immigration initiative designed to assist temporary foreign workers and international students in applying their Canadian work experience and education toward their permanent residency (PR) application. This program facilitates the transition from temporary to permanent status, recognizing the duration that international students or skilled workers have spent in Canada while actively contributing to Canadian society.</p>
+
+      <p>The Canadian Experience Class program stands as one of the three economic initiatives under the Express Entry system, an online platform overseeing permanent residence applications for immigrants capable of filling roles where a shortage of skilled Canadian workers exists.</p>
+      <div className="elementor-widget-container">
+      <img
+        fetchpriority="high"
+        decoding="async"
+        width={640}
+        height={344}
+        src="https://tncimmigration.com/wp-content/uploads/2023/12/amna123@@-14-1-1024x551.jpg"
+        className="attachment-large size-large wp-image-8925"
+        alt="avt"
+        sizes="(max-width: 640px) 100vw, 640px"
+        />
+      </div>`, 
+      pageData2: `
+        <h2>Key federal economic immigration programs under Express Entry include:</h2>
+        <p>1.Federal Skilled Worker Program (FSWP)</p>
+        <p>2.Federal Skilled Trades Program (FSTP)</p>
+        <p>3.Canadian Experience Class (CEC)</p>
+        <p>Prospective candidates, including foreign graduates and temporary foreign workers, must possess relevant work experience in Canada to be considered for the Canadian Experience Class draw. The eligibility criteria for this program operate on a pass or fail basis, and meeting the minimum requirements qualifies applicants to proceed with their application</p>
+
+        <h2>Requirements for Canadian Experience Class (CEC)</h2>
+        <p>To qualify for the Canadian Experience Class, you need to fulfill the following conditions:</p>
+        <ul>
+        <li>Attain the prescribed language proficiency levels essential for your occupation, encompassing writing, reading, listening, and speaking skills.</li>
+        <li>Possess a minimum of one year of skilled work experience in Canada within the last three years preceding your application. This work experience should be either full-time or an equivalent amount in part-time.</li>
+        <li>Acquire your work experience through legal employment in Canada.</li>
+        </ul>
+        <h2>Understanding the Calculation of Canadian Work Experience</h2></p>
+        <p>To qualify as skilled work experience in Canada, your employment history must involve paid work, encompassing paid wages or earned commission. Volunteer work or unpaid internships do not contribute to the calculation.</p>
+
+        <p>In the case of part-time employment, flexibility is allowed, with the condition that the total hours amount to at least 1,560 within a specified timeframe. Moreover, you have the option to work more than one part-time job concurrently to accumulate the required hours for your application.</p>
+
+        <p><b>As per the Canadian National Occupational Classification (NOC), skilled work experience is categorized into:</b></p>
+        <ol>
+        <li>Managerial jobs (skill level 0)</li>
+        <li>Professional jobs (skill type A)</li>
+        <li>Technical jobs and skilled trades (skill type B)</li>
+        </ol>
+        <p>Your work experience can encompass one or more NOC 0, A, or B jobs. It’s essential to identify and utilize the appropriate NOC Code for accurate classification.</p>
+        <h2>Language Requirement for Canadian Experience Class (CEC)</h2>
+        <p>To qualify for the Canadian Experience Class (CEC), you are required to <b>attain a minimum language proficiency level of English or French language:</b></p>
+        <ol>
+        <li>CLB 7 for TEER 0 or TEER 1 occupations</li>
+        <li>CLB 5 for TEER 2 or TEER 3 occupations.</li>
+        <li>Take approved language tests assessing your skills in writing, reading, listening, and speaking.</li>
+        <li>Provide a detailed account of your test results within your Express Entry profile.</li>
+        </ol>
+        <p>It’s important to note that the validity of your language test results is for a period of 2 years from the date of the test. Furthermore, these test results must remain valid on the day you submit your application for permanent residence. Ensure you meet these language requirements to enhance your eligibility for the Canadian Experience Class.</p>
+        <p>For Education obtained outside Canada, you are recommended to have an ECA report.</p>
+      ` 
+  }
 ];

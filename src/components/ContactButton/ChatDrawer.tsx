@@ -28,9 +28,9 @@ const Data = [
 export const ChatDrawer = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
   return (
-    <div className="">
+    <div className="flex flex-col justify-end items-end">
       <div
-        className={`flex flex-col items-end space-y-3 mr-4 transition-all duration-100 origin-bottom ${openDrawer ? "scale-y-100" : "scale-0"}`}
+        className={`flex flex-col items-end space-y-3 mr-4 transition-all duration-100 origin-left ${openDrawer ? "scale-y-100 w-full max-h-[400px]" : "scale-0 pointer-events-none w-0 justify-end max-h-0"}`}
       >
         {Data?.map((item, index) => (
           <div
