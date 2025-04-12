@@ -28,7 +28,6 @@ const PgaeData: React.FC<PageProps> = ({ pageData }) => {
         {/* form */}
         <div className="">
           <Form2 />
-
           <div className="max-w-[340px] mx-auto mt-4">
             <button
               type="submit"
