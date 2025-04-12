@@ -2397,5 +2397,45 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
         <p>It’s important to note that the validity of your language test results is for a period of 2 years from the date of the test. Furthermore, these test results must remain valid on the day you submit your application for permanent residence. Ensure you meet these language requirements to enhance your eligibility for the Canadian Experience Class.</p>
         <p>For Education obtained outside Canada, you are recommended to have an ECA report.</p>
       ` 
+  },
+  {
+    slug: "provincial-nominee-programs",
+    meta: {
+      title: "Provincial Nominee Programs - TNC immigration",
+      desc: "Provincial Nominee Program Provincial Nominee Program Individuals applying for Canadian work visas through the Provincial Nominee Program (PNP) can benefit from an expedited visa application process. Prospective immigrants considering the PNP route must possess the requisite skills, appropriate education, and ample work experience, and achieve a satisfactory result in a language proficiency examination, particularly for",
+    },
+    banner: {
+      title: "Provincial Nominee Program",
+      src: "/bgim.PNG",
+    },
+    htm: "true",
+    links: [
+      {
+        name: "+1(236)818 5558",
+        link: "tel:+1(236)818 5558",
+      },
+      {
+        name: "Mail us",
+        link: "mailto:info@tncimmigration.com",
+      },
+    ],
+    form: true,
+    pageData1:`
+    <h2>Provincial Nominee Program</h2>
+    <p>Individuals applying for Canadian work visas through the Provincial Nominee Program (PNP) can benefit from an expedited visa application process. Prospective immigrants considering the PNP route must possess the requisite skills, appropriate education, and ample work experience, and achieve a satisfactory result in a language proficiency examination, particularly for semi or low-skilled trades and professions.</p>
+
+    <p>To be eligible for the Provincial Nominee Program, an applicant must be nominated by a Canadian province or territory. Many provinces in Canada collaborate with the Federal Government of Canada to fulfill their authority to nominate immigrant workers seeking to establish themselves within their specific province.</p> 
+    <div className="elementor-widget-container">
+  <img
+    fetchpriority="high"
+    decoding="async"
+    width={640}
+    height={344}
+    src="https://tncimmigration.com/wp-content/uploads/2023/12/amna123@@-15-1-1024x551.jpg"
+    className="attachment-large size-large wp-image-8929"
+    alt=""
+  />
+  </div>    `,
+    pageData2:``
   }
 ];

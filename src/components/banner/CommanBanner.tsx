@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { Section } from "../sectionComponents";
 
 interface CommanBannerProps {
   title: string;
@@ -8,7 +9,7 @@ interface CommanBannerProps {
 
 const CommanBanner: React.FC<CommanBannerProps> = ({ title, src }) => {
   return (
-    <section className="max-scree">
+    <Section className="!py-0">
       <div className="relative md:aspect-[4/.8] aspect-[4/2.5] w-full">
         <Image src={src} alt={title} className="object-cover object-top" fill />
         <div className="absolute inset-0 w-full h-full bg-black/50 flex items-center justify-center">
@@ -17,7 +18,7 @@ const CommanBanner: React.FC<CommanBannerProps> = ({ title, src }) => {
           </div>
         </div>
       </div>
-    </section>
+    </Section>
   );
 };
 
