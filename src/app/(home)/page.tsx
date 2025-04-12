@@ -5,6 +5,7 @@ import AboutUs from "./components/AboutUs";
 import OurSocailMedia from "./components/OurSocailMedia";
 import OurServices from "./components/OurServices";
 import TncImmigration from "./components/TncImmigration";
+import { ChatDrawer } from "@/components/ChatDrawer";
 
 export default function Home() {
   return (
@@ -16,6 +17,10 @@ export default function Home() {
         <OurSocailMedia {...homePageData?.social} />
         <OurServices />
         <TncImmigration />
+
+        <div className="fixed bottom-2 right-4 z-50">
+          <ChatDrawer />
+        </div>
       </div>
       <Reviews />
     </main>
