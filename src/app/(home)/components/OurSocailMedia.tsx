@@ -46,7 +46,7 @@ const OurSocailMedia: React.FC<OurSocialMediaPrps> = ({
           <h3 className="font-bold text-3xl">tncimmigration</h3>
         </div>
 
-        <div className="grid md:grid-cols-6 gap-5 mt-6">
+        <div className="grid md:grid-cols-6 grid-cols-2 gap-5 mt-6">
           {content?.map((item, index) => (
             <div className="relative max-w-48 aspect-[1/1]" key={index}>
               <Image

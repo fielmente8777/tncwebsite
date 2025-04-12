@@ -105,8 +105,8 @@ export const NaveLinks: NveLinksProps[] = [
         href: "#",
         subLinks: [
           {
-            name: "Visitor to Student conversion",
-            href: "/visitor-to-student-conversion",
+            name: "Visitor to Study conversion",
+            href: "/visitor-to-study-conversion",
           },
           {
             name: "Post Grad Open Work Permit",
@@ -163,8 +163,8 @@ export const NaveLinks: NveLinksProps[] = [
         href:"/procedural-fairness-letters"
       },
       {
-        name:"sponsor your sibling for PR",
-        href:"sponsor-your-sibling-for-pr",
+        name:"sponsor your siblings for PR",
+        href:"/sponsor-your-siblings-for-pr",
       },
       {
         name:"Spousal Sponsorship",
@@ -175,12 +175,8 @@ export const NaveLinks: NveLinksProps[] = [
         href:"/spousal-open-work-permit",
       },
       {
-        name:"Post Grad Open Work Permit",
-        href:"/post-grad-open-work-permit",
-      },
-      {
-        name:"Extension within canada",
-        href:"/extension-within-canada",
+        name:"Extensions within canada",
+        href:"/extensions-within-canada",
       },
       {
         name:"other services",
@@ -262,7 +258,7 @@ export const NavbarUpperLinks = [
   },
   {
     name: "book Appointment",
-    href: "#",
+    href: "https://calendly.com/tncconsult",
   },
   {
     name: "Start Assessments",

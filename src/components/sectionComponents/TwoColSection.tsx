@@ -27,7 +27,7 @@ const TwoColSection: React.FC<TwoColSectionProps> = ({
     <SectionWithContainer>
       <div className="grid md:grid-cols-2 grid-cols-1 gap-4 md:gap-6">
         <div
-          className={`w-full relative md:aspect-[4/2.8] aspect-[4/3.5] ${
+          className={`w-full relative md:aspect-[4/3.8] aspect-[4/3.5] ${
             index
               ? index % 2 === 0
                 ? "md:order-1 order-2"
@@ -40,7 +40,7 @@ const TwoColSection: React.FC<TwoColSectionProps> = ({
               src={src}
               alt={title || "Image"}
               fill
-              className="object-cover rounded-2xl"
+              className="object-cover"
             />
           )}
         </div>
@@ -65,7 +65,7 @@ const TwoColSection: React.FC<TwoColSectionProps> = ({
               <li key={index} className="flex items-center gap-1">
                 <LinkButton
                   href={link.href}
-                  className={`raleway ${index === 0 ? `${btnCss ? "bg-dark " : "bg-secondary"} capitalize text-white hover:box-shadow flex items-center gap-1 rounded-lg py-3 px-6` : "text-dark underline underline-offset-4 hover:text-primary"} font-semibold`}
+                  className={`raleway ${index === 0 ? `${btnCss ? "bg-dark " : "bg-secondary hover:bg-prime-red"} capitalize text-white flex items-center gap-1  ` : " bg-prime-red hover:bg-secondary "} font-semibold py-3 px-6 text-white rounded-lg`}
                 >
                   {link.name}
                 </LinkButton>

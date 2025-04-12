@@ -28,11 +28,11 @@ const ServiceCard2: React.FC<ServiceCardProps> = ({
       className={`w-full bg-white p-3 ${className ? className : "rounded-xl"}`}
     >
       <div
-        className={`relative max-w-full mx-auto ${image?.className ? image?.className : "aspect-[5/3]"}`}
+        className={`relative w-full  mx-auto ${image?.className ? image?.className : "aspect-[5/3]"}`}
       >
         <Image
           src={image?.src}
-          alt={image?.alt}
+          alt={image?.alt || title.replace(" ", "-")}
           fill
           className="object-cover rounded-sm"
         />

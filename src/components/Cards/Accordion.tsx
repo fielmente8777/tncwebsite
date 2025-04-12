@@ -30,12 +30,14 @@ const Accordion: React.FC<AccordionProps> = ({
   return (
     <>
       <div
-        className={`flex flex-col w-full ${className} group cursor-pointer`}
+        className={`flex flex-col w-full ${className} group cursor-pointer `}
         onMouseEnter={() => setIsAccordionOpen(true)}
         onMouseLeave={() => setIsAccordionOpen(false)}
       >
-        <div className="flex items-center gap-4 justify-between">
-          <h3 className={`heading2 font-medium text-dark ${questionClassName}`}>
+        <div
+          className={`flex items-center gap-4 justify-between md:py-3 py-2 ${isAccordionOpen ? "!bg-prime-red text-white" : ""} px-4 box-shadow2`}
+        >
+          <h3 className={`heading3 font-medium text-dark ${questionClassName}`}>
             {question}
           </h3>
           {icon && (
@@ -43,18 +45,18 @@ const Accordion: React.FC<AccordionProps> = ({
               aria-label="accordion icon"
               role="svg"
               onClick={() => setIsAccordionOpen(!isAccordionOpen)}
-              className={`text-dark ${isAccordionOpen ? "-rotate-180" : ""} duration-300 transition-all ease-in-out`}
+              className={`text-dark ${isAccordionOpen ? "-rotate-180 text-black bg-white" : "bg-black text-white"}  p-1 duration-300 transition-all ease-in-out`}
             >
               {icon}
             </span>
           )}
         </div>
         <div
-          className={`flex flex-col gap-4 w-full ${answerClassName} transition-all max-h-0 overflow-hidden group-hover:max-h-[20rem] ${isAccordionOpen ? "max-h-[20rem] mt-4 md:mt-6" : ""}`}
+          className={`flex flex-col gap-4 w-full ${answerClassName} transition-all max-h-0 overflow-hidden group-hover:max-h-[20rem] ${isAccordionOpen ? "max-h-[20rem] mt-4 mb-2" : ""}`}
           onClick={() => setIsAccordionOpen(!isAccordionOpen)}
         >
           {typeList ? (
-            <ul className="list-disc pl-4 flex flex-col gap-2">
+            <ul className="pl-4 flex flex-col gap-2">
               {answer.map((item, index) => (
                 <li
                   key={index}

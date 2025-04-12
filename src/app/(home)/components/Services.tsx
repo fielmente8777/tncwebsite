@@ -1,5 +1,5 @@
 import { SectionWithContainer } from "@/components";
-import ServiceCard2 from "@/components/Cards/ServiceCard2";
+import ServiceCard from "@/components/Cards/ServiceCard";
 import { JSX } from "react";
 
 interface Props {
@@ -17,11 +17,11 @@ const Services: React.FC<Props> = ({ cards }) => {
     <SectionWithContainer>
       <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 md:gap-10">
         {cards.map((card, index) => (
-          <ServiceCard2
+          <ServiceCard
             key={index}
             icon={card.icon}
             title={card.title}
-            href={card.href}
+            href={"#"}
             src={card.src}
             name={card.name}
             level={2}
