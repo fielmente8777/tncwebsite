@@ -2179,6 +2179,62 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
 `,
   },
   {
+    slug: "flagpoling",
+    meta: {
+      title: "FlagPoling - TNC immigration",
+      desc: "Flagpoling Introduction To Flagpoling Flagpoling involves an applicant applying for their work permit or extending/changing their work permit at the Port of Entry (POE) of Canada.For detailed information regarding Flagpoling, you can reach out to our team. QUICK ENQUIRY Greetings! Kindly provide your requirements below, and we'll get back to you shortly. CLICK HERE BOOK",
+    },
+    banner: {
+      title: "Flagpoling",
+      src: "/bgim.PNG",
+    },
+    htm: "true",
+    links: [
+      {
+        name: "+1(236)818 5558",
+        link: "tel:+1(236)818 5558",
+      },
+      {
+        name: "Mail us",
+        link: "mailto:info@tncimmigration.com",
+      },
+    ],
+    form: true,
+    pageData1: `
+    <h2>Introduction To Flagpoling</h2>
+    <p>Flagpoling involves an applicant applying for their work permit or extending/changing their work permit at the Port of Entry (POE) of Canada.</p>
+
+    <p>For detailed information regarding Flagpoling, you can reach out to our team.</p>
+    <div className="elementor-widget-container">
+  <img
+    fetchpriority="high"
+    decoding="async"
+    width={2000}
+    height={1334}
+    src="https://tncimmigration.com/wp-content/uploads/2023/12/top-view-green-cards-passports.jpg"
+    className="attachment-full size-full wp-image-8441"
+    alt=""
+    sizes="(max-width: 2000px) 100vw, 2000px"
+  />
+    </div>
+`,
+    pageData2: `
+<h2>Who can apply?</h2>
+<p>Not everyone can apply at POE for their respective permit using the Flagpoling process.</p>
+
+<p>To check if you qualify or do not, you can reach out to our team of consultants.</p>
+
+<h2>What to Expect?</h2>
+<p>Flagpoling can be a tedious and a hard process. However, general steps involve the following:</p>
+<ul>
+      <li>You will be required to present your documents like proof of upfront medical, passport, current valid status document, job offer etc. to the CBSA officer.</li>
+      <li>You will be interviewed by the CBSA Officer.</li>
+      <li>You will be required to give biometrics and then a decision will be rendered.</li>
+</ul>
+<p>Our team will help you prepare for the in-person interview with the CBSA officer, help you prepare a complete application to present to the officer and will guide you through the process. For more information, you can contact our team at TNC branch.</p>
+`,
+  },
+  {
     slug: "federal-skilled-trade-workers",
     meta: {
       title: "Federal Skilled Worker - TNC immigration",

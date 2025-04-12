@@ -427,8 +427,7 @@ export const servicePageData = {
             },
             {
               name: "Read More",
-              href: "#",
-              // href: "/federal-skilled-trade-workers",
+              href: "/federal-skilled-trade-workers",
             },
           ],
         },
@@ -442,8 +441,7 @@ export const servicePageData = {
             },
             {
               name: "Read More",
-              href: "#",
-              // href: "/canadian-experience-class",
+              href: "/canadian-experience-class",
             },
           ],
         },
@@ -457,8 +455,7 @@ export const servicePageData = {
             },
             {
               name: "Read More",
-              href: "#",
-              // href: "/provincial-nominee-programs",
+              href: "/provincial-nominee-programs",
             },
           ],
         },
@@ -491,8 +488,7 @@ export const servicePageData = {
             },
             {
               name: "Read More",
-              href: "#",
-              // href: "/intra-company-transfer",
+              href: "/intra-company-transfer",
             },
           ],
         },
@@ -581,8 +577,7 @@ export const servicePageData = {
             },
             {
               name: "Read More",
-              href: "#",
-              // href: "/spousal-pr-sponsorship",
+              href: "/spousal-pr-sponsorship",
             },
           ],
         },
@@ -610,8 +605,7 @@ export const servicePageData = {
             },
             {
               name: "Read More",
-              href: "#",
-              // href: "/spousal-work-permit",
+              href: "/spousal-work-permit",
             },
           ],
         },
@@ -625,8 +619,7 @@ export const servicePageData = {
             },
             {
               name: "Read More",
-              href: "#",
-              // href: "/parents-grandparents-sponsorship",
+              href: "/parents-grandparents-sponsorship",
             },
           ],
         },
