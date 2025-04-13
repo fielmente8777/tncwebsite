@@ -80,8 +80,8 @@ const page = () => {
 
       <TeamMember {...AboutPageData.teamMembers} />
       <SectionWithContainer>
-        <h3 className="heading text-center font-semibold text-gray-700">
-          Happy Customers
+        <h3 className="heading font-semibold text-gray-700 flex items-center gap-2">
+        <span className="w-12 h-1 bg-prime-red"></span>  Happy Customers
         </h3>
       </SectionWithContainer>
       <Reviews />

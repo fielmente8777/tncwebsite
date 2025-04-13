@@ -1,6 +1,7 @@
 import Image from "next/image";
 import SectionWithContainer from "./SectionWithContainer";
 import { LinkButton } from "../buttons";
+import { FillCallIcon, GLOcationIcon } from "@/data/icons";
 
 export interface TwoColSectionProps {
   title?: string;
@@ -23,7 +24,7 @@ const TwoColSection: React.FC<TwoColSectionProps> = ({
   btnCss = false,
 }) => {
   return (
-    <SectionWithContainer>
+    <SectionWithContainer sectionClassName={`${index ? "!pt-4" : "!pb-4"}`}>
       <div className="grid md:grid-cols-2 grid-cols-1 gap-4 md:gap-6">
         <div
           className={`w-full relative md:aspect-[4/3.8] aspect-[4/3.5] ${
@@ -54,18 +55,27 @@ const TwoColSection: React.FC<TwoColSectionProps> = ({
               ></h2>
             </div>
           )}
-            <div
-              key={index}
-              className="heading4 text-dark flex flex-col gap-4 data_pass"
-              dangerouslySetInnerHTML={{ __html: desc }}
-            ></div>
+          <div
+            key={index}
+            className="heading4 text-dark flex flex-col gap-4 data_pass"
+            dangerouslySetInnerHTML={{ __html: desc }}
+          ></div>
           <ul className="flex max-lg:flex-col items-center gap-2 mt-auto">
             {links?.map((link, index) => (
               <li key={index} className="flex items-center gap-1">
                 <LinkButton
                   href={link.href}
-                  className={`raleway ${index === 0 ? `${btnCss ? "bg-dark " : "bg-secondary hover:bg-prime-red"} capitalize text-white flex items-center gap-1  ` : " bg-prime-red hover:bg-secondary "} font-semibold py-3 px-6 text-white rounded-lg`}
+                  className={`box-shadow2 ${index === 0 ? `${btnCss ? "bg-dark " : "bg-secondary hover:bg-prime-red"} capitalize text-white flex items-center gap-1  ` : " bg-prime-red hover:bg-secondary "} font-semibold py-3 px-6 text-white rounded-lg`}
                 >
+                  {index === 0 ? (
+                    <span className="">
+                      <GLOcationIcon />
+                    </span>
+                  ) : (
+                    <span className="">
+                      <FillCallIcon />
+                    </span>
+                  )}{" "}
                   {link.name}
                 </LinkButton>
               </li>

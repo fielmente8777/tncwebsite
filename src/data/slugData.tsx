@@ -5,7 +5,7 @@ export const slugPageData = [
     slug: "surrey",
     banner: {
       title: "Surrey, BC",
-      src: "/tnc/bnr2.webp",
+      src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/bnr2.webp",
     },
     meta: {
       title: "Surrey - TNC immigration",
@@ -15,8 +15,8 @@ export const slugPageData = [
       {
         src: "/tnc/bnr3.webp",
         title: "Welcome to TNC Immigration - Surrey Office",
-        desc: `<p>Located in the heart of Surrey, our flagship office is your trusted destination for expert immigration services. At TNC Immigration, we pride ourselves on being a leading immigration consultancy firm, helping individuals, families, and businesses achieve their Canadian dreams.<p>,
-          <p>Our Surrey office is strategically positioned to serve the vibrant and diverse community of the Lower Mainland. With years of experience and a strong commitment to excellence, we specialize in providing personalized immigration solutions tailored to your unique needs.</p>,
+        desc: `<p>Located in the heart of Surrey, our flagship office is your trusted destination for expert immigration services. At TNC Immigration, we pride ourselves on being a leading immigration consultancy firm, helping individuals, families, and businesses achieve their Canadian dreams.<p>
+          <p>Our Surrey office is strategically positioned to serve the vibrant and diverse community of the Lower Mainland. With years of experience and a strong commitment to excellence, we specialize in providing personalized immigration solutions tailored to your unique needs.</p>
           <p>From work permits, study permits, and visitor visas to Express Entry, Provincial Nominee Programs (PNP), and spousal sponsorships, our team is equipped to handle a wide range of immigration services. We also assist businesses with Labour Market Impact Assessments (LMIA) and Intra-Company Transfers.</p>`,
 
         links: [
@@ -43,7 +43,7 @@ export const slugPageData = [
     slug: "mississauga",
     banner: {
       title: "Mississauga,On",
-      src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/bgim.webp",
+      src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/dpbnr1.webp",
     },
     meta: {
       title: "Mississauga - TNC immigration",
@@ -82,7 +82,7 @@ export const slugPageData = [
     slug: "kelowna-bc",
     banner: {
       title: "kelowna, bc",
-      src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/bgim.webp",
+      src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/dpbnr2.webp",
     },
     meta: {
       title: "Kelowna, BC - TNC immigration",

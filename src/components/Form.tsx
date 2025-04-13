@@ -3,7 +3,7 @@
 import axios from "axios";
 import React, { useState } from "react";
 import { useRouter } from "next/navigation";
-
+import { FaTelegramPlane } from "react-icons/fa";
 const service = [
   "select service",
   "Study Visa",
@@ -94,7 +94,7 @@ const Form = () => {
   return (
     <form
       onSubmit={handleSubmit}
-      className="flex flex-col gap-4 max-md:mt-6 text-base w-full bg-bgclr text-white"
+      className="flex flex-col gap-4 max-md:mt-6 text-base w-full bg-slate-100 rounded-2xl overflow-hidden text-white"
       id="contact"
     >
       <div className="flex flex-col gap-6 border p-5">
@@ -163,10 +163,10 @@ const Form = () => {
             required
             className="w-full p-2 capitalize rounded-sm outline-none px-6 text-black/40"
           >
-            <option value="" disabled selected hidden >
+            <option value="" disabled selected hidden>
               Select your service
             </option>
-            {service.map((service,i) => (
+            {service.map((service, i) => (
               <option key={i} value={service} className="text-black capitalize">
                 {service}
               </option>
@@ -192,9 +192,9 @@ const Form = () => {
         </div>
         <button
           type="submit"
-          className="bg-primary w-full mx-auto text-sm text-white px-5 py-3 font-normal capitalize hover:bg-primary/80 duration-500 rounded-sm border"
+          className="bg-prime-red flex items-center gap-2 justify-center description1  w-full mx-auto text-sm text-white px-5 py-3 font-normal capitalize hover:bg-prime-light-blue duration-500 rounded-sm border"
         >
-          {formRes ? "Loading...." : "Contact us"}
+          <FaTelegramPlane /> {formRes ? "Loading...." : "submit"}
         </button>
       </div>
     </form>
