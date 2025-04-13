@@ -43,7 +43,7 @@ export const slugPageData = [
     slug: "mississauga",
     banner: {
       title: "Mississauga,On",
-      src: "/bgim.PNG",
+      src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/bgim.webp",
     },
     meta: {
       title: "Mississauga - TNC immigration",
@@ -82,7 +82,7 @@ export const slugPageData = [
     slug: "kelowna-bc",
     banner: {
       title: "kelowna, bc",
-      src: "/bgim.PNG",
+      src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/bgim.webp",
     },
     meta: {
       title: "Kelowna, BC - TNC immigration",
@@ -135,7 +135,7 @@ export const slugPageData = [
     },
     banner: {
       title: "Visitor Visa to Canada",
-      src: "/bgim.PNG",
+      src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/bgim.webp",
     },
     htm: "true",
     form: true,
@@ -288,7 +288,7 @@ export const slugPageData = [
     },
     banner: {
       title: "Study Permit",
-      src: "/bgim.PNG",
+      src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/bgim.webp",
     },
     htm: "true",
     pageData1: `
@@ -430,7 +430,7 @@ export const slugPageData = [
     },
     banner: {
       title: "Work Permit",
-      src: "/bgim.PNG",
+      src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/bgim.webp",
     },
     htm: "true",
     links: [
@@ -510,7 +510,7 @@ export const slugPageData = [
     },
     banner: {
       title: "Spousal Work Permit",
-      src: "/bgim.PNG",
+      src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/bgim.webp",
     },
     htm: "true",
     links: [
@@ -562,7 +562,7 @@ export const slugPageData = [
     },
     banner: {
       title: "LMIA FOR EMPLOYERS",
-      src: "/bgim.PNG",
+      src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/bgim.webp",
     },
     htm: "true",
     pageData1: `
@@ -635,7 +635,7 @@ export const slugPageData = [
     },
     banner: {
       title: "Visitor to Study conversion",
-      src: "/bgim.PNG",
+      src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/bgim.webp",
     },
     htm: "true",
     links: [
@@ -710,7 +710,7 @@ export const slugPageData = [
     },
     banner: {
       title: "Post-Graduate Open Work Permits",
-      src: "/bgim.PNG",
+      src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/bgim.webp",
     },
     htm: "true",
     links: [
@@ -781,7 +781,7 @@ export const slugPageData = [
     },
     banner: {
       title: "Spousal and Common Law",
-      src: "/bgim.PNG",
+      src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/bgim.webp",
     },
     htm: "true",
     links: [
@@ -849,7 +849,7 @@ export const slugPageData = [
     },
     banner: {
       title: "parents & Grandparents Program",
-      src: "/bgim.PNG",
+      src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/bgim.webp",
     },
     htm: "true",
     links: [
@@ -988,7 +988,7 @@ Financial Documentation:</h3>
     },
     banner: {
       title: "Child Or Other Dependent Sponsorship",
-      src: "/bgim.PNG",
+      src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/bgim.webp",
     },
     htm: "true",
     links: [
@@ -1376,7 +1376,7 @@ Applicants must secure a job offer from a designated Canadian agricultural emplo
     },
     banner: {
       title: "PROCEDURAL FAIRNESS LETTERS",
-      src: "/bgim.PNG",
+      src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/bgim.webp",
     },
     htm: "true",
     // links: [
@@ -1449,7 +1449,7 @@ Applicants must secure a job offer from a designated Canadian agricultural emplo
     },
     banner: {
       title: "SPONSOR YOUR SIBLINGS FOR PR",
-      src: "/bgim.PNG",
+      src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/bgim.webp",
     },
     htm: "true",
     // links: [
@@ -1534,7 +1534,7 @@ You are a Canadian citizen, a permanent resident in Canada, or registered under 
     },
     banner: {
       title: "SPOUSAL SPONSORSHIP",
-      src: "/bgim.PNG",
+      src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/bgim.webp",
     },
     htm: "true",
     // links: [
@@ -1621,7 +1621,7 @@ You are a Canadian citizen, a permanent resident in Canada, or registered under 
     },
     banner: {
       title: "Spousal Open Work Permit",
-      src: "/bgim.PNG",
+      src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/bgim.webp",
     },
     htm: "true",
     links: [
@@ -1669,7 +1669,7 @@ There are various situations in which an applicant may receive a Procedural Fair
     },
     banner: {
       title: "EXTENSIONS WITHIN CANADA",
-      src: "/bgim.PNG",
+      src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/bgim.webp",
     },
     htm: "true",
     // links: [
@@ -2015,7 +2015,7 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
     },
     banner: {
       title: "SUPER VISA",
-      src: "/bgim.PNG",
+      src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/bgim.webp",
     },
     htm: "true",
     // links: [
@@ -2083,7 +2083,7 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
     },
     banner: {
       title: "Federal Skilled Worker",
-      src: "/bgim.PNG",
+      src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/bgim.webp",
     },
     htm: "true",
     links: [
@@ -2157,7 +2157,7 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
     },
     banner: {
       title: "Flagpoling",
-      src: "/bgim.PNG",
+      src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/bgim.webp",
     },
     htm: "true",
     links: [
@@ -2378,7 +2378,7 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
     },
     banner: {
       title: "Provincial Nominee Program",
-      src: "/bgim.PNG",
+      src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/bgim.webp",
     },
     htm: "true",
     links: [
@@ -2423,7 +2423,7 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
     },
     banner: {
       title: "Spousal PR Sponsorship",
-      src: "/bgim.PNG",
+      src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/bgim.webp",
     },
     htm: "true",
     links: [
@@ -2488,7 +2488,7 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
     },
     banner: {
       title: "INTRA COMPANY TRANSFER",
-      src: "/bgim.PNG",
+      src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/bgim.webp",
     },
     htm: "true",
     // links: [
@@ -2577,7 +2577,7 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
     },
     banner: {
       title: "SPOUSAL OPEN WORK PERMIT",
-      src: "/bgim.PNG",
+      src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/bgim.webp",
     },
     htm: "true",
     // links: [
