@@ -1,14 +1,15 @@
 import { CommanBanner, LinkButton, SectionWithContainer } from "@/components";
+import { imagesLink } from "@/data/links";
 import { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Home - TNC immigration",
+  title: "Start Assessment - TNC immigration",
   description:
-    "Your Trusted Immigration Partner Gateway to Your Canadian Dream View Services About Us Temporary Residence Read More Permanent Residence Read More Family & Sponsorship Read More FlagPoling Application Read More 5 1 + Years of experience We have been the top 1% RCIC for the 5+ Golden Years About Us We’re Trusted Immigration Consultant Our",
+    "Assessment Inside Canada Outside Canada",
   keywords:"",
   alternates: {
-    canonical: "https://tncimmigration.com/",
+    canonical: "https://tncimmigration.com/start-assessment/",
   },
   robots: {
     index: true,
@@ -21,19 +22,19 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  authors: [{ name: "TNC Immigration", url: "https://tncimmigration.com/" }],
+  authors: [{ name: "TNC Immigration", url: "https://tncimmigration.com/start-assessment/" }],
   openGraph: {
-    title: "Home - TNC immigration",
+    title: "Start Assessment - TNC immigration",
     description:
-      "Your Trusted Immigration Partner Gateway to Your Canadian Dream View Services About Us Temporary Residence Read More Permanent Residence Read More Family & Sponsorship Read More FlagPoling Application Read More 5 1 + Years of experience We have been the top 1% RCIC for the 5+ Golden Years About Us We’re Trusted Immigration Consultant Our",
-    url: "https://tncimmigration.com/",
+      "Assessment Inside Canada Outside Canada",
+    url: "https://tncimmigration.com/start-assessment/",
     siteName: "tncimmigration",
     locale: "en_IN",
     type: "website",
 
     images: [
       {
-        url: "https://tncimmigration.com/images/Fielmente-og.png",
+        url: "https://tncimmigration.com/start-assessment/images/Fielmente-og.png",
         width: 1200,
       },
     ],
@@ -53,7 +54,7 @@ const page = () => {
   ];
   return (
     <main>
-      <CommanBanner title="Assessment" src="" />
+      <CommanBanner title="Assessment" src={imagesLink+"bgim.webp"} />
       <SectionWithContainer>
         <div className="flex flex-col w-full md:gap-8 gap-6">
           <div className="grid md:grid-cols-2 grid-cols-1 gap-8 md:gap-16">

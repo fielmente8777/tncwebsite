@@ -37,7 +37,7 @@ const PgaeData: React.FC<PageProps> = ({
 }) => {
   return (
     <SectionWithContainer>
-      <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-4 mb-4">
         <div
           className="flex flex-col gap-3 w-full data_pass"
           dangerouslySetInnerHTML={{ __html: pageData1 }}
@@ -64,7 +64,7 @@ const PgaeData: React.FC<PageProps> = ({
             </p>
           )}
           {links && (
-            <div className="flex gap-3 mt-4 p-2 box-shadow2 items-center">
+            <div className="flex max-lg:flex-col gap-3 mt-4 p-2 box-shadow2 items-center">
               <Link
                 href={links[0].link}
                 target="_blank"

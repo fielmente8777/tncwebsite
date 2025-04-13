@@ -1,6 +1,7 @@
+"use client";
 import { imagesLink } from "@/data/links";
 import Image from "next/image";
-import { useCallback, useEffect, useRef } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { IoClose } from "react-icons/io5";
 
 interface NewsLetterPopUPProps {
@@ -40,6 +41,31 @@ const NewsLetterPopUP: React.FC<NewsLetterPopUPProps> = ({
     }
   }, [setOpenNewsLetter]);
 
+  const host = "https://eazotel.eazotel.com/api/dashboard/editnewsletter";
+
+  const [email, setEmail] = useState("");
+
+  const handleNewsletter = async () => {
+    const data = {
+      Domain: "sumit",
+      email: email,
+    };
+    try {
+      await fetch(host, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+    } catch (error) {
+      console.log(error);
+    }
+
+    setEmail("");
+    closeModal();
+  };
+
   return (
     <div
       className={`fixed bg-black/50 ${openNewsLetter ? "inset-0 w-full h-full scale-100 opacity-100" : "opacity-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-0 h-0 scale-0"} duration-300 transition-all ease-in-out flex items-center justify-center z-50`}
@@ -67,10 +93,12 @@ const NewsLetterPopUP: React.FC<NewsLetterPopUPProps> = ({
                 and expert tips from TNC Immigration. Don&apos;t miss out on
                 important insights!
               </p>
-              <form className="flex flex-col gap-4 w-full">
+              <form className="flex flex-col gap-4 w-full" onSubmit={handleNewsletter}>
                 <input
                   type="email"
                   name="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   id="email"
                   placeholder="Enter your email"
                   className="border border-secondary/10 rounded-md py-2 px-3 w-full outline-none focus:border-secondary/70 duration-300 transition-all ease-in-out"
