@@ -172,7 +172,7 @@ export const NaveLinks: NveLinksProps[] = [
       },
       {
         name:"Spousal open work permit",
-        href:"/spousal-open-work-permit",
+        href:"/spousal-open-work-permit-2",
       },
       {
         name:"Extensions within canada",

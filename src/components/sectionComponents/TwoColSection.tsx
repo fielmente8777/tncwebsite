@@ -1,12 +1,11 @@
 import Image from "next/image";
-import SectionTitleSubTitle from "./SectionTitleSubTitle";
 import SectionWithContainer from "./SectionWithContainer";
 import { LinkButton } from "../buttons";
 
 export interface TwoColSectionProps {
   title?: string;
   subTitle?: string;
-  desc: string[];
+  desc: string;
   src?: string;
   links?: {
     name: string;
@@ -48,18 +47,18 @@ const TwoColSection: React.FC<TwoColSectionProps> = ({
           className={`flex flex-col gap-4 w-full ${index !== undefined && index % 2 === 0 ? "md:order-2 order-1" : "md:order-1 order-2"}`}
         >
           {title && (
-            <SectionTitleSubTitle
-              title={title}
-              subTitleClassName="text-dark md:pe-4"
-            />
+            <div className={`flex flex-col gap-4 w-full`}>
+              <h2
+                className={`text-xl font-semibold text-prime-red heading2`}
+                dangerouslySetInnerHTML={{ __html: title }}
+              ></h2>
+            </div>
           )}
-          {desc.map((item, index) => (
             <div
               key={index}
-              className="heading4 text-dark"
-              dangerouslySetInnerHTML={{ __html: item }}
+              className="heading4 text-dark flex flex-col gap-4 data_pass"
+              dangerouslySetInnerHTML={{ __html: desc }}
             ></div>
-          ))}
           <ul className="flex max-lg:flex-col items-center gap-2 mt-auto">
             {links?.map((link, index) => (
               <li key={index} className="flex items-center gap-1">

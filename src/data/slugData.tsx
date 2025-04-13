@@ -7,19 +7,22 @@ export const slugPageData = [
       title: "Surrey, BC",
       src: "/tnc/bnr2.webp",
     },
+    meta: {
+      title: "Surrey - TNC immigration",
+      desc: "Surrey,BC Welcome to TNC Immigration - Surrey Office Located in the heart of Surrey, our flagship office is your trusted destination for expert immigration services. At TNC Immigration, we pride ourselves on being a leading immigration consultancy firm, helping individuals, families, and businesses achieve their Canadian dreams.Our Surrey office is strategically positioned to serve the",
+    },
     welcom: [
       {
         src: "/tnc/bnr3.webp",
         title: "Welcome to TNC Immigration - Surrey Office",
-        desc: [
-          "Located in the heart of Surrey, our flagship office is your trusted destination for expert immigration services. At TNC Immigration, we pride ourselves on being a leading immigration consultancy firm, helping individuals, families, and businesses achieve their Canadian dreams.",
-          "Our Surrey office is strategically positioned to serve the vibrant and diverse community of the Lower Mainland. With years of experience and a strong commitment to excellence, we specialize in providing personalized immigration solutions tailored to your unique needs.",
-          "From work permits, study permits, and visitor visas to Express Entry, Provincial Nominee Programs (PNP), and spousal sponsorships, our team is equipped to handle a wide range of immigration services. We also assist businesses with Labour Market Impact Assessments (LMIA) and Intra-Company Transfers.",
-        ],
+        desc: `<p>Located in the heart of Surrey, our flagship office is your trusted destination for expert immigration services. At TNC Immigration, we pride ourselves on being a leading immigration consultancy firm, helping individuals, families, and businesses achieve their Canadian dreams.<p>,
+          <p>Our Surrey office is strategically positioned to serve the vibrant and diverse community of the Lower Mainland. With years of experience and a strong commitment to excellence, we specialize in providing personalized immigration solutions tailored to your unique needs.</p>,
+          <p>From work permits, study permits, and visitor visas to Express Entry, Provincial Nominee Programs (PNP), and spousal sponsorships, our team is equipped to handle a wide range of immigration services. We also assist businesses with Labour Market Impact Assessments (LMIA) and Intra-Company Transfers.</p>`,
+
         links: [
           {
             name: "get direction",
-            href: "#",
+            href: "https://maps.app.goo.gl/UtgSTSjGCqubSGLJ7",
           },
           {
             name: "+1(236)8185558",
@@ -29,11 +32,8 @@ export const slugPageData = [
       },
       {
         src: "/tnc/bnr4.webp",
-        desc: [
-          "Led by industry experts and supported by a dedicated team of professionals, our Surrey office is committed to making your immigration process smooth, efficient, and stress-free. Whether you’re an independent applicant looking to start a new chapter in Canada or a family hoping to reunite with loved ones, we’re here to guide you every step of the way.",
-          "As a Certified Canadian Immigration Consultant Firm (CICC), TNC Immigration adheres to the highest standards of professionalism and integrity.",
-          `<b>Visit us at our Surrey location or contact us today to schedule a consultation. Together, we’ll turn your Canadian aspirations into reality!</b>`,
-        ],
+        desc: `<p>Led by industry experts and supported by a dedicated team of professionals, our Surrey office is committed to making your immigration process smooth, efficient, and stress-free. Whether you’re an independent applicant looking to start a new chapter in Canada or a family hoping to reunite with loved ones, we’re here to guide you every step of the way.</p><p>As a Certified Canadian Immigration Consultant Firm (CICC), TNC Immigration adheres to the highest standards of professionalism and integrity.</p>
+          <p><b>Visit us at our Surrey location or contact us today to schedule a consultation. Together, we’ll turn your Canadian aspirations into reality!</b></p>`,
       },
     ],
     mapsrc:
@@ -45,34 +45,34 @@ export const slugPageData = [
       title: "Mississauga,On",
       src: "/bgim.PNG",
     },
+    meta: {
+      title: "Mississauga - TNC immigration",
+      desc: "Mississauga,On Welcome to TNC Immigration – Mississauga Location At TNC Immigration, we are dedicated to providing exceptional immigration consulting services to individuals and families looking to build their future in Canada. Our Mississauga office, strategically located in the vibrant heart of this diverse city, is here to serve clients across the Greater Toronto Area and",
+    },
     welcom: [
       {
         src: "/b1.PNG",
         title: "Welcome to TNC Immigration – Mississauga Location",
-        desc: [
-          "At TNC Immigration, we are dedicated to providing exceptional immigration consulting services to individuals and families looking to build their future in Canada. Our Mississauga office, strategically located in the vibrant heart of this diverse city, is here to serve clients across the Greater Toronto Area and beyond.",
-          "As a Certified Canadian Immigration Consultant Firm (CICC), we pride ourselves on delivering trusted, up-to-date, and personalized immigration solutions. Whether you’re a student, skilled professional, entrepreneur, or family member seeking to reunite with loved ones, our Mississauga team is equipped to guide you through every step of the immigration process.",
-        ],
+        desc: `<p>At TNC Immigration, we are dedicated to providing exceptional immigration consulting services to individuals and families looking to build their future in Canada. Our Mississauga office, strategically located in the vibrant heart of this diverse city, is here to serve clients across the Greater Toronto Area and beyond.</p>
+          <p>As a Certified Canadian Immigration Consultant Firm (CICC), we pride ourselves on delivering trusted, up-to-date, and personalized immigration solutions. Whether you’re a student, skilled professional, entrepreneur, or family member seeking to reunite with loved ones, our Mississauga team is equipped to guide you through every step of the immigration process.</p>`,
         links: [
           {
             name: "get direction",
-            href: "",
+            href: "https://maps.app.goo.gl/YZzjLM5jCd1DV2XY7",
           },
           {
             name: "+1(647)9320060",
-            href: "",
+            href: "tel:+1(647)9320060",
           },
         ],
       },
       {
         src: "/b2.PNG",
         title: "What We Offer",
-        desc: [
-          "Work Permits: Helping you secure employment opportunities in Canada.Study Permits: Supporting students in pursuing their academic dreams.Express Entry & PR Applications: Streamlining pathways to permanent residency.",
-          "Family Sponsorships: Reuniting families with their loved ones.Visitor Visas: Making it easier for you to explore Canada.Provincial Nominee Programs (PNP): Assisting with regional immigration opportunities.",
-          "Our experienced team of immigration professionals in Mississauga ensures a client-first approach, offering tailored advice and support to meet your unique needs. With a proven track record of success, TNC Immigration is your trusted partner in making Canada your home.",
-          `<b>Visit our Mississauga office today to experience seamless, reliable immigration consulting. Together, we’ll bring your Canadian dream to life!</b>`,
-        ],
+        desc: `<p>Work Permits: Helping you secure employment opportunities in Canada.Study Permits: Supporting students in pursuing their academic dreams.Express Entry & PR Applications: Streamlining pathways to permanent residency.</p>
+          <p>Family Sponsorships: Reuniting families with their loved ones.Visitor Visas: Making it easier for you to explore Canada.Provincial Nominee Programs (PNP): Assisting with regional immigration opportunities.</p>
+          <p>Our experienced team of immigration professionals in Mississauga ensures a client-first approach, offering tailored advice and support to meet your unique needs. With a proven track record of success, TNC Immigration is your trusted partner in making Canada your home.</p>
+          <p><b>Visit our Mississauga office today to experience seamless, reliable immigration consulting. Together, we’ll bring your Canadian dream to life!</b></p>`,
       },
     ],
     mapsrc:
@@ -84,28 +84,30 @@ export const slugPageData = [
       title: "kelowna, bc",
       src: "/bgim.PNG",
     },
+    meta: {
+      title: "Kelowna, BC - TNC immigration",
+      desc: "Kelowna, BC Welcome to TNC Immigration –Kelowna Location At TNC Immigration, we are excited to extend our trusted immigration consulting services to the vibrant city of Kelowna, British Columbia. Known for its stunning landscapes, welcoming community, and thriving opportunities, Kelowna serves as the perfect place to offer our expert guidance and personalized solutions to individuals",
+    },
     welcom: [
       {
         src: "/b3.PNG",
         title: "Welcome to TNC Immigration –Kelowna Location",
-        desc: [
-          "At TNC Immigration, we are excited to extend our trusted immigration consulting services to the vibrant city of Kelowna, British Columbia. Known for its stunning landscapes, welcoming community, and thriving opportunities, Kelowna serves as the perfect place to offer our expert guidance and personalized solutions to individuals and families pursuing their Canadian dreams.",
-          "Our Kelowna office is strategically located to provide easy access to clients in the Okanagan Valley and surrounding areas. Whether you’re looking to study, work, or settle in Canada, our dedicated team in Kelowna is here to ensure a seamless and stress-free immigration process.",
-        ],
+        desc: `<p>At TNC Immigration, we are excited to extend our trusted immigration consulting services to the vibrant city of Kelowna, British Columbia. Known for its stunning landscapes, welcoming community, and thriving opportunities, Kelowna serves as the perfect place to offer our expert guidance and personalized solutions to individuals and families pursuing their Canadian dreams.</p>
+          <p>Our Kelowna office is strategically located to provide easy access to clients in the Okanagan Valley and surrounding areas. Whether you’re looking to study, work, or settle in Canada, our dedicated team in Kelowna is here to ensure a seamless and stress-free immigration process.</p>`,
+
         links: [
           {
             name: "get direction",
-            href: "",
+            href: "https://maps.app.goo.gl/eeSueke3ypBzvQfK6",
           },
           {
             name: "+1(778)5944880",
-            href: "",
+            href: "tel:+1(778)5944880",
           },
         ],
       },
       {
-        desc: [
-          `<p>With a highly skilled team of Certified Canadian Immigration Consultants (CICC) and over a decade of experience, TNC Immigration specializes in a wide range of services, including:</p> <br/><br/> 
+        desc: `<p>With a highly skilled team of Certified Canadian Immigration Consultants (CICC) and over a decade of experience, TNC Immigration specializes in a wide range of services, including:</p> 
           <ul>
           <li>study permits</li>
           <li>Work permits</li>
@@ -120,7 +122,6 @@ export const slugPageData = [
           <p>Our Kelowna team is passionate about helping clients navigate the complexities of immigration while providing peace of mind at every step. We understand that every client’s journey is unique, and we strive to tailor our services to meet your specific needs.</p>
           <p><b>Let TNC Immigration’s Kelowna office be your trusted partner in achieving your immigration goals. Contact us today to book a consultation and take the first step toward your future in Canada!</b></p>
           `,
-        ],
       },
     ],
     mapsrc:
@@ -137,8 +138,9 @@ export const slugPageData = [
       src: "/bgim.PNG",
     },
     htm: "true",
+    form: true,
+    btnLink: true,
     pageData1: `
-    <div>
     <p>
       Are you dreaming of exploring the beauty and opportunities that Canada has
       to offer? We’re here to make your journey smooth and hassle-free with our
@@ -146,11 +148,11 @@ export const slugPageData = [
       business trip, or seeking new horizons, our Visitor Visa services are
       designed to cater to your unique needs.
     </p>
-    <h6>
-      <strong>Visitor Visa to Canada:</strong>
-    </h6>
+    <h4>
+      Visitor Visa to Canada:
+    </h4>
     <p>
-      <strong>Overview:</strong>
+      Overview:
     </p>
     <p>
       A Visitor visa, also known as a Temporary Resident Visa (TRV), allows
@@ -158,117 +160,115 @@ export const slugPageData = [
       tourism, family visits, business meetings, or any other purpose that
       doesn’t involve long-term residency.
     </p>
-    </div>
     <div>
      <img
       decoding="async"
       width={640}
       height={344}
-      src="https://tncimmigration.com/wp-content/uploads/2023/12/amna123@@-9-1-1024x551.jpg"
+      src=src=${imagesLink + "vv1.webp"}
       class="attachment-large size-large wp-image-8898"
       alt="avatar"
       sizes="(max-width: 640px) 100vw, 640px"
     />
     </div>`,
     pageData2: `
-    <div>
       <h2>
         Eligibility:
       </h2>
       <p>
           To be eligible for a Visitor Visa to Canada, applicants must:
       </p>
-      <h2>
+      <h4>
         1.Have a Valid Passport:
-      </h2>
+      </h4>
       <p>
           Ensure your passport is valid for at least six months beyond your
           planned stay in Canada.
       </p>
-      <h2>
+      <h4>
         2.Demonstrate Purpose of Visit:
-      </h2>
+      </h4>
       <p>
           Clearly articulate the purpose of your visit, whether it’s for
           tourism, family visits, or business.
       </p>
-      <h2>
+      <h4>
         3.Show Ties to Your Home Country:
-      </h2>
+      </h4>
       <p>
           Provide evidence that you have strong ties to your home country, such
           as a job, property, or family, to demonstrate your intention to
           return.
       </p>
-    <h2>Requirements:</h2>
-            <h2 class="elementor-heading-title elementor-size-default">
+    <h3>Requirements:</h3>
+            <h4 >
               1.Completed Application Form:
-            </h2>
+            </h4>
             <p>
                 Fill out the Visitor Visa application form accurately and
                 completely.
             </p>
-            <h2 class="elementor-heading-title elementor-size-default">
+            <h4 >
               2.Passport Photos
-            </h2>
+            </h4>
             <p>
                 Provide recent passport-sized photos that meet the Canadian visa
                 photo requirements.
             </p>
-            <h2 class="elementor-heading-title elementor-size-default">
+            <h4 >
               3.Travel Itinerary:
-            </h2>
+            </h4>
             <p>
                 Submit your travel itinerary, including details of your stay in
                 Canada.
             </p>
-            <h2 class="elementor-heading-title elementor-size-default">
+            <h4 >
               4.Proof of Financial Means
-            </h2>
+            </h4>
             <p>
                 If visiting family or friends, include an invitation letter with
                 their contact details and a statement confirming their
                 responsibility for your stay.
             </p>
-            <h2 class="elementor-heading-title elementor-size-default">
+            <h4 >
               5.Employment Verification:
-            </h2>
+            </h4>
             <p>
                 If employed, provide a letter from your employer stating your
                 position, length of employment, and approved leave of absence.
             </p>
-            <h2 class="elementor-heading-title elementor-size-default">
+            <h4 >
               6.Proof of Return
-            </h2>
+            </h4>
             <p>
                 Present evidence of your intention to return to your home
                 country, such as a return ticket.
             </p>
-        <h2>Why Choose Us:</h2>
-            <h2 class="elementor-heading-title elementor-size-default">
+        <h3>Why Choose Us:</h3>
+            <h4 >
               1.Expert Guidance:
-            </h2>
+            </h4>
             <p>
                 Our team of experienced immigration professionals will guide you
                 through every step of the application process.
             </p>
-            <h2 class="elementor-heading-title elementor-size-default">
+            <h4 >
               2.Tailored Solutions
-            </h2>
+            </h4>
             <p>
                 We understand that each case is unique. Our services are
                 tailored to meet your specific needs and circumstances.
             </p>
-            <h2 class="elementor-heading-title elementor-size-default">
+            <h4 >
               3.Timely Processing
-            </h2>
+            </h4>
             <p>
                 We strive for timely and efficient processing, ensuring you have
                 ample time to plan your visit.
             </p>
-            <h2 class="elementor-heading-title elementor-size-default">
+            <h4 >
               4.Transparent Communication:
-            </h2>
+            </h4>
             <p>
                 We believe in transparent communication. You’ll be informed at
                 every stage of your application process.
@@ -278,8 +278,7 @@ export const slugPageData = [
                 be your trusted partner in making your dream visit a reality.
                 Contact us today to get started on your Visitor Visa
                 application!
-            </p>
-</div>`,
+            </p>`,
   },
   {
     slug: "study-permit",
@@ -293,8 +292,7 @@ export const slugPageData = [
     },
     htm: "true",
     pageData1: `
-   <div>
-  <h2 class="elementor-heading-title elementor-size-default">
+  <h2 >
     Introduction to the Study Permit
   </h2>
   <p>
@@ -305,9 +303,9 @@ export const slugPageData = [
     the educational institution and course of study. Meeting specific
     requirements is essential for eligibility.
   </p>
-  <h2 class="elementor-heading-title elementor-size-default">
+  <h3 >
     Eligibility:
-  </h2>
+  </h3>
   <p>
     To be eligible for a study permit, you must meet the criteria established by
     the IRCC, including:
@@ -317,7 +315,7 @@ export const slugPageData = [
       decoding="async"
       width="{640}"
       height="{344}"
-      src="https://tncimmigration.com/wp-content/uploads/2023/12/amna123@@-7-1-1024x551.jpg"
+      src=src=${imagesLink + "sp1.webp"}
       class="attachment-large size-large wp-image-8890"
       alt="avt"
       sizes="(max-width: 640px) 100vw, 640px"
@@ -326,22 +324,22 @@ export const slugPageData = [
  
 
 `,
-    pageData2: `<div>
-  <ul class="elementor-icon-list-items">
-    <li class="elementor-icon-list-item">
-      1. Obtain a letter of acceptance from a Designated Learning Institution
+    pageData2: `
+  <ol >
+    <li >
+       Obtain a letter of acceptance from a Designated Learning Institution
       (DLI) in Canada, approved by the provincial or territorial government for
       international students.
     </li>
-    <li class="elementor-icon-list-item">
-      2. Demonstrate to an immigration officer your intention to leave Canada
+    <li >
+       Demonstrate to an immigration officer your intention to leave Canada
       upon the expiration of your study permit.
     </li>
-    <li class="elementor-icon-list-item">
-      3. Provide financial evidence indicating your ability to:
+    <li >
+       Provide financial evidence indicating your ability to:
     </li>
-  </ul>
-  <ul>
+  </ol>
+  <ul style="padding-left: 3rem">
     <li>Cover tuition fees.</li>
     <li>
       Support yourself and any accompanying family members during your stay in
@@ -351,28 +349,28 @@ export const slugPageData = [
       Afford return tickets for you and your family after the permit expires.
     </li>
   </ul>
-  <ul class="elementor-icon-list-items">
-    <li class="elementor-icon-list-item">
-      4. Maintain a clean legal record, adhere to Canadian laws, and have no
+  <ol >
+    <li >
+       Maintain a clean legal record, adhere to Canadian laws, and have no
       criminal history.
     </li>
-    <li class="elementor-icon-list-item">
-      5. Be in good health and be prepared to undergo required medical
+    <li >
+       Be in good health and be prepared to undergo required medical
       examinations.
     </li>
-    <li class="elementor-icon-list-item">
-      6. Meet general admissibility criteria for entry into Canada.
+    <li >
+      Meet general admissibility criteria for entry into Canada.
     </li>
-    <li class="elementor-icon-list-item">
-      7. If studying in the province of Quebec, obtain a Quebec Acceptance
+    <li >
+      If studying in the province of Quebec, obtain a Quebec Acceptance
       Certificate (QAC).
     </li>
-  </ul>
+  </ol>
   <p>
     Upon acquiring a study permit, eligible family members can join you in
     Canada by obtaining their own study or work permits.
   </p>
-  <h2 class="elementor-heading-title elementor-size-default">
+  <h2 >
     How To Apply For A Study Permit
   </h2>
   <p>
@@ -422,7 +420,6 @@ export const slugPageData = [
     examinations, police certificates, and biometrics. Ensure timely submission
     of this information within the specified timeframe.
   </p>
-</div>
 `,
   },
   {
@@ -447,22 +444,21 @@ export const slugPageData = [
       },
     ],
     pageData1: `
-    <div>
     <h2>Types of Work Permit</h2>
     <p>To engage in employment in Canada, securing a work permit is essential. Canada offers a range of work and immigration options, with some employment categories exempt from the requirement of a work permit. The specifics of work permits vary based on the nature of the occupation and typically include details such as:</p>
-    <ul>
-    <li>1. Applicant’s employer</li>
-    <li>2. Nature of employment</li>
-    <li>3. Location of employment</li>
-    <li>4. Duration of permitted employment</li>
-    </ul>
+    <ol style="font-weight: 600;">
+    <li> Applicant’s employer</li>
+    <li> Nature of employment</li>
+    <li> Location of employment</li>
+    <li> Duration of permitted employment</li>
+    </ol>
     <p>In Canada, there are generally two types of work permits:</p>
     <div>
     <img
       decoding="async"
       width="{640}"
       height="{344}"
-      src="https://tncimmigration.com/wp-content/uploads/2023/12/amna123@@-7-1-1024x551.jpg"
+      src=${imagesLink + "wp1.webp"}
       class="attachment-large size-large wp-image-8890"
       alt="avt"
       sizes="(max-width: 640px) 100vw, 640px"
@@ -470,43 +466,41 @@ export const slugPageData = [
     </div>
     </div>`,
     pageData2: `
-    <div>
-    <h2>Open Work Permit</h2>
-<p>Open work permits are further classified into two types: restricted and unrestricted. Unrestricted permits grant individuals the freedom to work in any location and occupation, while restricted permits limit both location and occupation choices. Restricted permits exclude employment with specific ineligible employers or those involved in certain services.</p>
+    <h3>Open Work Permit</h3>
+    <p>Open work permits are further classified into two types: restricted and unrestricted. Unrestricted permits grant individuals the freedom to work in any location and occupation, while restricted permits limit both location and occupation choices. Restricted permits exclude employment with specific ineligible employers or those involved in certain services.</p>
 
-<h2>Eligibility for Open Work Permit:</h2>
-<p>You may be eligible for an open work permit if you fall into categories such as being a permanent residency applicant, a dependent family member, a spouse of a skilled worker or international student, or part of special programs.</p>
-<h2>Types of Open Work Permits:</h2>
-<ul>
-<li>Regular Work Permit</li>
-<li>Post-Graduation Work Permits</li>
-<li>Temporary Work Permits for Spouses/Common-Law Partners</li>
-<li>Youth Program Permit</li>
-<li>Atlantic Immigration Pilot Program Spousal Permit</li>
-<li>Bridging Open Work Permit</li>
-<li>Visa Programs that require Open Work Permits</li>
-</ul>
-<p>Various visa programs, including the Working Holiday Visa, Federal Skilled Worker Program, Federal Skilled Trades Program, Provincial Nominee Program, Canadian Experience Class, International Experience Class, Young Professional Visa, and International Co-op Program, utilize open work permits.</p>
+    <h3>Eligibility for Open Work Permit:</h3>
+    <p>You may be eligible for an open work permit if you fall into categories such as being a permanent residency applicant, a dependent family member, a spouse of a skilled worker or international student, or part of special programs.</p>
+    <h4>Types of Open Work Permits:</h4>
+    <ul>
+      <li>Regular Work Permit</li>
+      <li>Post-Graduation Work Permits</li>
+      <li>Temporary Work Permits for Spouses/Common-Law Partners</li>
+      <li>Youth Program Permit</li>
+      <li>Atlantic Immigration Pilot Program Spousal Permit</li>
+      <li>Bridging Open Work Permit</li>
+    </ul>
+    <p><b>Visa Programs that require Open Work Permits</b></p>
+    <p>Various visa programs, including the Working Holiday Visa, Federal Skilled Worker Program, Federal Skilled Trades Program, Provincial Nominee Program, Canadian Experience Class, International Experience Class, Young Professional Visa, and International Co-op Program, utilize open work permits.</p>
 
-<h2>Employer-Specific Work Permit:</h2>
-<p>This type of permit ties employment to specific conditions such as the employer’s name, duration of employment, and location of employment.</p>
+    <h4>Employer-Specific Work Permit:</h4>
+    <p>This type of permit ties employment to specific conditions such as the employer’s name, duration of employment, and location of employment.</p>
 
-<h2>Eligibility for Employer-Specific Work Permits</h2>
- <p>Eligibility is contingent on factors like the nature of the occupation, financial stability, criminal record, security concerns, and health status. Working for ineligible employers or engaging in specific services may disqualify an applicant.</p>
+    <h3>Eligibility for Employer-Specific Work Permits</h3>
+    <p>Eligibility is contingent on factors like the nature of the occupation, financial stability, criminal record, security concerns, and health status. Working for ineligible employers or engaging in specific services may disqualify an applicant.</p>
 
-<h2>Occupations that require Employer-Specific work permits</h2>
-<p>Several occupations, including academics, religious workers, entrepreneurs, athletes/coaches, agricultural workers, and those in the film industry, may require employer-specific work permits.</p>
+    <h3>Occupations that require Employer-Specific work permits</h3>
+    <p>Several occupations, including academics, religious workers, entrepreneurs, athletes/coaches, agricultural workers, and those in the film industry, may require employer-specific work permits.</p>
 
-<h2>Other Types of Work Permits:</h2>
-<h2>Student Dependent Work Permit:</h2>
-<p>Allows international students to apply for work permits for their dependent spouses and visit visas or study permits for their children during their study in Canada.</p>
+    <h2>Other Types of Work Permits:</h2>
+    <h3>Student Dependent Work Permit:</h3>
+    <p>Allows international students to apply for work permits for their dependent spouses and visit visas or study permits for their children during their study in Canada.</p>
 
-<h2>Spousal Work Permit:</h2>
-<p>Enables spouses or common-law partners of Canadian citizens or permanent residents to apply for an open work permit, particularly if they are part of a spousal sponsorship application within Canada.</p>
+    <h3>Spousal Work Permit:</h3>
+    <p>Enables spouses or common-law partners of Canadian citizens or permanent residents to apply for an open work permit, particularly if they are part of a spousal sponsorship application within Canada.</p>
 
-<h2>Work Permit Exemptions</h2>
-<p>Certain short-duration and legal jobs, such as aviation investigators, athletes and coaches of foreign teams, clergy members, expert witnesses, news reporters, film crew, performing artists, and health care students, do not require work permits.</p>
-    </div>`,
+    <h3>Work Permit Exemptions</h3>
+    <p>Certain short-duration and legal jobs, such as aviation investigators, athletes and coaches of foreign teams, clergy members, expert witnesses, news reporters, film crew, performing artists, and health care students, do not require work permits.</p>`,
   },
   {
     slug: "spousal-work-permit",
@@ -530,7 +524,6 @@ export const slugPageData = [
       },
     ],
     pageData1: `
-    <div>
     <p>
       Individuals applying for Canadian work visas through the Provincial
       Nominee Program (PNP) can benefit from an expedited visa application
@@ -551,19 +544,15 @@ export const slugPageData = [
         decoding="async"
         width={640}
         height={344}
-        src="https://tncimmigration.com/wp-content/uploads/2023/12/amna123@@-19-1-1024x551.jpg"
-        class="attachment-large size-large wp-image-9210"
-        alt=""
-        srcSet="https://tncimmigration.com/wp-content/uploads/2023/12/amna123@@-19-1-1024x551.jpg 1024w, https://tncimmigration.com/wp-content/uploads/2023/12/amna123@@-19-1-300x162.jpg 300w, https://tncimmigration.com/wp-content/uploads/2023/12/amna123@@-19-1-768x414.jpg 768w, https://tncimmigration.com/wp-content/uploads/2023/12/amna123@@-19-1-600x323.jpg 600w, https://tncimmigration.com/wp-content/uploads/2023/12/amna123@@-19-1.jpg 1300w"
+        src=${imagesLink + "swp1.webp"}
+        alt="avt"
         sizes="(max-width: 640px) 100vw, 640px"
       />
-    </div>
-  </div>`,
-    pageData2: `
-    <div>
-    <h2>Discover effective strategies to enhance your CRS score for both Express Entry and PNP.</h2>
-    <p>*Provinces and territories (PTs) administering Provincial Nominee Programs (PNPs) have the authority to nominate candidates through the Express Entry pool. This process supplements their ability to nominate foreign nationals through the traditional paper-based method. The VisaPlace Express Entry Application Service ensures swift entry into the pool with a profile optimized for maximum selection potential. Evaluate your eligibility for our Express Entry Service by clicking “Get Started”</p>
     </div>`,
+    pageData2: `
+    <h3>Discover effective strategies to enhance your CRS score for both Express Entry and PNP.</h3>
+    <p>*Provinces and territories (PTs) administering Provincial Nominee Programs (PNPs) have the authority to nominate candidates through the Express Entry pool. This process supplements their ability to nominate foreign nationals through the traditional paper-based method. The VisaPlace Express Entry Application Service ensures swift entry into the pool with a profile optimized for maximum selection potential. Evaluate your eligibility for our Express Entry Service by clicking “Get Started”</p>
+    `,
   },
   {
     slug: "lmia-for-employers",
@@ -576,18 +565,7 @@ export const slugPageData = [
       src: "/bgim.PNG",
     },
     htm: "true",
-    links: [
-      {
-        name: "+1(236)818 5558",
-        link: "tel:+1(236)818 5558",
-      },
-      {
-        name: "Mail us",
-        link: "mailto:info@tncimmigration.com",
-      },
-    ],
     pageData1: `
-   <div>
   <h2>Introduction to LMIA for Employers</h2>
   <p>
     Canadian employers seeking to employ foreign workers are frequently
@@ -610,48 +588,44 @@ export const slugPageData = [
       decoding="async"
       width={640}
       height={344}
-      src="https://tncimmigration.com/wp-content/uploads/2023/12/amna123@@-1-1024x551.png"
+      src=${imagesLink + "lfe1.webp"}
       class="attachment-large size-large wp-image-8842"
       alt="avt"
       sizes="(max-width: 640px) 100vw, 640px"
     />
-  </div>
 </div>`,
     pageData2: `
-    <div>
     <h2>LMIA Requirements for Employers</h2>
     <p>Canadian employers seeking to complete an LMIA and engage a foreign worker to fill a position within their organization must adhere to the following criteria:</p>
-    <ul>
-    <li>1. Commit to paying a processing fee of $1,000 CAD, applicable to all LMIA categories except those involving caregivers for low-income families and LMIA supporting permanent resident applications.</li>
-    <li>
-    2.Advertise the vacant job position for a minimum of four weeks before extending an offer to a foreign worker.</li>
-    <li>3. Demonstrate the utilization of two or more recruitment channels, in addition to the Canadian Job Bank’s website.</li>
-    <li>4. Present a comprehensive transition plan outlining the strategy to reduce dependence on foreign workers.</li>
-    <li>5. Provide documentation indicating investment in training for the hired foreign worker.</li>
-    <li>6. Substantiate the commitment to retain Canadian workers, ensuring there will be no layoffs following the employment of the new foreign worker.</li>
-    </ul>
-    <h2>LMIA Process for Employers:</h2>
-<h3>1.Compilation of Required Documentation</h3>
-<p>To initiate the LMIA process, employers are required to compile essential documents. These include a business license, commercial lease agreement, and legal incorporation documents that validate the operational status of their business.</p>
+    <ol>
+    <li>Commit to paying a processing fee of $1,000 CAD, applicable to all LMIA categories except those involving caregivers for low-income families and LMIA supporting permanent resident applications.</li>
+    <li>Advertise the vacant job position for a minimum of four weeks before extending an offer to a foreign worker.</li>
+    <li>Demonstrate the utilization of two or more recruitment channels, in addition to the Canadian Job Bank’s website.</li>
+    <li>Present a comprehensive transition plan outlining the strategy to reduce dependence on foreign workers.</li>
+    <li>Provide documentation indicating investment in training for the hired foreign worker.</li>
+    <li>Substantiate the commitment to retain Canadian workers, ensuring there will be no layoffs following the employment of the new foreign worker.</li>
+    </ol>
+    <h3>LMIA Process for Employers:</h3>
+    <h4>1.Compilation of Required Documentation</h4>
+    <p>To initiate the LMIA process, employers are required to compile essential documents. These include a business license, commercial lease agreement, and legal incorporation documents that validate the operational status of their business.</p>
 
-<h3>2.Job Advertisement</h3>
-<p>Subsequently, employers must advertise the job position in a minimum of three recruitment outlets, with one of them being the Canadian Job Bank website. It is mandatory to conduct interviews with eligible Canadian residents or citizens who apply for the position. The hiring manager is tasked with documenting the reasons for considering or rejecting applicants and must submit these notes along with the LMIA application.</p>
+    <h4>2.Job Advertisement</h4>
+      <p>Subsequently, employers must advertise the job position in a minimum of three recruitment outlets, with one of them being the Canadian Job Bank website. It is mandatory to conduct interviews with eligible Canadian residents or citizens who apply for the position. The hiring manager is tasked with documenting the reasons for considering or rejecting applicants and must submit these notes along with the LMIA application.</p>
 
-<h3>3.Issuance of Job Offer to the Foreign Worker</h3>
-<p>Upon completion of the job advertising phase, employers can extend a job offer to the foreign worker. The job offer letter must encompass crucial details, including the offered wage, weekly working hours, and a concise overview of the job duties. The foreign worker is required to sign this letter before the employer proceeds to the next stage.</p>
+    <h4>3.Issuance of Job Offer to the Foreign Worker</h4>
+    <p>Upon completion of the job advertising phase, employers can extend a job offer to the foreign worker. The job offer letter must encompass crucial details, including the offered wage, weekly working hours, and a concise overview of the job duties. The foreign worker is required to sign this letter before the employer proceeds to the next stage.</p>
 
-<h3>4.Submission of LMIA Application</h3>
-<p>Subsequently, employers are expected to complete an LMIA application and submit it along with the necessary supporting documents. Additionally, a $1,000 CAD LMIA processing fee must be paid. Successful applicants will receive notification of a positive LMIA, enabling them to communicate with the prospective foreign employee and advise them to initiate the work permit application process.</p>
+    <h4>4.Submission of LMIA Application</h4>
+      <p>Subsequently, employers are expected to complete an LMIA application and submit it along with the necessary supporting documents. Additionally, a $1,000 CAD LMIA processing fee must be paid. Successful applicants will receive notification of a positive LMIA, enabling them to communicate with the prospective foreign employee and advise them to initiate the work permit application process.</p>
 
-<h3>5.Issuance of Job Offer to the Foreign Worker</h3>
-<p>Upon completion of the job advertising phase, employers can extend a job offer to the foreign worker. The job offer letter must encompass crucial details, including the offered wage, weekly working hours, and a concise overview of the job duties. The foreign worker is required to sign this letter before the employer proceeds to the next stage.</p>
+    <h4>5.Issuance of Job Offer to the Foreign Worker</h4>
+      <p>Upon completion of the job advertising phase, employers can extend a job offer to the foreign worker. The job offer letter must encompass crucial details, including the offered wage, weekly working hours, and a concise overview of the job duties. The foreign worker is required to sign this letter before the employer proceeds to the next stage.</p>
 
-<h3>6.Submission of LMIA Application</h3>
-<p>Subsequently, employers are expected to complete an LMIA application and submit it along with the necessary supporting documents. Additionally, a $1,000 CAD LMIA processing fee must be paid. Successful applicants will receive notification of a positive LMIA, enabling them to communicate with the prospective foreign employee and advise them to initiate the work permit application process</p>
+    <h4>6.Submission of LMIA Application</h4>
+    <p>Subsequently, employers are expected to complete an LMIA application and submit it along with the necessary supporting documents. Additionally, a $1,000 CAD LMIA processing fee must be paid. Successful applicants will receive notification of a positive LMIA, enabling them to communicate with the prospective foreign employee and advise them to initiate the work permit application process</p>
 
-<h3>7.Unlocking LMIA Success with TNC Immigration</h3>
-<p>Navigating the complexities of the LMIA application as an employer can be daunting. At TNC Immigration, we specialize in streamlining the process to ensure your success. Our expert team is dedicated to assisting you in securing the Labour Market Impact Assessment you need. From precise documentation to strategic guidance, TNC Immigration is your partner in simplifying the LMIA application journey. Let us pave the way for your seamless immigration success – contact us today.</p>
-    </div>`,
+    <h4>7.Unlocking LMIA Success with TNC Immigration</h4>
+    <p>Navigating the complexities of the LMIA application as an employer can be daunting. At TNC Immigration, we specialize in streamlining the process to ensure your success. Our expert team is dedicated to assisting you in securing the Labour Market Impact Assessment you need. From precise documentation to strategic guidance, TNC Immigration is your partner in simplifying the LMIA application journey. Let us pave the way for your seamless immigration success – contact us today.</p>`,
   },
   {
     slug: "visitor-to-study-conversion",
@@ -675,7 +649,6 @@ export const slugPageData = [
       },
     ],
     pageData1: `
-    <div>
   <h2>
     Convert Your Visitor Visa to a Study Permit in Canada: Your Path to Academic
     Success
@@ -692,7 +665,7 @@ export const slugPageData = [
       decoding="async"
       width={640}
       height={344}
-      src="https://tncimmigration.com/wp-content/uploads/2024/10/Untitled-design-2024-10-11T224502.334-1024x551.jpg"
+      src=${imagesLink + "vtsc1.webp"}
       class="attachment-large size-large wp-image-11013"
       alt="avt"
       sizes="(max-width: 640px) 100vw, 640px"
@@ -708,7 +681,7 @@ export const slugPageData = [
 <li><b>Work While Studying:</b> Many study permits allow part-time work during your studies and full-time work during breaks, helping you cover expenses and gain valuable work experience.</li>
 <li><b>Pathway to Permanent Residency:</b> Completing a program at a Canadian institution can lead to permanent residency options through various immigration streams, such as the Post-Graduation Work Permit (PGWP) and Express Entry.</li>
 </ul>
-<h2>Eligibility Criteria for Visitor to Study Permit Conversion</h2>
+<h3>Eligibility Criteria for Visitor to Study Permit Conversion</h3>
 <p>To convert your visitor visa to a study permit, you must meet certain eligibility criteria, including:</p>
 <ul>
 <li><b>Letter of Acceptance:</b> Secure an offer of admission from a Designated Learning Institution (DLI) in Canada.</li>
@@ -716,10 +689,10 @@ export const slugPageData = [
 <li><b>Proof of Financial Support:</b> Demonstrate that you have the funds to cover tuition, living expenses, and return transportation.</li>
 <li><b>Other Supporting Documents:</b> Provide required documents such as your passport, proof of funds, and letter of intent.</li>
 </ul>
-<h2>2.Relationship Eligibility:</h2>
+<h4>2.Relationship Eligibility:</h4>
 <p>Children eligible for sponsorship include biological children, adopted children, or other dependent children under a certain age.</p>
 <p>Other dependents may include parents, grandparents, or other family members who meet specific criteria.</p>
-<h2>3.Financial Eligibility:</h2>
+<h4>3.Financial Eligibility:</h4>
 <p>As a sponsor, you must demonstrate the ability to provide financial support to your sponsored child or dependent.</p>
 <h2>How TNC Immigration Can Help</h2>
 <p>At TNC Immigration, we guide you through each step of the visitor-to-study conversion process. Our experienced consultants will:</p>
@@ -751,52 +724,54 @@ export const slugPageData = [
       },
     ],
     pageData1: `
-    <div>
-   <h2>Introduction to Post-Graduate Open Work Permits</h2>
-<p>The Post-Graduation Work Permit (PGWP) is a valuable opportunity for international students who have completed a program of study at a designated learning institution (DLI) in Canada. This permit allows eligible graduates to work in Canada for a duration equivalent to the length of their study program, up to a maximum of three years.</p>
+      <h2>Introduction to Post-Graduate Open Work Permits</h2>
+      <p>The Post-Graduation Work Permit (PGWP) is a valuable opportunity for international students who have completed a program of study at a designated learning institution (DLI) in Canada. This permit allows eligible graduates to work in Canada for a duration equivalent to the length of their study program, up to a maximum of three years.</p>
 
-<h2>Eligiblity Criteria</h2>
-<h3>To be eligible for the PGWP, you must meet the following criteria:<h3>
-<p><b>1. Completed a Designated Learning Institution (DLI) Program</b></p>
-<p>You must have completed a program of study at a designated learning institution (DLI) in Canada. Ensure that your program was full-time and lasted for at least eight months.</p>
-<div class="elementor-widget-container">
-															<img fetchpriority="high" decoding="async" width="640" height="344" src="https://tncimmigration.com/wp-content/uploads/2023/12/amna123@@-21-1-1024x551.jpg" class="attachment-large size-large wp-image-9540" alt="" sizes="(max-width: 640px) 100vw, 640px">															</div>
-    </div>`,
+      <h3>Eligiblity Criteria</h3>
+      <h4>To be eligible for the PGWP, you must meet the following criteria:<h3>
+      <h4>1. Completed a Designated Learning Institution (DLI) Program</h4>
+      <p>You must have completed a program of study at a designated learning institution (DLI) in Canada. Ensure that your program was full-time and lasted for at least eight months.</p>
+      <div>
+		  <img 
+      fetchpriority="high" 
+      decoding="async" 
+      width="640" height="344" 
+      src=${imagesLink + "pgowp1.webp"}
+      alt="avt" 
+      sizes="(max-width: 640px) 100vw, 640px">															
+      </div>`,
     pageData2: `
-    <div>
-   <p> 2. Graduated from a Public or Private Post-Secondary Institution</p>
-<p>Your DLI can be either a public or private post-secondary institution, but it must be authorized by the provincial or territorial government to grant degrees.</p>
+    <h4> 2. Graduated from a Public or Private Post-Secondary Institution</h4>
+    <p>Your DLI can be either a public or private post-secondary institution, but it must be authorized by the provincial or territorial government to grant degrees.</p>
+    <h4>3. Apply within 180 Days of Receiving the Final Transcript or Notification of Graduation</h4>
+    <p>To be eligible, you must apply for the PGWP within 180 days of receiving your final transcript, or a written notification from your institution confirming that you have met the requirements for completing your program.</p>
 
-<p>3. Apply within 180 Days of Receiving the Final Transcript or Notification of Graduation</p>
-<p>To be eligible, you must apply for the PGWP within 180 days of receiving your final transcript, or a written notification from your institution confirming that you have met the requirements for completing your program.</p>
+    <h4>4. Valid Study Permit</h4>
+    <p>You must have had a valid study permit when you completed your program, or your study permit must have expired within the last 90 days.</p>
 
-<p>4. Valid Study Permit</p>
-<p>You must have had a valid study permit when you completed your program, or your study permit must have expired within the last 90 days.</p>
+    <h4>5. No Previous PGWP Issued</h4>
+    <p>You are not eligible if you have previously been issued a PGWP after completing another program of study.</p>
 
-<p>5. No Previous PGWP Issued</p>
-<p>You are not eligible if you have previously been issued a PGWP after completing another program of study.</p>
+    <h3>Application Process</h3>
+    <h4>1. Gather Required Documents</h4>
+    <p>Ensure you have the necessary documents, including your valid passport, study permit, final transcript, and proof of program completion.</p>
 
-<p>Application Process</p>
-<p>1. Gather Required Documents</p>
-<p>Ensure you have the necessary documents, including your valid passport, study permit, final transcript, and proof of program completion.</p>
+    <h4>2. Create an Online Account</h4>
+    <p>Visit the official Immigration, Refugees and Citizenship Canada (IRCC) website and create an online account to start your application.</p>
 
-<p>2. Create an Online Account</p>
-<p>Visit the official Immigration, Refugees and Citizenship Canada (IRCC) website and create an online account to start your application.</p>
+    <h4>3. Submit Your Application</h4>
+    <p>Fill out the application form, providing accurate information. Upload the required documents and pay the application fee.</p>
 
-<p>3. Submit Your Application</p>
-<p>Fill out the application form, providing accurate information. Upload the required documents and pay the application fee.</p>
+    <h4>4. Wait for a Decision</h4>
+    <p>Once submitted, your application will be reviewed by immigration authorities. Monitor your application status through your online account.</p>
 
-<p>4. Wait for a Decision</p>
-<p>Once submitted, your application will be reviewed by immigration authorities. Monitor your application status through your online account.</p>
+    <h4>5. Receive Your PGWP
+    <p>Upon approval, you will receive your Post-Graduation Work Permit. This permit allows you to work in Canada and gain valuable Canadian work experience.</p>
 
-<p>5. Receive Your PGWP
-<p>Upon approval, you will receive your Post-Graduation Work Permit. This permit allows you to work in Canada and gain valuable Canadian work experience.</p>
+    <h4>Let Us help you!</h4>
+    <p>Stay updated on immigration news and policy changes by regularly checking the official IRCC website. If you have any questions or concerns, contact the IRCC or consult with a qualified immigration professional.</p>
 
-<p>Let Us help you!</p>
-<p>Stay updated on immigration news and policy changes by regularly checking the official IRCC website. If you have any questions or concerns, contact the IRCC or consult with a qualified immigration professional.</p>
-
-<p>Embark on your post-graduation journey in Canada and build a promising future with the Post-Graduation Work Permit!</p>
-    </div>`,
+    <p>Embark on your post-graduation journey in Canada and build a promising future with the Post-Graduation Work Permit!</p>`,
   },
   {
     slug: "spousal-and-common-law",
@@ -820,51 +795,47 @@ export const slugPageData = [
       },
     ],
     pageData1: `
-    <div>
     <h2>Spousal and Common Law Sponsorship</h2>
-<p>Canada is committed to keeping families together, and through the Spousal and Common Law Sponsorship program, Canadian citizens and permanent residents can sponsor their spouse or common-law partner to live and work in Canada. Whether you are newly married, in a long-term relationship, or have lived together in a common-law arrangement, this program ensures that your loved ones can join you in Canada.</p>
+    <p>Canada is committed to keeping families together, and through the Spousal and Common Law Sponsorship program, Canadian citizens and permanent residents can sponsor their spouse or common-law partner to live and work in Canada. Whether you are newly married, in a long-term relationship, or have lived together in a common-law arrangement, this program ensures that your loved ones can join you in Canada.</p>
 
-<h2>Who Can Apply?</h2>
-<p>You can sponsor your spouse or common-law partner if:</p>
-<ul>
-<li>You are a Canadian citizen or permanent resident aged 18 or older.</li>
-<li>You can prove the authenticity of your relationship, either as a legally married couple or as common-law partners (which means you’ve lived together for at least 12 consecutive months).</li>
-<li>You are financially capable of supporting your spouse or partner for the duration of the sponsorship.</li>
-</ul>
-<div>
-  <img
-    fetchpriority="high"
-    decoding="async"
-    width={640}
-    height={344}
-    src="https://tncimmigration.com/wp-content/uploads/2024/10/Untitled-design-2024-10-11T225415.334-1024x551.jpg"
-    class="attachment-large size-large wp-image-11021"
-    alt="avt"
-    
-    sizes="(max-width: 640px) 100vw, 640px"
-  />
-</div>
+    <h3>Who Can Apply?</h3>
+    <p>You can sponsor your spouse or common-law partner if:</p>
+    <ul>
+      <li>You are a Canadian citizen or permanent resident aged 18 or older.</li>
+      <li>You can prove the authenticity of your relationship, either as a legally married couple or as common-law partners (which means you’ve lived together for at least 12 consecutive months).</li>
+      <li>You are financially capable of supporting your spouse or partner for the duration of the sponsorship.</li>
+    </ul>
+    <div>
+      <img
+        fetchpriority="high"
+        decoding="async"
+        width={640}
+        height={344}
+        src=${imagesLink + "sacl1.webp"}
+        class="attachment-large size-large wp-image-11021"
+        alt="avt"
+        sizes="(max-width: 640px) 100vw, 640px"
+      />
     </div>`,
     pageData2: `
-    <div>
-    <h2>Sponsoring a Spouse</h2>
-<p>Spousal sponsorship is for legally married couples. You must provide evidence such as a valid marriage certificate and documentation that proves your relationship is genuine and ongoing.</p>
+    <h3>Sponsoring a Spouse</h3>
+    <p>Spousal sponsorship is for legally married couples. You must provide evidence such as a valid marriage certificate and documentation that proves your relationship is genuine and ongoing.</p>
 
-<h2>Sponsoring a Common-Law Partner</h3>
+    <h4>Sponsoring a Common-Law Partner</h3>
 
-<p>Common-law sponsorship applies to couples who have lived together in a conjugal relationship for at least one year. Documentation like joint leases, utility bills, and other shared commitments will be required to demonstrate the legitimacy of your partnership.</p>
+    <p>Common-law sponsorship applies to couples who have lived together in a conjugal relationship for at least one year. Documentation like joint leases, utility bills, and other shared commitments will be required to demonstrate the legitimacy of your partnership.</p>
 
-<h2>Sponsorship Process</h3>
-<ul>
+    <h4>Sponsorship Process</h3>
+<ol>
 <li><b>Submit an Application:</b> The application package includes forms and supporting documents from both the sponsor and the applicant.</li>
 <li><b> Eligibility Assessment:</b>  Immigration, Refugees, and Citizenship Canada (IRCC) will review your application to ensure you meet the eligibility criteria.</li>
 <li><b> Processing Time:</b>  Processing times vary but typically take 12 months. During this time, IRCC may request additional documentation or schedule an interview.</li>
-</ul>
-<h2>Benefits of Sponsorship</h3>
+</ol>
+<h4>Benefits of Sponsorship</h4>
 
 <li>Your spouse or common-law partner can live and work in Canada while their application is being processed.</li>
 <li>Upon approval, they become permanent residents, gaining access to Canada’s healthcare system, education, and employment opportunities.</li>
-<h2>Why Choose TNC Immigration?</h2>
+<h3>Why Choose TNC Immigration?</h3>
 <p>Navigating the sponsorship process can be complex. At TNC Immigration, we are dedicated to helping you through every step of the way, ensuring your application is complete and meets all requirements. Our experienced team will guide you in gathering the necessary documents, meeting deadlines, and overcoming any obstacles in the process.</p>
 
 <p>Let us help you reunite with your loved one and build a life together in Canada.</p>
@@ -892,35 +863,32 @@ export const slugPageData = [
       },
     ],
     pageData1: `
-    <div>
     <h2>Parents & Grandparents Program</h2>
-Welcome to the Parents and Grandparents Sponsorship program, a pathway for Canadian citizens and permanent residents to reunite with their parents and grandparents. This program allows you to bring your loved ones to join you in Canada and experience the warmth of family togetherness in this diverse and welcoming nation.
+    <p>Welcome to the Parents and Grandparents Sponsorship program, a pathway for Canadian citizens and permanent residents to reunite with their parents and grandparents. This program allows you to bring your loved ones to join you in Canada and experience the warmth of family togetherness in this diverse and welcoming nation.</p>
 
-<h3>Eligibility Criteria</h3>
-<p><b>To sponsor your parents or grandparents, you must:</b></p>
+    <h3>Eligibility Criteria</h3>
+    <p><b>To sponsor your parents or grandparents, you must:</b></p>
 
-<p>Be a Canadian Citizen or Permanent Resident: Only individuals who are either Canadian citizens or permanent residents are eligible to sponsor their parents or grandparents.</p>
+    <p>Be a Canadian Citizen or Permanent Resident: Only individuals who are either Canadian citizens or permanent residents are eligible to sponsor their parents or grandparents.</p>
 
-<p><b>Meet Minimum Income Requirements:</b> Sponsors are required to demonstrate they have the financial means to support their family members. This includes meeting the minimum necessary income, which is assessed based on the number of family</p>
-<div>
-  <img
+    <p><b>Meet Minimum Income Requirements:</b> Sponsors are required to demonstrate they have the financial means to support their family members. This includes meeting the minimum necessary income, which is assessed based on the number of family</p>
+    <div>
+    <img
     fetchpriority="high"
     decoding="async"
     width={640}
     height={344}
-    src="https://tncimmigration.com/wp-content/uploads/2023/12/amna123@@-17-1-1024x551.jpg"
+    src=${imagesLink + "parents-grandparents-sponsorship.webp"}
     class="attachment-large size-large wp-image-8942"
     alt="avt"
     sizes="(max-width: 640px) 100vw, 640px"
-  />
-</div>
-    </div>    `,
+      />
+      </div>`,
     pageData2: `
-    <div>
     <p>Commit to Financial Support: Sponsors must sign an undertaking to financially support their parents or grandparents for a specified duration, ensuring they don’t need social assistance from the government.</p>
 
-<h2>Sponsorship Process</h2>
-<p>The sponsorship process involves the following key steps:</p>
+    <h3>Sponsorship Process</h3>
+    <p>The sponsorship process involves the following key steps:</p>
 
 <h3>Submit the Interest to Sponsor Form:</h3>
 <p>The first step is to submit an online ‘Interest to Sponsor’ form during the designated intake period, typically announced annually.</p>
@@ -954,8 +922,7 @@ Financial Documentation:</h3>
 <p>Submit police certificates to verify the criminal background of your parents or grandparents.</p>
 
 <h3>Resources and Support</h3>
-<p>Navigating the immigration process can be complex, and we’re here to assist you at every step. Explore our resources, FAQs, and connect with our dedicated team to make your Parents and Grandparents Sponsorship journey a seamless and successful one.</p>
-    </div>`,
+<p>Navigating the immigration process can be complex, and we’re here to assist you at every step. Explore our resources, FAQs, and connect with our dedicated team to make your Parents and Grandparents Sponsorship journey a seamless and successful one.</p>`,
   },
   {
     slug: "last-living-relative-program",
@@ -965,7 +932,7 @@ Financial Documentation:</h3>
     },
     banner: {
       title: "Last Living Relative program",
-      src: "/bgim.PNG",
+      src: imagesLink + "chbne1.webp",
     },
     htm: "true",
     links: [
@@ -994,8 +961,8 @@ Financial Documentation:</h3>
     decoding="async"
     width={640}
     height={344}
-    src="https://tncimmigration.com/wp-content/uploads/2024/10/Untitled-design-2024-10-11T231318.571-1024x551.jpg"
-    class="attachment-large size-large wp-image-11037 bv-tag-attr-replace bv-lazyload-tag-img"
+    src=${imagesLink + "last-living-relative.webp"}
+    class=""
     alt="avt"
     sizes="(max-width: 640px) 100vw, 640px"
   />
@@ -1047,9 +1014,9 @@ Financial Documentation:</h3>
     decoding="async"
     width={640}
     height={344}
-    src="https://tncimmigration.com/wp-content/uploads/2023/12/amna123@@-20-1-1024x551.jpg"
+    src=${imagesLink + "child-or-other-dependent-sponsorship.webp"}
     class="attachment-large size-large wp-image-9214"
-    alt="avt"
+    alt="child-or-other-dependent-sponsorship"
   />
 </div>
 `,
@@ -1121,7 +1088,7 @@ To be eligible for child or other dependent sponsorship, you must meet the follo
     },
     banner: {
       title: "Orphan program",
-      src: "/bgim.PNG",
+      src: imagesLink+ "chbne1.webp",
     },
     htm: "true",
     links: [
@@ -1152,7 +1119,7 @@ To be eligible for child or other dependent sponsorship, you must meet the follo
     decoding="async"
     width={640}
     height={344}
-    src="https://tncimmigration.com/wp-content/uploads/2024/10/Untitled-design-2024-10-11T232357.891-1024x551.jpg"
+    src=${imagesLink+ "orphan-program.webp"}
     class="attachment-large size-large wp-image-11044 bv-tag-attr-replace bv-lazyload-tag-img"
     alt="avt"
   />
@@ -1180,7 +1147,7 @@ To be eligible for child or other dependent sponsorship, you must meet the follo
     },
     banner: {
       title: "Home childcare program",
-      src: "/bgim.PNG",
+      src: imagesLink+ "chbne1.webp",
     },
     htm: "true",
     links: [
@@ -1212,7 +1179,7 @@ To be eligible for child or other dependent sponsorship, you must meet the follo
     decoding="async"
     width={640}
     height={344}
-    src="https://tncimmigration.com/wp-content/uploads/2024/10/Untitled-design-2024-10-11T235500.170-1024x551.jpg"
+    src=${imagesLink+ "home-childcare.webp"}
     class="attachment-large size-large wp-image-11058 bv-tag-attr-replace bv-lazyload-tag-img"
     alt="avt"
     sizes="(max-width: 640px) 100vw, 640px"
@@ -1247,7 +1214,7 @@ To be eligible for child or other dependent sponsorship, you must meet the follo
     },
     banner: {
       title: "Agripilot program",
-      src: "/bgim.PNG",
+      src: imagesLink+ "chbne1.webp",
     },
     htm: "true",
     links: [
@@ -1267,14 +1234,14 @@ To be eligible for child or other dependent sponsorship, you must meet the follo
 <h3>What is the Agripilot Program?</h3>
 
 <p>The Agripilot Program is designed to attract experienced agricultural workers from around the world to work in specific farming sectors across Canada. This program helps address labor shortages while offering eligible workers the opportunity to work and live in Canada, with a potential path to permanent residency.</p>
-<div class="elementor-widget-container">
+<div >
   <img
     fetchpriority="high"
     decoding="async"
     width={640}
     height={344}
-    src="https://tncimmigration.com/./wp-content/uploads/al_opt_content/IMAGE/tncimmigration.com/wp-content/uploads/2023/12/amna123@@-14-1-1024x551.jpg.bv_resized_desktop.jpg.bv.webp"
-    class="attachment-large size-large wp-image-8925 bv-tag-attr-replace bv-lazyload-tag-img"
+    src=${imagesLink+ "agripilot-program.webp"}
+    class=""
     alt="avt"
     sizes="(max-width: 640px) 100vw, 640px"
   />
@@ -1322,7 +1289,7 @@ Applicants must secure a job offer from a designated Canadian agricultural emplo
     },
     banner: {
       title: "Express Entry",
-      src: "/bgim.PNG",
+      src: imagesLink+ "chbne1.webp",
     },
     htm: "true",
     links: [
@@ -1344,14 +1311,14 @@ Applicants must secure a job offer from a designated Canadian agricultural emplo
     the globe, helping to fill labor market gaps in various sectors of the
     Canadian economy.
   </p>
-  <div class="elementor-widget-container">
+  <div >
     <img
       fetchpriority="high"
       decoding="async"
       width="{640}"
       height="{344}"
-      src="https://tncimmigration.com/./wp-content/uploads/al_opt_content/IMAGE/tncimmigration.com/wp-content/uploads/2023/12/amna123@@-14-1-1024x551.jpg.bv_resized_desktop.jpg.bv.webp"
-      class="attachment-large size-large wp-image-8925 bv-tag-attr-replace bv-lazyload-tag-img"
+      src=${imagesLink+ "agripilot-program.webp"}
+      class=""
       alt="a"
       sizes="(max-width: 640px) 100vw, 640px"
     />
@@ -1425,15 +1392,15 @@ Applicants must secure a job offer from a designated Canadian agricultural emplo
     pageData1: `
     <h2>Procedural Fairness Letter (PFL)</h2>
 <p>A Procedural Fairness Letter is a written communication that individuals or entities can submit to a decision-making authority or administrative body to assert their right to fair treatment in a particular process. It is a crucial tool in ensuring that the principles of procedural fairness, also known as natural justice or due process, are upheld during administrative proceedings, investigations, or decision-making</p>
-<h2>Understanding Potential Challenges in Your IRCC Application</h2>
+<h3>Understanding Potential Challenges in Your IRCC Application</h3>
 <p>Submitting an application to the Immigration, Refugees, and Citizenship Canada (IRCC) is a meticulous process, but sometimes, unforeseen issues may arise during the assessment.</p>
 <p>The complexity of immigration procedures, combined with the scrutiny applied by IRCC officers, can lead to various challenges. It’s essential to be aware of potential pitfalls in the application process, as they can significantly impact the outcome of your case.</p>
-<div class="elementor-widget-container">
+<div >
   <img
     decoding="async"
     width={640}
     height={344}
-    src="https://tncimmigration.com/wp-content/uploads/2023/12/amna123@@-2-1-1024x551.jpg"
+    src=${imagesLink+"procedural-fairness-letters.webp"}
     class="attachment-large size-large wp-image-8858"
     alt="avt"
     sizes="(max-width: 640px) 100vw, 640px"
@@ -1515,7 +1482,7 @@ You are a Canadian citizen, a permanent resident in Canada, or registered under 
     decoding="async"
     width={640}
     height={344}
-    src="https://tncimmigration.com/wp-content/uploads/2023/12/amna123@@-3-1-1024x551.jpg"
+    src=${imagesLink+"sponsor-your-siblings-for-pr.webp"}
     className="attachment-large size-large wp-image-8866"
     alt="avt"
     sizes="(max-width: 640px) 100vw, 640px"
@@ -1592,7 +1559,7 @@ You are a Canadian citizen, a permanent resident in Canada, or registered under 
     decoding="async"
     width={1300}
     height={700}
-    src="https://tncimmigration.com/wp-content/uploads/2024/01/amna123@@-22-1.jpg"
+    src=${imagesLink+"spousal-sponsorship.webp"}
     className="attachment-full size-full wp-image-9818"
     alt="avt"
     sizes="(max-width: 1300px) 100vw, 1300px"
@@ -1667,6 +1634,8 @@ You are a Canadian citizen, a permanent resident in Canada, or registered under 
         link: "mailto:info@tncimmigration.com",
       },
     ],
+    title:"Get your Assessment Done Today",
+    address:"Our offices are located on the Suite 303 – 15957 84 Avenue Surrey BC, V4N 0W7 Canada",
     pageData1: `
     <h2>Spousal Open Work Permit</h2>
 <p>In the immigration process, it’s not uncommon for immigration officers to have significant questions or concerns regarding an applicant’s submission, potentially leading to a refusal of their application. In such instances, officers typically communicate their doubts or inquiries through official correspondence, often delivered via email. These correspondences are commonly referred to as Procedural Fairness Letters, or simply PFLs. They serve as a crucial means of ensuring fairness and transparency in the application process.</p>
@@ -1727,7 +1696,7 @@ There are various situations in which an applicant may receive a Procedural Fair
     decoding="async"
     width={640}
     height={344}
-    src="https://tncimmigration.com/wp-content/uploads/2023/12/amna123@@-5-1-1024x551.jpg"
+    src=${imagesLink+"extensions-within-canada.webp"}
     className="attachment-large size-large wp-image-8874"
     alt=""
     sizes="(max-width: 640px) 100vw, 640px"
@@ -1774,19 +1743,19 @@ There are various situations in which an applicant may receive a Procedural Fair
     },
     banner: {
       title: "PR renewal",
-      src: "/bgim.PNG",
+      src: imagesLink+"chbne1.webp",
     },
     htm: "true",
-    // links: [
-    //   {
-    //     name: "+1(236)818 5558",
-    //     link: "tel:+1(236)818 5558",
-    //   },
-    //   {
-    //     name:"Mail us",
-    //     link: "mailto:info@tncimmigration.com",
-    //   },
-    // ],
+    links: [
+      {
+        name: "+1(236)818 5558",
+        link: "tel:+1(236)818 5558",
+      },
+      {
+        name:"Mail us",
+        link: "mailto:info@tncimmigration.com",
+      },
+    ],
     pageData1: `
     <h2>Permanent Resident (PR) Card Renewal</h2>
     <p>As a permanent resident of Canada, it’s essential to keep your Permanent Resident (PR) card up to date. Your PR card is proof of your status and allows you to re-enter Canada after international travel. If your card is expiring or has already expired, you’ll need to apply for a renewal to maintain your legal status and avoid complications when traveling.</p>
@@ -1805,7 +1774,7 @@ There are various situations in which an applicant may receive a Procedural Fair
     decoding="async"
     width={640}
     height={344}
-    src="https://tncimmigration.com/wp-content/uploads/2024/10/Untitled-design-2024-10-12T002435.961-1024x551.jpg"
+    src=${imagesLink+"pr-renewal.webp"}
     className="attachment-large size-large wp-image-11072 bv-tag-attr-replace bv-lazyload-tag-img"
     alt="avt"
     sizes="(max-width: 640px) 100vw, 640px"
@@ -1852,7 +1821,7 @@ There are various situations in which an applicant may receive a Procedural Fair
     },
     banner: {
       title: "Citizenship Application",
-      src: "/bgim.PNG",
+      src: imagesLink+"chbne1.webp",
     },
     htm: "true",
     links: [
@@ -1884,9 +1853,9 @@ There are various situations in which an applicant may receive a Procedural Fair
     decoding="async"
     width={640}
     height={344}
-    src="https://tncimmigration.com/wp-content/uploads/2024/10/Untitled-design-2024-10-12T003117.345-1024x551.jpg"
+    src=${imagesLink+ "citizenship-application.webp"}
     className="attachment-large size-large wp-image-11080 bv-tag-attr-replace bv-lazyload-tag-img"
-    alt="ant"
+    alt="citizenship-application"
     sizes="(max-width: 640px) 100vw, 640px"
   />
 </div>
@@ -1915,7 +1884,7 @@ There are various situations in which an applicant may receive a Procedural Fair
     },
     banner: {
       title: "Citizenship Application",
-      src: "/bgim.PNG",
+      src: imagesLink+"chbne1.webp",
     },
     htm: "true",
     links: [
@@ -1940,7 +1909,7 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
     decoding="async"
     width={640}
     height={344}
-    src="https://tncimmigration.com/wp-content/uploads/2024/10/Untitled-design-2024-10-12T003400.241-1024x551.jpg"
+    src=${imagesLink+"citizenship-hand-down.webp"}
     className="attachment-large size-large wp-image-11084 bv-tag-attr-replace bv-lazyload-tag-img"
     alt="avt"
     sizes="(max-width: 640px) 100vw, 640px"
@@ -1973,7 +1942,7 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
     },
     banner: {
       title: "Canada Recovering Lost",
-      src: "/bgim.PNG",
+      src: imagesLink+"chbne1.webp",
     },
     htm: "true",
     links: [
@@ -2004,7 +1973,7 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
     decoding="async"
     width={640}
     height={344}
-    src="https://tncimmigration.com/wp-content/uploads/2024/10/Untitled-design-2024-10-12T004209.878-1024x551.jpg"
+    src=${imagesLink+"lost-documents.webp"}
     className="attachment-large size-large wp-image-11095 bv-tag-attr-replace bv-lazyload-tag-img"
     alt="avt"
     sizes="(max-width: 640px) 100vw, 640px"
@@ -2048,16 +2017,16 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
       src: "/bgim.PNG",
     },
     htm: "true",
-    links: [
-      {
-        name: "+1(236)818 5558",
-        link: "tel:+1(236)818 5558",
-      },
-      {
-        name: "Mail us",
-        link: "mailto:info@tncimmigration.com",
-      },
-    ],
+    // links: [
+    //   {
+    //     name: "+1(236)818 5558",
+    //     link: "tel:+1(236)818 5558",
+    //   },
+    //   {
+    //     name: "Mail us",
+    //     link: "mailto:info@tncimmigration.com",
+    //   },
+    // ],
     pageData1: `
     <h2>Super Visa for Canada: A Heartwarming Journey with Loved Ones</h2>
     <p>In Canada, the Super Visa isn’t just a travel document; it’s an invitation to create enduring memories and strengthen the bonds of family. Designed to facilitate visits by parents and grandparents of Canadian citizens or permanent residents, the Super Visa allows for extended stays and quality time with loved ones in the True North.</p>
@@ -2069,7 +2038,7 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
     decoding="async"
     width={640}
     height={344}
-    src="https://tncimmigration.com/wp-content/uploads/2023/12/amna123@@-10-1-1024x551.png"
+    src=${imagesLink+"ad8.webp"}
     className="attachment-large size-large wp-image-8902"
     alt="avt"
     sizes="(max-width: 640px) 100vw, 640px"
@@ -2112,7 +2081,7 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
       desc: "Federal Skilled Worker Are you a skilled professional looking to build your career and life in Canada? The Federal Skilled Worker (FSW) Program might be the pathway for you. Designed to attract individuals with valuable skills and experience, this program is a key component of Canada’s immigration system, aiming to contribute to the country’s economic",
     },
     banner: {
-      title: "SUPER VISA",
+      title: "Federal Skilled Worker",
       src: "/bgim.PNG",
     },
     htm: "true",
@@ -2137,7 +2106,7 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
     decoding="async"
     width={640}
     height={344}
-    src="https://tncimmigration.com/wp-content/uploads/2023/12/amna123@@-12-1-1024x551.jpg"
+    src=${imagesLink+"federal-skilled-worker.webp"}
     className="attachment-large size-large wp-image-8917"
     alt="avt"
     sizes="(max-width: 640px) 100vw, 640px"
@@ -2212,7 +2181,7 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
     decoding="async"
     width={2000}
     height={1334}
-    src="https://tncimmigration.com/wp-content/uploads/2023/12/top-view-green-cards-passports.jpg"
+    src=${imagesLink+"flagpoling.webp"}
     className="attachment-full size-full wp-image-8441"
     alt=""
     sizes="(max-width: 2000px) 100vw, 2000px"
@@ -2243,7 +2212,7 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
     },
     banner: {
       title: "Federal Skilled Trades Program",
-      src: "/bgim.PNG",
+      src: imagesLink+"chbne1.webp",
     },
     htm: "true",
     links: [
@@ -2268,7 +2237,7 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
     decoding="async"
     width={640}
     height={344}
-    src="https://tncimmigration.com/wp-content/uploads/2023/12/amna123@@-13-1-1024x551.png"
+    src=${imagesLink+"fstp.webp"}
     className="attachment-large size-large wp-image-8921"
     alt="avt"
     sizes="(max-width: 640px) 100vw, 640px"
@@ -2331,7 +2300,7 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
     },
     banner: {
       title: "Canadian Experience Class",
-      src: "/bgim.PNG",
+      src: imagesLink+"chbne1.webp",
     },
     htm: "true",
     links: [
@@ -2356,13 +2325,13 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
         decoding="async"
         width={640}
         height={344}
-        src="https://tncimmigration.com/wp-content/uploads/2023/12/amna123@@-14-1-1024x551.jpg"
+        src= ${imagesLink+"agripilot-program.webp"}
         className="attachment-large size-large wp-image-8925"
         alt="avt"
         sizes="(max-width: 640px) 100vw, 640px"
         />
-      </div>`, 
-      pageData2: `
+      </div>`,
+    pageData2: `
         <h2>Key federal economic immigration programs under Express Entry include:</h2>
         <p>1.Federal Skilled Worker Program (FSWP)</p>
         <p>2.Federal Skilled Trades Program (FSTP)</p>
@@ -2398,7 +2367,7 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
         </ol>
         <p>It’s important to note that the validity of your language test results is for a period of 2 years from the date of the test. Furthermore, these test results must remain valid on the day you submit your application for permanent residence. Ensure you meet these language requirements to enhance your eligibility for the Canadian Experience Class.</p>
         <p>For Education obtained outside Canada, you are recommended to have an ECA report.</p>
-      ` 
+      `,
   },
   {
     slug: "provincial-nominee-programs",
@@ -2422,7 +2391,7 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
       },
     ],
     form: true,
-    pageData1:`
+    pageData1: `
     <h2>Provincial Nominee Program</h2>
     <p>Individuals applying for Canadian work visas through the Provincial Nominee Program (PNP) can benefit from an expedited visa application process. Prospective immigrants considering the PNP route must possess the requisite skills, appropriate education, and ample work experience, and achieve a satisfactory result in a language proficiency examination, particularly for semi or low-skilled trades and professions.</p>
 
@@ -2433,12 +2402,12 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
     decoding="async"
     width={640}
     height={344}
-    src="https://tncimmigration.com/wp-content/uploads/2023/12/amna123@@-15-1-1024x551.jpg"
+    src= ${imagesLink+"provincial-nominee-programs.webp"}
     className="attachment-large size-large wp-image-8929"
     alt=""
   />
   </div>    `,
-    pageData2:`
+    pageData2: `
     <p>Provinces and territories (PTs) administering Provincial Nominee Programs (PNPs) have the authority to nominate candidates through the Express Entry pool. This process supplements their ability to nominate foreign nationals through the traditional paper-based method or Express Entry.</p>
 
     <p>If your NOC TEER Code and profile is qualified for Express Entry, then having a PNP nomination from a province like BC can give add an additional 600 points to your current Express Entry CRS score.</p>
@@ -2467,7 +2436,7 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
       },
     ],
     form: true,
-    pageData1:`
+    pageData1: `
     <h2>Spousal PR Sponsorship</h2>
     <p>Embark on the journey of bringing your loved ones to Canada through the Spousal Sponsorship program, a compassionate initiative by the Canadian government. This program allows both citizens and permanent residents to sponsor their foreign national spouse, common-law partner, or conjugal partner to join them in Canada and obtain permanent residency. Each year, Canada warmly welcomes approximately 80,000 new applicants.</p>
 
@@ -2484,12 +2453,12 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
     decoding="async"
     width={640}
     height={344}
-    src="https://tncimmigration.com/wp-content/uploads/2023/12/amna123@@-18-1-1024x551.jpg"
+    src= ${imagesLink+"spousal-pr-sponsorship.webp"}
     className="attachment-large size-large wp-image-8929"
-    alt=""
+    alt="spousal-pr-sponsorship"
     />
     </div>`,
-    pageData2:`
+    pageData2: `
     <ul>
     <li>You live in Canada or plan to return to Canada if you are a Canadian citizen abroad.</li>
     <li>You are not receiving social assistance, except for disability reasons.</li>
@@ -2521,16 +2490,16 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
       src: "/bgim.PNG",
     },
     htm: "true",
-    links: [
-      {
-        name: "+1(236)818 5558",
-        link: "tel:+1(236)818 5558",
-      },
-      {
-        name: "Mail us",
-        link: "mailto:info@tncimmigration.com",
-      },
-    ],
+    // links: [
+    //   {
+    //     name: "+1(236)818 5558",
+    //     link: "tel:+1(236)818 5558",
+    //   },
+    //   {
+    //     name: "Mail us",
+    //     link: "mailto:info@tncimmigration.com",
+    //   },
+    // ],
     form: true,
     pageData1: `
     <h2>Intra-company transfer</h2>
@@ -2541,7 +2510,7 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
     decoding="async"
     width={640}
     height={344}
-    src="https://tncimmigration.com/wp-content/uploads/2023/12/concept-human-resources-support-global-global-network-1024x683.jpg"
+    src= ${imagesLink+"intra-company-transfer.webp"}
     className="attachment-large size-large wp-image-8929"
     alt="avt"
     />
@@ -2610,18 +2579,18 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
       src: "/bgim.PNG",
     },
     htm: "true",
-    links: [
-      {
-        name: "+1(236)818 5558",
-        link: "tel:+1(236)818 5558",
-      },
-      {
-        name: "Mail us",
-        link: "mailto:info@tncimmigration.com",
-      },
-    ],
+    // links: [
+    //   {
+    //     name: "+1(236)818 5558",
+    //     link: "tel:+1(236)818 5558",
+    //   },
+    //   {
+    //     name: "Mail us",
+    //     link: "mailto:info@tncimmigration.com",
+    //   },
+    // ],
     form: true,
-    pageData1:`
+    pageData1: `
     <h2>Introduction to Spousal Open Work Permits</h2>
     <p>The Spousal Sponsorship Open Work Permit in Canada permits the spouse or common-law partner of a Canadian citizen or permanent resident to engage in employment within the country. This permit’s duration aligns with that of the sponsoring spouse’s or partner’s work permit.</p>
 
@@ -2631,11 +2600,11 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
     <div>
     <img
     fatchpriority="high"
-    src=${imagesLink+ "ad7.webp"}
+    src=${imagesLink + "ad7.webp"}
     alt="avt"
     />
     </div>`,
-    pageData2:`
+    pageData2: `
     <h3>Eligibility for Spousal Open Work Permits</h3>
     <p>The primary applicant, whether a spouse or partner, must hold temporary resident status in Canada, either as a student or a worker, and possess a valid study or work permit. It is essential that the spouse or partner is currently residing in Canada.</p>
 
@@ -2692,6 +2661,6 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
     <p>Working in Canada allows the accompanying spouse or partner to immerse themselves in Canadian society, fostering cultural exchange and integration.</p>
 
     <h4>5.Versatility</h4>
-    <p>Unlike employer-specific work permits, spousal open work permits are not tied to a particular job or employer, providing flexibility to change jobs or pursue self-employment ventures.</p>`
-  }
+    <p>Unlike employer-specific work permits, spousal open work permits are not tied to a particular job or employer, providing flexibility to change jobs or pursue self-employment ventures.</p>`,
+  },
 ];
