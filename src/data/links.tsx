@@ -1,6 +1,7 @@
 import { JSX } from "react";
 import { FaFacebook, FaTiktok, FaYoutube, FaInstagram } from "react-icons/fa";
 import { IoLogoLinkedin } from "react-icons/io";
+import { FillLocationIcon } from "./icons";
 
 export const imagesLink =
   "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/";
@@ -308,15 +309,18 @@ export const FooterLinks: FooterLinksProps[] = [
       {
         title: "Surrey,BC",
         name: "15957 84 Ave #303, Surrey, BC V4N 0W7, Canada",
-        // href: "/services/hotel-industry",
+        // href: "/services/hotel-industry",      
+        icon:<FillLocationIcon/>
       },
       {
         title: "Mississauga,Ontario",
         name: "1030 Kamato Rd #210, Mississauga, ON L4W 2W4",
+        icon:<FillLocationIcon/>
       },
       {
         title: "Kelowna, BC",
         name: "201 – 2903 Pandosy Street Kelowna B.C V1Y 1W1",
+        icon:<FillLocationIcon/>
       },
     ],
   },

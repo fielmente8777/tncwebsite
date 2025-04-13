@@ -45,7 +45,7 @@ const Footer = () => {
       </div>
 
       <SectionWithContainer sectionClassName="bg-black text-white md:!pt-24">
-        <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 lg:gap-24 w-full">
+        <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 lg:gap-20 w-full">
           <div className="w-full flex justify-center flex-col items-center gap-6">
             <Link href="/">
               <Image src="/logo.png" alt="logo" width={250} height={64} />
@@ -66,8 +66,9 @@ const Footer = () => {
                     )}
                     <Link
                       href={sublink.href ? sublink.href : ""}
-                      className=" capitalize"
+                      className=" capitalize flex items-center gap-2"
                     >
+                      <span>{sublink.icon} </span>
                       {sublink.name}
                     </Link>
                     {sublink.links && (
