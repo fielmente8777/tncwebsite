@@ -112,7 +112,7 @@ const Navbar = () => {
                             <span className="relative group nav-2" key={index}>
                               <Link
                                 href={subLink.href ? subLink.href : "#"}
-                                className={`w-full text-nowrap py-2 px-4 flex items-center gap-1 group capitalize font-semibold description1 hover:bg-[#29313C] hover:text-white ${pathName === subLink.href ? "bg-[#29313C] text-white" : ""}`}
+                                className={`w-full text-nowrap flex items-center gap-1 group capitalize font-semibold hover:bg-[#29313C] hover:text-white ${pathName === subLink.href ? "bg-[#29313C] text-white" : ""}`}
                               >
                                 {subLink.name}
                                 {subLink.subLinks && (
