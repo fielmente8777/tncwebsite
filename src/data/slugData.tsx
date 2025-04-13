@@ -165,7 +165,7 @@ export const slugPageData = [
       decoding="async"
       width={640}
       height={344}
-      src=src=${imagesLink + "vv1.webp"}
+      src="https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/vv1.webp"
       class="attachment-large size-large wp-image-8898"
       alt="avatar"
       sizes="(max-width: 640px) 100vw, 640px"
@@ -315,7 +315,7 @@ export const slugPageData = [
       decoding="async"
       width="{640}"
       height="{344}"
-      src=src=${imagesLink + "sp1.webp"}
+      src="https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/sp1.webp"
       class="attachment-large size-large wp-image-8890"
       alt="avt"
       sizes="(max-width: 640px) 100vw, 640px"
@@ -458,7 +458,7 @@ export const slugPageData = [
       decoding="async"
       width="{640}"
       height="{344}"
-      src=${imagesLink + "wp1.webp"}
+      src="https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/wp1.webp"
       class="attachment-large size-large wp-image-8890"
       alt="avt"
       sizes="(max-width: 640px) 100vw, 640px"
@@ -544,7 +544,7 @@ export const slugPageData = [
         decoding="async"
         width={640}
         height={344}
-        src=${imagesLink + "swp1.webp"}
+        src="https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/swp1.webp"
         alt="avt"
         sizes="(max-width: 640px) 100vw, 640px"
       />
@@ -588,7 +588,7 @@ export const slugPageData = [
       decoding="async"
       width={640}
       height={344}
-      src=${imagesLink + "lfe1.webp"}
+      src="https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/lfe1.webp"
       class="attachment-large size-large wp-image-8842"
       alt="avt"
       sizes="(max-width: 640px) 100vw, 640px"
@@ -665,7 +665,7 @@ export const slugPageData = [
       decoding="async"
       width={640}
       height={344}
-      src=${imagesLink + "vtsc1.webp"}
+      src="https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/vtsc1.webp"
       class="attachment-large size-large wp-image-11013"
       alt="avt"
       sizes="(max-width: 640px) 100vw, 640px"
@@ -736,7 +736,7 @@ export const slugPageData = [
       fetchpriority="high" 
       decoding="async" 
       width="640" height="344" 
-      src=${imagesLink + "pgowp1.webp"}
+      src="https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/pgowp1.webp"
       alt="avt" 
       sizes="(max-width: 640px) 100vw, 640px">															
       </div>`,
@@ -811,7 +811,7 @@ export const slugPageData = [
         decoding="async"
         width={640}
         height={344}
-        src=${imagesLink + "sacl1.webp"}
+        src="https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/sacl1.webp"
         class="attachment-large size-large wp-image-11021"
         alt="avt"
         sizes="(max-width: 640px) 100vw, 640px"
@@ -878,7 +878,7 @@ export const slugPageData = [
     decoding="async"
     width={640}
     height={344}
-    src=${imagesLink + "parents-grandparents-sponsorship.webp"}
+    src="https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/parents-grandparents-sponsorship.webp"
     class="attachment-large size-large wp-image-8942"
     alt="avt"
     sizes="(max-width: 640px) 100vw, 640px"
@@ -961,7 +961,7 @@ Financial Documentation:</h3>
     decoding="async"
     width={640}
     height={344}
-    src=${imagesLink + "last-living-relative.webp"}
+    src="https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/last-living-relative.webp"
     class=""
     alt="avt"
     sizes="(max-width: 640px) 100vw, 640px"
@@ -1014,7 +1014,7 @@ Financial Documentation:</h3>
     decoding="async"
     width={640}
     height={344}
-    src=${imagesLink + "child-or-other-dependent-sponsorship.webp"}
+    src="https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/child-or-other-dependent-sponsorship.webp"
     class="attachment-large size-large wp-image-9214"
     alt="child-or-other-dependent-sponsorship"
   />
@@ -1088,7 +1088,7 @@ To be eligible for child or other dependent sponsorship, you must meet the follo
     },
     banner: {
       title: "Orphan program",
-      src: imagesLink+ "chbne1.webp",
+      src: imagesLink + "chbne1.webp",
     },
     htm: "true",
     links: [
@@ -1119,7 +1119,7 @@ To be eligible for child or other dependent sponsorship, you must meet the follo
     decoding="async"
     width={640}
     height={344}
-    src=${imagesLink+ "orphan-program.webp"}
+    src="https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/orphan-program.webp"
     class="attachment-large size-large wp-image-11044 bv-tag-attr-replace bv-lazyload-tag-img"
     alt="avt"
   />
@@ -1147,7 +1147,7 @@ To be eligible for child or other dependent sponsorship, you must meet the follo
     },
     banner: {
       title: "Home childcare program",
-      src: imagesLink+ "chbne1.webp",
+      src: imagesLink + "chbne1.webp",
     },
     htm: "true",
     links: [
@@ -1179,7 +1179,7 @@ To be eligible for child or other dependent sponsorship, you must meet the follo
     decoding="async"
     width={640}
     height={344}
-    src=${imagesLink+ "home-childcare.webp"}
+    src="https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/home-childcare.webp"
     class="attachment-large size-large wp-image-11058 bv-tag-attr-replace bv-lazyload-tag-img"
     alt="avt"
     sizes="(max-width: 640px) 100vw, 640px"
@@ -1214,7 +1214,7 @@ To be eligible for child or other dependent sponsorship, you must meet the follo
     },
     banner: {
       title: "Agripilot program",
-      src: imagesLink+ "chbne1.webp",
+      src: imagesLink + "chbne1.webp",
     },
     htm: "true",
     links: [
@@ -1240,7 +1240,7 @@ To be eligible for child or other dependent sponsorship, you must meet the follo
     decoding="async"
     width={640}
     height={344}
-    src=${imagesLink+ "agripilot-program.webp"}
+    src="https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/agripilot-program.webp"
     class=""
     alt="avt"
     sizes="(max-width: 640px) 100vw, 640px"
@@ -1289,7 +1289,7 @@ Applicants must secure a job offer from a designated Canadian agricultural emplo
     },
     banner: {
       title: "Express Entry",
-      src: imagesLink+ "chbne1.webp",
+      src: imagesLink + "chbne1.webp",
     },
     htm: "true",
     links: [
@@ -1317,7 +1317,7 @@ Applicants must secure a job offer from a designated Canadian agricultural emplo
       decoding="async"
       width="{640}"
       height="{344}"
-      src=${imagesLink+ "agripilot-program.webp"}
+      src="https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/agripilot-program.webp"
       class=""
       alt="a"
       sizes="(max-width: 640px) 100vw, 640px"
@@ -1400,7 +1400,7 @@ Applicants must secure a job offer from a designated Canadian agricultural emplo
     decoding="async"
     width={640}
     height={344}
-    src=${imagesLink+"procedural-fairness-letters.webp"}
+    src="https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/procedural-fairness-letters.webp"
     class="attachment-large size-large wp-image-8858"
     alt="avt"
     sizes="(max-width: 640px) 100vw, 640px"
@@ -1482,7 +1482,7 @@ You are a Canadian citizen, a permanent resident in Canada, or registered under 
     decoding="async"
     width={640}
     height={344}
-    src=${imagesLink+"sponsor-your-siblings-for-pr.webp"}
+    src="https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/sponsor-your-siblings-for-pr.webp"
     className="attachment-large size-large wp-image-8866"
     alt="avt"
     sizes="(max-width: 640px) 100vw, 640px"
@@ -1559,7 +1559,7 @@ You are a Canadian citizen, a permanent resident in Canada, or registered under 
     decoding="async"
     width={1300}
     height={700}
-    src=${imagesLink+"spousal-sponsorship.webp"}
+    src="https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/spousal-sponsorship.webp"
     className="attachment-full size-full wp-image-9818"
     alt="avt"
     sizes="(max-width: 1300px) 100vw, 1300px"
@@ -1634,8 +1634,9 @@ You are a Canadian citizen, a permanent resident in Canada, or registered under 
         link: "mailto:info@tncimmigration.com",
       },
     ],
-    title:"Get your Assessment Done Today",
-    address:"Our offices are located on the Suite 303 – 15957 84 Avenue Surrey BC, V4N 0W7 Canada",
+    title: "Get your Assessment Done Today",
+    address:
+      "Our offices are located on the Suite 303 – 15957 84 Avenue Surrey BC, V4N 0W7 Canada",
     pageData1: `
     <h2>Spousal Open Work Permit</h2>
 <p>In the immigration process, it’s not uncommon for immigration officers to have significant questions or concerns regarding an applicant’s submission, potentially leading to a refusal of their application. In such instances, officers typically communicate their doubts or inquiries through official correspondence, often delivered via email. These correspondences are commonly referred to as Procedural Fairness Letters, or simply PFLs. They serve as a crucial means of ensuring fairness and transparency in the application process.</p>
@@ -1696,7 +1697,7 @@ There are various situations in which an applicant may receive a Procedural Fair
     decoding="async"
     width={640}
     height={344}
-    src=${imagesLink+"extensions-within-canada.webp"}
+    src="https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/extensions-within-canada.webp"
     className="attachment-large size-large wp-image-8874"
     alt=""
     sizes="(max-width: 640px) 100vw, 640px"
@@ -1743,7 +1744,7 @@ There are various situations in which an applicant may receive a Procedural Fair
     },
     banner: {
       title: "PR renewal",
-      src: imagesLink+"chbne1.webp",
+      src: imagesLink + "chbne1.webp",
     },
     htm: "true",
     links: [
@@ -1752,7 +1753,7 @@ There are various situations in which an applicant may receive a Procedural Fair
         link: "tel:+1(236)818 5558",
       },
       {
-        name:"Mail us",
+        name: "Mail us",
         link: "mailto:info@tncimmigration.com",
       },
     ],
@@ -1774,7 +1775,7 @@ There are various situations in which an applicant may receive a Procedural Fair
     decoding="async"
     width={640}
     height={344}
-    src=${imagesLink+"pr-renewal.webp"}
+    src="https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/pr-renewal.webp"
     className="attachment-large size-large wp-image-11072 bv-tag-attr-replace bv-lazyload-tag-img"
     alt="avt"
     sizes="(max-width: 640px) 100vw, 640px"
@@ -1821,7 +1822,7 @@ There are various situations in which an applicant may receive a Procedural Fair
     },
     banner: {
       title: "Citizenship Application",
-      src: imagesLink+"chbne1.webp",
+      src: imagesLink + "chbne1.webp",
     },
     htm: "true",
     links: [
@@ -1853,7 +1854,7 @@ There are various situations in which an applicant may receive a Procedural Fair
     decoding="async"
     width={640}
     height={344}
-    src=${imagesLink+ "citizenship-application.webp"}
+    src="https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/citizenship-application.webp"
     className="attachment-large size-large wp-image-11080 bv-tag-attr-replace bv-lazyload-tag-img"
     alt="citizenship-application"
     sizes="(max-width: 640px) 100vw, 640px"
@@ -1884,7 +1885,7 @@ There are various situations in which an applicant may receive a Procedural Fair
     },
     banner: {
       title: "Citizenship Application",
-      src: imagesLink+"chbne1.webp",
+      src: imagesLink + "chbne1.webp",
     },
     htm: "true",
     links: [
@@ -1909,7 +1910,7 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
     decoding="async"
     width={640}
     height={344}
-    src=${imagesLink+"citizenship-hand-down.webp"}
+    src="https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/citizenship-hand-down.webp"
     className="attachment-large size-large wp-image-11084 bv-tag-attr-replace bv-lazyload-tag-img"
     alt="avt"
     sizes="(max-width: 640px) 100vw, 640px"
@@ -1942,7 +1943,7 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
     },
     banner: {
       title: "Canada Recovering Lost",
-      src: imagesLink+"chbne1.webp",
+      src: imagesLink + "chbne1.webp",
     },
     htm: "true",
     links: [
@@ -1973,7 +1974,7 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
     decoding="async"
     width={640}
     height={344}
-    src=${imagesLink+"lost-documents.webp"}
+    src="https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/lost-documents.webp"
     className="attachment-large size-large wp-image-11095 bv-tag-attr-replace bv-lazyload-tag-img"
     alt="avt"
     sizes="(max-width: 640px) 100vw, 640px"
@@ -2038,7 +2039,7 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
     decoding="async"
     width={640}
     height={344}
-    src=${imagesLink+"ad8.webp"}
+    src="https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/ad8.webp"
     className="attachment-large size-large wp-image-8902"
     alt="avt"
     sizes="(max-width: 640px) 100vw, 640px"
@@ -2106,7 +2107,7 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
     decoding="async"
     width={640}
     height={344}
-    src=${imagesLink+"federal-skilled-worker.webp"}
+    src="https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/federal-skilled-worker.webp"
     className="attachment-large size-large wp-image-8917"
     alt="avt"
     sizes="(max-width: 640px) 100vw, 640px"
@@ -2181,7 +2182,7 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
     decoding="async"
     width={2000}
     height={1334}
-    src=${imagesLink+"flagpoling.webp"}
+    src="https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/flagpoling.webp"
     className="attachment-full size-full wp-image-8441"
     alt=""
     sizes="(max-width: 2000px) 100vw, 2000px"
@@ -2212,7 +2213,7 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
     },
     banner: {
       title: "Federal Skilled Trades Program",
-      src: imagesLink+"chbne1.webp",
+      src: imagesLink + "chbne1.webp",
     },
     htm: "true",
     links: [
@@ -2237,7 +2238,7 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
     decoding="async"
     width={640}
     height={344}
-    src=${imagesLink+"fstp.webp"}
+    src="https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/fstp.webp"
     className="attachment-large size-large wp-image-8921"
     alt="avt"
     sizes="(max-width: 640px) 100vw, 640px"
@@ -2300,7 +2301,7 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
     },
     banner: {
       title: "Canadian Experience Class",
-      src: imagesLink+"chbne1.webp",
+      src: imagesLink + "chbne1.webp",
     },
     htm: "true",
     links: [
@@ -2325,7 +2326,7 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
         decoding="async"
         width={640}
         height={344}
-        src= ${imagesLink+"agripilot-program.webp"}
+        src= "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/agripilot-program.webp"
         className="attachment-large size-large wp-image-8925"
         alt="avt"
         sizes="(max-width: 640px) 100vw, 640px"
@@ -2402,7 +2403,7 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
     decoding="async"
     width={640}
     height={344}
-    src= ${imagesLink+"provincial-nominee-programs.webp"}
+    src= "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/provincial-nominee-programs.webp"
     className="attachment-large size-large wp-image-8929"
     alt=""
   />
@@ -2453,7 +2454,7 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
     decoding="async"
     width={640}
     height={344}
-    src= ${imagesLink+"spousal-pr-sponsorship.webp"}
+    src= "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/spousal-pr-sponsorship.webp"
     className="attachment-large size-large wp-image-8929"
     alt="spousal-pr-sponsorship"
     />
@@ -2510,7 +2511,7 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
     decoding="async"
     width={640}
     height={344}
-    src= ${imagesLink+"intra-company-transfer.webp"}
+    src= "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/intra-company-transfer.webp"
     className="attachment-large size-large wp-image-8929"
     alt="avt"
     />
@@ -2600,7 +2601,7 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
     <div>
     <img
     fatchpriority="high"
-    src=${imagesLink + "ad7.webp"}
+    src="https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/ad7.webp"
     alt="avt"
     />
     </div>`,
