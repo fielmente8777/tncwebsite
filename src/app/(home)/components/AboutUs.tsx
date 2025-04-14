@@ -23,13 +23,8 @@ const AboutUs: React.FC<AboutUsProps> = ({
   return (
     <SectionWithContainer>
       <div className="grid md:grid-cols-2 gap-5 grid-cols-1 items-center">
-        <div className="relative w-full aspect-[4/3] md:aspect-[4/3.2]">
-          <Image
-            src={src}
-            alt={title}
-            fill
-            className="object-cover"
-          />
+        <div className="relative w-full aspect-square md:aspect-[4/3.2]">
+          <Image src={src} alt={title} fill className="object-cover" />
         </div>
 
         <div className="space-y-5">
