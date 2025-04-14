@@ -1,5 +1,6 @@
 import { CommanBanner, SectionWithContainer } from "@/components";
 import Form3 from "@/components/Form3";
+import { imagesLink } from "@/data/links";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -42,7 +43,7 @@ export const metadata: Metadata = {
 const page = () => {
   return (
     <main>
-      <CommanBanner title="Request A Call - Outside Canada" src="/bgim.PNG" />
+      <CommanBanner title="Request A Call - Outside Canada" src={imagesLink + "bgim.webp"} />
 
       <SectionWithContainer>
         <div className="max-w-96 mx-auto">
