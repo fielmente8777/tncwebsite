@@ -407,7 +407,7 @@ const Calculator = () => {
               <label>
                 <input
                   type="radio"
-                  name="educationInCanada"
+                  name="educationInCanadas"
                   value="0"
                   onChange={(e) => {
                     setShowEducationComplete(true);
@@ -420,7 +420,7 @@ const Calculator = () => {
               <label>
                 <input
                   type="radio"
-                  name="educationInCanada"
+                  name="educationInCanadas"
                   value="0"
                   onChange={(e) => {
                     setShowEducationComplete(false);
@@ -471,7 +471,7 @@ const Calculator = () => {
               <label>
                 <input
                   type="radio"
-                  name="designation"
+                  name="designations"
                   value="yes"
                   onChange={(e) => {
                     setShowProfessionalDesignation(true);
