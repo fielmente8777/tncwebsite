@@ -84,7 +84,10 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="lg:hidden block">
-            <button onClick={() => setMobileMenu(!mobileMenu)} className={`p-2 bg-white rounded-sm shadow-md`}>
+            <button
+              onClick={() => setMobileMenu(!mobileMenu)}
+              className={`p-2 bg-white rounded-sm shadow-md`}
+            >
               {!mobileMenu ? <AiOutlineMenu /> : <AiOutlineClose />}
             </button>
           </div>
@@ -108,43 +111,41 @@ const Navbar = () => {
                     <span className="nav-1">
                       {link.subLinks.map((subLink, index) => {
                         return (
-                          <>
-                            <span className="relative group nav-2" key={index}>
-                              <Link
-                                href={subLink.href ? subLink.href : "#"}
-                                className={`w-full text-nowrap flex items-center gap-1 group capitalize font-semibold hover:bg-[#29313C] hover:text-white ${pathName === subLink.href ? "bg-[#29313C] text-white" : ""}`}
-                              >
-                                {subLink.name}
-                                {subLink.subLinks && (
-                                  <span className="group-hover:rotate-90 -rotate-90 duration-300 transition-all ease-in-out">
-                                    <DropDownIcon />
-                                  </span>
-                                )}
-                              </Link>
+                          <span className="relative group nav-2" key={index}>
+                            <Link
+                              href={subLink.href ? subLink.href : "#"}
+                              className={`w-full text-nowrap flex items-center gap-1 group capitalize font-semibold hover:bg-[#29313C] hover:text-white ${pathName === subLink.href ? "bg-[#29313C] text-white" : ""}`}
+                            >
+                              {subLink.name}
                               {subLink.subLinks && (
-                                <span className="nav-link">
-                                  {subLink.subLinks?.map(
-                                    (nestedSubLink, nestedIndex) => {
-                                      return (
-                                        <span className="" key={nestedIndex}>
-                                          <Link
-                                            href={
-                                              nestedSubLink.href
-                                                ? nestedSubLink.href
-                                                : "#"
-                                            }
-                                            className={`w-full text-nowrap py-2 px-4 flex items-center font-semibold description1 gap-1 group capitalize hover:bg-[#29313C] hover:text-white ${pathName === nestedSubLink.href ? "bg-[#29313C] text-white" : ""}`}
-                                          >
-                                            {nestedSubLink.name}
-                                          </Link>
-                                        </span>
-                                      );
-                                    }
-                                  )}
+                                <span className="group-hover:rotate-90 -rotate-90 duration-300 transition-all ease-in-out">
+                                  <DropDownIcon />
                                 </span>
                               )}
-                            </span>
-                          </>
+                            </Link>
+                            {subLink.subLinks && (
+                              <span className="nav-link">
+                                {subLink.subLinks?.map(
+                                  (nestedSubLink, nestedIndex) => {
+                                    return (
+                                      <span className="" key={nestedIndex}>
+                                        <Link
+                                          href={
+                                            nestedSubLink.href
+                                              ? nestedSubLink.href
+                                              : "#"
+                                          }
+                                          className={`w-full text-nowrap py-2 px-4 flex items-center font-semibold description1 gap-1 group capitalize hover:bg-[#29313C] hover:text-white ${pathName === nestedSubLink.href ? "bg-[#29313C] text-white" : ""}`}
+                                        >
+                                          {nestedSubLink.name}
+                                        </Link>
+                                      </span>
+                                    );
+                                  }
+                                )}
+                              </span>
+                            )}
+                          </span>
                         );
                       })}
                     </span>
