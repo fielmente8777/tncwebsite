@@ -2699,7 +2699,7 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
     <div>
     <img
     fatchpriority="high"
-    src="https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/ad7.webp"
+    src="https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/procedural-fairness-letters.webp"
     alt="avt"
     />
     </div>`,
