@@ -64,13 +64,19 @@ const Footer = () => {
                         {sublink.title}
                       </h3>
                     )}
-                    {sublink.name && <Link
-                      href={sublink.href ? sublink.href : ""}
-                      className=" capitalize flex items-center gap-2"
-                    >
-                      <span className="w-4 text-prime-red">{sublink.icon} </span>
-                      {sublink.name}
-                    </Link>}
+                    {sublink.name && (
+                      <Link
+                        href={sublink.href ? sublink.href : ""}
+                        className=" capitalize flex items-center gap-2"
+                      >
+                        {sublink.icon && (
+                          <span className="w-4 text-prime-red">
+                            {sublink.icon}{" "}
+                          </span>
+                        )}
+                        {sublink.name}
+                      </Link>
+                    )}
                     {sublink.links && (
                       <div className="flex items-center gap-2">
                         {sublink.links?.map((slink, index) => (
