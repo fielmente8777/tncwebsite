@@ -283,7 +283,7 @@ export const FooterLinks: FooterLinksProps[] = [
       },
       {
         name: "Provincial Attestation Letters",
-        href: "/services",
+        href: "/provincial-attestation-letters",
       },
       {
         name: "Book Appointment",
