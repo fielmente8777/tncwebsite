@@ -64,13 +64,13 @@ const Footer = () => {
                         {sublink.title}
                       </h3>
                     )}
-                    <Link
+                    {sublink.name && <Link
                       href={sublink.href ? sublink.href : ""}
                       className=" capitalize flex items-center gap-2"
                     >
-                      <span>{sublink.icon} </span>
+                      <span className="w-4 text-prime-red">{sublink.icon} </span>
                       {sublink.name}
-                    </Link>
+                    </Link>}
                     {sublink.links && (
                       <div className="flex items-center gap-2">
                         {sublink.links?.map((slink, index) => (
@@ -93,7 +93,7 @@ const Footer = () => {
         </div>
       </SectionWithContainer>
 
-      <SectionWithContainer sectionClassName="bg-primary text-white !py-4">
+      <SectionWithContainer sectionClassName="bg-prime-red text-white !py-4">
         <div className="flex max-lg:flex-col justify-center items-center gap-2">
           <p className="text-center font-semibold">
             © {currentYear} All Right Reserved TNC Immigration.

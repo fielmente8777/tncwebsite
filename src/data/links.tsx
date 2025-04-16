@@ -1,7 +1,7 @@
 import { JSX } from "react";
 import { FaFacebook, FaTiktok, FaYoutube, FaInstagram } from "react-icons/fa";
 import { IoLogoLinkedin } from "react-icons/io";
-import { FillLocationIcon } from "./icons";
+import { FillCallIcon, FillLocationIcon, FillMailIcon } from "./icons";
 
 export const imagesLink =
   "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/";
@@ -271,7 +271,7 @@ export const FooterLinks: FooterLinksProps[] = [
     links: [
       {
         name: "Home",
-        href: "/about-us",
+        href: "/",
       },
       {
         name: "about us",
@@ -279,7 +279,7 @@ export const FooterLinks: FooterLinksProps[] = [
       },
       {
         name: "Assessment",
-        href: "/industries-we-serve",
+        href: "/start-assessment",
       },
       {
         name: "Provincial Attestation Letters",
@@ -287,19 +287,19 @@ export const FooterLinks: FooterLinksProps[] = [
       },
       {
         name: "Book Appointment",
-        href: "/contact-us",
+        href: "https://calendly.com/tncconsult",
       },
       {
         name: "FAQs",
-        href: "/our-work",
+        href: "/faqs",
       },
       {
         name: "Score Calculator",
-        href: "/our-work",
+        href: "#",
       },
       {
         name: "Contact Us",
-        href: "/our-work",
+        href: "/contact-us",
       },
     ],
   },
@@ -329,16 +329,17 @@ export const FooterLinks: FooterLinksProps[] = [
     links: [
       {
         title: "Contact Us",
-        name: "3064 Hurontario St. Mississauga, Ontario",
-        href: "/contact-us",
+        name: "",
       },
       {
         name: "+1 236 818 5558",
         href: "/tel:+1 236 818 5558",
+        icon:<FillCallIcon/>
       },
       {
         name: "info@tncimmigration.com",
         href: "/mailto:info@tncimmigration.com",
+        icon:<FillMailIcon/>
       },
       {
         title: "Our Social Links",
