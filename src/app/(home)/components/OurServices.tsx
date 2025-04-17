@@ -1,6 +1,6 @@
 import { SectionWithContainer } from "@/components";
 import ServiceCard2 from "@/components/Cards/ServiceCard2";
-import { HorizontTwoLineLeft } from "@/data/icons";
+import { HorizontTowLine, HorizontTwoLineLeft } from "@/data/icons";
 import React from "react";
 
 const OurServicesData = [
@@ -127,7 +127,7 @@ const OurServices = () => {
           <div className="flex justify-center items-center gap-2">
             <HorizontTwoLineLeft />
             <h2 className="text-second-red text-3xl font-bold">Services</h2>
-            <HorizontTwoLineLeft />
+            <HorizontTowLine />
           </div>
 
           <h3 className="text-white font-bold text-center text-4xl mt-4">

@@ -83,7 +83,7 @@ const PgaeData: React.FC<PageProps> = ({
                 href={links[1].link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`bg-prime-red hover:bg-black w-fit h-14 flex items-center text-white gap-2 mx-auto text-md font-semibold  px-5 py-2 capitalize  duration-500 border rounded-full`}
+                className={`bg-prime-red hover:bg-black w-fit h-14 flex items-center text-white gap-2 mx-auto text-md font-semibold  md:px-8 px-5 py-2 capitalize  duration-500 border rounded-full`}
               >
                 <span className=" text-white rounded-full flex items-center justify-center">
                   <FillMailIcon />

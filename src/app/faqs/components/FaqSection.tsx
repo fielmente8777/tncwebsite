@@ -21,13 +21,13 @@ const FaqSection: React.FC<faqSection> = ({
   return (
     <div>
       <SectionWithContainer>
-        <div className="flex flex-col w-full md:gap-8 gap-4">
+        <div className="flex flex-col w-full md:gap-14 gap-4">
           <div className="flex flex-col gap-4">
-            <h2 className="text-second-red heading2 text-center font-semibold flex gap-2 items-center justify-center">
+            <h2 className="text-second-red heading1 text-center font-semibold flex gap-2 items-center justify-center">
                 <span><HorizontTwoLineLeft/></span>{title} <span><HorizontTowLine/></span></h2>
-            <h3 className="heading1 text-center font-semibold">{subTitle}</h3>
+            <h3 className="heading text-center font-semibold">{subTitle}</h3>
           </div>
-          <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
+          <div className="grid md:grid-cols-2 grid-cols-1 gap-4 md:gap-8">
             <div className="flex flex-col w-full">
               {images.map((item, index) => (
                 <div
