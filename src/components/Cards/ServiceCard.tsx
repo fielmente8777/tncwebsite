@@ -19,8 +19,9 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
   src,
 }) => {
   const Tag = `h${level}` as keyof JSX.IntrinsicElements;
+
   return (
-    <div className="w-full bg-white rounded-sm group box-shadow2 duration-300 transition-all ease-in-out relative md:aspect-square aspect-[4/3]">
+    <div className="w-full bg-white rounded-sm group box-shadow2 duration-300 transition-all ease-in-out relative md:aspect-[4/4.5] aspect-[4/3]">
       <Image src={src} alt={title} fill className="object-cover rounded-sm" />
       <div className="flex flex-col items-center justify-center gap-4 py-6 px-4 absolute inset-0 bg-white group-hover:bg-black/50 w-full h-full">
         <span className="p-5 aspect-square flex items-center justify-center group-hover:bg-white group-hover:text-primary bg-primary rounded-full text-white duration-500 transition-all ease-in-out">
