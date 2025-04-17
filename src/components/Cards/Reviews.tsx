@@ -41,7 +41,7 @@ const Reviews = () => {
       review:
         "I highly recommend TNC True North Consultancy LTD business. I was completely impressed with their professionalism and customer service. Their staff is not only friendly but also highly skilled. They are reliable, honest and operate with integrity. They always took time to answer questions I may have. I recommend their services to whoever is looking for help with an immigration matter. Thank you again TNC!!",
       date: "2024-03-22",
-      // src: "/kevin.PNG",
+      src: "/unna.PNG",
       gicon: "",
       rating: "",
       verify: "",
@@ -51,7 +51,7 @@ const Reviews = () => {
       review:
         "One of the best immigration services providing place. My sister’s visitor to study permit approved with in 15 days inside Canada. I am really thankful to Tania mam for answering me every query quick and whenever i called and texted her she explained me in detail. I really thankful to her for this approval and her hard work. Thankyou so much Tania Mam and whole TNC Immigration team.😁🙏🏻",
       date: "2024-03-22",
-      // src: "/shern.PNG",
+      // src: "/un.PNG",
       gicon: "",
       rating: "",
       verify: "",
@@ -62,7 +62,7 @@ const Reviews = () => {
       review:
         "I would like to thank you for hard work and dedication at the end success. In future i will recommended to my friends great works thank you TNC. I really appreciate your contribution...",
       date: "2024-03-22",
-      // src: "/syd.PNG",
+      src: "/unn.PNG",
       gicon: "",
       rating: "",
       verify: "",
