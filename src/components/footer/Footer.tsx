@@ -53,9 +53,13 @@ const Footer = () => {
           </div>
           {FooterLinks.map((link, index) => (
             <div key={index} className="flex flex-col gap-6">
-              <h2 className={` text-lg capitalize text-primary font-semibold`}>
-                {link.title}
-              </h2>
+              {link.title && (
+                <h2
+                  className={` text-lg capitalize text-primary font-semibold`}
+                >
+                  {link.title}
+                </h2>
+              )}
               <ul className="flex flex-col gap-2">
                 {link.links?.map((sublink, index) => (
                   <li key={index} className="flex flex-col gap-2">
