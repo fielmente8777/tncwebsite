@@ -2,6 +2,7 @@ import Image from "next/image";
 import SectionWithContainer from "./SectionWithContainer";
 import { LinkButton } from "../buttons";
 import { FillCallIcon, GLOcationIcon } from "@/data/icons";
+import { cn } from "@/utils/cn";
 
 export interface TwoColSectionProps {
   title?: string;
@@ -14,6 +15,7 @@ export interface TwoColSectionProps {
   }[];
   btnCss?: boolean;
   index?: number;
+  aspect?: string;
 }
 const TwoColSection: React.FC<TwoColSectionProps> = ({
   title,
@@ -22,18 +24,26 @@ const TwoColSection: React.FC<TwoColSectionProps> = ({
   links,
   index,
   btnCss = false,
+  aspect,
 }) => {
   return (
     <SectionWithContainer sectionClassName={`${index ? "!pt-4" : "!pb-4"}`}>
       <div className="grid md:grid-cols-2 grid-cols-1 gap-4 md:gap-6">
         <div
-          className={`w-full relative md:aspect-[4/3.8] aspect-[4/3.5] ${
+          className={cn(`w-full relative md:aspect-[4/3.8] aspect-[4/3.5], ${
             index
               ? index % 2 === 0
                 ? "md:order-1 order-2"
                 : "md:order-2 order-1"
               : ""
-          }`}
+          }`,aspect)}
+          // className={`w-full relative ${aspect ? aspect : "md:aspect-[4/3.8] aspect-[4/3.5]"} ${
+          //   index
+          //     ? index % 2 === 0
+          //       ? "md:order-1 order-2"
+          //       : "md:order-2 order-1"
+          //     : ""
+          // }`}
         >
           {src && (
             <Image

@@ -18,7 +18,7 @@ export const slugPageData = [
         desc: `<p>Located in the heart of Surrey, our flagship office is your trusted destination for expert immigration services. At TNC Immigration, we pride ourselves on being a leading immigration consultancy firm, helping individuals, families, and businesses achieve their Canadian dreams.<p>
           <p>Our Surrey office is strategically positioned to serve the vibrant and diverse community of the Lower Mainland. With years of experience and a strong commitment to excellence, we specialize in providing personalized immigration solutions tailored to your unique needs.</p>
           <p>From work permits, study permits, and visitor visas to Express Entry, Provincial Nominee Programs (PNP), and spousal sponsorships, our team is equipped to handle a wide range of immigration services. We also assist businesses with Labour Market Impact Assessments (LMIA) and Intra-Company Transfers.</p>`,
-
+          aspect:"md:aspect-[4/2.8] aspect-[4/3.5]",
         links: [
           {
             name: "get direction",
@@ -32,6 +32,7 @@ export const slugPageData = [
       },
       {
         src: "/tnc/bnr4.webp",
+        aspect:"md:aspect-[4/2.05] aspect-[4/3.5]",
         desc: `<p>Led by industry experts and supported by a dedicated team of professionals, our Surrey office is committed to making your immigration process smooth, efficient, and stress-free. Whether you’re an independent applicant looking to start a new chapter in Canada or a family hoping to reunite with loved ones, we’re here to guide you every step of the way.</p><p>As a Certified Canadian Immigration Consultant Firm (CICC), TNC Immigration adheres to the highest standards of professionalism and integrity.</p>
           <p><b>Visit us at our Surrey location or contact us today to schedule a consultation. Together, we’ll turn your Canadian aspirations into reality!</b></p>`,
       },
@@ -51,11 +52,12 @@ export const slugPageData = [
     },
     welcom: [
       {
-        src: "/b1.PNG",
+        src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/b1.webp",
         title: "Welcome to TNC Immigration – Mississauga Location",
         desc: `<p>At TNC Immigration, we are dedicated to providing exceptional immigration consulting services to individuals and families looking to build their future in Canada. Our Mississauga office, strategically located in the vibrant heart of this diverse city, is here to serve clients across the Greater Toronto Area and beyond.</p>
           <p>As a Certified Canadian Immigration Consultant Firm (CICC), we pride ourselves on delivering trusted, up-to-date, and personalized immigration solutions. Whether you’re a student, skilled professional, entrepreneur, or family member seeking to reunite with loved ones, our Mississauga team is equipped to guide you through every step of the immigration process.</p>`,
-        links: [
+          aspect:"md:aspect-[5/2.6] aspect-[4/3.5]",
+          links: [
           {
             name: "get direction",
             href: "https://maps.app.goo.gl/YZzjLM5jCd1DV2XY7",
@@ -67,8 +69,9 @@ export const slugPageData = [
         ],
       },
       {
-        src: "/b2.PNG",
+        src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/b2.webp",
         title: "What We Offer",
+        aspect:"aspect-[4/3.5] md:aspect-[4/2.6] ",
         desc: `<p>Work Permits: Helping you secure employment opportunities in Canada.Study Permits: Supporting students in pursuing their academic dreams.Express Entry & PR Applications: Streamlining pathways to permanent residency.</p>
           <p>Family Sponsorships: Reuniting families with their loved ones.Visitor Visas: Making it easier for you to explore Canada.Provincial Nominee Programs (PNP): Assisting with regional immigration opportunities.</p>
           <p>Our experienced team of immigration professionals in Mississauga ensures a client-first approach, offering tailored advice and support to meet your unique needs. With a proven track record of success, TNC Immigration is your trusted partner in making Canada your home.</p>
@@ -90,11 +93,11 @@ export const slugPageData = [
     },
     welcom: [
       {
-        src: "/b3.PNG",
+        src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/b3.webp",
         title: "Welcome to TNC Immigration –Kelowna Location",
         desc: `<p>At TNC Immigration, we are excited to extend our trusted immigration consulting services to the vibrant city of Kelowna, British Columbia. Known for its stunning landscapes, welcoming community, and thriving opportunities, Kelowna serves as the perfect place to offer our expert guidance and personalized solutions to individuals and families pursuing their Canadian dreams.</p>
           <p>Our Kelowna office is strategically located to provide easy access to clients in the Okanagan Valley and surrounding areas. Whether you’re looking to study, work, or settle in Canada, our dedicated team in Kelowna is here to ensure a seamless and stress-free immigration process.</p>`,
-
+          aspect:"md:aspect-[4/2.6] aspect-[4/3.5]",
         links: [
           {
             name: "get direction",

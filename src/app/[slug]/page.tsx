@@ -64,6 +64,7 @@ export async function generateMetadata({ params }: Params) {
 const Page = async ({ params }: Params) => {
   const slug = (await params).slug;
   const pageData = slugPageData.find((data) => data.slug === slug);
+
   return (
     <>
       {pageData?.banner && (
@@ -71,9 +72,17 @@ const Page = async ({ params }: Params) => {
       )}
       {pageData?.welcom && (
         <div>
-          {pageData.welcom.map((data, index) => (
-            <TwoColSection {...data} key={index} index={index} />
-          ))}
+          {pageData.welcom.map((data, index) => {
+            console.log(data.aspect);
+            return (
+              <TwoColSection
+                {...data}
+                key={index}
+                index={index}
+                aspect={data.aspect}
+              />
+            );
+          })}
         </div>
       )}
       {pageData?.pageData1 && <PageData pageData={pageData} />}
