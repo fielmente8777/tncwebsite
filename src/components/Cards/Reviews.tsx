@@ -41,7 +41,7 @@ const Reviews = () => {
       review:
         "I highly recommend TNC True North Consultancy LTD business. I was completely impressed with their professionalism and customer service. Their staff is not only friendly but also highly skilled. They are reliable, honest and operate with integrity. They always took time to answer questions I may have. I recommend their services to whoever is looking for help with an immigration matter. Thank you again TNC!!",
       date: "2024-03-22",
-      src: "/unna.PNG",
+      src: "/unna.png",
       gicon: "",
       rating: "",
       verify: "",
@@ -62,7 +62,7 @@ const Reviews = () => {
       review:
         "I would like to thank you for hard work and dedication at the end success. In future i will recommended to my friends great works thank you TNC. I really appreciate your contribution...",
       date: "2024-03-22",
-      src: "/unn.PNG",
+      src: "/unn.png",
       gicon: "",
       rating: "",
       verify: "",
