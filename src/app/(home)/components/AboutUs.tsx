@@ -44,7 +44,7 @@ const AboutUs: React.FC<AboutUsProps> = ({
               <li key={index}>
                 <LinkButton
                   href={link.href}
-                  className={`rounded-full ${index === 0 ? "bg-prime-light-blue text-white" : "bg-prime-red text-white"} px-5 py-2 font-medium text-sm`}
+                  className={`rounded-full ${index === 0 ? "bg-prime-light-blue text-white" : "bg-prime-red text-white"} capitalize px-5 py-2 font-medium text-sm`}
                 >
                   {link.name}
                 </LinkButton>
