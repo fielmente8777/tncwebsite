@@ -12,10 +12,12 @@ const Footer = () => {
   const [openNewsLetter, setOpenNewsLetter] = useState(false);
   return (
     <footer className="max_screen md:relative md:pt-44">
-      <div className="md:absolute top-6 left-0 w-full">
-        <Container className="bg-[#29313C] text-white ">
+      <div className="md:absolute top-6 left-0 w-full z-10">
+        <Container className="text-white relative after:content-[''] after:absolute after:bg-[url('/maps.webp')] after:w-full after:h-full after:inset-0 after:bg-cover after:bg-no-repeat after:bg-center after:z-[-1] after:opacity-40 before:content-[''] before:absolute before:inset-0 before:bg-[#29313C]  before:z-[-1] before:w-full before:h-full">
+
+
           <div className="md:px-20 px-4 md:py-14 py-6 w-full grid md:grid-cols-5 grid-cols-1 items-center gap-4">
-            <div className="w-full flex flex-col gap-4 md:col-span-4 col-span-2">
+            <div className="w-full flex flex-col gap-4 md:col-span-4 col-span-2 ">
               <h2 className="md:text-2xl text-lg">Are you looking for</h2>
               <h3 className="md:text-[2.0625rem]/[1.125rem] text-2xl font-semibold">
                 Licensed Canadian Immigration Consultant?
@@ -24,7 +26,7 @@ const Footer = () => {
                 Need A Consultation? Call us:{" "}
                 <Link href={"tel:+12368185558"}>+1 (236) 818 5558</Link> or
                 Email us:{" "}
-                <Link href={"mailto:info@tncimmigration.com"}>
+                <Link href={"mailto:info@tncimmigration.com"} className="hover:text-black duration-300 ease-in-out transition-all">
                   info@tncimmigration.com
                 </Link>
               </p>
@@ -71,7 +73,7 @@ const Footer = () => {
                     {sublink.name && (
                       <Link
                         href={sublink.href ? sublink.href : ""}
-                        className=" capitalize flex items-center gap-2"
+                        className={`${sublink?.capitalize && "capitalize"} flex items-center gap-2`}
                       >
                         {sublink.icon && (
                           <span className="w-4 text-prime-red">

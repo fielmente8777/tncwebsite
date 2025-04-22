@@ -27,7 +27,7 @@ export const homePageData = {
     title: "About Us",
     subTitle: "We’re Trusted Immigration Consultant",
     desc: "Our legal professionals take their time to understand the needs of our clients. We ensure that our clients are dealt professionally and provided all the suitable options. We provide immigration services to our clients inside Canada and also cater to our clients globally. We pride ourselves in providing professional services to a diversity of clients.",
-    src: "/img1.png",
+    src: "/Image1.webp",
     links: [
       {
         name: "Read More",
@@ -87,6 +87,7 @@ export const homePageData = {
         link: {
           href: "https://www.instagram.com/reel/DB_8ivVSdAq/",
         },
+        isIcon: true,
       },
       {
         image: {
@@ -111,6 +112,7 @@ export const homePageData = {
         link: {
           href: "https://www.instagram.com/reel/DB64EVTSpyJ/",
         },
+        isIcon: true,
       },
       {
         image: {
@@ -151,6 +153,7 @@ export const homePageData = {
         link: {
           href: "https://www.instagram.com/reel/DB1QSwhPO8m/",
         },
+        isIcon: true,
       },
       {
         image: {
@@ -175,6 +178,7 @@ export const homePageData = {
         link: {
           href: "https://www.instagram.com/reel/DBy0VJ3PbZB/",
         },
+        isIcon: true,
       },
       {
         image: {
@@ -183,6 +187,7 @@ export const homePageData = {
         link: {
           href: "https://www.instagram.com/reel/DBxJYQmy6BS/",
         },
+        isIcon: true,
       },
       {
         image: {
@@ -191,6 +196,7 @@ export const homePageData = {
         link: {
           href: "https://www.instagram.com/reel/DBwQFDiPuJ2/",
         },
+        isIcon: true,
       },
       {
         image: {
@@ -199,6 +205,7 @@ export const homePageData = {
         link: {
           href: "https://www.instagram.com/reel/DBuoQtNSIK6/",
         },
+        isIcon: true,
       },
     ],
     buttons: [

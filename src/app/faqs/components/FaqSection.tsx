@@ -32,7 +32,7 @@ const FaqSection: React.FC<faqSection> = ({
               {images.map((item, index) => (
                 <div
                   key={index}
-                  className={`w-full md:max-w-[350px] max-w-[250px] relative aspect-[4/3] border-[5px] border-prime-red ${index !== 0 ? "ml-auto -mt-[5rem]" : " mr-auto"}`}
+                  className={`w-full md:max-w-[350px] max-w-[250px] relative  border-[5px] border-prime-red ${index !== 0 ? "ml-auto -mt-[5rem] aspect-[4/3.5]" : " mr-auto aspect-[4/3]"}`}
                 >
                   <Image src={item} alt={title} fill />
                 </div>

@@ -16,7 +16,7 @@ const CommonSection: React.FC<Props> = ({ title, cards }) => {
     <SectionWithContainer>
       <div className="flex flex-col md:gap-10 gap-6">
         <div className="">
-          <h2 className="text-2xl md:text-4xl  font-semibold text-center">
+          <h2 className="text-2xl md:text-[1.75rem]/[1.75rem]  font-semibold text-center">
             {title}
           </h2>
 

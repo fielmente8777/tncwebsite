@@ -41,7 +41,7 @@ const ServiceCard2: React.FC<ServiceCardProps> = ({
       </div>
 
       <div>
-        <h3 className="text-center text-xl font-bold">{title}</h3>
+        <h3 className="text-center text-xl font-bold outfit">{title}</h3>
 
         <div className="flex items-center justify-center gap-2 mt-2">
           {buttons?.map((btn, index) => {
@@ -50,7 +50,7 @@ const ServiceCard2: React.FC<ServiceCardProps> = ({
                 <LinkButton
                   href={btn?.href}
                   key={index}
-                  className={`rounded-full text-white px-4 py-2 text-sm ${btn?.className ? `${btn?.className} hover:bg-prime-light-blue` : "bg-prime-light-blue hover:bg-prime-red"}`}
+                  className={`rounded-full text-white px-4 py-2 text-sm font-medium ${btn?.className ? `${btn?.className} hover:bg-prime-light-blue` : "bg-prime-light-blue hover:bg-prime-red"}`}
                 >
                   {btn?.label}
                 </LinkButton>

@@ -37,7 +37,7 @@ const AboutUs: React.FC<AboutUsProps> = ({
             {subTitle}
           </h3>
 
-          <p className="text-tertiary max-w-[470px]">{desc}</p>
+          <p className="text-tertiary max-w-[470px] nunito md:text-lg ">{desc}</p>
 
           <ul className="flex items-center gap-4 mt-5">
             {links.map((link, index) => (

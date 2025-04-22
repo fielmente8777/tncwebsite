@@ -15,7 +15,7 @@ export default {
         quaternary: "#045cb4",
         "prime-red": "#B41B2A",
         "prime-light-blue": "#4054B2",
-        "prime-dark-blue": "#0D2252",
+        "prime-dark-blue": "#0d2252",
         "second-red": "#C1282A",
         "second-blue": "#408BD1",
         light: "#CECECE",

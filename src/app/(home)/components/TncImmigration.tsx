@@ -10,8 +10,6 @@ import {
 import Image from "next/image";
 import React from "react";
 
-const TncImmigrationGirl = "/tnc/Tnc-immigration-girl.webp";
-
 const ImmigrationData = [
   {
     title: "Consultation",
@@ -40,17 +38,18 @@ const TncImmigration = () => {
     <SectionWithContainer>
       <div className="lg:-mt-[12rem] md:-mt-[10rem] relative">
         <div className="absolute -top-24 -left-8 w-96 h-96 lg:block hidden">
-          <div className="relative w-full h-full">
+          <div className="relative bottom-[3rem] -left-4 w-full aspect-[4/4.5] z-10">
             <Image
-              src={TncImmigrationGirl}
+              src={"/Designer.png"}
+              // src={TncImmigrationGirl}
               alt="girl-image"
               fill
-              className="object-cover"
+              className="object-contain scale-x-[-1]"
             />
           </div>
         </div>
 
-        <div className="max-w-[900px] mx-auto bg-second-red max-h-72 h-full  w-full rounded-t-full flex flex-col md:gap-10 items-center max-lg:jtc py-16">
+        <div className="max-w-[900px] overflow-hidden relative md:after:absolute after:bottom-0 after:left-0 after:right-0 after:bg-[url('/bg-c.png')] after:bg-center after:bg-cover after:bg-no-repeat after:z-[1] after:w-full after:h-full mx-auto bg-second-red max-h-72 h-full  w-full rounded-t-full flex flex-col md:gap-10 items-center max-lg:jtc py-16">
           <h2 className="text-white font-bold md:text-4xl text-2xl md:max-w-xl max-w-xs w-full max-lg:mt-10 text-center">
             Embark on your Canadian dream journey with TNC Immigration.
           </h2>
@@ -65,15 +64,15 @@ const TncImmigration = () => {
 
       <div className="mt-4">
         <div className="space-y-1">
-          <div className="flex justify-center items-center gap-2">
+          <div className="flex justify-center items-center gap-3">
             <HorizontTwoLineLeft />
-            <h2 className="text-second-red md:text-3xl text-2xl font-bold text-center">
+            <h2 className="text-second-red md:text-2xl text-xl font-semibold text-center">
               TNC Visa Application Process
             </h2>
             <HorizontTowLine />
           </div>
 
-          <h3 className="text-center text-2xl text-black font-bold">
+          <h3 className="text-center text-2xl text-prime-dark-blue font-semibold">
             General visa process and steps to apply for a visa to Canada
           </h3>
         </div>
@@ -85,7 +84,9 @@ const TncImmigration = () => {
               <h2 className="text-center text-prime-red font-bold text-2xl">
                 {data?.title}
               </h2>
-              <p className="leading-7 text-sm text-center">{data?.desc}</p>
+              <p className="leading-7 text-base text-center nunito">
+                {data?.desc}
+              </p>
             </div>
           ))}
         </div>

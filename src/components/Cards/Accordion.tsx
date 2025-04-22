@@ -35,9 +35,9 @@ const Accordion: React.FC<AccordionProps> = ({
         onMouseLeave={() => setIsAccordionOpen(false)}
       >
         <div
-          className={`flex items-center gap-4 justify-between md:py-3 py-2 ${isAccordionOpen ? "!bg-prime-red text-white" : ""} px-4 box-shadow2`}
+          className={`flex items-center gap-4 justify-between md:py-4 py-2 ${isAccordionOpen ? "!bg-prime-red text-white" : ""} px-5 box-shadow2`}
         >
-          <h3 className={`heading3 font-medium text-dark ${questionClassName}`}>
+          <h3 className={`heading3 font-medium text-dark nunito ${questionClassName}`}>
             {question}
           </h3>
           {icon && (
@@ -60,7 +60,7 @@ const Accordion: React.FC<AccordionProps> = ({
               {answer.map((item, index) => (
                 <li
                   key={index}
-                  className={`heading4 text-light font-normal`}
+                  className={`heading4 text-[rgb(110,110,110)] font-normal`}
                   dangerouslySetInnerHTML={{ __html: item }}
                 ></li>
               ))}
@@ -69,7 +69,7 @@ const Accordion: React.FC<AccordionProps> = ({
             answer.map((item, index) => (
               <p
                 key={index}
-                className={`heading4 text-light font-normal`}
+                className={`heading4 text-[rgb(110,110,110)] font-normal`}
                 dangerouslySetInnerHTML={{ __html: item }}
               ></p>
             ))

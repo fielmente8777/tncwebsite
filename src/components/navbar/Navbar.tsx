@@ -41,7 +41,7 @@ const Navbar = () => {
                     <span className="">
                       {" "}
                       <OutlinePhone
-                        className="w-6 h-6 fill-white"
+                        className="w-4 h-4 fill-white"
                         fill="white"
                       />
                     </span>{" "}
@@ -57,7 +57,7 @@ const Navbar = () => {
                     <Link
                       href={link.href}
                       key={index}
-                      className="capitalize md:text-base text-sm bg-white flex items-center rounded-full md:px-4 px-3 py-2 text-black font-medium hover:bg-blue-500 hover:text-white duration-300 transition-all ease-in-out"
+                      className={`capitalize md:text-base !text-sm bg-[#d1d2d4] flex items-center rounded-full md:px-4 px-3 py-2 text-black font-medium ${index === 0 ? "hover:bg-transparent hover:text-white":""}  duration-300 transition-all ease-in-out`}
                     >
                       {link.name}
                     </Link>

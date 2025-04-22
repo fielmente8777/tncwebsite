@@ -23,13 +23,14 @@ const Bannner: React.FC<bannnerData> = ({
     <Section className="!py-0">
       <div className="relative md:aspect-[4/1.6] aspect-[4/3.5] w-full">
         <Image src={src} alt={title} fill className="object-cover" />
-        <div className="absolute inset-0 w-full h-full bg-black/50 flex items-center justify-center">
+        <div className="absolute inset-0 w-full h-full bg-[#1A213A]/30 flex items-center justify-center">
           <Container>
-            <div className="max-w-xl">
+            <div className="max-w-xl md:pe-[2rem]">
               <SectionTitleSubTitle
                 title={title}
                 subTitle={subTitle}
-                subTitleClassName="text-white md:text-7xl font-semibold"
+                subTitleClassName="text-white md:text-7xl font-bold"
+                
               />
             </div>
             <p className="heading4 text-white">{description}</p>

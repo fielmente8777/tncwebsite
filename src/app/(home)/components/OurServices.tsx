@@ -120,7 +120,7 @@ const OurServices = () => {
       style={{
         backgroundImage: `url("/tnc/bg-section-02.webp")`,
       }}
-      className="md:h-[1068.21px] max-lg:w-full max-lg:aspect-square bg-cover bg-center"
+      className="md:h-[1068.21px] max-lg:w-full max-lg:aspect-square bg-cover bg-center max_screen"
     >
       <div>
         <div className="pt-10">

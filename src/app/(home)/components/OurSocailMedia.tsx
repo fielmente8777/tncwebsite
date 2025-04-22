@@ -3,6 +3,7 @@ import {
   HorizontTowLine,
   HorizontTwoLineLeft,
   InstagramIcon,
+  PlayBtnIcon,
   StackedSquaresIcon,
 } from "@/data/icons";
 import Image from "next/image";
@@ -18,6 +19,7 @@ interface OurSocialMediaPrps {
     link: {
       href: string;
     };
+    isIcon?: boolean;
   }[];
   buttons: {
     label: string;
@@ -56,7 +58,13 @@ const OurSocailMedia: React.FC<OurSocialMediaPrps> = ({
                 fill
                 alt="Social-Image"
               />
-
+              {item?.isIcon && (
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <span>
+                    <PlayBtnIcon />
+                  </span>
+                </div>
+              )}
               <Link
                 href={item?.link?.href}
                 target="_blank"

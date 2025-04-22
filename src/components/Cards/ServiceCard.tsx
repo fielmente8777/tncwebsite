@@ -27,13 +27,13 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
         <span className="p-5 aspect-square flex items-center justify-center group-hover:bg-white group-hover:text-primary bg-primary rounded-full text-white duration-500 transition-all ease-in-out">
           {icon ? icon : ""}
         </span>
-        <Tag className="heading2 text-center font-semibold group-hover:text-white text-black px-10">
+        <Tag className="heading2 text-center font-semibold text-prime-dark-blue group-hover:text-white px-10">
           {title}
         </Tag>
         <Link
           href={href ? href : ""}
-          className="heading4 capitalize rounded-full h-6 ps-2 text-center text-black flex items-center w-fit gap-2  group-hover:text-white group-hover:bg-primary duration-300 transition-all ease-in-out
-        justify-end font-semibold text-sm
+          className="heading4 capitalize rounded-full h-6 ps-2 text-center text-prime-dark-blue flex items-center w-fit gap-2  group-hover:text-white group-hover:bg-primary duration-300 transition-all ease-in-out
+        justify-end font-semibold !text-sm
         relative after:absolute right-1 group-hover:after:w-full after:w-0 after:h-full after:z-[-1] after:bg-[#C1282A] after:bottom-0 after:rounded-full after:duration-500 after:transition-all after:ease-in-out"
         >
           {name}{" "}

@@ -102,7 +102,7 @@ const Reviews = () => {
     <SectionWithContainer sectionClassName="!py-4">
       <div className="flex w-full max-lg:flex-col items-center justify-center gap-4">
         <div className="md:w-[15%] flex flex-col gap-2 items-center">
-          <h3 className="text-secondary text-center uppercase font-bold">
+          <h3 className="text-secondary text-center uppercase font-bold heading2">
             excellent
           </h3>
           <div className="flex gap-1 items-center justify-center">
@@ -116,7 +116,7 @@ const Reviews = () => {
               />
             ))}
           </div>
-          <p className="text-center description2">
+          <p className="text-center md:text-[0.9rem] text-sm">
             Based on <b>370 reviews</b>
           </p>
           <Image src="/google.svg" alt="alt" width={100} height={50} />

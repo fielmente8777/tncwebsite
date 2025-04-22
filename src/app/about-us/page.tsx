@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   title: "About Us - TNC immigration",
   description:
     "About Us TNC True North Consultancy TNC True North Consultancy Ltd. is one of the leading immigration consulting firms in the Lower Mainland of BC, Canada with offices to serve our clients at their best convenience.Our main office is based in the heart of Surrey and is easily accessible to our clients. We at True",
-  keywords:"",
+  keywords: "",
   alternates: {
     canonical: "https://tncimmigration.com/about-us/",
   },
@@ -29,7 +29,9 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  authors: [{ name: "TNC Immigration", url: "https://tncimmigration.com/about-us/" }],
+  authors: [
+    { name: "TNC Immigration", url: "https://tncimmigration.com/about-us/" },
+  ],
   openGraph: {
     title: "About Us - TNC immigration",
     description:
@@ -52,11 +54,11 @@ const page = () => {
     <main>
       <CommanBanner {...AboutPageData.bannerData} />
       <AboutUsSection {...AboutPageData.about} />
-      <SectionWithContainer>
+      <SectionWithContainer sectionClassName="!py-0">
         <div className="w-full grid md:grid-cols-2 grid-cols-1 gap-4">
           {AboutPageData.images.slice(0, 2).map((item, index) => (
             <div
-              className="w-full relative md:aspect-[4/1] aspect-[4/3.5]"
+              className="w-full relative md:aspect-[4/1] aspect-[4/2]"
               key={index}
             >
               <Image src={item} alt={item} fill className="object-contain" />
@@ -65,12 +67,12 @@ const page = () => {
         </div>
       </SectionWithContainer>
 
-      <Section>
+      <Section className="max-lg:px-2">
         {AboutPageData.images
           .slice(2, AboutPageData.images.length)
           .map((item, index) => (
             <div
-              className="w-full relative md:aspect-[4/2.5] aspect-[4/3.5]"
+              className="w-full relative md:aspect-[4/2.5] aspect-[4/2.2]"
               key={index}
             >
               <Image src={item} alt={item} fill className="object-cover" />
@@ -79,12 +81,14 @@ const page = () => {
       </Section>
 
       <TeamMember {...AboutPageData.teamMembers} />
-      <SectionWithContainer>
-        <h3 className="heading font-semibold text-gray-700 flex items-center gap-2">
-        <span className="w-12 h-1 bg-prime-red"></span>  Happy Customers
-        </h3>
-      </SectionWithContainer>
-      <Reviews />
+      <div className="bg-[#E4EAEE] max_screen md:py-16 py-8">
+        <SectionWithContainer>
+          <h3 className="heading font-bold text-[#0e0e0e] flex items-center gap-4">
+            <span className="w-14 h-[1.8px] bg-prime-red"></span> Happy Customers
+          </h3>
+        </SectionWithContainer>
+        <Reviews />
+      </div>
     </main>
   );
 };

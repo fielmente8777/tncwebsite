@@ -20,6 +20,7 @@ interface FooterLinksProps {
     name: string;
     href?: string;
     icon?: JSX.Element;
+    capitalize?: boolean;
     links?: {
       name: string;
       href: string;
@@ -339,7 +340,8 @@ export const FooterLinks: FooterLinksProps[] = [
       {
         name: "info@tncimmigration.com",
         href: "/mailto:info@tncimmigration.com",
-        icon:<FillMailIcon/>
+        icon:<FillMailIcon/>,
+        capitalize: false,
       },
       {
         title: "Our Social Links",
