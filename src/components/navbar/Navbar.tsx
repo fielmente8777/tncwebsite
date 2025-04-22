@@ -98,7 +98,7 @@ const Navbar = () => {
                 <li key={index} className="relative nav">
                   <Link
                     href={link.href ? link.href : "#"}
-                    className={`relative hover:text-primary text-nowrap py-2 capitalize flex items-center gap-1  font-semibold description1 ${pathName === link.href ? "text-primary" : "text-white"}`}
+                    className={`relative hover:text-primary text-nowrap py-2 capitalize flex items-center gap-2  font-semibold description1 ${pathName === link.href ? "text-primary" : "text-white"}`}
                   >
                     {link.name}
                     {link.subLinks && (
@@ -114,7 +114,7 @@ const Navbar = () => {
                           <span className="relative group nav-2" key={index}>
                             <Link
                               href={subLink.href ? subLink.href : "#"}
-                              className={`w-full text-nowrap flex items-center gap-1 group capitalize font-semibold hover:bg-[#29313C] hover:text-white ${pathName === subLink.href ? "bg-[#29313C] text-white" : ""}`}
+                              className={`w-full text-nowrap flex items-center gap-2 group capitalize font-semibold hover:bg-[#29313C] hover:text-white ${pathName === subLink.href ? "bg-[#29313C] text-white" : ""}`}
                             >
                               {subLink.name}
                               {subLink.subLinks && (
@@ -135,7 +135,7 @@ const Navbar = () => {
                                               ? nestedSubLink.href
                                               : "#"
                                           }
-                                          className={`w-full text-nowrap py-2 px-4 flex items-center font-semibold description1 gap-1 group capitalize hover:bg-[#29313C] hover:text-white ${pathName === nestedSubLink.href ? "bg-[#29313C] text-white" : ""}`}
+                                          className={`w-full text-nowrap py-2 px-4 flex items-center font-semibold description1 gap-2 group capitalize hover:bg-[#29313C] hover:text-white ${pathName === nestedSubLink.href ? "bg-[#29313C] text-white" : ""}`}
                                         >
                                           {nestedSubLink.name}
                                         </Link>

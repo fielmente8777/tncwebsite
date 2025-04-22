@@ -19,7 +19,7 @@ const ServiceCard3: React.FC<ServiceCardProps> = ({
   const Tag = `h${level}` as keyof JSX.IntrinsicElements;
   return (
     <div className="w-full bg-white flex flex-col items-center box-shadow2 justify-center gap-4 py-6 px-2 border-t-[6px] border-l-[6px] border-prime-red hover:border-t-0 hover:border-l-0 hover:border-b-[6px] hover:border-r-[6px] hover:border-prime-light-blue transition-all ease-in-out duration-300">
-      <div className="relative aspect-[4/2] md:aspect-[4/1] w-full">
+      <div className="relative aspect-[4/1] md:aspect-[4/1] w-full">
         <Image src={icon} alt={title} fill className="object-contain" />
       </div>
       <Tag className="heading4 w-full text-center font-semibold text-black px-10">
