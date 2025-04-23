@@ -29,7 +29,7 @@ const AboutUs: React.FC<AboutUsProps> = ({
 
         <div className="space-y-5">
           <div className="flex gap-4 items-center">
-            <h2 className="text-second-red font-bold text-2xl">{title}</h2>
+            <h2 className="text-second-red font-semibold text-2xl">{title}</h2>
             <HorizontTowLine />
           </div>
 
@@ -44,7 +44,7 @@ const AboutUs: React.FC<AboutUsProps> = ({
               <li key={index}>
                 <LinkButton
                   href={link.href}
-                  className={`rounded-full ${index === 0 ? "bg-prime-light-blue text-white" : "bg-prime-red text-white"} capitalize px-5 py-2 font-medium text-sm`}
+                  className={`rounded-full ${index !== 0 ? "bg-prime-light-blue text-white" : "bg-prime-red text-white"} capitalize px-5 py-2 font-medium text-sm md:text-md` }
                 >
                   {link.name}
                 </LinkButton>
