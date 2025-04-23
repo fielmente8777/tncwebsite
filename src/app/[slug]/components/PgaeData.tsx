@@ -12,11 +12,11 @@ interface PageProps {
       src: string;
     };
     htm: string;
-    formInfo: {
+    formInfo?: {
       title: string;
       desc: string;
     };
-    forData: {
+    forData?: {
       title: string;
       link: {
         name: string;
