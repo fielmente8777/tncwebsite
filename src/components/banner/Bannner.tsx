@@ -29,7 +29,7 @@ const Bannner: React.FC<bannnerData> = ({
               <SectionTitleSubTitle
                 title={title}
                 subTitle={subTitle}
-                subTitleClassName="text-white md:text-7xl font-bold"
+                subTitleClassName="text-white md:text-7xl font-bold poppins"
                 
               />
             </div>

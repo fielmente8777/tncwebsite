@@ -51,7 +51,7 @@ export const ChatDrawer = () => {
 
       <div className="flex justify-end mt-4">
         <div
-          className="w-16 h-16 bg-red-600 rounded-3xl flex justify-center items-center cursor-pointer text-white"
+          className="w-16 h-16 bg-prime-red shadow-xl rounded-3xl flex justify-center items-center cursor-pointer text-white"
           onClick={() => setOpenDrawer(!openDrawer)}
         >
           {openDrawer ? (

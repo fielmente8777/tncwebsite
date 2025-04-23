@@ -299,19 +299,13 @@ export const slugPageData = [
     Introduction to the Study Permit
   </h2>
   <p>
-    Annually, more than 135,000 students choose Canada for their education. To
-    pursue studies in the country, they need to secure a study permit issued by
-    the Canadian government. This permit, categorized as a Temporary Resident
-    Visa (TRV), enables students to study in Canada temporarily. It specifies
-    the educational institution and course of study. Meeting specific
-    requirements is essential for eligibility.
+    Each year, over <b>135,000 international students</b> choose Canada for its world-class education, inclusive culture, and post-study opportunities. To study in Canada, international students must obtain a <b>study permit</b> issued by the Government of Canada. This document, categorized under <b>Temporary Resident Visas (TRVs),</b> authorizes temporary residence for the purpose of education and clearly outlines the designated institution and program of study.
   </p>
   <h3 >
-    Eligibility:
+    Important Update: Introduction of the Provincial Attestation Letter (PAL)
   </h3>
   <p>
-    To be eligible for a study permit, you must meet the criteria established by
-    the IRCC, including:
+    As of <b>January 22, 2024,</b> the <b>Immigration, Refugees and Citizenship Canada (IRCC)</b> introduced a new requirement for most international students applying for a study permit — the <b>Provincial Attestation Letter (PAL)</b>.
   </p>
   <div>
     <img
@@ -328,101 +322,63 @@ export const slugPageData = [
 
 `,
     pageData2: `
+  <h3>📝 What is a PAL?</h3>
+  <p>A <b>Provincial Attestation Letter (PAL)</b> is a formal document issued by the province or territory where your <b>Designated Learning Institution (DLI)</b> is located. It confirms that your study permit application falls within the province’s <b>federally allocated cap</b> for international students.</p>
+  <h3>📌 Who Needs a PAL?</h3>
+  <p>f you are applying for a study permit <b>outside Canada,</b> you must <b>include a PAL</b> with your application — unless you fall under one of the following exemptions:</p>
   <ol >
     <li >
-       Obtain a letter of acceptance from a Designated Learning Institution
-      (DLI) in Canada, approved by the provincial or territorial government for
-      international students.
+       Kindergarten to Grade 12 students
     </li>
     <li >
-       Demonstrate to an immigration officer your intention to leave Canada
-      upon the expiration of your study permit.
+      Master’s and doctoral program applicants
     </li>
     <li >
-       Provide financial evidence indicating your ability to:
+       Visiting or exchange students
+    </li>
+    <li>
+    Students already in Canada with a valid permit applying for an extension or change
+    </li>
+    <li>
+    Family members of certain temporary residents (e.g., work permit holders under specific public policies)
     </li>
   </ol>
-  <ul style="padding-left: 3rem">
-    <li>Cover tuition fees.</li>
+  <p>⚠️
+Note: Applications submitted without a required PAL will be refused.</p>
+<h4>How to Get a PAL?</h4>
+<p>Once you receive your <b>Letter of Acceptance (LOA)</b> from a DLI, the institution will request a PAL on your behalf from the respective provincial or territorial government. You do not apply for the PAL directly. Processing times and requirements may vary by province.</p>
+<p>At <b>TNC Immigration,</b> we stay updated with each province’s PAL issuance process to ensure you’re fully prepared and compliant.</p>
+<h3>Eligibility Criteria for a Study Permit</h3>
+<p>To be eligible for a study permit, you must meet the criteria outlined by <b>IRCC,</b> including:</p>
+  <ol style="padding-left: 3rem">
+    <li>Letter of Acceptance from a Designated Learning Institution (DLI), approved by the provincial or territorial government for international students.</li>
     <li>
-      Support yourself and any accompanying family members during your stay in
-      Canada.
+      Provincial Attestation Letter (PAL) (if required based on your program and location).
     </li>
     <li>
-      Afford return tickets for you and your family after the permit expires.
+     Proof of intent to leave Canada upon expiry of your study permit.
     </li>
-  </ul>
-  <ol >
-    <li >
-       Maintain a clean legal record, adhere to Canadian laws, and have no
-      criminal history.
-    </li>
-    <li >
-       Be in good health and be prepared to undergo required medical
-      examinations.
+    <li>
+     Financial proof demonstrating ability to:
+     <ul>
+     <li>Pay tuition fees.</li>
+     <li>Cover living expenses for yourself and accompanying family members.</li>
+     <li>Afford return transportation for all family members.</li>
+     </ul>
     </li>
     <li >
-      Meet general admissibility criteria for entry into Canada.
+      No criminal record and willingness to provide police certificates if required.
     </li>
     <li >
-      If studying in the province of Quebec, obtain a Quebec Acceptance
-      Certificate (QAC).
+       Good health and willingness to complete a medical exam, if necessary.
+    </li>
+    <li >
+      Meet Canada’s general admissibility requirements
+    </li>
+    <li >
+      If planning to study in <b>Quebec</b>, obtain a <b>Quebec Acceptance Certificate (QAC)</b>.
     </li>
   </ol>
-  <p>
-    Upon acquiring a study permit, eligible family members can join you in
-    Canada by obtaining their own study or work permits.
-  </p>
-  <h2 >
-    How To Apply For A Study Permit
-  </h2>
-  <p>
-    Assess Your Eligibility Before initiating your application, ensure you meet
-    all the prerequisites outlined by the IRCC for a study permit. This prevents
-    unnecessary time and financial investments. Once eligibility, including
-    enrollment in a DLI, is confirmed, proceed with your study permit
-    application.
-  </p>
-  <p>
-    Document Preparation Certain documents are essential for a study permit
-    application, such as:
-  </p>
-  <ul>
-    <li>Proof of acceptance from a designated institution</li>
-    <li>Valid travel documents/passport</li>
-    <li>
-      Financial evidence demonstrating your ability to support yourself and
-      accompanying family members
-    </li>
-  </ul>
-  <p>
-    Depending on your unique circumstances, additional documents like a letter
-    of explanation or custodian declaration (for minors) may be necessary. For
-    guidance on your specific requirements, feel free to contact us.
-  </p>
-  <p>
-    <strong>Complete Study Permit Forms</strong> With all documents in order,
-    fill out your application forms either online or manually. Online submission
-    is recommended for its advantages, saving time, reducing mailing costs,
-    facilitating updates, and ensuring immediate receipt by the IRCC.
-  </p>
-  <p>
-    <strong>Fee Payment After completing</strong> the study permit forms and
-    attaching all necessary documents, proceed to make the required payments to
-    the IRCC, covering study permit and biometric fees.
-  </p>
-  <p>
-    <strong>Submit Application</strong> Submit your study permit application,
-    along with proof of fee payment, to the IRCC. Online submissions can be made
-    electronically, while manual submissions should be sent via the provided
-    mailing instructions in the manual.
-  </p>
-  <p>
-    Provide Additional Information During the processing of your study permit
-    application, the IRCC may request additional information, such as medical
-    examinations, police certificates, and biometrics. Ensure timely submission
-    of this information within the specified timeframe.
-  </p>
 `,
   },
   {
@@ -727,13 +683,13 @@ export const slugPageData = [
       },
     ],
     pageData1: `
-      <h2>Introduction to Post-Graduate Open Work Permits</h2>
-      <p>The Post-Graduation Work Permit (PGWP) is a valuable opportunity for international students who have completed a program of study at a designated learning institution (DLI) in Canada. This permit allows eligible graduates to work in Canada for a duration equivalent to the length of their study program, up to a maximum of three years.</p>
+      <h2>Post-Graduation Work Permit (PGWP) in Canada</h2>
+      <p><b>The Post-Graduation Work Permit (PGWP) allows international students who complete an eligible program at a Designated Learning Institution (DLI) in Canada to work for up to three years. It’s a key step toward gaining Canadian work experience and potentially applying for permanent residency.</b></p>
 
-      <h3>Eligiblity Criteria</h3>
-      <h4>To be eligible for the PGWP, you must meet the following criteria:<h3>
-      <h4>1. Completed a Designated Learning Institution (DLI) Program</h4>
-      <p>You must have completed a program of study at a designated learning institution (DLI) in Canada. Ensure that your program was full-time and lasted for at least eight months.</p>
+      <h3>PGWP Eligibility Criteria (Updated for 2024–2025)</h3>
+      <h4>To qualify for a PGWP, students must meet the following conditions:<h3>
+      <h4>1. Complete a Full-Time Program at a DLI</h4>
+      <p>Your program must be full-time, last at least 8 months, and be completed at a recognized Canadian DLI.</p>
       <div>
 		  <img 
       fetchpriority="high" 
@@ -744,37 +700,36 @@ export const slugPageData = [
       sizes="(max-width: 640px) 100vw, 640px">															
       </div>`,
     pageData2: `
-    <h4> 2. Graduated from a Public or Private Post-Secondary Institution</h4>
-    <p>Your DLI can be either a public or private post-secondary institution, but it must be authorized by the provincial or territorial government to grant degrees.</p>
-    <h4>3. Apply within 180 Days of Receiving the Final Transcript or Notification of Graduation</h4>
-    <p>To be eligible, you must apply for the PGWP within 180 days of receiving your final transcript, or a written notification from your institution confirming that you have met the requirements for completing your program.</p>
+    <h4> 2. Graduate from an Eligible Institution</h4>
+    <p>Your institution can be public or certain private post-secondary schools that are authorized to award degrees under provincial law.</p>
+    <h4>3. Apply Within 180 Days</h4>
+    <p>You must apply for the PGWP within 180 days of receiving your final transcript or official confirmation of program completion.</p>
 
-    <h4>4. Valid Study Permit</h4>
-    <p>You must have had a valid study permit when you completed your program, or your study permit must have expired within the last 90 days.</p>
-
+    <h4>4. Hold a Valid Study Permit</h4>
+    <p>You must either:</p>
+    <ul>
+    <li><b>Have a valid study permit when you finish your program, or</b></li>
+    <li><b>Have had a study permit that expired within the last 90 days</b></li>
+    </ul>
     <h4>5. No Previous PGWP Issued</h4>
-    <p>You are not eligible if you have previously been issued a PGWP after completing another program of study.</p>
+    <p>You are not eligible if you’ve already received a PGWP after completing another program.</p>
 
-    <h3>Application Process</h3>
-    <h4>1. Gather Required Documents</h4>
-    <p>Ensure you have the necessary documents, including your valid passport, study permit, final transcript, and proof of program completion.</p>
 
-    <h4>2. Create an Online Account</h4>
-    <p>Visit the official Immigration, Refugees and Citizenship Canada (IRCC) website and create an online account to start your application.</p>
+    <h4>Important Updates: September 2024 & Beyond</h4>
+    <p>IRCC has introduced new requirements for PGWP applicants:</p>
+    <p style="margin-left: 16px;"><b> • From September 1, 2024, students must be physically present in Canada for the entire duration of their studies.</b></p>
+    <p style="margin-left: 22px;"><b>➤ Time spent outside Canada will be deducted from your PGWP length.</b></p>
+    <p style="margin-left: 16px;"><b> • At least 50% of your program must be delivered in-person (includes in-person, hybrid, or flexible delivery with mandatory on-campus attendance).</b></p>
+    <p style="margin-left: 16px;"><b> • From November 1, 2024, PGWP applicants must meet the new language proficiency requirement:</b></p>
+    <p style="margin-left: 22px;"><b>➤ Minimum Canadian Language Benchmark 5 (CLB 5) for college-level programs.</b></p>
+    <p style="margin-left: 16px;"><b> • Programs must fall within IRCC’s approved fields of study to qualify for PGWP if you apply for a study permit on or after November 1, 2024.</b></p>
 
-    <h4>3. Submit Your Application</h4>
-    <p>Fill out the application form, providing accurate information. Upload the required documents and pay the application fee.</p>
 
-    <h4>4. Wait for a Decision</h4>
-    <p>Once submitted, your application will be reviewed by immigration authorities. Monitor your application status through your online account.</p>
 
-    <h4>5. Receive Your PGWP
-    <p>Upon approval, you will receive your Post-Graduation Work Permit. This permit allows you to work in Canada and gain valuable Canadian work experience.</p>
 
-    <h4>Let Us help you!</h4>
-    <p>Stay updated on immigration news and policy changes by regularly checking the official IRCC website. If you have any questions or concerns, contact the IRCC or consult with a qualified immigration professional.</p>
 
-    <p>Embark on your post-graduation journey in Canada and build a promising future with the Post-Graduation Work Permit!</p>`,
+    <h3>Let TNC Immigration Help You</h3>
+    <p>The PGWP process can be complex, especially with the 2024 updates. At TNC Immigration, our team of professionals is ready to guide you through every step — from checking your program eligibility to submitting a strong PGWP application.</p>`,
   },
   {
     slug: "spousal-and-common-law",
@@ -1305,14 +1260,14 @@ Applicants must secure a job offer from a designated Canadian agricultural emplo
         link: "mailto:info@tncimmigration.com",
       },
     ],
+    formInfo: {
+      title: "Get Started Today",
+      desc: "Book a consultation or fill out our quick enquiry form below."
+    },
     pageData1: `
-   <h2>Express Entry: Your Pathway to Permanent Residency in Canada</h2>
+   <h2>Express Entry: Your Fast Track to Canadian Permanent Residency</h2>
   <p>
-    Canada’s Express Entry system is one of the most popular and efficient
-    immigration pathways for skilled workers seeking to make Canada their
-    permanent home. It is designed to attract talented professionals from across
-    the globe, helping to fill labor market gaps in various sectors of the
-    Canadian economy.
+    Canada’s Express Entry system is a leading immigration pathway for skilled workers aiming to become permanent residents. It is designed to fill labor market gaps by attracting talented professionals from around the world.
   </p>
   <div >
     <img
@@ -1325,50 +1280,66 @@ Applicants must secure a job offer from a designated Canadian agricultural emplo
       alt="a"
       sizes="(max-width: 640px) 100vw, 640px"
     />
-  </div>`,
+  </div>
+  <h2>Programs Under Express Entry</h2>
+  <ul>
+<li>Federal Skilled Worker Program (FSWP)</li>
+<li>Federal Skilled Trades Program (FSTP)</li>
+<li>Canadian Experience Class (CEC)</li></ul>`,
     pageData2: `
-  <h2>What is Express Entry?</h2>
-<p>1.Federal Skilled Worker Program (FSWP)</p>
-<p>2.Federal Skilled Trades Program (FSTP)</p>
-<p>3.Canadian Experience Class (CEC)</p>
-<p>Each of these programs caters to different skill sets, experience levels, and qualifications, ensuring that Canada welcomes immigrants who can contribute to its economy and society.</p>
-<h2>How Express Entry Works</h2>
+  
+<p>Each program targets specific work experience, education, and skill levels.</p>
+<h2>How It Works</h2>
   <p>
-    Express Entry operates on a points-based system known as the Comprehensive
-    Ranking System (CRS). Points are awarded based on various factors such as:
+    Candidates create an online profile and receive a Comprehensive Ranking System (CRS) score based on factors like:
   </p>
   <ul>
-    <li><b>Age</b></li>
-    <li><b>Education</b></li>
-    <li><b>Work Experience</b></li>
-    <li><b>Language Proficiency (English and/or French)</b></li>
+    <li>Age</li>
+    <li>Education</li>
+    <li>Work Experience</li>
+    <li>Language Proficiency (English and/or French)</li>
     <li>
-      <b>Adaptability (such as a spouse’s qualifications or Canadian relatives)</b>
+      Adaptability 
+      // (such as a spouse’s qualifications or Canadian relatives)</b>
     </li>
   </ul>
   <p>
-    Applicants create an online profile and are entered into the Express Entry
-    pool, where they are ranked against others in the pool. Candidates with the
-    highest CRS scores are invited to apply for permanent residency during
-    regular rounds of invitations conducted by Immigration, Refugees, and
-    Citizenship Canada (IRCC).
+    Top-ranking candidates are invited to apply for permanent residency through regular draws conducted by IRCC.
   </p>
-  Key Benefits of Express Entry
-<li><b>Fast Processing:</b> Express Entry applications are processed in as little as six months after receiving an invitation to apply.</li>
-<li><b>Flexibility:</b> Express Entry is open to individuals from a wide range of industries and professions.</li>
-<li><b>Permanent Residency:</b> Successful applicants and their families can become permanent residents of Canada, enjoying benefits such as access to healthcare, education, and the ability to live and work anywhere in Canada.</li>
-<h2>Steps to Apply for Express Entry</h2>
+ <h4>Category-Based Draws: A Targeted Approach</h4>
+<p>In addition to general draws, IRCC now conducts category-based draws to meet specific labor market needs.</p>
+<p>Current Categories Include:</p>
 <ul>
-<li> <b>Determine Your Eligibility:</b> Use the eligibility tools on our website or consult with our experienced immigration professionals to assess if you qualify for any of the programs under Express Entry.</li>
-<li> <b>Create an Express Entry Profile:</b> Gather the necessary documents, such as proof of language proficiency, educational credentials, and work experience, and create your online profile.</li>
-<li> <b>Enter the Pool:</b> Once your profile is created, you will enter the Express Entry pool and receive a CRS score based on your qualifications.</li>
-<li> <b>Receive an Invitation to Apply (ITA):</b> If you score high enough, you will receive an ITA to apply for permanent residency.</li>
-<li> <b>Submit Your Application:</b> After receiving an ITA, you have 60 days to submit a complete application, along with all supporting documents.</li>
-<li> <b>Receive Confirmation of Permanent Residency (COPR):</b> If your application is approved, you will receive a COPR and can begin your new life in Canada.
-</li>
+<li>French-language proficiency</li>
+<li>Healthcare occupations</li>
+<li>STEM (Science, Technology, Engineering, Math) occupations</li>
+<li>Skilled trades</li>
+<li>Agriculture and agri-food</li>
+<li>Early childhood educators (ECEs only)</li>
 </ul>
-<h2>Why Choose TNC Immigration Canada?</h2>
-<p>Navigating the Express Entry process can be complex and overwhelming. At TNC Immigration Canada, our team of expert immigration consultants will guide you every step of the way. From determining eligibility to submitting your application, we ensure that your journey to Canadian permanent residency is smooth, efficient, and stress-free.</p>
+<p>Note: ECE Assistants are no longer eligible. Healthcare draws now focus only on front-line roles.</p>
+<h4>To be eligible, you must:</h4>
+<ul>
+<li> Qualify under one of the Express Entry programs</li>
+<li>Meet all criteria for the specific targeted category</li>
+
+</ul>
+<p>Candidates who meet the requirements are ranked within their category, and top profiles are invited — sometimes even with lower CRS scores.</p>
+<h3>Why Express Entry?</h3>
+<ul>
+<li>Fast Processing: As little as 6 months</li>
+<li>Flexible: Open to a wide range of skilled workers</li>
+<li>Permanent Residency: Live, work, and study anywhere in Canada</li>
+</ul>
+<h3>How TNC Immigration Can Help</h3>
+<p>At TNC Immigration Canada, we help you:</p>
+<ul>
+<li>Determine eligibility</li>
+<li>Create a strong Express Entry profile</li>
+<li>Target category-based draws effectively</li>
+<li>Submit a complete and successful application</li>
+</ul>
+<p>Let TNC Immigration help you take the right steps toward your Canadian dream.</p>
   `,
   },
   {
@@ -1637,25 +1608,55 @@ You are a Canadian citizen, a permanent resident in Canada, or registered under 
         link: "mailto:info@tncimmigration.com",
       },
     ],
-    title: "Get your Assessment Done Today",
+    title: "Confused about eligibility or received a PFL?",
     address:
-      "Our offices are located on the Suite 303 – 15957 84 Avenue Surrey BC, V4N 0W7 Canada",
+      "Book a consultation with TNC Immigration to ensure a strong, accurate application under the new rules.",
     pageData1: `
-    <h2>Spousal Open Work Permit</h2>
-<p>In the immigration process, it’s not uncommon for immigration officers to have significant questions or concerns regarding an applicant’s submission, potentially leading to a refusal of their application. In such instances, officers typically communicate their doubts or inquiries through official correspondence, often delivered via email. These correspondences are commonly referred to as Procedural Fairness Letters, or simply PFLs. They serve as a crucial means of ensuring fairness and transparency in the application process.</p>
+    <h2>Spousal Open Work Permit (SOWP) –</h2>
+<p>A Spousal Open Work Permit (SOWP) allows eligible spouses or common-law partners of international students to work in Canada. However, as of 2024, eligibility has been restricted.</p>
+<h3>Who Is Eligible?</h3>
 
-<p>Instances of Receiving a Procedural Fairness Letter (PFL)</p>
+<p>Your spouse/partner can apply for a SOWP only if you’re enrolled in one of these full-time, degree-granting programs at a Designated Learning Institution (DLI):</p>
 
-There are various situations in which an applicant may receive a Procedural Fairness Letter. Some of these include:
+<h4>Graduate Programs</h4>
 <ul>
-<li><b>Suspected Misrepresentation:</b> If an immigration officer suspects that an applicant has misrepresented themselves or provided false information in their application.
-<li><b>External Source References:</b> When officers refer to external sources, such as an applicant’s social media accounts, and contemplate refusal based on the information gathered from these sources.</li>
-<li><b>Incomplete Forms or Documents:</b> When an officer believes that an application is missing required updates or necessary documents and considers refusal due to these omissions.</li>
-<li><b>Medical Inadmissibility Concerns:</b> If there are concerns about an applicant’s medical admissibility to Canada.</li>
-</ul>`,
+<li>Master’s programs (minimum 16 months)</li>
+<li>Doctoral (PhD) programs</li>
+</ul>
+<h4>Professional Programs</h4>
+<ul>
+<li>Dentistry (DDS, DMD)</li>
+<li>Law (LLB, JD, BCL)</li>
+<li>Medicine (MD)</li>
+<li>Optometry (OD)</li>
+<li>Pharmacy (PharmD, BS, BSc, BPharm)</li>
+<li>Veterinary Medicine (DVM)</li>
+<li>Nursing (BScN, BSN, BNSc, BN)</li>
+<li>Education (B.Ed.)</li>
+<li>Engineering (B.Eng., BE, BASc)</li>
+</ul>
+`,
+pageData2: `
+    <h4>Special Cases</h4>
+    <ul>
+    <li><b>Spouses of participants in the Supervised Practice Experience Partnership (SPEP) may also qualify.</b></li>
+    </ul>
+    <p>❌ Spouses of students in other programs are no longer eligible for a SOWP.</p>
+    <h4>No Job Offer Needed</h4>
+    <p>Eligible spouses can apply for an open work permit without a job offer or LMIA, allowing them to work for any employer in Canada.</p>
+    <h4>Documents Needed</h4>
+    <ul>
+    <li>Proof of student’s enrollment in an eligible program</li>
+    <li>Valid study permit</li>
+    <li>Proof of relationship (marriage/common-law documents)</li>
+    <li>Passport and travel documents</li>
+    </ul>
+    <h4>Procedural Fairness Letters (PFL)</h4>
+    <p>If IRCC raises concerns about your SOWP application (e.g., ineligibility, misrepresentation, or missing documents), you may receive a PFL. We can help you respond effectively to avoid refusal.</p>
+`,
     form: false,
     forData: {
-      title: "Get your Assessment Done Today",
+      title: "Need Help?",
       link: {
         name: "Click Here for Free Assessment",
         href: "/start-assessment",

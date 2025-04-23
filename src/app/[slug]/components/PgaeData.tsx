@@ -12,6 +12,18 @@ interface PageProps {
       src: string;
     };
     htm: string;
+    formInfo: {
+      title: string;
+      desc: string;
+    };
+    forData: {
+      title: string;
+      link: {
+        name: string;
+        href: string;
+      };
+      address: string;
+    };
     pageData1: string;
     pageData2?: string;
     welcom?: undefined;
@@ -33,6 +45,8 @@ const PgaeData: React.FC<PageProps> = ({
     links,
     title,
     address,
+    formInfo,
+    forData,
   },
 }) => {
   return (
@@ -44,7 +58,12 @@ const PgaeData: React.FC<PageProps> = ({
         ></div>
         {/* form */}
         <div className="flex flex-col gap-8 w-full">
-          {form && <Form2 />}
+          {form && <Form2 {...formInfo} />}
+          {forData && (
+            <div className="flex flex-col w-full data_pass -mb-6">
+              <h2 className="font-bold text-2xl">{forData.title}</h2>
+            </div>
+          )}
           {title && <h2 className="font-bold text-2xl">{title}</h2>}
           {btnLink && (
             <div className="max-w-[340px] mx-auto mt-4">

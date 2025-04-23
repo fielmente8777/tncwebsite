@@ -46,7 +46,11 @@ const ServicesData = [
   },
 ];
 
-const Form2 = () => {
+interface Form2Props {
+  title?: string;
+  desc?: string;
+}
+const Form2: React.FC<Form2Props> = ({ title, desc }) => {
   const [userName, setUserName] = useState("");
   const [userEmail, setUserEmail] = useState("");
   const [userMessage, setUserMessage] = useState("");
@@ -130,15 +134,18 @@ const Form2 = () => {
           {/* quick enquiry  */}
           <div className="flex justify-center items-center gap-4">
             <EnquiryIcon />
-            <h2 className="text-prime-red font-bold text-lg">QUICK ENQUIRY</h2>
+            <h2 className="text-prime-red font-bold text-lg">
+              {title ? title : "QUICK ENQUIRY"}
+            </h2>
           </div>
 
           {/* greetings message  */}
           <div className="flex justify-center">
             <HandShakeIcon />
             <p className="text-sm text-center max-w-96">
-              Greetings! Kindly provide your requirements below, and we&#39;ll get
-              back to you shortly.
+              {desc
+                ? desc
+                : " Greetings! Kindly provide your requirements below, and we'll get back to you shortly."}
             </p>
           </div>
         </div>
