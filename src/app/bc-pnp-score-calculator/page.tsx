@@ -39,7 +39,7 @@ export const metadata: Metadata = {
 
     images: [
       {
-        url: "https://tncimmigration.com/bc-pnp-score-calculator/images/Fielmente-og.png",
+        url: "https://tncimmigration.com/bc-pnp-score-calculator/images/tncimmigration-og.png",
         width: 1200,
       },
     ],

@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   
       images: [
         {
-          url: "https://tncimmigration.com/fsw-score-calculator/images/Fielmente-og.png",
+          url: "https://tncimmigration.com/fsw-score-calculator/images/tncimmigration-og.png",
           width: 1200,
         },
       ],

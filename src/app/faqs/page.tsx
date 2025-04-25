@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   
       images: [
         {
-          url: "https://tncimmigration.com/faqs/images/Fielmente-og.png",
+          url: "https://tncimmigration.com/faqs/images/tncimmigration-og.png",
           width: 1200,
         },
       ],
