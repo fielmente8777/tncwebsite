@@ -1,6 +1,7 @@
 import { InstaIcon } from "@/app/(home)/components/OurSocailMedia";
 import {
   FlagPolingIcon,
+  // FlagPolingIcon,
   PermanentResidenceIcon,
   SponsorshipIcon,
   TemporaryResidenceIcon,
@@ -63,9 +64,9 @@ export const homePageData = {
     },
     {
       icon: <FlagPolingIcon />,
-      title: "FlagPoling Application",
+      title: "Express Entry Profile Creation",
       name: "read more",
-      href: "/flagpoling",
+      href: "/express-entry-profile-creation",
       src: imagesLink + "im1.webp",
     },
   ],

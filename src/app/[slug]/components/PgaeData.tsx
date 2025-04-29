@@ -1,5 +1,5 @@
 import { SectionWithContainer } from "@/components";
-import Form2 from "@/components/Form2";
+// import Form2 from "@/components/Form2";
 import { FillCallIcon, FillMailIcon } from "@/data/icons";
 import Link from "next/link";
 import React from "react";
@@ -41,11 +41,11 @@ const PgaeData: React.FC<PageProps> = ({
     pageData1,
     pageData2,
     btnLink = true,
-    form = true,
+    // form = true,
     links,
     title,
     address,
-    formInfo,
+    // formInfo,
     forData,
   },
 }) => {
@@ -58,7 +58,7 @@ const PgaeData: React.FC<PageProps> = ({
         ></div>
         {/* form */}
         <div className="flex flex-col gap-8 w-full">
-          {form && <Form2 {...formInfo} />}
+          {/* {form && <Form2 {...formInfo} />} */}
           {forData && (
             <div className="flex flex-col w-full data_pass -mb-6">
               <h2 className="font-bold text-2xl">{forData.title}</h2>

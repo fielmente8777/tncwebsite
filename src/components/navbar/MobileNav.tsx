@@ -15,20 +15,20 @@ const MobileNav: React.FC<MobileNavProps> = ({ mobileMenu, setMobileMenu }) => {
   const pathName = usePathname();
   return (
     <div
-      className={`fixed top-[13rem] left-0 w-full h-screen z-50 bg-black/80 transition-all duration-300 ${mobileMenu ? "translate-x-0" : "-translate-x-full"}`}
+      className={`fixed top-[13rem] max-lg:block hidden left-0 w-full h-screen z-50 bg-black/80 transition-all duration-300 ${mobileMenu ? "translate-x-0" : "-translate-x-full"}`}
     >
       <div className="w-full h-full relative">
-        <div className="w-full h-full bg-white py-4 ps-4">
-          <nav className="flex flex-col gap-2 h-full w-full  font-semibold text-[#29313C]">
-            <ul className="flex flex-col gap-4 h-[100vh] overflow-y-scroll pe-3">
+        <div className="w-full h-full bg-white">
+          <nav className="flex flex-col gap-2 h-full w-full  pb-4 ">
+            <ul className="flex flex-col h-[90dvh] overflow-y-auto pb-36">
               {NaveLinks.map((link, index) => {
                 return (
-                  <li key={index} className="flex flex-col ">
+                  <li key={index} className={` text-[#29313C] py-3 px-4 capitalize flex flex-col `}>
                     <span className="flex items-center justify-between">
                       <Link
                         href={link.href ? link.href : "/"}
                         onClick={() => setMobileMenu(false)}
-                        className="w-4/5"
+                        className="w-4/5 !text-base capitalize  font-semibold"
                       >
                         {link.name}
                       </Link>
@@ -55,7 +55,7 @@ const MobileNav: React.FC<MobileNavProps> = ({ mobileMenu, setMobileMenu }) => {
                     </span>
 
                     {link.subLinks && openDropDown === index && (
-                      <span className="flex flex-col gap-2 ">
+                      <span className="flex flex-col gap-4 mt-4 ml-2">
                         {link.subLinks.map((subLink, subIndex) => (
                           <span key={subIndex} className="flex flex-col gap-2">
                             <span className="flex items-center justify-between">
@@ -65,7 +65,7 @@ const MobileNav: React.FC<MobileNavProps> = ({ mobileMenu, setMobileMenu }) => {
                                   setMobileMenu(false);
                                   setOpenSubDropDown(null);
                                 }}
-                                className={`w-4/5 ${pathName === subLink.href ? "text-secondary" : ""} capitalize text-sm`}
+                                className={`w-4/5  font-semibold ${pathName === subLink.href ? "text-secondary" : ""} capitalize text-sm`}
                               >
                                 {subLink.name}
                               </Link>
@@ -87,7 +87,7 @@ const MobileNav: React.FC<MobileNavProps> = ({ mobileMenu, setMobileMenu }) => {
                             </span>
                             {subLink.subLinks &&
                               openSubDropDown === subIndex && (
-                                <span className="flex flex-col gap-3">
+                                <span className="flex flex-col gap-3 ml-4">
                                   {subLink.subLinks.map(
                                     (subSubLink, subSubIndex) => (
                                       <Link

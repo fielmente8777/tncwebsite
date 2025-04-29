@@ -1240,7 +1240,7 @@ Applicants must secure a job offer from a designated Canadian agricultural emplo
 `,
   },
   {
-    slug: "express-entry",
+    slug: "express-entry-profile-creation",
     meta: {
       title: "Express Entry - TNC immigration",
       desc: "Express Entry Express Entry: Your Pathway to Permanent Residency in Canada Canada’s Express Entry system is one of the most popular and efficient immigration pathways for skilled workers seeking to make Canada their permanent home. It is designed to attract talented professionals from across the globe, helping to fill labor market gaps in various sectors",

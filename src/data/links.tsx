@@ -157,8 +157,8 @@ export const NaveLinks: NveLinksProps[] = [
         ]
       },
       {
-        name: "Express Entry",
-        href: "/express-entry",
+        name: "express entry profile creation",
+        href: "/express-entry-profile-creation",
       },
       {
         name:"procedural Fairness Letters",
@@ -253,7 +253,7 @@ export const NavbarUpperLinks = [
     href: "tel:+1 (236) 818 5558",
   },
   {
-    name: "Mississauga : +1 (647) 9320060",
+    name: "Mississauga : +1 (647) 932 0060",
     href: "tel:+1 (647) 9320060",
   },
   {

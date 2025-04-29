@@ -27,7 +27,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
         <span className="p-5 aspect-square flex items-center justify-center group-hover:bg-white group-hover:text-primary bg-primary rounded-full text-white duration-500 transition-all ease-in-out">
           {icon ? icon : ""}
         </span>
-        <Tag className="heading2 text-center font-semibold text-prime-dark-blue group-hover:text-white px-10">
+        <Tag className="heading2 text-center font-semibold text-prime-dark-blue group-hover:text-white px-4">
           {title}
         </Tag>
         <Link
