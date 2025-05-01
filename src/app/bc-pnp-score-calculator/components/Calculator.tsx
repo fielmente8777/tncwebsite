@@ -625,6 +625,7 @@ const Calculator = () => {
                   type="radio"
                   name="emp"
                   value={"0"}
+                  className="mt-1"
                   onChange={(e) =>
                     handleChange("employmentwithinbc", e.target.value)
                   }
@@ -643,6 +644,7 @@ const Calculator = () => {
                   type="radio"
                   name="emp"
                   value={"5"}
+                  className="mt-1"
                   onChange={(e) =>
                     handleChange("employmentwithinbc", e.target.value)
                   }
@@ -657,6 +659,7 @@ const Calculator = () => {
                   type="radio"
                   name="emp"
                   value={"15"}
+                  className="mt-1"
                   onChange={(e) =>
                     handleChange("employmentwithinbc", e.target.value)
                   }

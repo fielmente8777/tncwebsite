@@ -25,7 +25,7 @@ export const slugPageData = [
             href: "https://maps.app.goo.gl/UtgSTSjGCqubSGLJ7",
           },
           {
-            name: "+1(236)8185558",
+            name: "+1 (236) 818 5558",
             href: "tel:+1(236)8185558",
           },
         ],
@@ -63,7 +63,7 @@ export const slugPageData = [
             href: "https://maps.app.goo.gl/YZzjLM5jCd1DV2XY7",
           },
           {
-            name: "+1(647)9320060",
+            name: "+1 (647) 932 0060",
             href: "tel:+1(647)9320060",
           },
         ],
@@ -104,7 +104,7 @@ export const slugPageData = [
             href: "https://maps.app.goo.gl/eeSueke3ypBzvQfK6",
           },
           {
-            name: "+1(778)5944880",
+            name: "+1 (778) 594 4880",
             href: "tel:+1(778)5944880",
           },
         ],
@@ -394,7 +394,7 @@ Note: Applications submitted without a required PAL will be refused.</p>
     htm: "true",
     links: [
       {
-        name: "+1(236)818 5558",
+        name: "+1 (236) 818 5558",
         link: "tel:+1(236)818 5558",
       },
       {
@@ -474,7 +474,7 @@ Note: Applications submitted without a required PAL will be refused.</p>
     htm: "true",
     links: [
       {
-        name: "+1(236)818 5558",
+        name: "+1 (236) 818 5558",
         link: "tel:+1(236)818 5558",
       },
       {
@@ -599,7 +599,7 @@ Note: Applications submitted without a required PAL will be refused.</p>
     htm: "true",
     links: [
       {
-        name: "+1(236)818 5558",
+        name: "+1 (236) 818 5558",
         link: "tel:+1(236)818 5558",
       },
       {
@@ -674,7 +674,7 @@ Note: Applications submitted without a required PAL will be refused.</p>
     htm: "true",
     links: [
       {
-        name: "+1(236)818 5558",
+        name: "+1 (236) 818 5558",
         link: "tel:+1(236)818 5558",
       },
       {
@@ -744,7 +744,7 @@ Note: Applications submitted without a required PAL will be refused.</p>
     htm: "true",
     links: [
       {
-        name: "+1(236)818 5558",
+        name: "+1 (236) 818 5558",
         link: "tel:+1(236)818 5558",
       },
       {
@@ -812,7 +812,7 @@ Note: Applications submitted without a required PAL will be refused.</p>
     htm: "true",
     links: [
       {
-        name: "+1(236)818 5558",
+        name: "+1 (236) 818 5558",
         link: "tel:+1(236)818 5558",
       },
       {
@@ -895,7 +895,7 @@ Financial Documentation:</h3>
     htm: "true",
     links: [
       {
-        name: "+1(236)818 5558",
+        name: "+1 (236) 818 5558",
         link: "tel:+1(236)818 5558",
       },
       {
@@ -951,7 +951,7 @@ Financial Documentation:</h3>
     htm: "true",
     links: [
       {
-        name: "+1(236)818 5558",
+        name: "+1 (236) 818 5558",
         link: "tel:+1(236)818 5558",
       },
       {
@@ -1051,7 +1051,7 @@ To be eligible for child or other dependent sponsorship, you must meet the follo
     htm: "true",
     links: [
       {
-        name: "+1(236)818 5558",
+        name: "+1 (236) 818 5558",
         link: "tel:+1(236)818 5558",
       },
       {
@@ -1110,7 +1110,7 @@ To be eligible for child or other dependent sponsorship, you must meet the follo
     htm: "true",
     links: [
       {
-        name: "+1(236)818 5558",
+        name: "+1 (236) 818 5558",
         link: "tel:+1(236)818 5558",
       },
       {
@@ -1177,7 +1177,7 @@ To be eligible for child or other dependent sponsorship, you must meet the follo
     htm: "true",
     links: [
       {
-        name: "+1(236)818 5558",
+        name: "+1 (236) 818 5558",
         link: "tel:+1(236)818 5558",
       },
       {
@@ -1252,7 +1252,7 @@ Applicants must secure a job offer from a designated Canadian agricultural emplo
     htm: "true",
     links: [
       {
-        name: "+1(236)818 5558",
+        name: "+1 (236) 818 5558",
         link: "tel:+1(236)818 5558",
       },
       {
@@ -1355,7 +1355,7 @@ Applicants must secure a job offer from a designated Canadian agricultural emplo
     htm: "true",
     // links: [
     //   {
-    //     name: "+1(236)818 5558",
+    //     name: "+1 (236) 818 5558",
     //     link: "tel:+1(236)818 5558",
     //   },
     //   {
@@ -1428,7 +1428,7 @@ Applicants must secure a job offer from a designated Canadian agricultural emplo
     htm: "true",
     // links: [
     //   {
-    //     name: "+1(236)818 5558",
+    //     name: "+1 (236) 818 5558",
     //     link: "tel:+1(236)818 5558",
     //   },
     //   {
@@ -1513,7 +1513,7 @@ You are a Canadian citizen, a permanent resident in Canada, or registered under 
     htm: "true",
     // links: [
     //   {
-    //     name: "+1(236)818 5558",
+    //     name: "+1 (236) 818 5558",
     //     link: "tel:+1(236)818 5558",
     //   },
     //   {
@@ -1600,7 +1600,7 @@ You are a Canadian citizen, a permanent resident in Canada, or registered under 
     htm: "true",
     links: [
       {
-        name: "+1(236)818 5558",
+        name: "+1 (236) 818 5558",
         link: "tel:+1(236)818 5558",
       },
       {
@@ -1678,7 +1678,7 @@ pageData2: `
     htm: "true",
     // links: [
     //   {
-    //     name: "+1(236)818 5558",
+    //     name: "+1 (236) 818 5558",
     //     link: "tel:+1(236)818 5558",
     //   },
     //   {
@@ -1753,7 +1753,7 @@ pageData2: `
     htm: "true",
     links: [
       {
-        name: "+1(236)818 5558",
+        name: "+1 (236) 818 5558",
         link: "tel:+1(236)818 5558",
       },
       {
@@ -1831,7 +1831,7 @@ pageData2: `
     htm: "true",
     links: [
       {
-        name: "+1(236)818 5558",
+        name: "+1 (236) 818 5558",
         link: "tel:+1(236)818 5558",
       },
       {
@@ -1894,7 +1894,7 @@ pageData2: `
     htm: "true",
     links: [
       {
-        name: "+1(236)818 5558",
+        name: "+1 (236) 818 5558",
         link: "tel:+1(236)818 5558",
       },
       {
@@ -1952,7 +1952,7 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
     htm: "true",
     links: [
       {
-        name: "+1(236)818 5558",
+        name: "+1 (236) 818 5558",
         link: "tel:+1(236)818 5558",
       },
       {
@@ -2024,7 +2024,7 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
     htm: "true",
     // links: [
     //   {
-    //     name: "+1(236)818 5558",
+    //     name: "+1 (236) 818 5558",
     //     link: "tel:+1(236)818 5558",
     //   },
     //   {
@@ -2092,7 +2092,7 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
     htm: "true",
     links: [
       {
-        name: "+1(236)818 5558",
+        name: "+1 (236) 818 5558",
         link: "tel:+1(236)818 5558",
       },
       {
@@ -2166,7 +2166,7 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
     htm: "true",
     links: [
       {
-        name: "+1(236)818 5558",
+        name: "+1 (236) 818 5558",
         link: "tel:+1(236)818 5558",
       },
       {
@@ -2222,7 +2222,7 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
     htm: "true",
     links: [
       {
-        name: "+1(236)818 5558",
+        name: "+1 (236) 818 5558",
         link: "tel:+1(236)818 5558",
       },
       {
@@ -2310,7 +2310,7 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
     htm: "true",
     links: [
       {
-        name: "+1(236)818 5558",
+        name: "+1 (236) 818 5558",
         link: "tel:+1(236)818 5558",
       },
       {
@@ -2387,7 +2387,7 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
     htm: "true",
     links: [
       {
-        name: "+1(236)818 5558",
+        name: "+1 (236) 818 5558",
         link: "tel:+1(236)818 5558",
       },
       {
@@ -2432,7 +2432,7 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
     htm: "true",
     links: [
       {
-        name: "+1(236)818 5558",
+        name: "+1 (236) 818 5558",
         link: "tel:+1(236)818 5558",
       },
       {
@@ -2497,7 +2497,7 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
     htm: "true",
     // links: [
     //   {
-    //     name: "+1(236)818 5558",
+    //     name: "+1 (236) 818 5558",
     //     link: "tel:+1(236)818 5558",
     //   },
     //   {
@@ -2586,7 +2586,7 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
     htm: "true",
     // links: [
     //   {
-    //     name: "+1(236)818 5558",
+    //     name: "+1 (236) 818 5558",
     //     link: "tel:+1(236)818 5558",
     //   },
     //   {
@@ -2681,7 +2681,7 @@ At <b>TNC Immigration Canada,</b> we specialize in guiding you through the compl
     htm: "true",
     // links: [
     //   {
-    //     name: "+1(236)818 5558",
+    //     name: "+1 (236) 818 5558",
     //     link: "tel:+1(236)818 5558",
     //   },
     //   {

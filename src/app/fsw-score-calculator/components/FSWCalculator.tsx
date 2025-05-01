@@ -296,12 +296,12 @@ const FSWCalculator = () => {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 mt-4 gap-5">
               {Scores.map((skill, index) => (
-                <div key={index} className="flex flex-col">
+                <div key={index} className="flex flex-col ">
                   <label className="capitalize block font-medium">
                     {skill?.subject}
                   </label>
                   {skill?.marks.map((level, idx) => (
-                    <label key={idx} className="ml-3">
+                    <label key={idx} className="ml-3 flex gap-1 items-center">
                       <input
                         type="radio"
                         name={`${skill?.subject}`}
