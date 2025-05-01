@@ -51,39 +51,21 @@ const PgaeData: React.FC<PageProps> = ({
 }) => {
   return (
     <SectionWithContainer>
-      <div className="grid md:grid-cols-2 grid-cols-1 gap-4 mb-4">
-        <div
-          className="flex flex-col gap-3 w-full data_pass"
-          dangerouslySetInnerHTML={{ __html: pageData1 }}
-        ></div>
-        {/* form */}
-        <div className="flex flex-col gap-8 w-full">
-          {/* {form && <Form2 {...formInfo} />} */}
-          {forData && (
-            <div className="flex flex-col w-full data_pass -mb-6">
-              <h2 className="font-bold text-2xl">{forData.title}</h2>
-            </div>
-          )}
-          {title && <h2 className="font-bold text-2xl">{title}</h2>}
-          {btnLink && (
-            <div className="max-w-[340px] mx-auto mt-4">
-              <Link
-                href="https://calendly.com/tncbooking/consultation60"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-prime-red w-full mx-auto text-sm text-white px-5 py-3 font-normal capitalize hover:bg-black duration-500 border shadow-lg rounded-md"
-              >
-                {"CLICK HERE BOOK CONSULATION TODAY"}
-              </Link>
-            </div>
-          )}
-          {address && (
-            <p className="text-lg border-l-2 border-prime-red pl-4">
-              {address}
-            </p>
-          )}
-          {links && (
-            <div className="flex max-lg:flex-col gap-3 mt-4 p-2 box-shadow2 items-center">
+      <div className=" gap-4 mb-4">
+        {btnLink && (
+          <div className={`max-w-[340px] mx-auto mt-4 ${links?"":" mb-8 "}`}>
+            <Link
+              href="https://calendly.com/tncbooking/consultation60"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-prime-red w-full mx-auto text-sm text-white px-5 py-3 font-normal capitalize hover:bg-black duration-500 border shadow-lg rounded-md"
+            >
+              {"CLICK HERE BOOK CONSULATION TODAY"}
+            </Link>
+          </div>
+        )}
+        {links && (
+            <div className="flex max-w-[500px] mx-auto max-lg:flex-col gap-3 my-8 p-2 box-shadow2 items-center">
               <Link
                 href={links[0].link}
                 target="_blank"
@@ -110,6 +92,24 @@ const PgaeData: React.FC<PageProps> = ({
                 {links[1].name}
               </Link>
             </div>
+          )}
+        <div
+          className="flex flex-col gap-3 w-full data_pass"
+          dangerouslySetInnerHTML={{ __html: pageData1 }}
+        ></div>
+        {/* form */}
+        <div className="flex flex-col gap-8 w-full">
+          {/* {form && <Form2 {...formInfo} />} */}
+          {forData && (
+            <div className="flex flex-col w-full data_pass -mb-6">
+              <h2 className="font-bold text-2xl">{forData.title}</h2>
+            </div>
+          )}
+          {title && <h2 className="font-bold text-2xl">{title}</h2>}
+          {address && (
+            <p className="text-lg border-l-2 border-prime-red pl-4">
+              {address}
+            </p>
           )}
         </div>
       </div>
