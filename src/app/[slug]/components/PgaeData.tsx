@@ -2,40 +2,51 @@ import { SectionWithContainer } from "@/components";
 import { FillCallIcon, FillMailIcon } from "@/data/icons";
 import Link from "next/link";
 import React, { JSX } from "react";
+interface LinkItem {
+  name: string;
+  href: string;
+}
 
-interface ContentBlock {
+export interface WelcomeItem {
+  src: string;
+  title?: string;
+  desc: string;
+  aspect: string;
+  links?: LinkItem[];
+}
+
+export interface ContentBlock {
   type: string;
   level?: number;
   content?: string;
   src?: string;
   alt?: string;
-  width?: string | null;     // ✅ FIXED
-  height?: string | null;    // ✅ FIXED
-  className?: string | string[] | null; // ✅ FIXED
+  width?: string | null;
+  height?: string | null;
+  className?: string | string[] | null;
   items?: string[];
   ordered?: boolean;
 }
 
-interface PageProps {
+export interface PageProps {
   pageData: {
     slug: string;
     banner?: { title: string; src: string };
     formInfo?: { title: string; desc: string };
     forData?: {
       title: string;
-      link: { name: string; href: string };
+      link: LinkItem;
       address: string;
-    };
-    pageData1?: ContentBlock[]; // now optional
-    pageData2?: ContentBlock[]; // now optional
-    welcom?: any; // safe default for now
+    };    
+    pageData1?: ContentBlock[];
+    pageData2?: ContentBlock[];
+    welcom?: WelcomeItem[];
     mapSrc?: string;
     form?: boolean;
     btnLink?: boolean;
-    links?: { name: string; link: string }[];
+    links?: LinkItem[];
     title?: string;
     address?: string;
-    [key: string]: any; // extra keys for future proofing
   };
 }
 
@@ -112,7 +123,7 @@ const PgaeData: React.FC<PageProps> = ({
           {links && (
             <div className="flex max-lg:flex-col gap-3 mt-4 p-2 box-shadow2 items-center">
               <Link
-                href={links[0].link}
+                href={links[0].href}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-fit flex items-center gap-2 text-sm px-5 py-3 font-normal capitalize duration-500 rounded-md"
@@ -126,7 +137,7 @@ const PgaeData: React.FC<PageProps> = ({
                 </span>
               </Link>
               <Link
-                href={links[1].link}
+                href={links[1].href}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-prime-red hover:bg-black w-fit h-14 flex items-center text-white gap-2 mx-auto text-md font-semibold md:px-8 px-5 py-2 capitalize duration-500 border rounded-full"
@@ -139,8 +150,8 @@ const PgaeData: React.FC<PageProps> = ({
             </div>
           )}
           {pageData1
-            ?.filter(block => block.type === "image")
-            .map((imgBlock, i) => (
+            ?.filter((block) => block.type === "image")
+            .map((imgBlock: ContentBlock, i) => (
               <img
                 key={i}
                 src={imgBlock.src}
@@ -149,8 +160,7 @@ const PgaeData: React.FC<PageProps> = ({
                 height={imgBlock.height ?? undefined}
                 className={(imgBlock.className || "").toString()}
               />
-            ))}
-
+            ))} 
         </div>
       </div>
 

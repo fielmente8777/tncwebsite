@@ -435,11 +435,11 @@ export const slugPageData = [
     links: [
       {
         name: "+1 (236) 818 5558",
-        link: "tel:+1(236)818 5558",
+        href: "tel:+1(236)818 5558",
       },
       {
         name: "Mail us",
-        link: "mailto:info@tncimmigration.com",
+        href: "mailto:info@tncimmigration.com",
       },
     ],
     pageData1: [
@@ -585,11 +585,11 @@ export const slugPageData = [
     links: [
       {
         name: "+1 (236) 818 5558",
-        link: "tel:+1(236)818 5558",
+        href: "tel:+1(236)818 5558",
       },
       {
         name: "Mail us",
-        link: "mailto:info@tncimmigration.com",
+        href: "mailto:info@tncimmigration.com",
       },
     ],
     pageData1: [
@@ -759,11 +759,11 @@ export const slugPageData = [
     links: [
       {
         name: "+1 (236) 818 5558",
-        link: "tel:+1(236)818 5558",
+        href: "tel:+1(236)818 5558",
       },
       {
         name: "Mail us",
-        link: "mailto:info@tncimmigration.com",
+        href: "mailto:info@tncimmigration.com",
       },
     ],
     pageData1: [
@@ -867,11 +867,11 @@ export const slugPageData = [
     links: [
       {
         name: "+1 (236) 818 5558",
-        link: "tel:+1(236)818 5558",
+        href: "tel:+1(236)818 5558",
       },
       {
         name: "Mail us",
-        link: "mailto:info@tncimmigration.com",
+        href: "mailto:info@tncimmigration.com",
       },
     ],
     pageData1: [
@@ -1011,11 +1011,11 @@ export const slugPageData = [
     links: [
       {
         name: "+1 (236) 818 5558",
-        link: "tel:+1(236)818 5558",
+        href: "tel:+1(236)818 5558",
       },
       {
         name: "Mail us",
-        link: "mailto:info@tncimmigration.com",
+        href: "mailto:info@tncimmigration.com",
       },
     ],
     pageData1: [
@@ -1122,11 +1122,11 @@ export const slugPageData = [
     links: [
       {
         name: "+1 (236) 818 5558",
-        link: "tel:+1(236)818 5558",
+        href: "tel:+1(236)818 5558",
       },
       {
         name: "Mail us",
-        link: "mailto:info@tncimmigration.com",
+        href: "mailto:info@tncimmigration.com",
       },
     ],
     pageData1: [
@@ -1298,11 +1298,11 @@ export const slugPageData = [
     links: [
       {
         name: "+1 (236) 818 5558",
-        link: "tel:+1(236)818 5558",
+        href: "tel:+1(236)818 5558",
       },
       {
         name: "Mail us",
-        link: "mailto:info@tncimmigration.com",
+        href: "mailto:info@tncimmigration.com",
       },
     ],
     pageData1: [
@@ -1376,11 +1376,11 @@ export const slugPageData = [
     links: [
       {
         name: "+1 (236) 818 5558",
-        link: "tel:+1(236)818 5558",
+        href: "tel:+1(236)818 5558",
       },
       {
         name: "Mail us",
-        link: "mailto:info@tncimmigration.com",
+        href: "mailto:info@tncimmigration.com",
       },
     ],
     pageData1: [
@@ -1590,11 +1590,11 @@ export const slugPageData = [
     links: [
       {
         name: "+1 (236) 818 5558",
-        link: "tel:+1(236)818 5558",
+        href: "tel:+1(236)818 5558",
       },
       {
         name: "Mail us",
-        link: "mailto:info@tncimmigration.com",
+        href: "mailto:info@tncimmigration.com",
       },
     ],
     pageData1: [
@@ -1674,11 +1674,11 @@ export const slugPageData = [
     links: [
       {
         name: "+1 (236) 818 5558",
-        link: "tel:+1(236)818 5558",
+        href: "tel:+1(236)818 5558",
       },
       {
         name: "Mail us",
-        link: "mailto:info@tncimmigration.com",
+        href: "mailto:info@tncimmigration.com",
       },
     ],
     pageData1: [
@@ -1767,11 +1767,11 @@ export const slugPageData = [
     links: [
       {
         name: "+1 (236) 818 5558",
-        link: "tel:+1(236)818 5558",
+        href: "tel:+1(236)818 5558",
       },
       {
         name: "Mail us",
-        link: "mailto:info@tncimmigration.com",
+        href: "mailto:info@tncimmigration.com",
       },
     ],
     pageData1: [
@@ -1847,11 +1847,11 @@ export const slugPageData = [
     links: [
       {
         name: "+1 (236) 818 5558",
-        link: "tel:+1(236)818 5558",
+        href: "tel:+1(236)818 5558",
       },
       {
         name: "Mail us",
-        link: "mailto:info@tncimmigration.com",
+        href: "mailto:info@tncimmigration.com",
       },
     ],
     formInfo: {
@@ -1936,11 +1936,11 @@ export const slugPageData = [
     // links: [
     //   {
     //     name: "+1 (236) 818 5558",
-    //     link: "tel:+1(236)818 5558",
+    //     href: "tel:+1(236)818 5558",
     //   },
     //   {
     //     name:"Mail us",
-    //     link: "mailto:info@tncimmigration.com",
+    //     href: "mailto:info@tncimmigration.com",
     //   },
     // ],
     pageData1: [
@@ -2095,11 +2095,11 @@ export const slugPageData = [
     // links: [
     //   {
     //     name: "+1 (236) 818 5558",
-    //     link: "tel:+1(236)818 5558",
+    //     href: "tel:+1(236)818 5558",
     //   },
     //   {
     //     name:"Mail us",
-    //     link: "mailto:info@tncimmigration.com",
+    //     href: "mailto:info@tncimmigration.com",
     //   },
     // ],
     pageData1: [
@@ -2211,11 +2211,11 @@ export const slugPageData = [
     // links: [
     //   {
     //     name: "+1 (236) 818 5558",
-    //     link: "tel:+1(236)818 5558",
+    //     href: "tel:+1(236)818 5558",
     //   },
     //   {
     //     name:"Mail us",
-    //     link: "mailto:info@tncimmigration.com",
+    //     href: "mailto:info@tncimmigration.com",
     //   },
     // ],
     pageData1: [
@@ -2326,11 +2326,11 @@ export const slugPageData = [
     links: [
       {
         name: "+1 (236) 818 5558",
-        link: "tel:+1(236)818 5558",
+        href: "tel:+1(236)818 5558",
       },
       {
         name: "Mail us",
-        link: "mailto:info@tncimmigration.com",
+        href: "mailto:info@tncimmigration.com",
       },
     ],
     title: "Confused about eligibility or received a PFL?",
@@ -2419,7 +2419,7 @@ pageData2: [
     form: false,
     forData: {
       title: "Need Help?",
-      link: {
+      link:{
         name: "Click Here for Free Assessment",
         href: "/start-assessment",
       },
@@ -2441,11 +2441,11 @@ pageData2: [
     // links: [
     //   {
     //     name: "+1 (236) 818 5558",
-    //     link: "tel:+1(236)818 5558",
+    //     href: "tel:+1(236)818 5558",
     //   },
     //   {
     //     name:"Mail us",
-    //     link: "mailto:info@tncimmigration.com",
+    //     href: "mailto:info@tncimmigration.com",
     //   },
     // ],
     pageData1: [
@@ -2580,11 +2580,11 @@ pageData2: [
     links: [
       {
         name: "+1 (236) 818 5558",
-        link: "tel:+1(236)818 5558",
+        href: "tel:+1(236)818 5558",
       },
       {
         name: "Mail us",
-        link: "mailto:info@tncimmigration.com",
+        href: "mailto:info@tncimmigration.com",
       },
     ],
     pageData1: [
@@ -2685,11 +2685,11 @@ pageData2: [
     links: [
       {
         name: "+1 (236) 818 5558",
-        link: "tel:+1(236)818 5558",
+        href: "tel:+1(236)818 5558",
       },
       {
         name: "Mail us",
-        link: "mailto:info@tncimmigration.com",
+        href: "mailto:info@tncimmigration.com",
       },
     ],
     pageData1: [
@@ -2764,11 +2764,11 @@ pageData2: [
     links: [
       {
         name: "+1 (236) 818 5558",
-        link: "tel:+1(236)818 5558",
+        href: "tel:+1(236)818 5558",
       },
       {
         name: "Mail us",
-        link: "mailto:info@tncimmigration.com",
+        href: "mailto:info@tncimmigration.com",
       },
     ],
     pageData1: [
@@ -2834,11 +2834,11 @@ pageData2: [
     links: [
       {
         name: "+1 (236) 818 5558",
-        link: "tel:+1(236)818 5558",
+        href: "tel:+1(236)818 5558",
       },
       {
         name: "Mail us",
-        link: "mailto:info@tncimmigration.com",
+        href: "mailto:info@tncimmigration.com",
       },
     ],
     pageData1: [
@@ -2940,11 +2940,11 @@ pageData2: [
     // links: [
     //   {
     //     name: "+1 (236) 818 5558",
-    //     link: "tel:+1(236)818 5558",
+    //     href: "tel:+1(236)818 5558",
     //   },
     //   {
     //     name: "Mail us",
-    //     link: "mailto:info@tncimmigration.com",
+    //     href: "mailto:info@tncimmigration.com",
     //   },
     // ],
     pageData1: [
@@ -3074,11 +3074,11 @@ pageData2: [
     links: [
       {
         name: "+1 (236) 818 5558",
-        link: "tel:+1(236)818 5558",
+        href: "tel:+1(236)818 5558",
       },
       {
         name: "Mail us",
-        link: "mailto:info@tncimmigration.com",
+        href: "mailto:info@tncimmigration.com",
       },
     ],
     form: true,
@@ -3230,11 +3230,11 @@ pageData2: [
     links: [
       {
         name: "+1 (236) 818 5558",
-        link: "tel:+1(236)818 5558",
+        href: "tel:+1(236)818 5558",
       },
       {
         name: "Mail us",
-        link: "mailto:info@tncimmigration.com",
+        href: "mailto:info@tncimmigration.com",
       },
     ],
     form: true,
@@ -3308,11 +3308,11 @@ pageData2: [
     links: [
       {
         name: "+1 (236) 818 5558",
-        link: "tel:+1(236)818 5558",
+        href: "tel:+1(236)818 5558",
       },
       {
         name: "Mail us",
-        link: "mailto:info@tncimmigration.com",
+        href: "mailto:info@tncimmigration.com",
       },
     ],
     form: true,
@@ -3491,11 +3491,11 @@ pageData2: [
     links: [
       {
         name: "+1 (236) 818 5558",
-        link: "tel:+1(236)818 5558",
+        href: "tel:+1(236)818 5558",
       },
       {
         name: "Mail us",
-        link: "mailto:info@tncimmigration.com",
+        href: "mailto:info@tncimmigration.com",
       },
     ],
     form: true,
@@ -3621,11 +3621,11 @@ pageData2: [
     links: [
       {
         name: "+1 (236) 818 5558",
-        link: "tel:+1(236)818 5558",
+        href: "tel:+1(236)818 5558",
       },
       {
         name: "Mail us",
-        link: "mailto:info@tncimmigration.com",
+        href: "mailto:info@tncimmigration.com",
       },
     ],
     form: true,
@@ -3681,11 +3681,11 @@ pageData2: [
     links: [
       {
         name: "+1 (236) 818 5558",
-        link: "tel:+1(236)818 5558",
+        href: "tel:+1(236)818 5558",
       },
       {
         name: "Mail us",
-        link: "mailto:info@tncimmigration.com",
+        href: "mailto:info@tncimmigration.com",
       },
     ],
     form: true,
@@ -3781,11 +3781,11 @@ pageData2: [
     // links: [
     //   {
     //     name: "+1 (236) 818 5558",
-    //     link: "tel:+1(236)818 5558",
+    //     href: "tel:+1(236)818 5558",
     //   },
     //   {
     //     name: "Mail us",
-    //     link: "mailto:info@tncimmigration.com",
+    //     href: "mailto:info@tncimmigration.com",
     //   },
     // ],
     form: true,
@@ -3984,11 +3984,11 @@ pageData2: [
     // links: [
     //   {
     //     name: "+1 (236) 818 5558",
-    //     link: "tel:+1(236)818 5558",
+    //     href: "tel:+1(236)818 5558",
     //   },
     //   {
     //     name: "Mail us",
-    //     link: "mailto:info@tncimmigration.com",
+    //     href: "mailto:info@tncimmigration.com",
     //   },
     // ],
     form: true,
@@ -4206,11 +4206,11 @@ pageData2: [
     // links: [
     //   {
     //     name: "+1 (236) 818 5558",
-    //     link: "tel:+1(236)818 5558",
+    //     href: "tel:+1(236)818 5558",
     //   },
     //   {
     //     name: "Mail us",
-    //     link: "mailto:info@tncimmigration.com",
+    //     href: "mailto:info@tncimmigration.com",
     //   },
     // ],
     form: true,

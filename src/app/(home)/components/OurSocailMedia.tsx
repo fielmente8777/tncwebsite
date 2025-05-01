@@ -92,10 +92,8 @@ const OurSocailMedia: React.FC<OurSocialMediaPrps> = ({
               );
             } else {
               return (
-                <OnlyButton key={index}>
-                  <button className="bg-secondary text-white rounded-md text-xs px-4 py-2 font-medium hover:bg-secondary/70 duration-200">
-                    {btn.label}
-                  </button>
+                <OnlyButton key={index} className="bg-secondary text-white rounded-md text-xs px-4 py-2 font-medium hover:bg-secondary/70 duration-200">
+                  {btn.label}
                 </OnlyButton>
               );
             }
