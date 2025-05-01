@@ -1265,9 +1265,9 @@ Applicants must secure a job offer from a designated Canadian agricultural emplo
       desc: "Book a consultation or fill out our quick enquiry form below."
     },
     pageData1: `
-   <h2>Express Entry: Your Fast Track to Canadian Permanent Residency</h2>
+   <p>Building a life in Canada starts with the right first step — and for skilled workers, Express Entry is one of the quickest path. But it’s more than just filling a form. One small error at the profile stage can cause major issues later when you’re invited to apply. With immigration officers reviewing applications carefully, it’s crucial your profile is accurate and complete from the beginning.</p>
   <p>
-    Canada’s Express Entry system is a leading immigration pathway for skilled workers aiming to become permanent residents. It is designed to fill labor market gaps by attracting talented professionals from around the world.
+    Express Entry isn't just one program — it manages several pathways based on your work experience, education, and skills. Plus, with new targeted invitation rounds focusing on fields like healthcare, STEM, agriculture, and French-speaking candidates, having the right guidance may make all the difference
   </p>
   <div >
     <img
@@ -1281,65 +1281,36 @@ Applicants must secure a job offer from a designated Canadian agricultural emplo
       sizes="(max-width: 640px) 100vw, 640px"
     />
   </div>
-  <h2>Programs Under Express Entry</h2>
+  <h2>Which Path Fits You?</h2>
+  <p>You could qualify for Express Entry, if you are</p>
   <ul>
-<li>Federal Skilled Worker Program (FSWP)</li>
-<li>Federal Skilled Trades Program (FSTP)</li>
-<li>Canadian Experience Class (CEC)</li></ul>`,
+<li>Skilled professionals with foreign work experience (FSW)</li>
+<li>Trades workers in specialized occupations (FSTP)</li>
+<li>Individuals with a year of Canadian work experience (CEC)</li>
+<li>Individuals with a nomination from a province (PNP)</li>
+</ul>`,
     pageData2: `
   
-<p>Each program targets specific work experience, education, and skill levels.</p>
-<h2>How It Works</h2>
+<p>IRCC is also conducting targeted draws targeting and inviting NOC codes in demand. For Express Entry your NOC code has to be in TEER 0,1,2 or 3.</p>
+<h4>Each pathway has its own rules — but don’t worry, we’ll help you find the suitable stream as applicable</h4>
+<h2>How It All Comes Together</h2>
   <p>
-    Candidates create an online profile and receive a Comprehensive Ranking System (CRS) score based on factors like:
+    Once you submit your profile, your eligibility is ranked based on:
   </p>
   <ul>
-    <li>Age</li>
-    <li>Education</li>
-    <li>Work Experience</li>
-    <li>Language Proficiency (English and/or French)</li>
+    <li>Your age</li>
+    <li>Academic background</li>
+    <li>Job experience</li>
+    <li>Language fluency</li>
     <li>
-      Adaptability 
-      // (such as a spouse’s qualifications or Canadian relatives)</b>
+      Other adaptability factors like family ties in Canada
     </li>
   </ul>
   <p>
-    Top-ranking candidates are invited to apply for permanent residency through regular draws conducted by IRCC.
+    Based on the cut off score by IRCC during the round of invitations, you are invited to submit your complete application — but IRCC officers are vigilant, and precision is everything.
   </p>
- <h4>Category-Based Draws: A Targeted Approach</h4>
-<p>In addition to general draws, IRCC now conducts category-based draws to meet specific labor market needs.</p>
-<p>Current Categories Include:</p>
-<ul>
-<li>French-language proficiency</li>
-<li>Healthcare occupations</li>
-<li>STEM (Science, Technology, Engineering, Math) occupations</li>
-<li>Skilled trades</li>
-<li>Agriculture and agri-food</li>
-<li>Early childhood educators (ECEs only)</li>
-</ul>
-<p>Note: ECE Assistants are no longer eligible. Healthcare draws now focus only on front-line roles.</p>
-<h4>To be eligible, you must:</h4>
-<ul>
-<li> Qualify under one of the Express Entry programs</li>
-<li>Meet all criteria for the specific targeted category</li>
 
-</ul>
-<p>Candidates who meet the requirements are ranked within their category, and top profiles are invited — sometimes even with lower CRS scores.</p>
-<h3>Why Express Entry?</h3>
-<ul>
-<li>Fast Processing: As little as 6 months</li>
-<li>Flexible: Open to a wide range of skilled workers</li>
-<li>Permanent Residency: Live, work, and study anywhere in Canada</li>
-</ul>
-<h3>How TNC Immigration Can Help</h3>
-<p>At TNC Immigration Canada, we help you:</p>
-<ul>
-<li>Determine eligibility</li>
-<li>Create a strong Express Entry profile</li>
-<li>Target category-based draws effectively</li>
-<li>Submit a complete and successful application</li>
-</ul>
-<p>Let TNC Immigration help you take the right steps toward your Canadian dream.</p>
+  <p>At TNC Immigration, we help you navigate every detail — from uploading an accurate profile in Express Entry pool (pre-ITA) to submitting the complete application post ITA — so you can handle the PR process without unnecessary hassle or risks. Let’s make sure your first move is the right one by creating an accurate profile.</p>
   `,
   },
   {
