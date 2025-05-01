@@ -3,6 +3,7 @@ import CommanBanner from "@/components/banner/CommanBanner";
 import { slugPageData } from "@/data/slugData";
 import PageData from "./components/PgaeData";
 import Map from "@/components/maps/Map";
+
 interface Params {
   params: Promise<{
     slug: string;
@@ -48,7 +49,6 @@ export async function generateMetadata({ params }: Params) {
       type: "website",
       locale: "en_IN",
       siteName: "TNC Immigration",
-
       images: [
         {
           url: `https://tncimmigration.com/${pageData?.slug}/og-image.jpg`,
@@ -72,20 +72,14 @@ const Page = async ({ params }: Params) => {
       )}
       {pageData?.welcom && (
         <div>
-          {pageData.welcom.map((data, index) => {
-            console.log(data.aspect);
-            return (
-              <TwoColSection
-                {...data}
-                key={index}
-                index={index}
-                aspect={data.aspect}
-              />
-            );
-          })}
+          {pageData.welcom.map((data, index) => (
+            <TwoColSection {...data} key={index} index={index} aspect={data.aspect} />
+          ))}
         </div>
       )}
-      {pageData?.pageData1 && <PageData pageData={pageData} />}
+      {(pageData?.pageData1 || pageData?.pageData2) && (
+        <PageData pageData={pageData} />
+      )}
       {pageData?.mapsrc && <Map src={pageData.mapsrc} />}
     </>
   );

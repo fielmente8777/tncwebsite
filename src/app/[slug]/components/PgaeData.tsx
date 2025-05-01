@@ -1,64 +1,93 @@
 import { SectionWithContainer } from "@/components";
-// import Form2 from "@/components/Form2";
 import { FillCallIcon, FillMailIcon } from "@/data/icons";
 import Link from "next/link";
-import React from "react";
+import React, { JSX } from "react";
+
+interface ContentBlock {
+  type: string;
+  level?: number;
+  content?: string;
+  src?: string;
+  alt?: string;
+  width?: string | null;     // ✅ FIXED
+  height?: string | null;    // ✅ FIXED
+  className?: string | string[] | null; // ✅ FIXED
+  items?: string[];
+  ordered?: boolean;
+}
 
 interface PageProps {
   pageData: {
     slug: string;
-    banner: {
-      title: string;
-      src: string;
-    };
-    htm: string;
-    formInfo?: {
-      title: string;
-      desc: string;
-    };
+    banner?: { title: string; src: string };
+    formInfo?: { title: string; desc: string };
     forData?: {
       title: string;
-      link: {
-        name: string;
-        href: string;
-      };
+      link: { name: string; href: string };
       address: string;
     };
-    pageData1: string;
-    pageData2?: string;
-    welcom?: undefined;
-    mapSrc?: undefined;
+    pageData1?: ContentBlock[]; // now optional
+    pageData2?: ContentBlock[]; // now optional
+    welcom?: any; // safe default for now
+    mapSrc?: string;
     form?: boolean;
     btnLink?: boolean;
     links?: { name: string; link: string }[];
     title?: string;
     address?: string;
+    [key: string]: any; // extra keys for future proofing
   };
 }
+
+const renderBlock = (block: ContentBlock, index: number) => {
+  switch (block.type) {
+    case "heading":
+      const Heading = `h${block.level}` as keyof JSX.IntrinsicElements;
+      return <Heading key={index} className="font-bold text-xl">{block.content}</Heading>;
+    case "paragraph":
+      return <p key={index} className="text-base">{block.content}</p>;
+    // case "image":
+    //   return (
+    //     <img
+    //       key={index}
+    //       src={block.src}
+    //       alt={block.alt || ""}
+    //       width={block.width ?? undefined}
+    //       height={block.height ?? undefined}
+    //       className={(block.className || "").toString()}
+    //     />
+
+    //   );
+    case "list":
+      const List = block.ordered ? "ol" : "ul";
+      return (
+        <List key={index} className="pl-5 list-disc space-y-1">
+          {block.items?.map((item, i) => <li key={i}>{item}</li>)}
+        </List>
+      );
+    default:
+      return null;
+  }
+};
 
 const PgaeData: React.FC<PageProps> = ({
   pageData: {
     pageData1,
     pageData2,
     btnLink = true,
-    // form = true,
     links,
     title,
     address,
-    // formInfo,
     forData,
   },
 }) => {
   return (
     <SectionWithContainer>
       <div className="grid md:grid-cols-2 grid-cols-1 gap-4 mb-4">
-        <div
-          className="flex flex-col gap-3 w-full data_pass"
-          dangerouslySetInnerHTML={{ __html: pageData1 }}
-        ></div>
-        {/* form */}
+        {pageData1 && <div className="flex flex-col gap-3 w-full data_pass">
+          {pageData1.map(renderBlock)}
+        </div>}
         <div className="flex flex-col gap-8 w-full">
-          {/* {form && <Form2 {...formInfo} />} */}
           {forData && (
             <div className="flex flex-col w-full data_pass -mb-6">
               <h2 className="font-bold text-2xl">{forData.title}</h2>
@@ -73,14 +102,12 @@ const PgaeData: React.FC<PageProps> = ({
                 rel="noopener noreferrer"
                 className="bg-prime-red w-full mx-auto text-sm text-white px-5 py-3 font-normal capitalize hover:bg-black duration-500 border shadow-lg rounded-md"
               >
-                {"CLICK HERE BOOK CONSULATION TODAY"}
+                CLICK HERE BOOK CONSULATION TODAY
               </Link>
             </div>
           )}
           {address && (
-            <p className="text-lg border-l-2 border-prime-red pl-4">
-              {address}
-            </p>
+            <p className="text-lg border-l-2 border-prime-red pl-4">{address}</p>
           )}
           {links && (
             <div className="flex max-lg:flex-col gap-3 mt-4 p-2 box-shadow2 items-center">
@@ -88,13 +115,13 @@ const PgaeData: React.FC<PageProps> = ({
                 href={links[0].link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={` w-fit flex items-center gap-2 text-sm  px-5 py-3 font-normal capitalize  duration-500  rounded-md`}
+                className="w-fit flex items-center gap-2 text-sm px-5 py-3 font-normal capitalize duration-500 rounded-md"
               >
                 <span className="bg-black text-white rounded-full w-12 aspect-square flex items-center justify-center">
                   <FillCallIcon />
                 </span>
                 <span className="flex flex-col gap-2">
-                  Call us for information{" "}
+                  Call us for information
                   <span className="text-lg font-semibold">{links[0].name}</span>
                 </span>
               </Link>
@@ -102,22 +129,35 @@ const PgaeData: React.FC<PageProps> = ({
                 href={links[1].link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`bg-prime-red hover:bg-black w-fit h-14 flex items-center text-white gap-2 mx-auto text-md font-semibold  md:px-8 px-5 py-2 capitalize  duration-500 border rounded-full`}
+                className="bg-prime-red hover:bg-black w-fit h-14 flex items-center text-white gap-2 mx-auto text-md font-semibold md:px-8 px-5 py-2 capitalize duration-500 border rounded-full"
               >
-                <span className=" text-white rounded-full flex items-center justify-center">
+                <span className="text-white rounded-full flex items-center justify-center">
                   <FillMailIcon />
                 </span>
                 {links[1].name}
               </Link>
             </div>
           )}
+          {pageData1
+            ?.filter(block => block.type === "image")
+            .map((imgBlock, i) => (
+              <img
+                key={i}
+                src={imgBlock.src}
+                alt={imgBlock.alt || ""}
+                width={imgBlock.width ?? undefined}
+                height={imgBlock.height ?? undefined}
+                className={(imgBlock.className || "").toString()}
+              />
+            ))}
+
         </div>
       </div>
+
       {pageData2 && (
-        <div
-          className="flex flex-col gap-3 w-full data_pass"
-          dangerouslySetInnerHTML={{ __html: pageData2 }}
-        ></div>
+        <div className="flex flex-col gap-3 w-full data_pass">
+          {pageData2.map(renderBlock)}
+        </div>
       )}
     </SectionWithContainer>
   );
