@@ -93,7 +93,7 @@ const PgaeData: React.FC<PageProps> = ({
   },
 }) => {
   return (
-    <SectionWithContainer>
+    <SectionWithContainer sectionClassName="!py-5">
       <div className="grid md:grid-cols-2 grid-cols-1 gap-4 mb-4">
         {pageData1 && <div className="flex flex-col gap-3 w-full data_pass">
           {pageData1.map(renderBlock)}
@@ -158,7 +158,7 @@ const PgaeData: React.FC<PageProps> = ({
         </div>
       )}
       {btnLink && (
-        <div className="max-w-[340px] mx-auto mt-4">
+        <div className="max-w-[340px] mx-auto mt-8">
           <Link
             href="https://calendly.com/tncbooking/consultation60"
             target="_blank"

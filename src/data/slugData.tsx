@@ -336,7 +336,7 @@ export const slugPageData = [
   },
   {
     "type": "paragraph",
-    "content": "Each year, over135, 000 international studentschoose Canada for its world-class education, inclusive culture, and post-study opportunities. To study in Canada, international students must obtain astudy permitissued by the Government of Canada. This document, categorized under Temporary Resident Visas (TRVs), authorizes temporary residence for the purpose of education and clearly outlines the designated institution and program of study."
+    "content": "Each year, over 135, 000 international students choose Canada for its world-class education, inclusive culture, and post-study opportunities. To study in Canada, international students must obtain astudy permitissued by the Government of Canada. This document, categorized under Temporary Resident Visas (TRVs), authorizes temporary residence for the purpose of education and clearly outlines the designated institution and program of study."
   },
   {
     "type": "heading",
@@ -345,7 +345,7 @@ export const slugPageData = [
   },
   {
     "type": "paragraph",
-    "content": "As of January 22, 2024, the Immigration, Refugees and Citizenship Canada (IRCC)introduced a new requirement for most international students applying for a study permit \u2014 the Provincial Attestation Letter (PAL)."
+    "content": "As of January 22, 2024, the Immigration, Refugees and Citizenship Canada (IRCC) introduced a new requirement for most international students applying for a study permit \u2014 the Provincial Attestation Letter (PAL)."
   },
   {
     "type": "image",
@@ -368,7 +368,7 @@ export const slugPageData = [
   },
   {
     "type": "paragraph",
-    "content": "AProvincial Attestation Letter (PAL)is a formal document issued by the province or territory where your Designated Learning Institution (DLI)is located. It confirms that your study permit application falls within the province\u2019sfederally allocated capfor international students."
+    "content": "A Provincial Attestation Letter (PAL) is a formal document issued by the province or territory where your Designated Learning Institution (DLI) is located. It confirms that your study permit application falls within the province\u2019s federally allocated cap for international students."
   },
   {
     "type": "heading",
@@ -377,12 +377,12 @@ export const slugPageData = [
   },
   {
     "type": "paragraph",
-    "content": "If you are applying for a study permitoutside Canada, you mustinclude a PALwith your application \u2014 unless you fall under one of the following exemptions:"
+    "content": "If you are applying for a study permit outside Canada, you must include a PAL with your application \u2014 unless you fall under one of the following exemptions:"
   },
   {
     "type": "list",
     "ordered": true,
-    "items": ["Kindergarten to Grade 12 students", "Master\u2019s and doctoral program applicants", "Visiting or exchange students", "Students already in Canada with a valid permit applying for an extension or change", "Family members of certain temporary residents (e. g.", "work permit holders under specific public policies)"]
+    "items": ["Kindergarten to Grade 12 students", "Master\u2019s and doctoral program applicants", "Visiting or exchange students", "Students already in Canada with a valid permit applying for an extension or change", "Family members of certain temporary residents (e. g., work permit holders under specific public policies)"]
   },
   {
     "type": "paragraph",
@@ -413,12 +413,8 @@ export const slugPageData = [
   {
     "type": "list",
     "ordered": true,
-    "items": ["Letter of Acceptance from a Designated Learning Institution (DLI)", "approved by the provincial or territorial government for international students.", "Provincial Attestation Letter (PAL) (if required based on your program and location).", "Proof of intent to leave Canada upon expiry of your study permit.", "Financial proof demonstrating ability to: Pay tuition fees. Cover living expenses for yourself and accompanying family members. Afford return transportation for all family members.", "Pay tuition fees.", "Cover living expenses for yourself and accompanying family members.", "Afford return transportation for all family members.", "No criminal record and willingness to provide police certificates if required.", "Good health and willingness to complete a medical exam", "if necessary.", "Meet Canada\u2019s general admissibility requirements", "If planning to study in Quebec", "obtain a Quebec Acceptance Certificate (QAC)."]
+    "items": ["Letter of Acceptance from a Designated Learning Institution (DLI), approved by the provincial or territorial government for international students.", "Provincial Attestation Letter (PAL) (if required based on your program and location).", "Proof of intent to leave Canada upon expiry of your study permit.", "Financial proof demonstrating ability to: Pay tuition fees. Cover living expenses for yourself and accompanying family members. Afford return transportation for all family members.", "Pay tuition fees.", "Cover living expenses for yourself and accompanying family members.", "Afford return transportation for all family members.", "No criminal record and willingness to provide police certificates if required.", "Good health and willingness to complete a medical exam, if necessary.", "Meet Canada\u2019s general admissibility requirements", "If planning to study in Quebec, obtain a Quebec Acceptance Certificate (QAC)."]
   },
-  {
-    "type": "list",
-    "items": ["Pay tuition fees.", "Cover living expenses for yourself and accompanying family members.", "Afford return transportation for all family members."]
-  }
 ],
   },
   {
@@ -2371,7 +2367,7 @@ export const slugPageData = [
   },
   {
     "type": "list",
-    "items": ["Dentistry (DDS", "DMD)", "Law (LLB", "JD", "BCL)", "Medicine (MD)", "Optometry (OD)", "Pharmacy (Pharm D", "BS", "BSc", "BPharm)", "Veterinary Medicine (DVM)", "Nursing (BSc N", "BSN", "BNSc", "BN)", "Education (B. Ed. )", "Engineering (B. Eng.", "BE", "BASc)"]
+    "items": ["Dentistry (DDS, DMD)", "Law (LLB, JD, BCL)", "Medicine (MD)", "Optometry (OD)", "Pharmacy (Pharm D, BS, BSc, BPharm)", "Veterinary Medicine (DVM)", "Nursing (BSc N, BSN, BNSc, BN)", "Education (B. Ed. )", "Engineering (B. Eng., BE, BASc)"]
   }
 ],
 pageData2: [
