@@ -37,7 +37,7 @@ export interface PageProps {
       title: string;
       link: LinkItem;
       address: string;
-    };    
+    };
     pageData1?: ContentBlock[];
     pageData2?: ContentBlock[];
     welcom?: WelcomeItem[];
@@ -105,22 +105,22 @@ const PgaeData: React.FC<PageProps> = ({
             </div>
           )}
           {title && <h2 className="font-bold text-2xl">{title}</h2>}
-          {btnLink && (
-            <div className="max-w-[340px] mx-auto mt-4">
-              <Link
-                href="https://calendly.com/tncbooking/consultation60"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-prime-red w-full mx-auto text-sm text-white px-5 py-3 font-normal capitalize hover:bg-black duration-500 border shadow-lg rounded-md"
-              >
-                CLICK HERE BOOK CONSULATION TODAY
-              </Link>
-            </div>
-          )}
           {address && (
             <p className="text-lg border-l-2 border-prime-red pl-4">{address}</p>
           )}
-          {links && (
+          {pageData1
+            ?.filter((block) => block.type === "image")
+            .map((imgBlock: ContentBlock, i) => (
+              <img
+                key={i}
+                src={imgBlock.src}
+                alt={imgBlock.alt || ""}
+                width={imgBlock.width ?? undefined}
+                height={imgBlock.height ?? undefined}
+                className={(imgBlock.className || "").toString()}
+              />
+            ))}
+            {links && (
             <div className="flex max-lg:flex-col gap-3 mt-4 p-2 box-shadow2 items-center">
               <Link
                 href={links[0].href}
@@ -149,24 +149,24 @@ const PgaeData: React.FC<PageProps> = ({
               </Link>
             </div>
           )}
-          {pageData1
-            ?.filter((block) => block.type === "image")
-            .map((imgBlock: ContentBlock, i) => (
-              <img
-                key={i}
-                src={imgBlock.src}
-                alt={imgBlock.alt || ""}
-                width={imgBlock.width ?? undefined}
-                height={imgBlock.height ?? undefined}
-                className={(imgBlock.className || "").toString()}
-              />
-            ))} 
         </div>
       </div>
 
       {pageData2 && (
         <div className="flex flex-col gap-3 w-full data_pass">
           {pageData2.map(renderBlock)}
+        </div>
+      )}
+      {btnLink && (
+        <div className="max-w-[340px] mx-auto mt-4">
+          <Link
+            href="https://calendly.com/tncbooking/consultation60"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-prime-red w-full mx-auto text-sm text-white px-5 py-3 font-normal capitalize hover:bg-black duration-500 border shadow-lg rounded-md"
+          >
+            CLICK HERE BOOK CONSULATION TODAY
+          </Link>
         </div>
       )}
     </SectionWithContainer>
