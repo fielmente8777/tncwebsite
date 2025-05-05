@@ -136,7 +136,7 @@ const PgaeData: React.FC<PageProps> = ({
             rel="noopener noreferrer"
             className="bg-prime-red w-full mx-auto text-sm text-white px-5 py-3 font-normal capitalize hover:bg-black duration-500 border shadow-lg rounded-md"
           >
-            CLICK HERE BOOK CONSULATION TODAY
+            CLICK HERE BOOK CONSULTATION TODAY
           </Link>
         </div>
       )}
