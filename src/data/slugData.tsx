@@ -1036,7 +1036,7 @@ export const slugPageData = [
       },
       {
         "type": "list",
-        "items": ["You are a Canadian citizen or permanent resident aged 18 or older.", "You can prove the authenticity of your relationship, either as a legally married couple or as common-law partners (which means you\u2019ve lived together for at least 12 consecutive months).", "You are financially capable of supporting your spouse or partner for the duration of the sponsorship."]
+        "items": ["You are a Canadian citizen or permanent resident aged 18 or older.", "You are financially capable of supporting your spouse or partner for the duration of the sponsorship."]
       },
       {
         "type": "image",
@@ -1052,6 +1052,10 @@ export const slugPageData = [
       }
     ],
     pageData2: [
+      {
+        "type": "list",
+        "items": ["You can prove the authenticity of your relationship, either as a legally married couple or as common-law partners (which means you\u2019ve lived together for at least 12 consecutive months)."]
+      },
       {
         "type": "heading",
         "level": 3,
@@ -1396,10 +1400,6 @@ export const slugPageData = [
         "content": "Sponsoring your child or other dependents to come to Canada involves a comprehensive process that ensures family reunification. This sponsorship program is designed to bring families together, allowing children and dependents to join their loved ones who are already permanent residents or Canadian citizens."
       },
       {
-        "type": "paragraph",
-        "content": "To be eligible for the Provincial Nominee Program, an applicant must be nominated by a Canadian province or territory. Many provinces in Canada collaborate with the federal Government of Canada to fulfill their authority to nominate immigrant"
-      },
-      {
         "type": "image",
         "src": "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/child-or-other-dependent-sponsorship.webp",
         "alt": "child-or-other-dependent-sponsorship",
@@ -1413,6 +1413,10 @@ export const slugPageData = [
       }
     ],
     pageData2: [
+      {
+        "type": "paragraph",
+        "content": "To be eligible for the Provincial Nominee Program, an applicant must be nominated by a Canadian province or territory. Many provinces in Canada collaborate with the federal Government of Canada to fulfill their authority to nominate immigrant"
+      },
       {
         "type": "heading",
         "level": 2,
@@ -1607,7 +1611,7 @@ export const slugPageData = [
       },
       {
         "type": "list",
-        "items": ["Age: The child must be under 18 years of age.", "Marital Status: The child must be single, with no spouse or common-law partner.", "Parental Status: Both parents must have passed away. The child cannot have any living parents, and they must not be under the care of another guardian.", "Relationship to Sponsor: The child must be directly related to the Canadian sponsor, such as a brother, sister, nephew, niece, or grandchild."]
+        "items": ["Age: The child must be under 18 years of age.", "Marital Status: The child must be single, with no spouse or common-law partner."]
       },
       {
         "type": "image",
@@ -1625,6 +1629,10 @@ export const slugPageData = [
       }
     ],
     pageData2: [
+      {
+        "type": "list",
+        "items": ["Parental Status: Both parents must have passed away. The child cannot have any living parents, and they must not be under the care of another guardian.", "Relationship to Sponsor: The child must be directly related to the Canadian sponsor, such as a brother, sister, nephew, niece, or grandchild."]
+      },
       {
         "type": "heading",
         "level": 2,
@@ -1695,7 +1703,7 @@ export const slugPageData = [
       },
       {
         "type": "list",
-        "items": ["Job Offer: A valid job offer to work as a home childcare provider in Canada.", "Relevant Experience: At least one year of full-time work experience in child caregiving, either in Canada or abroad.", "Education: A post-secondary education credential equivalent to Canadian standards.", "Language Proficiency: Applicants must demonstrate proficiency in English or French by achieving the required language test scores.", "Admissibility: Applicants must pass health and security clearances."]
+        "items": ["Job Offer: A valid job offer to work as a home childcare provider in Canada."]
       },
       {
         "type": "image",
@@ -1713,6 +1721,10 @@ export const slugPageData = [
       }
     ],
     pageData2: [
+      {
+        "type":"list",
+        "items":["Relevant Experience: At least one year of full-time work experience in child caregiving, either in Canada or abroad.", "Education: A post-secondary education credential equivalent to Canadian standards.", "Language Proficiency: Applicants must demonstrate proficiency in English or French by achieving the required language test scores.", "Admissibility: Applicants must pass health and security clearances."]
+      },
       {
         "type": "heading",
         "level": 2,
@@ -1961,10 +1973,6 @@ export const slugPageData = [
         "content": "Submitting an application to the Immigration, Refugees, and Citizenship Canada (IRCC) is a meticulous process, but sometimes, unforeseen issues may arise during the assessment."
       },
       {
-        "type": "paragraph",
-        "content": "The complexity of immigration procedures, combined with the scrutiny applied by IRCC officers, can lead to various challenges. It\u2019s essential to be aware of potential pitfalls in the application process, as they can significantly impact the outcome of your case."
-      },
-      {
         "type": "image",
         "src": "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/procedural-fairness-letters.webp",
         "alt": "avt",
@@ -1978,6 +1986,10 @@ export const slugPageData = [
       }
     ],
     pageData2: [
+      {
+        "type": "paragraph",
+        "content": "The complexity of immigration procedures, combined with the scrutiny applied by IRCC officers, can lead to various challenges. It\u2019s essential to be aware of potential pitfalls in the application process, as they can significantly impact the outcome of your case."
+      },
       {
         "type": "heading",
         "level": 3,
@@ -2706,7 +2718,7 @@ export const slugPageData = [
       },
       {
         "type": "list",
-        "items": ["Permanent Resident Status: You must hold permanent resident status in Canada.", "Time Spent in Canada: You must have lived in Canada for at least 1,095 days (three years) within the five years before applying.", "Income Tax Filing: You may need to have filed your taxes for at least three years within the five-year period.", "Language Skills: Applicants between the ages of 18 and 54 must demonstrate adequate knowledge of either English or French.", "Knowledge of Canada: You will need to pass a test demonstrating your understanding of Canada\u2019s history, values, institutions, and rights."]
+        "items": ["Permanent Resident Status: You must hold permanent resident status in Canada.", "Time Spent in Canada: You must have lived in Canada for at least 1,095 days (three years) within the five years before applying."]
       },
       {
         "type": "image",
@@ -2718,6 +2730,10 @@ export const slugPageData = [
       }
     ],
     pageData2: [
+      {
+        "type": "list",
+        "items": ["Income Tax Filing: You may need to have filed your taxes for at least three years within the five-year period.", "Language Skills: Applicants between the ages of 18 and 54 must demonstrate adequate knowledge of either English or French.", "Knowledge of Canada: You will need to pass a test demonstrating your understanding of Canada\u2019s history, values, institutions, and rights."]
+      },
       {
         "type": "heading",
         "level": 2,
