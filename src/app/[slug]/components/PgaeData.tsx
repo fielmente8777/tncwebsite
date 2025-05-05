@@ -129,14 +129,14 @@ const PgaeData: React.FC<PageProps> = ({
         </div>
       )}
       {btnLink && (
-        <div className="max-w-[340px] mx-auto mt-8">
+        <div className="max-w-[360px] mx-auto mt-8">
           <Link
             href="https://calendly.com/tncbooking/consultation60"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-prime-red w-full mx-auto text-sm text-white px-5 py-3 font-normal capitalize hover:bg-black duration-500 border shadow-lg rounded-md"
           >
-            CLICK HERE BOOK CONSULTATION TODAY
+            CLICK HERE TO BOOK CONSULTATION TODAY
           </Link>
         </div>
       )}

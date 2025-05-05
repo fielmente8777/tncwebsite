@@ -216,8 +216,8 @@ select {
     line-height: 2.5rem;
     font-weight: 700;
     @media (width < 640px) {
-      font-size: 1.375rem;
-      line-height: 1.5rem;
+      font-size: 1.75rem;
+      line-height: 2.25rem;
     }
   }
   h3 {
@@ -225,8 +225,8 @@ select {
     line-height: 1.5rem;
     font-weight: 600;
     @media (width < 640px) {
-      font-size: 1.125rem;
-      line-height: 1.5rem;
+      font-size: 1.5rem;
+      line-height: 2rem;
     }
   }
   h4 {
@@ -234,32 +234,32 @@ select {
     line-height: 1.5rem;
     font-weight: 600;
     @media (width < 640px) {
-      font-size: 0.875rem;
-      line-height: 1.25rem;
+      font-size: 1.25rem;
+      line-height: 1.75rem;
     }
   }
 
   p {
     font-size: 1rem;
     line-height: 1.5rem;
-
     @media (width < 640px) {
-      font-size: 0.75rem;
-      line-height: 1.25rem;
+      font-size: 1.125rem;
+      line-height: 1.75rem;
     }
   }
+
   ol {
     font-size: 1rem;
     line-height: 1.5rem;
     padding-left: 1.5rem;
-
     @media (width < 640px) {
-      font-size: 0.75rem;
-      line-height: 1.25rem;
+      font-size: 1.125rem;
+      line-height: 1.75rem;
     }
+
     li {
       list-style: decimal;
-      ul{
+      ul {
         list-style: circle;
         padding-left: 1.5rem;
         li {
@@ -268,26 +268,28 @@ select {
       }
     }
   }
+
   ul {
     font-size: 1rem;
     line-height: 1.5rem;
     padding-left: 1.5rem;
     list-style: disc;
-
     @media (width < 640px) {
-      font-size: 0.75rem;
-      line-height: 1.25rem;
+      font-size: 1.125rem;
+      line-height: 1.75rem;
     }
   }
+
   li {
     font-size: 1rem;
     line-height: 1.5rem;
     list-style: disc;
     @media (width < 640px) {
-      font-size: 0.75rem;
-      line-height: 1.25rem;
+      font-size: 1.125rem;
+      line-height: 1.75rem;
     }
   }
+
   div {
     img {
       border: 3px solid #c1282a;
