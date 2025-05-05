@@ -774,6 +774,11 @@ export const slugPageData = [
         "content": "Are you currently visiting Canada and considering extending your stay to\n pursue your academic goals? With TNC Immigration, converting your visitor\n visa to a study permit is a straightforward process that opens doors to\n endless educational opportunities in Canada."
       },
       {
+        "type": "heading",
+        "level": 2,
+        "content": "Why Convert Your Visitor Visa to a Study Permit?"
+      },
+      {
         "type": "image",
         "src": "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/vtsc1.webp",
         "alt": "avt",
@@ -787,11 +792,6 @@ export const slugPageData = [
       }
     ],
     pageData2: [
-      {
-        "type": "heading",
-        "level": 2,
-        "content": "Why Convert Your Visitor Visa to a Study Permit?"
-      },
       {
         "type": "paragraph",
         "content": "Canada is home to some of the world\u2019s most prestigious educational institutions, offering a diverse range of programs tailored to your ambitions. By converting your visitor visa to a study permit, you can:"
