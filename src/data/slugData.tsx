@@ -341,7 +341,7 @@ export const slugPageData = [
       },
       {
         "type": "paragraph",
-        "content": "Each year, over 135, 000 international students choose Canada for its world-class education, inclusive culture, and post-study opportunities. To study in Canada, international students must obtain astudy permitissued by the Government of Canada. This document, categorized under Temporary Resident Visas (TRVs), authorizes temporary residence for the purpose of education and clearly outlines the designated institution and program of study."
+        "content": "Each year, over 135, 000 international students choose Canada for its world-class education, inclusive culture, and post-study opportunities. To study in Canada, international students must obtain a study permit issued by the Government of Canada. This document, categorized under Temporary Resident Visas (TRVs), authorizes temporary residence for the purpose of education and clearly outlines the designated institution and program of study."
       },
       {
         "type": "heading",
@@ -387,7 +387,7 @@ export const slugPageData = [
       {
         "type": "list",
         "ordered": true,
-        "items": ["Kindergarten to Grade 12 students", "Master\u2019s and doctoral program applicants", "Visiting or exchange students", "Students already in Canada with a valid permit applying for an extension or change", "Family members of certain temporary residents (e. g., work permit holders under specific public policies)"]
+        "items": ["Kindergarten to Grade 12 students", "Master\u2019s and doctoral program applicants", "Visiting or exchange students", "Students already in Canada with a valid permit applying for an extension or change", "Family members of certain temporary residents (e.g. Work permit holders under specific public policies)"]
       },
       {
         "type": "paragraph",
@@ -624,7 +624,7 @@ export const slugPageData = [
       },
       {
         "type": "paragraph",
-        "content": "*Provinces and territories (PTs) administering Provincial Nominee Programs (PNPs) have the authority to nominate candidates through the Express Entry pool. This process supplements their ability to nominate foreign nationals through the traditional paper-based method. The Visa Place Express Entry Application Service ensures swift entry into the pool with a profile optimized for maximum selection potential. Evaluate your eligibility for our Express Entry Service by clicking \u201c Get Started\u201d"
+        "content": "Provinces and territories (PTs) administering Provincial Nominee Programs (PNPs) have the authority to nominate candidates through the Express Entry pool. This process supplements their ability to nominate foreign nationals through the traditional paper-based method. The Visa Place Express Entry Application Service ensures swift entry into the pool with a profile optimized for maximum selection potential. Evaluate your eligibility for our Express Entry Service by clicking \u201c Get Started\u201d"
       }
     ],
   },
@@ -679,7 +679,7 @@ export const slugPageData = [
       {
         "type": "list",
         "ordered": true,
-        "items": ["Commit to paying a processing fee of $1", "000 CAD", "applicable to all LMIA categories except those involving caregivers for low-income families and LMIA supporting permanent resident applications.", "Advertise the vacant job position for a minimum of four weeks before extending an offer to a foreign worker.", "Demonstrate the utilization of two or more recruitment channels", "in addition to the Canadian Job Bank\u2019s website.", "Present a comprehensive transition plan outlining the strategy to reduce dependence on foreign workers.", "Provide documentation indicating investment in training for the hired foreign worker.", "Substantiate the commitment to retain Canadian workers", "ensuring there will be no layoffs following the employment of the new foreign worker."]
+        "items": ["Commit to paying a processing fee of $1,000 CAD, applicable to all LMIA categories except those involving caregivers for low-income families and LMIA supporting permanent resident applications.", "Advertise the vacant job position for a minimum of four weeks before extending an offer to a foreign worker.", "Demonstrate the utilization of two or more recruitment channels, in addition to the Canadian Job Bank\u2019s website.", "Present a comprehensive transition plan outlining the strategy to reduce dependence on foreign workers.", "Provide documentation indicating investment in training for the hired foreign worker.", "Substantiate the commitment to retain Canadian workers, ensuring there will be no layoffs following the employment of the new foreign worker."]
       },
       {
         "type": "heading",
@@ -707,16 +707,7 @@ export const slugPageData = [
       {
         "type": "heading",
         "level": 4,
-        "content": "3. Issuance of Job Offer to the Foreign Worker"
-      },
-      {
-        "type": "paragraph",
-        "content": "Upon completion of the job advertising phase, employers can extend a job offer to the foreign worker. The job offer letter must encompass crucial details, including the offered wage, weekly working hours, and a concise overview of the job duties. The foreign worker is required to sign this letter before the employer proceeds to the next stage."
-      },
-      {
-        "type": "heading",
-        "level": 4,
-        "content": "4. Submission of LMIA Application"
+        "content": "3. Submission of LMIA Application"
       },
       {
         "type": "paragraph",
@@ -725,7 +716,7 @@ export const slugPageData = [
       {
         "type": "heading",
         "level": 4,
-        "content": "5. Issuance of Job Offer to the Foreign Worker"
+        "content": "4. Issuance of Job Offer to the Foreign Worker"
       },
       {
         "type": "paragraph",
@@ -734,7 +725,7 @@ export const slugPageData = [
       {
         "type": "heading",
         "level": 4,
-        "content": "6. Submission of LMIA Application"
+        "content": "5. Submission of LMIA Application"
       },
       {
         "type": "paragraph",
@@ -743,7 +734,7 @@ export const slugPageData = [
       {
         "type": "heading",
         "level": 4,
-        "content": "7. Unlocking LMIA Success with TNC Immigration"
+        "content": "6. Unlocking LMIA Success with TNC Immigration"
       },
       {
         "type": "paragraph",
@@ -807,7 +798,7 @@ export const slugPageData = [
       },
       {
         "type": "list",
-        "items": ["Stay Longer: Study permits allow you to remain in Canada for the duration of your academic program.", "Access World-Class Education: Enroll in top Canadian colleges and universities", "gaining qualifications recognized globally.", "Work While Studying: Many study permits allow part-time work during your studies and full-time work during breaks", "helping you cover expenses and gain valuable work experience.", "Pathway to Permanent Residency: Completing a program at a Canadian institution can lead to permanent residency options through various immigration streams", "such as the Post-Graduation Work Permit (PGWP) and Express Entry."]
+        "items": ["Stay Longer: Study permits allow you to remain in Canada for the duration of your academic program.", "Access World-Class Education: Enroll in top Canadian colleges and universities, gaining qualifications recognized globally.", "Work While Studying: Many study permits allow part-time work during your studies and full-time work during breaks, helping you cover expenses and gain valuable work experience.", "Pathway to Permanent Residency: Completing a program at a Canadian institution can lead to permanent residency options through various immigration streams, such as the Post-Graduation Work Permit (PGWP) and Express Entry."]
       },
       {
         "type": "heading",
@@ -820,7 +811,7 @@ export const slugPageData = [
       },
       {
         "type": "list",
-        "items": ["Letter of Acceptance: Secure an offer of admission from a Designated Learning Institution (DLI) in Canada.", "Valid Visitor Status: Ensure that your visitor status is still valid while applying for the study permit.", "Proof of Financial Support: Demonstrate that you have the funds to cover tuition", "living expenses", "and return transportation.", "Other Supporting Documents: Provide required documents such as your passport", "proof of funds", "and letter of intent."]
+        "items": ["Letter of Acceptance: Secure an offer of admission from a Designated Learning Institution (DLI) in Canada.", "Valid Visitor Status: Ensure that your visitor status is still valid while applying for the study permit.", "Proof of Financial Support: Demonstrate that you have the funds to cover tuition, living expenses, and return transportation.", "Other Supporting Documents: Provide required documents such as your passport, proof of funds, and letter of intent."]
       },
       {
         "type": "heading",
@@ -855,7 +846,7 @@ export const slugPageData = [
       },
       {
         "type": "list",
-        "items": ["Assess Your Eligibility: We\u2019ll review your current status and help you understand the requirements for your specific case.", "Help You Secure Admission: We\u2019ll assist you in finding the right program and school to fit your academic and career aspirations.", "File Your Study Permit Application: Our team will ensure your application is complete", "accurate", "and submitted in a timely manner", "reducing the chances of delays or rejections.", "Ongoing Support: We\u2019re here to provide ongoing guidance throughout your study journey", "including advice on post-graduation opportunities and pathways to permanent residency"]
+        "items": ["Assess Your Eligibility: We\u2019ll review your current status and help you understand the requirements for your specific case.", "Help You Secure Admission: We\u2019ll assist you in finding the right program and school to fit your academic and career aspirations.", "File Your Study Permit Application: Our team will ensure your application is complete, accurate, and submitted in a timely manner, reducing the chances of delays or rejections.", "Ongoing Support: We\u2019re here to provide ongoing guidance throughout your study journey, including advice on post-graduation opportunities and pathways to permanent residency"]
       }
     ],
   },
@@ -1045,7 +1036,7 @@ export const slugPageData = [
       },
       {
         "type": "list",
-        "items": ["You are a Canadian citizen or permanent resident aged 18 or older.", "You can prove the authenticity of your relationship", "either as a legally married couple or as common-law partners (which means you\u2019ve lived together for at least 12 consecutive months).", "You are financially capable of supporting your spouse or partner for the duration of the sponsorship."]
+        "items": ["You are a Canadian citizen or permanent resident aged 18 or older.", "You can prove the authenticity of your relationship, either as a legally married couple or as common-law partners (which means you\u2019ve lived together for at least 12 consecutive months).", "You are financially capable of supporting your spouse or partner for the duration of the sponsorship."]
       },
       {
         "type": "image",
@@ -1155,12 +1146,8 @@ export const slugPageData = [
         "content": "To sponsor your parents or grandparents, you must:"
       },
       {
-        "type": "paragraph",
-        "content": "Be a Canadian Citizen or Permanent Resident: Only individuals who are either Canadian citizens or permanent residents are eligible to sponsor their parents or grandparents."
-      },
-      {
-        "type": "paragraph",
-        "content": "Meet Minimum Income Requirements: Sponsors are required to demonstrate they have the financial means to support their family members. This includes meeting the minimum necessary income, which is assessed based on the number of family"
+        "type": "list",
+        "items": ["Be a Canadian Citizen or Permanent Resident: Only individuals who are either Canadian citizens or permanent residents are eligible to sponsor their parents or grandparents."]
       },
       {
         "type": "image",
@@ -1177,8 +1164,8 @@ export const slugPageData = [
     ],
     pageData2: [
       {
-        "type": "paragraph",
-        "content": "Commit to Financial Support: Sponsors must sign an undertaking to financially support their parents or grandparents for a specified duration, ensuring they don\u2019t need social assistance from the government."
+        "type": "list",
+        "items": ["Meet Minimum Income Requirements: Sponsors are required to demonstrate they have the financial means to support their family members. This includes meeting the minimum necessary income, which is assessed based on the number of family", "Commit to Financial Support: Sponsors must sign an undertaking to financially support their parents or grandparents for a specified duration, ensuring they don\u2019t need social assistance from the government."]
       },
       {
         "type": "heading",
@@ -2424,7 +2411,7 @@ export const slugPageData = [
       },
       {
         "type": "paragraph",
-        "content": "If IRCC raises concerns about your SOWP application (e. g. , ineligibility, misrepresentation, or missing documents), you may receive a PFL. We can help you respond effectively to avoid refusal."
+        "content": "If IRCC raises concerns about your SOWP application (e.g. Ineligibility, Misrepresentation, or Missing Documents), you may receive a PFL. We can help you respond effectively to avoid refusal."
       }
     ],
     form: false,
@@ -2504,7 +2491,7 @@ export const slugPageData = [
       },
       {
         "type": "list",
-        "items": ["Apply for an extension 3 to 4 months before the current permit expires.", "Applying too close to expiry leads to \u201cimplied status, \u201d restricting work and study.", "Choices then narrow down to a challenging status restoration or leaving Canada for a fresh permit application from home."]
+        "items": ["Apply for an extension 3 to 4 months before the current permit expires.", "Applying too close to expiry leads to \u201cimplied status\u201d, restricting work and study.", "Choices then narrow down to a challenging status restoration or leaving Canada for a fresh permit application from home."]
       },
       {
         "type": "heading",
@@ -2566,13 +2553,8 @@ export const slugPageData = [
         "content": "Understanding the process and requirements for extensions within Canada is vital to ensuring a smooth and successful application. Whether you are a student looking to continue your studies, a temporary worker seeking to extend your employment, or a visitor wishing to explore more of this beautiful country, our dedicated team is here to provide the guidance and resources you need."
       },
       {
-        "type": "heading",
-        "level": 3,
-        "content": "Explore our comprehensive resources and consultation"
-      },
-      {
         "type": "paragraph",
-        "content": "services to learn more about extensions within Canada and how you can extend your stay in this welcoming nation while complying with immigration regulations and requirements."
+        "content": "Explore our comprehensive resources and consultation services to learn more about extensions within Canada and how you can extend your stay in this welcoming nation while complying with immigration regulations and requirements."
       }
     ],
     form: true,
@@ -2668,7 +2650,7 @@ export const slugPageData = [
       },
       {
         "type": "list",
-        "items": ["A valid passport or travel document.", "Your current or expired PR card.", "Proof of residency in Canada (e. g., utility bills, tax returns, employment records).", "Additional documents depending on your personal situation."]
+        "items": ["A valid passport or travel document.", "Your current or expired PR card.", "Proof of residency in Canada (e.g. Utility Bills, Tax Returns, Employment Records).", "Additional documents depending on your personal situation."]
       },
       {
         "type": "heading",
