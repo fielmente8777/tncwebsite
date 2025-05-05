@@ -707,16 +707,7 @@ export const slugPageData = [
       {
         "type": "heading",
         "level": 4,
-        "content": "3. Submission of LMIA Application"
-      },
-      {
-        "type": "paragraph",
-        "content": "Subsequently, employers are expected to complete an LMIA application and submit it along with the necessary supporting documents. Additionally, a $1, 000 CAD LMIA processing fee must be paid. Successful applicants will receive notification of a positive LMIA, enabling them to communicate with the prospective foreign employee and advise them to initiate the work permit application process."
-      },
-      {
-        "type": "heading",
-        "level": 4,
-        "content": "4. Issuance of Job Offer to the Foreign Worker"
+        "content": "3. Issuance of Job Offer to the Foreign Worker"
       },
       {
         "type": "paragraph",
@@ -725,7 +716,7 @@ export const slugPageData = [
       {
         "type": "heading",
         "level": 4,
-        "content": "5. Submission of LMIA Application"
+        "content": "4. Submission of LMIA Application"
       },
       {
         "type": "paragraph",
@@ -734,7 +725,7 @@ export const slugPageData = [
       {
         "type": "heading",
         "level": 4,
-        "content": "6. Unlocking LMIA Success with TNC Immigration"
+        "content": "5. Unlocking LMIA Success with TNC Immigration"
       },
       {
         "type": "paragraph",
