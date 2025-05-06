@@ -193,8 +193,8 @@ export const Card: React.FC<reviewProps> = ({
         )}
 
         <div className="flex flex-col ">
-          <h3 className="description1 font-bold">{name}</h3>
-          <p className="description3">{date}</p>
+          <h3 className="description1 font-bold max-md:text-[18px]">{name}</h3>
+          <p className="description3 max-md:text-[14px]">{date}</p>
         </div>
         <Image
           src={"/gico.svg"}
@@ -216,7 +216,7 @@ export const Card: React.FC<reviewProps> = ({
         ))}
         <Image src={"/ver.svg"} alt="tick logo" width={20} height={20} />
       </div>
-      <p className="description2 !leading-5 mt-4">
+      <p className="description2 !leading-5 mt-4 max-md:text-[16px]">
         {review.slice(0, readMore ? review.length : 100)}
         {review.length > 120 && !readMore && " ..."}
         {review.length > 120 && (

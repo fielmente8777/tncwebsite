@@ -17,7 +17,7 @@ const Data = [
   {
     icon: <DrawerNoteBook />,
     label: "Request a Call - Inside Canada",
-    href: "/request-a-call-inside-canadaa",
+    href: "/request-a-call-inside-canada",
   },
   {
     icon: <DrawerNoteBook />,

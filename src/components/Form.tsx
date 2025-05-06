@@ -159,11 +159,10 @@ const Form = () => {
             id="selection"
             // value={selectedOption}
             // onChange={handleSelectChange}
-
             required
             className="w-full p-2 capitalize rounded-sm outline-none px-6 text-black/40"
           >
-            <option value="" disabled selected hidden>
+            <option value="" disabled hidden>
               Select your service
             </option>
             {service.map((service, i) => (
