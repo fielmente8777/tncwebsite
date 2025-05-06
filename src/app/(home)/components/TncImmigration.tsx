@@ -84,7 +84,7 @@ const TncImmigration = () => {
               <h2 className="text-center text-prime-red font-bold text-2xl">
                 {data?.title}
               </h2>
-              <p className="leading-7 text-base text-center nunito">
+              <p className="leading-7 text-base text-center nunito max-md:text-[20px]">
                 {data?.desc}
               </p>
             </div>
