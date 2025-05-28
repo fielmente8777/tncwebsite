@@ -255,7 +255,7 @@ export const slugPageData = [
       },
       {
         "type": "paragraph",
-        "content": "If visiting family or friends, include an invitation letter with\n their contact details and a statement confirming their\n responsibility for your stay."
+        "content": "You’ll need to demonstrate proof of bank statements to support your visit to Canada. These documents must show that you have sufficient funds to cover your stay, including accommodation, travel, and daily expenses."
       },
       {
         "type": "heading",
@@ -507,10 +507,10 @@ export const slugPageData = [
         "type": "paragraph",
         "content": "Visa Programs that require Open Work Permits"
       },
-      {
-        "type": "paragraph",
-        "content": "Various visa programs, including the Working Holiday Visa, Federal Skilled Worker Program, Federal Skilled Trades Program, Provincial Nominee Program, Canadian Experience Class, International Experience Class, Young Professional Visa, and International Co-op Program, utilize open work permits."
-      },
+      // {
+      //   "type": "paragraph",
+      //   "content": "Various visa programs, including the Working Holiday Visa, Federal Skilled Worker Program, Federal Skilled Trades Program, Provincial Nominee Program, Canadian Experience Class, International Experience Class, Young Professional Visa, and International Co-op Program, utilize open work permits."
+      // },
       {
         "type": "heading",
         "level": 4,
@@ -520,15 +520,15 @@ export const slugPageData = [
         "type": "paragraph",
         "content": "This type of permit ties employment to specific conditions such as the employer\u2019s name, duration of employment, and location of employment."
       },
-      {
-        "type": "heading",
-        "level": 3,
-        "content": "Eligibility for Employer-Specific Work Permits"
-      },
-      {
-        "type": "paragraph",
-        "content": "Eligibility is contingent on factors like the nature of the occupation, financial stability, criminal record, security concerns, and health status. Working for ineligible employers or engaging in specific services may disqualify an applicant."
-      },
+      // {
+      //   "type": "heading",
+      //   "level": 3,
+      //   "content": "Eligibility for Employer-Specific Work Permits"
+      // },
+      // {
+      //   "type": "paragraph",
+      //   "content": "Eligibility is contingent on factors like the nature of the occupation, financial stability, criminal record, security concerns, and health status. Working for ineligible employers or engaging in specific services may disqualify an applicant."
+      // },
       {
         "type": "heading",
         "level": 3,
@@ -561,15 +561,15 @@ export const slugPageData = [
         "type": "paragraph",
         "content": "Enables spouses or common-law partners of Canadian citizens or permanent residents to apply for an open work permit, particularly if they are part of a spousal sponsorship application within Canada."
       },
-      {
-        "type": "heading",
-        "level": 3,
-        "content": "Work Permit Exemptions"
-      },
-      {
-        "type": "paragraph",
-        "content": "Certain short-duration and legal jobs, such as aviation investigators, athletes and coaches of foreign teams, clergy members, expert witnesses, news reporters, film crew, performing artists, and health care students, do not require work permits."
-      }
+      // {
+      //   "type": "heading",
+      //   "level": 3,
+      //   "content": "Work Permit Exemptions"
+      // },
+      // {
+      //   "type": "paragraph",
+      //   "content": "Certain short-duration and legal jobs, such as aviation investigators, athletes and coaches of foreign teams, clergy members, expert witnesses, news reporters, film crew, performing artists, and health care students, do not require work permits."
+      // }
     ],
   },
   {
@@ -968,11 +968,11 @@ export const slugPageData = [
       },
       {
         "type": "paragraph",
-        "content": "\u27a4 Minimum Canadian Language Benchmark 5 (CLB 5) for college-level programs."
+        "content": "🎓 Language Requirement Some programs require you to meet CLB 7 (Canadian Language Benchmark) for eligibility. Make sure to verify the language requirement for your specific program before applying."
       },
       {
         "type": "paragraph",
-        "content": "\u2022 Programs must fall within IRCC\u2019s approved fields of study to qualify for PGWP if you apply for a study permit on or after November 1, 2024."
+        "content": "📌 Not All Programs Qualify for PGWP Please note: Not all academic programs are eligible for a Post-Graduation Work Permit (PGWP). We recommend checking the latest updates on the official IRCC website."
       },
       {
         "type": "heading",
@@ -1898,7 +1898,7 @@ export const slugPageData = [
       {
         "type": "heading",
         "level": 4,
-        "content": "Each pathway has its own rules \u2014 but don\u2019t worry, we\u2019ll help you find the suitable stream as applicable"
+        "content": "Each pathway has its own rules — but we’ll help you check your eligibility based on your profile."
       },
       {
         "type": "heading",
@@ -2988,7 +2988,7 @@ export const slugPageData = [
       },
       {
         "type": "paragraph",
-        "content": "The Super Visa permits parents and grandparents to stay in Canada for up to two years at a time without the need for frequent visa renewals."
+        "content": "The Super Visa permits parents and grandparents to stay in Upto 5 years during their first visit without the need for frequent visa renewals."
       },
       {
         "type": "heading",
@@ -3094,7 +3094,7 @@ export const slugPageData = [
       },
       {
         "type": "paragraph",
-        "content": "To be eligible for the Federal Skilled Worker Program, applicants must meet the following criteria:"
+        "content": "A candidate needs to meet at least 67 points out of 100 based on factors such as age, education, work experience, language proficiency, adaptability, and a valid job offer (if applicable)."
       },
       {
         "type": "image",
@@ -4000,11 +4000,11 @@ export const slugPageData = [
       },
       {
         "type": "paragraph",
-        "content": "Primarily, this permit facilitates the sponsored spouse or partner to work while their application for permanent residence undergoes processing."
+        "content": "Primarily, this permit facilitates the sponsored spouse or partner to work while they stay together in Canada."
       },
       {
         "type": "paragraph",
-        "content": "It\u2019s important to note that eligibility for an open work permit is not confined to sponsorship applications by Canadian permanent residents or citizens. If your spouse is presently employed or pursuing studies in Canada, you may qualify"
+        "content": "It\u2019s important to note that eligibility for an open work permit is not confined to sponsorship applications by Canadian permanent residents or citizens. If your spouse is presently employed or pursuing studies in Canada, After you may qualify"
       },
       {
         "type": "image",
@@ -4040,7 +4040,7 @@ export const slugPageData = [
       },
       {
         "type": "paragraph",
-        "content": "One of the primary advantages of this permit is its ability to enhance family income, contributing to a more comfortable life in Canada. However, it is crucial to ensure that both the primary applicant and the spouse meet all requirements before initiating the application process."
+        "content": "Refer to canada.ca for updates related to the eligibility requirement"
       },
       {
         "type": "heading",
@@ -4103,7 +4103,7 @@ export const slugPageData = [
       },
       {
         "type": "paragraph",
-        "content": "Confirm the current fee (as of my last update, CAD 255) by checking the IRCC website, and proceed to pay the required amount."
+        "content": "Confirm the current fee (As per last update CAD255) by checking the IRCC website, and proceed to pay the required amount."
       },
       {
         "type": "heading",
