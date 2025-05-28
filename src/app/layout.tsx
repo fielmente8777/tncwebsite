@@ -4,13 +4,11 @@ import "./styles/nav&button.scss";
 import { Footer, Navbar } from "@/components";
 import { ChatDrawer } from "@/components/ContactButton/ChatDrawer";
 
-
-
 export const metadata: Metadata = {
   title: "Home - TNC immigration",
   description:
     "Your Trusted Immigration Partner Gateway to Your Canadian Dream View Services About Us Temporary Residence Read More Permanent Residence Read More Family & Sponsorship Read More FlagPoling Application Read More 5 1 + Years of experience We have been the top 1% RCIC for the 5+ Golden Years About Us We’re Trusted Immigration Consultant Our",
-  keywords:"",
+  keywords: "",
   alternates: {
     canonical: "https://tncimmigration.com/",
   },
@@ -44,7 +42,6 @@ export const metadata: Metadata = {
   },
 };
 
-
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -52,12 +49,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        suppressHydrationWarning={true}
-        className={` antialiased`}
-      >
+      <body suppressHydrationWarning={true} className={` antialiased`}>
         <Navbar />
         {children}
+        <div className="max-width">
+          <p className="mb-4 mt-8 text-center">
+            This page provides a basic outline of the respective application,
+            which may or may not be applicable to you. Do not solely rely on the
+            information here. To check your eligibility and get accurate
+            information you can contact our team at TNC Immigration.
+          </p>
+        </div>
         <Footer />
         <div className="fixed bottom-4 right-4 z-50">
           <ChatDrawer />
