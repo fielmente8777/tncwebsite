@@ -503,10 +503,10 @@ export const slugPageData = [
         "type": "list",
         "items": ["Regular Work Permit", "Post-Graduation Work Permits", "Temporary Work Permits for Spouses/Common-Law Partners", "Youth Program Permit", "Atlantic Immigration Pilot Program Spousal Permit", "Bridging Open Work Permit"]
       },
-      {
-        "type": "paragraph",
-        "content": "Visa Programs that require Open Work Permits"
-      },
+      // {
+      //   "type": "paragraph",
+      //   "content": "Visa Programs that require Open Work Permits"
+      // },
       // {
       //   "type": "paragraph",
       //   "content": "Various visa programs, including the Working Holiday Visa, Federal Skilled Worker Program, Federal Skilled Trades Program, Provincial Nominee Program, Canadian Experience Class, International Experience Class, Young Professional Visa, and International Co-op Program, utilize open work permits."
@@ -532,7 +532,7 @@ export const slugPageData = [
       {
         "type": "heading",
         "level": 3,
-        "content": "Occupations that require Employer-Specific work permits"
+        "content": "Other types of open work permit:"
       },
       {
         "type": "paragraph",
@@ -550,7 +550,7 @@ export const slugPageData = [
       },
       {
         "type": "paragraph",
-        "content": "Allows international students to apply for work permits for their dependent spouses and visit visas or study permits for their children during their study in Canada."
+        "content": "Allows some international students (Masters degree and higher) to apply for open work permits for their dependent spouse and apply for visitor extension or study permits for their children to apply for work permits for their dependent spouses and visit visas or study permits for their children during their study in Canada."
       },
       {
         "type": "heading",
@@ -2198,236 +2198,236 @@ export const slugPageData = [
       }
     ],
   },
-  {
-    slug: "spousal-sponsorship",
-    meta: {
-      title: "SPOUSAL SPONSORSHIP - TNC immigration",
-      desc: "SPOUSAL SPONSORSHIP Introduction to Spousal Sponsorship Spousal sponsorship in Canada refers to the process by which a Canadian citizen or a permanent resident can sponsor their spouse, common-law partner, or conjugal partner for Canadian permanent residence. The objective is to facilitate the reunification of families by allowing individuals to bring their loved ones to Canada.",
-    },
-    banner: {
-      title: "SPOUSAL SPONSORSHIP",
-      src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/bgim.webp",
-    },
-    htm: "true",
-    // links: [
-    //   {
-    //     name: "+1 (236) 818 5558",
-    //     href: "tel:+1(236)818 5558",
-    //   },
-    //   {
-    //     name:"Mail us",
-    //     href: "mailto:info@tncimmigration.com",
-    //   },
-    // ],
-    pageData1: [
-      {
-        "type": "heading",
-        "level": 2,
-        "content": "Introduction to Spousal Sponsorship"
-      },
-      {
-        "type": "paragraph",
-        "content": "Spousal sponsorship in Canada refers to the process by which a Canadian citizen or a permanent resident can sponsor their spouse, common-law partner, or conjugal partner for Canadian permanent residence. The objective is to facilitate the reunification of families by allowing individuals to bring their loved ones to Canada. Here are key points about spousal sponsorship in Canada."
-      },
-      {
-        "type": "heading",
-        "level": 3,
-        "content": "What are the requirements for obtaining a spousal open work permit?"
-      },
-      {
-        "type": "paragraph",
-        "content": "To be considered eligible for an open work permit, individuals must fulfill the following criteria:"
-      },
-      {
-        "type": "image",
-        "src": "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/spousal-sponsorship.webp",
-        "alt": "avt",
-        "width": "{1300}",
-        "height": "{700}",
-        "className": null
-      }
-    ],
-    pageData2: [
-      {
-        "type": "list",
-        "ordered": true,
-        "items": ["Act as the principal applicant who has submitted a permanent residence application under the Spouse or Common-Law Partner in Canada Class. Alternatively, be a spouse, common-law partner, or conjugal partner under the family class whose application has been accepted for processing by IRCC after passing a completeness check and has not faced refusal or withdrawal.", "Submit a work permit application specifying a maximum duration of two years.", "Be the subject of a sponsorship application initiated by their Canadian citizen or permanent resident spouse, common-law partner, or conjugal partner.", "Share the same residential address as their sponsor in Canada at the time of application.", "Possess a valid temporary resident status in Canada or be eligible for and have applied for the restoration of their status.", "Both the applicant and the sponsor must meet all eligibility requirements under spousal or common-law partner sponsorship."]
-      },
-      {
-        "type": "paragraph",
-        "content": "Ensuring compliance with these criteria is crucial for a successful application for a spousal open work permit. It is imperative for applicants and sponsors to thoroughly understand and adhere to the stipulated eligibility requirements for spousal or common-law partner sponsorship."
-      },
-      {
-        "type": "heading",
-        "level": 3,
-        "content": "Some of the reasons for Spouse Visa Refusal?"
-      },
-      {
-        "type": "paragraph",
-        "content": "The primary reason for numerous spousal application refusals lies with the Immigration, Refugees, and Citizenship Canada (IRCC). The IRCC provides forms and process instructions online, creating an illusion that the application process is straightforward and manageable independently. However, individuals often realize the complexities only after initiating the process on their own, resulting in returned or refused applications."
-      },
-      {
-        "type": "paragraph",
-        "content": "If an application is returned due to the use of outdated forms or incompleteness, the delay can extend up to 2 to 3 months. In cases of refusal, permanent residence (PR) status won\u2019t be granted for a minimum of 2 years. For Outland applications, where spouses come from non-visa-exempt countries requiring a Temporary Resident Visa (TRV), travel to Canada becomes restricted for at least 2 years post-refusal, unless a valid TRV visa is already in place. Moreover, after a spousal application refusal, the IRCC will not approve a TRV visa."
-      },
-      {
-        "type": "heading",
-        "level": 3,
-        "content": "Check Your Eligibility Request Our Free Consultation"
-      },
-      {
-        "type": "paragraph",
-        "content": "Consider seeking legal assistance during the application process to benefit from several advantages. When choosing a law firm, individuals"
-      },
-      {
-        "type": "paragraph",
-        "content": "1. Unfavorable Outcomes:"
-      },
-      {
-        "type": "list",
-        "items": ["Application returns", "In-person interviews", "Receipt of a fairness letter", "Issuance of a refusal letter"]
-      },
-      {
-        "type": "paragraph",
-        "content": "2. Proving Genuineness of Relationship:"
-      },
-      {
-        "type": "paragraph",
-        "content": "The IRCC evaluates several criteria to determine the authenticity of relationships, including:"
-      },
-      {
-        "type": "list",
-        "items": ["Compatibility of the couple", "Co-habitation details", "Length of the relationship", "Differences in religion", "Age disparity", "Educational differences", "Cultural disparities"]
-      },
-      {
-        "type": "paragraph",
-        "content": "3. Other Potential Issues:"
-      },
-      {
-        "type": "list",
-        "items": ["Application not linked to the online account", "Non-issuance of an Open Work Permit", "Problems with Police Clearance Certificate (PCC)", "Issues with divorce records", "Challenges related to children from previous marriages"]
-      },
-      {
-        "type": "paragraph",
-        "content": "Choosing legal representation can significantly enhance the chances of a successful spousal sponsorship application. For personalized assistance, it is recommended to seek a free consultation with our experienced team. Enter your details below and let us guide you through the process."
-      }
-    ],
-  },
-  {
-    slug: "spousal-open-work-permit-2",
-    meta: {
-      title: "Spousal Open Work Permit￼ - TNC immigration",
-      desc: "Spousal Open Work Permit Spousal Open Work Permit In the immigration process, it's not uncommon for immigration officers to have significant questions or concerns regarding an applicant's submission, potentially leading to a refusal of their application. In such instances, officers typically communicate their doubts or inquiries through official correspondence, often delivered via email. These correspondences",
-    },
-    banner: {
-      title: "Spousal Open Work Permit",
-      src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/bgim.webp",
-    },
-    htm: "true",
-    links: [
-      {
-        name: "+1 (236) 818 5558",
-        href: "tel:+1(236)818 5558",
-      },
-      {
-        name: "Mail us",
-        href: "mailto:info@tncimmigration.com",
-      },
-    ],
-    title: "Confused about eligibility or received a PFL?",
-    address:
-      "Book a consultation with TNC Immigration to ensure a strong, accurate application under the new rules.",
-    pageData1: [
-      {
-        "type": "heading",
-        "level": 2,
-        "content": "Spousal Open Work Permit (SOWP) \u2013"
-      },
-      {
-        "type": "paragraph",
-        "content": "A Spousal Open Work Permit (SOWP) allows eligible spouses or common-law partners of international students to work in Canada. However, as of 2024, eligibility has been restricted."
-      },
-      {
-        "type": "heading",
-        "level": 3,
-        "content": "Who Is Eligible?"
-      },
-      {
-        "type": "paragraph",
-        "content": "Your spouse/partner can apply for a SOWP only if you\u2019re enrolled in one of these full-time, degree-granting programs at a Designated Learning Institution (DLI):"
-      },
-      {
-        "type": "heading",
-        "level": 4,
-        "content": "Graduate Programs"
-      },
-      {
-        "type": "list",
-        "items": ["Master\u2019s programs (minimum 16 months)", "Doctoral (Ph D) programs"]
-      },
-      {
-        "type": "heading",
-        "level": 4,
-        "content": "Professional Programs"
-      },
-      {
-        "type": "list",
-        "items": ["Dentistry (DDS, DMD)", "Law (LLB, JD, BCL)", "Medicine (MD)", "Optometry (OD)", "Pharmacy (Pharm D, BS, BSc, BPharm)", "Veterinary Medicine (DVM)", "Nursing (BSc N, BSN, BNSc, BN)", "Education (B. Ed. )", "Engineering (B. Eng., BE, BASc)"]
-      }
-    ],
-    pageData2: [
-      {
-        "type": "heading",
-        "level": 4,
-        "content": "Special Cases"
-      },
-      {
-        "type": "list",
-        "items": ["Spouses of participants in the Supervised Practice Experience Partnership (SPEP) may also qualify."]
-      },
-      {
-        "type": "paragraph",
-        "content": "\u274c Spouses of students in other programs are no longer eligible for a SOWP."
-      },
-      {
-        "type": "heading",
-        "level": 4,
-        "content": "No Job Offer Needed"
-      },
-      {
-        "type": "paragraph",
-        "content": "Eligible spouses can apply for an open work permit without a job offer or LMIA, allowing them to work for any employer in Canada."
-      },
-      {
-        "type": "heading",
-        "level": 4,
-        "content": "Documents Needed"
-      },
-      {
-        "type": "list",
-        "items": ["Proof of student\u2019s enrollment in an eligible program", "Valid study permit", "Proof of relationship (marriage/common-law documents)", "Passport and travel documents"]
-      },
-      {
-        "type": "heading",
-        "level": 4,
-        "content": "Procedural Fairness Letters (PFL)"
-      },
-      {
-        "type": "paragraph",
-        "content": "If IRCC raises concerns about your SOWP application (e.g. Ineligibility, Misrepresentation, or Missing Documents), you may receive a PFL. We can help you respond effectively to avoid refusal."
-      }
-    ],
-    form: false,
-    forData: {
-      title: "Need Help?",
-      link: {
-        name: "Click Here for Free Assessment",
-        href: "/start-assessment",
-      },
-      address:
-        "Our offices are located on the Suite 303 – 15957 84 Avenue Surrey BC, V4N 0W7 Canada",
-    },
-  },
+  // {
+  //   slug: "spousal-sponsorship",
+  //   meta: {
+  //     title: "SPOUSAL SPONSORSHIP - TNC immigration",
+  //     desc: "SPOUSAL SPONSORSHIP Introduction to Spousal Sponsorship Spousal sponsorship in Canada refers to the process by which a Canadian citizen or a permanent resident can sponsor their spouse, common-law partner, or conjugal partner for Canadian permanent residence. The objective is to facilitate the reunification of families by allowing individuals to bring their loved ones to Canada.",
+  //   },
+  //   banner: {
+  //     title: "SPOUSAL SPONSORSHIP",
+  //     src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/bgim.webp",
+  //   },
+  //   htm: "true",
+  //   // links: [
+  //   //   {
+  //   //     name: "+1 (236) 818 5558",
+  //   //     href: "tel:+1(236)818 5558",
+  //   //   },
+  //   //   {
+  //   //     name:"Mail us",
+  //   //     href: "mailto:info@tncimmigration.com",
+  //   //   },
+  //   // ],
+  //   pageData1: [
+  //     {
+  //       "type": "heading",
+  //       "level": 2,
+  //       "content": "Introduction to Spousal Sponsorship"
+  //     },
+  //     {
+  //       "type": "paragraph",
+  //       "content": "Spousal sponsorship in Canada refers to the process by which a Canadian citizen or a permanent resident can sponsor their spouse, common-law partner, or conjugal partner for Canadian permanent residence. The objective is to facilitate the reunification of families by allowing individuals to bring their loved ones to Canada. Here are key points about spousal sponsorship in Canada."
+  //     },
+  //     {
+  //       "type": "heading",
+  //       "level": 3,
+  //       "content": "What are the requirements for obtaining a spousal open work permit?"
+  //     },
+  //     {
+  //       "type": "paragraph",
+  //       "content": "To be considered eligible for an open work permit, individuals must fulfill the following criteria:"
+  //     },
+  //     {
+  //       "type": "image",
+  //       "src": "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/spousal-sponsorship.webp",
+  //       "alt": "avt",
+  //       "width": "{1300}",
+  //       "height": "{700}",
+  //       "className": null
+  //     }
+  //   ],
+  //   pageData2: [
+  //     {
+  //       "type": "list",
+  //       "ordered": true,
+  //       "items": ["Act as the principal applicant who has submitted a permanent residence application under the Spouse or Common-Law Partner in Canada Class. Alternatively, be a spouse, common-law partner, or conjugal partner under the family class whose application has been accepted for processing by IRCC after passing a completeness check and has not faced refusal or withdrawal.", "Submit a work permit application specifying a maximum duration of two years.", "Be the subject of a sponsorship application initiated by their Canadian citizen or permanent resident spouse, common-law partner, or conjugal partner.", "Share the same residential address as their sponsor in Canada at the time of application.", "Possess a valid temporary resident status in Canada or be eligible for and have applied for the restoration of their status.", "Both the applicant and the sponsor must meet all eligibility requirements under spousal or common-law partner sponsorship."]
+  //     },
+  //     {
+  //       "type": "paragraph",
+  //       "content": "Ensuring compliance with these criteria is crucial for a successful application for a spousal open work permit. It is imperative for applicants and sponsors to thoroughly understand and adhere to the stipulated eligibility requirements for spousal or common-law partner sponsorship."
+  //     },
+  //     {
+  //       "type": "heading",
+  //       "level": 3,
+  //       "content": "Some of the reasons for Spouse Visa Refusal?"
+  //     },
+  //     {
+  //       "type": "paragraph",
+  //       "content": "The primary reason for numerous spousal application refusals lies with the Immigration, Refugees, and Citizenship Canada (IRCC). The IRCC provides forms and process instructions online, creating an illusion that the application process is straightforward and manageable independently. However, individuals often realize the complexities only after initiating the process on their own, resulting in returned or refused applications."
+  //     },
+  //     {
+  //       "type": "paragraph",
+  //       "content": "If an application is returned due to the use of outdated forms or incompleteness, the delay can extend up to 2 to 3 months. In cases of refusal, permanent residence (PR) status won\u2019t be granted for a minimum of 2 years. For Outland applications, where spouses come from non-visa-exempt countries requiring a Temporary Resident Visa (TRV), travel to Canada becomes restricted for at least 2 years post-refusal, unless a valid TRV visa is already in place. Moreover, after a spousal application refusal, the IRCC will not approve a TRV visa."
+  //     },
+  //     {
+  //       "type": "heading",
+  //       "level": 3,
+  //       "content": "Check Your Eligibility Request Our Free Consultation"
+  //     },
+  //     {
+  //       "type": "paragraph",
+  //       "content": "Consider seeking legal assistance during the application process to benefit from several advantages. When choosing a law firm, individuals"
+  //     },
+  //     {
+  //       "type": "paragraph",
+  //       "content": "1. Unfavorable Outcomes:"
+  //     },
+  //     {
+  //       "type": "list",
+  //       "items": ["Application returns", "In-person interviews", "Receipt of a fairness letter", "Issuance of a refusal letter"]
+  //     },
+  //     {
+  //       "type": "paragraph",
+  //       "content": "2. Proving Genuineness of Relationship:"
+  //     },
+  //     {
+  //       "type": "paragraph",
+  //       "content": "The IRCC evaluates several criteria to determine the authenticity of relationships, including:"
+  //     },
+  //     {
+  //       "type": "list",
+  //       "items": ["Compatibility of the couple", "Co-habitation details", "Length of the relationship", "Differences in religion", "Age disparity", "Educational differences", "Cultural disparities"]
+  //     },
+  //     {
+  //       "type": "paragraph",
+  //       "content": "3. Other Potential Issues:"
+  //     },
+  //     {
+  //       "type": "list",
+  //       "items": ["Application not linked to the online account", "Non-issuance of an Open Work Permit", "Problems with Police Clearance Certificate (PCC)", "Issues with divorce records", "Challenges related to children from previous marriages"]
+  //     },
+  //     {
+  //       "type": "paragraph",
+  //       "content": "Choosing legal representation can significantly enhance the chances of a successful spousal sponsorship application. For personalized assistance, it is recommended to seek a free consultation with our experienced team. Enter your details below and let us guide you through the process."
+  //     }
+  //   ],
+  // },
+  // {
+  //   slug: "spousal-open-work-permit-2",
+  //   meta: {
+  //     title: "Spousal Open Work Permit￼ - TNC immigration",
+  //     desc: "Spousal Open Work Permit Spousal Open Work Permit In the immigration process, it's not uncommon for immigration officers to have significant questions or concerns regarding an applicant's submission, potentially leading to a refusal of their application. In such instances, officers typically communicate their doubts or inquiries through official correspondence, often delivered via email. These correspondences",
+  //   },
+  //   banner: {
+  //     title: "Spousal Open Work Permit",
+  //     src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/bgim.webp",
+  //   },
+  //   htm: "true",
+  //   links: [
+  //     {
+  //       name: "+1 (236) 818 5558",
+  //       href: "tel:+1(236)818 5558",
+  //     },
+  //     {
+  //       name: "Mail us",
+  //       href: "mailto:info@tncimmigration.com",
+  //     },
+  //   ],
+  //   title: "Confused about eligibility or received a PFL?",
+  //   address:
+  //     "Book a consultation with TNC Immigration to ensure a strong, accurate application under the new rules.",
+  //   pageData1: [
+  //     {
+  //       "type": "heading",
+  //       "level": 2,
+  //       "content": "Spousal Open Work Permit (SOWP) \u2013"
+  //     },
+  //     {
+  //       "type": "paragraph",
+  //       "content": "A Spousal Open Work Permit (SOWP) allows eligible spouses or common-law partners of international students to work in Canada. However, as of 2024, eligibility has been restricted."
+  //     },
+  //     {
+  //       "type": "heading",
+  //       "level": 3,
+  //       "content": "Who Is Eligible?"
+  //     },
+  //     {
+  //       "type": "paragraph",
+  //       "content": "Your spouse/partner can apply for a SOWP only if you\u2019re enrolled in one of these full-time, degree-granting programs at a Designated Learning Institution (DLI):"
+  //     },
+  //     {
+  //       "type": "heading",
+  //       "level": 4,
+  //       "content": "Graduate Programs"
+  //     },
+  //     {
+  //       "type": "list",
+  //       "items": ["Master\u2019s programs (minimum 16 months)", "Doctoral (Ph D) programs"]
+  //     },
+  //     {
+  //       "type": "heading",
+  //       "level": 4,
+  //       "content": "Professional Programs"
+  //     },
+  //     {
+  //       "type": "list",
+  //       "items": ["Dentistry (DDS, DMD)", "Law (LLB, JD, BCL)", "Medicine (MD)", "Optometry (OD)", "Pharmacy (Pharm D, BS, BSc, BPharm)", "Veterinary Medicine (DVM)", "Nursing (BSc N, BSN, BNSc, BN)", "Education (B. Ed. )", "Engineering (B. Eng., BE, BASc)"]
+  //     }
+  //   ],
+  //   pageData2: [
+  //     {
+  //       "type": "heading",
+  //       "level": 4,
+  //       "content": "Special Cases"
+  //     },
+  //     {
+  //       "type": "list",
+  //       "items": ["Spouses of participants in the Supervised Practice Experience Partnership (SPEP) may also qualify."]
+  //     },
+  //     {
+  //       "type": "paragraph",
+  //       "content": "\u274c Spouses of students in other programs are no longer eligible for a SOWP."
+  //     },
+  //     {
+  //       "type": "heading",
+  //       "level": 4,
+  //       "content": "No Job Offer Needed"
+  //     },
+  //     {
+  //       "type": "paragraph",
+  //       "content": "Eligible spouses can apply for an open work permit without a job offer or LMIA, allowing them to work for any employer in Canada."
+  //     },
+  //     {
+  //       "type": "heading",
+  //       "level": 4,
+  //       "content": "Documents Needed"
+  //     },
+  //     {
+  //       "type": "list",
+  //       "items": ["Proof of student\u2019s enrollment in an eligible program", "Valid study permit", "Proof of relationship (marriage/common-law documents)", "Passport and travel documents"]
+  //     },
+  //     {
+  //       "type": "heading",
+  //       "level": 4,
+  //       "content": "Procedural Fairness Letters (PFL)"
+  //     },
+  //     {
+  //       "type": "paragraph",
+  //       "content": "If IRCC raises concerns about your SOWP application (e.g. Ineligibility, Misrepresentation, or Missing Documents), you may receive a PFL. We can help you respond effectively to avoid refusal."
+  //     }
+  //   ],
+  //   form: false,
+  //   forData: {
+  //     title: "Need Help?",
+  //     link: {
+  //       name: "Click Here for Free Assessment",
+  //       href: "/start-assessment",
+  //     },
+  //     address:
+  //       "Our offices are located on the Suite 303 – 15957 84 Avenue Surrey BC, V4N 0W7 Canada",
+  //   },
+  // },
   {
     slug: "extensions-within-canada",
     meta: {
@@ -2988,7 +2988,7 @@ export const slugPageData = [
       },
       {
         "type": "paragraph",
-        "content": "The Super Visa permits parents and grandparents to stay in Upto 5 years during their first visit without the need for frequent visa renewals."
+        "content": "The Super Visa permits parents and grandparents to stay in Up to 5 years during their first visit without the need for frequent visa renewals."
       },
       {
         "type": "heading",
@@ -4103,7 +4103,7 @@ export const slugPageData = [
       },
       {
         "type": "paragraph",
-        "content": "Confirm the current fee (As per last update CAD255) by checking the IRCC website, and proceed to pay the required amount."
+        "content": "Confirm the current fee (as per last update CAD255) by checking the IRCC website, and proceed to pay the required amount."
       },
       {
         "type": "heading",

@@ -1,6 +1,7 @@
-import { SectionWithContainer } from "@/components";
+import { Section, SectionWithContainer } from "@/components";
 import ServiceCard2 from "@/components/Cards/ServiceCard2";
 import { HorizontTowLine, HorizontTwoLineLeft } from "@/data/icons";
+import Image from "next/image";
 import React from "react";
 
 const OurServicesData = [
@@ -116,37 +117,38 @@ const OurServicesData = [
 
 const OurServices = () => {
   return (
-    <div
-      style={{
-        backgroundImage: `url("/tnc/bg-section-02.webp")`,
-      }}
-      className="md:h-[1068.21px] max-lg:w-full max-lg:aspect-square bg-cover bg-center max_screen"
-    >
-      <div>
-        <div className="pt-10">
-          <div className="flex justify-center items-center gap-2">
-            <HorizontTwoLineLeft />
-            <h2 className="text-second-red text-3xl font-bold">Services</h2>
-            <HorizontTowLine />
-          </div>
-
-          <h3 className="text-white font-bold text-center text-4xl mt-4">
-            Our Services
-          </h3>
-        </div>
-
+    <Section className="!pt-0 relative w-full md:min-h-[68rem] md:h-full md:aspect-auto aspect-[4/21.5]">
+      <Image
+        src="/tnc/bg-section-02.webp"
+        alt="banner"
+        fill
+        className="object-cover"
+      />
+      <div className="absolute inset-0 w-full h-full flex">
         <SectionWithContainer>
-          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mx-auto md:gap-2 gap-4">
-            {OurServicesData?.map((data, index) => (
-              <div key={index}>
-                <ServiceCard2 {...data} />
-              </div>
-            ))}
+          <div className="flex flex-col gap-4 w-full">
+            <div className="flex justify-center items-center gap-2">
+              <HorizontTwoLineLeft />
+              <h2 className="text-second-red text-3xl font-bold">Services</h2>
+              <HorizontTowLine />
+            </div>
+            <h3 className="text-white font-bold text-center text-4xl">
+              Our Services
+            </h3>
+            <div className="grid w-full md:mt-6  lg:grid-cols-3 md:grid-cols-2 grid-cols-1 mx-auto md:gap-2 gap-4">
+              {OurServicesData?.map((data, index) => (
+                <div key={index}>
+                  <ServiceCard2 {...data} />
+                </div>
+              ))}
+            </div>
           </div>
         </SectionWithContainer>
       </div>
-    </div>
+    </Section>
   );
 };
 
 export default OurServices;
+
+

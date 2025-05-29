@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Services - TNC immigration",
   description:
     "Our Services Permanent Residence Federal Skilled Worker Book Consultation Read More Federal Skilled Trade Workers Book Consultation Read More Canadian Experience Class Book Consultation Read More Provincial Nominee Programs Book Consultation Read More Temporary Residence Study Permit Book Consultation Read More Intra-Company Transfer Book Consultation Read More Work Permit Book Consultation Read More Super Visa",
-  keywords:"",
+  keywords: "",
   alternates: {
     canonical: "https://tncimmigration.com/services",
   },
@@ -22,7 +22,9 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  authors: [{ name: "TNC Immigration", url: "https://tncimmigration.com/services" }],
+  authors: [
+    { name: "TNC Immigration", url: "https://tncimmigration.com/services" },
+  ],
   openGraph: {
     title: "Services - TNC immigration",
     description:
@@ -47,6 +49,14 @@ const page = () => {
       {servicePageData.services.map((data, index) => (
         <CommonSection {...data} key={index} />
       ))}
+      <div className="max-width">
+        <p className="mb-4 mt-8 text-center">
+          This page provides a basic outline of the respective application,
+          which may or may not be applicable to you. Do not solely rely on the
+          information here. To check your eligibility and get accurate
+          information you can contact our team at TNC Immigration.
+        </p>
+      </div>
     </main>
   );
 };

@@ -81,6 +81,14 @@ const Page = async ({ params }: Params) => {
         <PageData pageData={pageData} />
       )}
       {pageData?.mapsrc && <Map src={pageData.mapsrc} />}
+      <div className="max-width">
+          <p className="mb-4 mt-8 text-center">
+            This page provides a basic outline of the respective application,
+            which may or may not be applicable to you. Do not solely rely on the
+            information here. To check your eligibility and get accurate
+            information you can contact our team at TNC Immigration.
+          </p>
+        </div>
     </>
   );
 };

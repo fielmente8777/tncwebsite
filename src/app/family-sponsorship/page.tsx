@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Family & Sponsorship - TNC immigration",
   description:
     "Family & Sponsorship Family & Sponsorship Applications Spousal PR Sponsorship Read More Spousal Work Permit Read More Child Or Other Dependent Sponsorship Read More Parents, Grandparents Sponsorship Read More",
-  keywords:"",
+  keywords: "",
   alternates: {
     canonical: "https://tncimmigration.com/family-sponsorship/",
   },
@@ -22,7 +22,12 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  authors: [{ name: "TNC Immigration", url: "https://tncimmigration.com/family-sponsorship/" }],
+  authors: [
+    {
+      name: "TNC Immigration",
+      url: "https://tncimmigration.com/family-sponsorship/",
+    },
+  ],
   openGraph: {
     title: "Family & Sponsorship - TNC immigration",
     description:
@@ -45,6 +50,14 @@ const page = () => {
     <main>
       <CommanBanner {...familySponsorship.bannerData} />
       <Application {...familySponsorship.application} />
+      <div className="max-width">
+        <p className="mb-4 mt-8 text-center">
+          This page provides a basic outline of the respective application,
+          which may or may not be applicable to you. Do not solely rely on the
+          information here. To check your eligibility and get accurate
+          information you can contact our team at TNC Immigration.
+        </p>
+      </div>
     </main>
   );
 };
