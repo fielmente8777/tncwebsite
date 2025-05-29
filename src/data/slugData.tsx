@@ -550,7 +550,7 @@ export const slugPageData = [
       },
       {
         "type": "paragraph",
-        "content": "Allows some international students (Masters degree and higher) to apply for open work permits for their dependent spouse and apply for visitor extension or study permits for their children to apply for work permits for their dependent spouses and visit visas or study permits for their children during their study in Canada."
+        "content": "Allows some international students (Masters degree and higher) to apply for open work permits for their dependent spouse and apply for visitor extension or study permits for their children."
       },
       {
         "type": "heading",
@@ -2024,7 +2024,7 @@ export const slugPageData = [
       },
       {
         "type": "paragraph",
-        "content": "When responding to a Procedural Fairness letter, it is highly recommended to seek professional guidance. IRCC rarely grants applicants the chance to respond to specific concerns, making the response process crucial. Engaging an immigration professional, such as the experienced team at Hummingbird Lawyers LLP, can be invaluable."
+        "content": "When responding to a Procedural Fairness letter, it is highly recommended to seek professional guidance. IRCC rarely grants applicants the chance to respond to specific concerns, making the response process crucial. Engaging an immigration professional, such as the experienced team at TNC Immigration, can be invaluable."
       },
       {
         "type": "heading",
@@ -2065,7 +2065,7 @@ export const slugPageData = [
       },
       {
         "type": "paragraph",
-        "content": "The immigration team at Hummingbird Lawyers LLP possesses extensive experience in reviewing and responding to Procedural Fairness letters. Their expertise can play a crucial role in securing the approval of your application. Don\u2019t underestimate the impact of a detailed and well-crafted response in navigating the complexities of the immigration process."
+        "content": "The immigration team at TNC Immigration possesses extensive experience in reviewing and responding to Procedural Fairness Letters. With a deep understanding of immigration procedures and case-specific nuances, they are well-equipped to guide you through this critical stage. A comprehensive and well-prepared response can make a significant difference in the outcome of your application, and we are here to help you build the strongest possible case in your favor."
       },
       {
         "type": "heading",
@@ -2074,7 +2074,7 @@ export const slugPageData = [
       },
       {
         "type": "paragraph",
-        "content": "While Procedural Fairness Letters are a common means of addressing concerns in immigration applications, it\u2019s worth mentioning that, in some cases, interviews may be conducted as an alternative method of gathering information. However, interviews have become less frequent in recent times. In situations involving national security concerns, the Canadian Security Intelligence Service (CSIS) may choose to interview the applicant as part of their assessment."
+        "content": "While Procedural Fairness Letters are a common means of addressing concerns in immigration applications, it\u2019s worth mentioning that, in some cases, interviews may be conducted as an alternative method of gathering information. However, interviews have become less frequent in recent times."
       },
       {
         "type": "paragraph",
@@ -2494,7 +2494,7 @@ export const slugPageData = [
       },
       {
         "type": "list",
-        "items": ["Apply for an extension 3 to 4 months before the current permit expires.", "Applying too close to expiry leads to \u201cimplied status\u201d, restricting work and study.", "Choices then narrow down to a challenging status restoration or leaving Canada for a fresh permit application from home."]
+        "items": ["To streamline the process, you need to apply for an extension 3 to 4 months before the current permit expiry."]
       },
       {
         "type": "heading",

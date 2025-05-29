@@ -790,7 +790,7 @@ export const temporaryResidence = {
         buttons: [
           {
             label: "Read More",
-            href: "/spousal-open-work-permit-2",
+            href: "/spousal-open-work-permit",
           },
           {
             label: "Assessment",

@@ -168,14 +168,14 @@ export const NaveLinks: NveLinksProps[] = [
         name:"sponsor your siblings for PR",
         href:"/sponsor-your-siblings-for-pr",
       },
-      {
-        name:"Spousal Sponsorship",
-        href:"/spousal-sponsorship",
-      },
-      {
-        name:"Spousal open work permit",
-        href:"/spousal-open-work-permit-2",
-      },
+      // {
+      //   name:"Spousal Sponsorship",
+      //   href:"/spousal-sponsorship",
+      // },
+      // {
+      //   name:"Spousal open work permit",
+      //   href:"/spousal-open-work-permit-2",
+      // },
       {
         name:"Extensions within canada",
         href:"/extensions-within-canada",
