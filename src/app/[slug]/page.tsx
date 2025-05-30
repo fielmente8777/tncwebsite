@@ -73,7 +73,12 @@ const Page = async ({ params }: Params) => {
       {pageData?.welcom && (
         <div>
           {pageData.welcom.map((data, index) => (
-            <TwoColSection {...data} key={index} index={index} aspect={data.aspect} />
+            <TwoColSection
+              {...data}
+              key={index}
+              index={index}
+              aspect={data.aspect}
+            />
           ))}
         </div>
       )}
@@ -81,7 +86,8 @@ const Page = async ({ params }: Params) => {
         <PageData pageData={pageData} />
       )}
       {pageData?.mapsrc && <Map src={pageData.mapsrc} />}
-      <div className="max-width">
+      {(pageData?.pageData1 || pageData?.pageData2) && (
+        <div className="max-width">
           <p className="mb-4 mt-8 text-center">
             This page provides a basic outline of the respective application,
             which may or may not be applicable to you. Do not solely rely on the
@@ -89,6 +95,7 @@ const Page = async ({ params }: Params) => {
             information you can contact our team at TNC Immigration.
           </p>
         </div>
+      )}
     </>
   );
 };
