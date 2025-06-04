@@ -1067,7 +1067,16 @@ export const slugPageData = [
       {
         type: "paragraph",
         content:
-          "🎓 Language Requirement Some programs require you to meet CLB 7 (Canadian Language Benchmark) for eligibility. Make sure to verify the language requirement for your specific program before applying.",
+          "🎓 Language Requirement:",
+      },
+      {
+        type: "list",
+        items: [
+          "If you graduated with a bachelor’s degree, master’s degree or doctoral degree you need CLB 7 in English or NCLC 7 in French in all 4 language areas.",
+          "If you graduated from any other university program the you need CLB 7 in English or NCLC 7 in French in all 4 language areas.",
+          "If you graduated from any other college, polytechnic or non-university program, you need CLB 5 in English or NCLC 5 in French in all 4 language areas.",
+          "If you graduated from a flight school, there are no language or field of study requirements for graduates from a PGWP-eligible flight school.",
+        ],
       },
       {
         type: "paragraph",
