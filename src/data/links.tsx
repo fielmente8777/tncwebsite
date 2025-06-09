@@ -4,8 +4,9 @@ import { IoLogoLinkedin } from "react-icons/io";
 import { FillCallIcon, FillLocationIcon, FillMailIcon } from "./icons";
 
 export const imagesLink =
-  "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/";
+  // "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/";
 
+  "https://eazotel-client-webp-images.s3.ap-south-1.amazonaws.com/tnc/";
 interface NveLinksProps {
   name: string;
   href?: string;
@@ -154,19 +155,19 @@ export const NaveLinks: NveLinksProps[] = [
             name: "Agripilot program",
             href: "/agripilot-program",
           },
-        ]
+        ],
       },
       {
         name: "express entry profile creation",
         href: "/express-entry-profile-creation",
       },
       {
-        name:"procedural Fairness Letters",
-        href:"/procedural-fairness-letters"
+        name: "procedural Fairness Letters",
+        href: "/procedural-fairness-letters",
       },
       {
-        name:"sponsor your siblings for PR",
-        href:"/sponsor-your-siblings-for-pr",
+        name: "sponsor your siblings for PR",
+        href: "/sponsor-your-siblings-for-pr",
       },
       // {
       //   name:"Spousal Sponsorship",
@@ -177,32 +178,31 @@ export const NaveLinks: NveLinksProps[] = [
       //   href:"/spousal-open-work-permit-2",
       // },
       {
-        name:"Extensions within canada",
-        href:"/extensions-within-canada",
+        name: "Extensions within canada",
+        href: "/extensions-within-canada",
       },
       {
-        name:"other services",
-        href:"#",
+        name: "other services",
+        href: "#",
         subLinks: [
           {
-            name:"PR Renewal",
-            href:"/pr-renewal",
+            name: "PR Renewal",
+            href: "/pr-renewal",
           },
           {
-            name:"citizenship application",
-            href:"/citizenship-application",
+            name: "citizenship application",
+            href: "/citizenship-application",
           },
           {
-            name:"citizenship hand down",
-            href:"/citizenship-hand-down",
+            name: "citizenship hand down",
+            href: "/citizenship-hand-down",
           },
           {
-            name:"canada recovering lost",
-            href:"/canada-recovering-lost",
+            name: "canada recovering lost",
+            href: "/canada-recovering-lost",
           },
-          
-        ]
-      }
+        ],
+      },
     ],
   },
   {
@@ -310,18 +310,18 @@ export const FooterLinks: FooterLinksProps[] = [
       {
         title: "Surrey,BC",
         name: "15957 84 Ave #303, Surrey, BC V4N 0W7, Canada",
-        // href: "/services/hotel-industry",      
-        icon:<FillLocationIcon/>
+        // href: "/services/hotel-industry",
+        icon: <FillLocationIcon />,
       },
       {
         title: "Mississauga,Ontario",
         name: "1030 Kamato Rd #210, Mississauga, ON L4W 2W4",
-        icon:<FillLocationIcon/>
+        icon: <FillLocationIcon />,
       },
       {
         title: "Kelowna, BC",
         name: "201 – 2903 Pandosy Street Kelowna B.C V1Y 1W1",
-        icon:<FillLocationIcon/>
+        icon: <FillLocationIcon />,
       },
     ],
   },
@@ -335,12 +335,12 @@ export const FooterLinks: FooterLinksProps[] = [
       {
         name: "+1 236 818 5558",
         href: "/tel:+1 236 818 5558",
-        icon:<FillCallIcon/>
+        icon: <FillCallIcon />,
       },
       {
         name: "info@tncimmigration.com",
         href: "/mailto:info@tncimmigration.com",
-        icon:<FillMailIcon/>,
+        icon: <FillMailIcon />,
         capitalize: false,
       },
       {

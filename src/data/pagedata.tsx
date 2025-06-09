@@ -406,6 +406,30 @@ export const AboutPageData = {
         name: "Kasturi",
         src: imagesLink + "tm15.webp",
       },
+      {
+        name: "Smriti",
+        src: imagesLink + "Smriti.webp",
+      },
+      {
+        name: "Sonia",
+        src: imagesLink + "Sonia.webp",
+      },
+      {
+        name: "Vridhi",
+        src: imagesLink + "Vridhi.webp",
+      },
+      {
+        name: "Amandeep Kaur",
+        src: imagesLink + "Amandeep_Kaur.webp",
+      },
+      {
+        name: "Simranjeet Singh",
+        src: imagesLink + "Simranjeet_Singh.webp",
+      },
+      {
+        name: "Bhanu",
+        src: imagesLink + "Bhanu.webp",
+      },
     ],
   },
 };
