@@ -342,7 +342,7 @@ const FSWCalculator = () => {
             <select
               className="w-full border p-2 rounded"
               value={formData.age}
-              onChange={() => handleChange("age", "0")}
+              onChange={(e) => handleChange("age", e.target.value)}
             >
               <option value="">Select Age</option>
               {[
