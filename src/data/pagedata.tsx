@@ -399,11 +399,11 @@ export const AboutPageData = {
         src: imagesLink + "tm13.webp",
       },
       {
-        name: "Amanpreet Singh",
+        name: "Kasturi",
         src: imagesLink + "tm14.webp",
       },
       {
-        name: "Kasturi",
+        name: "Sejal Oberoi",
         src: imagesLink + "tm15.webp",
       },
       {
