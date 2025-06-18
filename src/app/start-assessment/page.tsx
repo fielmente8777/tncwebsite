@@ -45,11 +45,12 @@ const page = () => {
   const data = [
     {
       name: "Inside Canada",
-      href: "https://api.mybusinesspilot.com/widget/form/4mIIinFkRqahNwPvQXCp",
+      href: "/inaside-canada", // Uncomment the line below if you want to use JotForm
+      // href: "https://api.mybusinesspilot.com/widget/form/4mIIinFkRqahNwPvQXCp",
     },
     {
       name: "Outside Canada",
-      href: "https://api.mybusinesspilot.com/widget/form/4mIIinFkRqahNwPvQXCp",
+      href: "/outside-canada", // Uncomment the line below if you want to use JotForm
     },
   ];
   return (

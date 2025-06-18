@@ -1,7 +1,8 @@
 import { CommanBanner, SectionWithContainer } from "@/components";
-import Form3 from "@/components/Form3";
+// import Form3 from "@/components/Form3";
 import { imagesLink } from "@/data/links";
 import { Metadata } from "next";
+import Form from "./components/Form";
 
 export const metadata: Metadata = {
   title: "Home - TNC immigration",
@@ -50,9 +51,7 @@ const page = () => {
       />
 
       <SectionWithContainer>
-        <div className="max-w-96 mx-auto">
-          <Form3 />
-        </div>
+          <Form />
       </SectionWithContainer>
     </main>
   );
