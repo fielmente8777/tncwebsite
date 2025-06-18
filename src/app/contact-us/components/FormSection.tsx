@@ -1,5 +1,5 @@
 import { SectionWithContainer } from "@/components";
-import Form from "@/components/Form";
+// import Form from "@/components/Form";
 import LazyLoadedMap from "@/components/maps/LazyLoadedMap";
 import { imagesLink } from "@/data/links";
 import Image from "next/image";
@@ -8,7 +8,7 @@ import React from "react";
 const FormSection = () => {
   return (
     <SectionWithContainer>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-10 items-center">
         <div className="relative lg:aspect-[4/5]">
           <Image
             src= {imagesLink+"ad15.webp"}
@@ -24,7 +24,11 @@ const FormSection = () => {
           </h1>
 
           <div className="mt-10">
-            <Form />
+            {/* <Form />
+             */}
+
+
+             <iframe src="/tnc-inside.html" width="100%" className="md:h-[900px] h-[1000px]"></iframe>
           </div>
         </div>
       </div>

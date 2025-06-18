@@ -8,48 +8,50 @@ interface NewsLetterPopUPProps {
   openNewsLetter: boolean;
   setOpenNewsLetter: React.Dispatch<React.SetStateAction<boolean>>;
 }
+
 const NewsLetterPopUP: React.FC<NewsLetterPopUPProps> = ({
   openNewsLetter,
   setOpenNewsLetter,
 }) => {
-  const intervalIdRef = useRef<NodeJS.Timeout | null>(null);
-  useEffect(() => {
-    if (openNewsLetter) {
-      document.body.style.overflow = "hidden";
-    }
-    intervalIdRef.current = setInterval(() => {
-      setOpenNewsLetter(true);
-      document.body.style.overflow = "hidden";
-    }, 1000);
+  const timerRef = useRef<NodeJS.Timeout | null>(null);
+  const [hasShown, setHasShown] = useState(false);
+  const [email, setEmail] = useState("");
 
-    // Cleanup the interval when the component unmounts or modal is closed
+  useEffect(() => {
+    // Only set timer if popup hasn't been shown yet and isn't already open
+    if (!hasShown && !openNewsLetter) {
+      timerRef.current = setTimeout(() => {
+        setOpenNewsLetter(true);
+        setHasShown(true);
+        document.body.style.overflow = "hidden";
+      }, 5000); // Show after 5 seconds
+    }
+
     return () => {
-      if (intervalIdRef.current) {
-        clearInterval(intervalIdRef.current);
+      if (timerRef.current) {
+        clearTimeout(timerRef.current);
       }
     };
-  }, [setOpenNewsLetter, openNewsLetter]);
+  }, [openNewsLetter, hasShown, setOpenNewsLetter]);
 
   const closeModal = useCallback(() => {
     setOpenNewsLetter(false);
-    document.body.style.overflow = "auto"; // Restore scrolling
-
-    // Clear the interval when the modal is closed
-    if (intervalIdRef.current) {
-      clearInterval(intervalIdRef.current);
-      intervalIdRef.current = null; // Reset the ref
+    document.body.style.overflow = "auto";
+    
+    // Clear any pending timer when modal is closed
+    if (timerRef.current) {
+      clearTimeout(timerRef.current);
     }
   }, [setOpenNewsLetter]);
 
-  const host = "https://eazotel.eazotel.com/api/dashboard/editnewsletter";
-
-  const [email, setEmail] = useState("");
-
-  const handleNewsletter = async () => {
+  const handleNewsletter = async (e: React.FormEvent) => {
+    e.preventDefault();
+    const host = "https://eazotel.eazotel.com/api/dashboard/editnewsletter";
     const data = {
       Domain: "sumit",
       email: email,
     };
+    
     try {
       await fetch(host, {
         method: "POST",
@@ -93,7 +95,10 @@ const NewsLetterPopUP: React.FC<NewsLetterPopUPProps> = ({
                 and expert tips from TNC Immigration. Don&apos;t miss out on
                 important insights!
               </p>
-              <form className="flex flex-col gap-4 w-full" onSubmit={handleNewsletter}>
+              <form 
+                className="flex flex-col gap-4 w-full" 
+                onSubmit={handleNewsletter}
+              >
                 <input
                   type="email"
                   name="email"
@@ -102,6 +107,7 @@ const NewsLetterPopUP: React.FC<NewsLetterPopUPProps> = ({
                   id="email"
                   placeholder="Enter your email"
                   className="border border-secondary/10 rounded-md py-2 px-3 w-full outline-none focus:border-secondary/70 duration-300 transition-all ease-in-out"
+                  required
                 />
                 <button
                   type="submit"
@@ -121,7 +127,7 @@ const NewsLetterPopUP: React.FC<NewsLetterPopUPProps> = ({
             />
             <button
               className="absolute top-3 right-3 p-1 aspect-square bg-white/10 text-secondary/70 hover:text-secondary flex items-center justify-center duration-300 transition-all ease-in-out"
-              onClick={() => closeModal()}
+              onClick={closeModal}
             >
               <IoClose className="w-8 h-8 " />
             </button>
