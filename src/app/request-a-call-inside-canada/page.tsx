@@ -46,7 +46,7 @@ const page = () => {
   return (
     <main>
       <CommanBanner
-        title="Request A Call - Outside Canada"
+        title="Request A Call - Inside Canada"
         src={imagesLink + "bgim.webp"}
       />
 

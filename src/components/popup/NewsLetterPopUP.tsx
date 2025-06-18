@@ -20,7 +20,7 @@ const NewsLetterPopUP: React.FC<NewsLetterPopUPProps> = ({
     intervalIdRef.current = setInterval(() => {
       setOpenNewsLetter(true);
       document.body.style.overflow = "hidden";
-    }, 600000);
+    }, 1000);
 
     // Cleanup the interval when the component unmounts or modal is closed
     return () => {
