@@ -48,7 +48,7 @@ const NewsLetterPopUP: React.FC<NewsLetterPopUPProps> = ({
     e.preventDefault();
     const host = "https://eazotel.eazotel.com/api/dashboard/editnewsletter";
     const data = {
-      Domain: "sumit",
+      Domain: "tnc",
       email: email,
     };
     
