@@ -46,20 +46,22 @@ const NewsLetterPopUP: React.FC<NewsLetterPopUPProps> = ({
 
   const handleNewsletter = async (e: React.FormEvent) => {
     e.preventDefault();
-    const host = "https://eazotel.eazotel.com/api/dashboard/editnewsletter";
+    const host = "https://nexon.eazotel.com/api/dashboard/editnewsletter";
     const data = {
       Domain: "tnc",
       email: email,
     };
     
     try {
-      await fetch(host, {
+      const response = await fetch(host, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(data),
       });
+      console.log(data.email)
+      console.log(response);
     } catch (error) {
       console.log(error);
     }

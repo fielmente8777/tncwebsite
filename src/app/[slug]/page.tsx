@@ -3,6 +3,7 @@ import CommanBanner from "@/components/banner/CommanBanner";
 import { slugPageData } from "@/data/slugData";
 import PageData from "./components/PgaeData";
 import Map from "@/components/maps/Map";
+import { notFound } from "next/navigation";
 
 interface Params {
   params: Promise<{
@@ -64,6 +65,10 @@ export async function generateMetadata({ params }: Params) {
 const Page = async ({ params }: Params) => {
   const slug = (await params).slug;
   const pageData = slugPageData.find((data) => data.slug === slug);
+
+  if (!pageData) {
+    notFound();
+  }
 
   return (
     <>
