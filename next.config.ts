@@ -10,6 +10,10 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "eazotel-client-webp-images.s3.ap-south-1.amazonaws.com",
       },
+      {
+        protocol: "https",
+        hostname: "eazotel-client-webp-image.s3.ap-south-1.amazonaws.com",
+      },
     ],
     dangerouslyAllowSVG: true,
   },

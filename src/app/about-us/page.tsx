@@ -7,7 +7,7 @@ import {
 import { AboutPageData } from "@/data/pagedata";
 import AboutUsSection from "./components/AboutUsSection";
 import Image from "next/image";
-import TeamMember from "./components/TeamMember";
+// import TeamMember from "./components/TeamMember";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -80,7 +80,7 @@ const page = () => {
           ))}
       </Section>
 
-      <TeamMember {...AboutPageData.teamMembers} />
+      {/* <TeamMember {...AboutPageData.teamMembers} /> */}
       <div className="bg-[#E4EAEE] max_screen md:py-16 py-8">
         <SectionWithContainer>
           <h3 className="heading font-bold text-[#0e0e0e] flex items-center gap-4">
