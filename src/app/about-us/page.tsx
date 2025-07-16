@@ -81,10 +81,22 @@ const page = () => {
       </Section>
 
       {/* <TeamMember {...AboutPageData.teamMembers} /> */}
+      <div className="pb-12">
+        <div className="relative w-full aspect-square md:aspect-[4/2] max-w-7xl mx-auto">
+          <Image
+            src="/teams.png"
+            alt="teams"
+            fill
+            className="object-cover"
+            sizes="100vw"
+          />
+        </div>
+      </div>
       <div className="bg-[#E4EAEE] max_screen md:py-16 py-8">
         <SectionWithContainer>
           <h3 className="heading font-bold text-[#0e0e0e] flex items-center gap-4">
-            <span className="w-14 h-[1.8px] bg-prime-red"></span> Happy Customers
+            <span className="w-14 h-[1.8px] bg-prime-red"></span> Happy
+            Customers
           </h3>
         </SectionWithContainer>
         <Reviews />
