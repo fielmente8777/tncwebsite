@@ -7,7 +7,7 @@ import {
 import { AboutPageData } from "@/data/pagedata";
 import AboutUsSection from "./components/AboutUsSection";
 import Image from "next/image";
-// import TeamMember from "./components/TeamMember";
+import TeamMember from "./components/TeamMember";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -80,8 +80,8 @@ const page = () => {
           ))}
       </Section>
 
-      {/* <TeamMember {...AboutPageData.teamMembers} /> */}
-      <div className="pb-12">
+      <TeamMember {...AboutPageData.teamMembers} />
+      {/* <div className="pb-12">
         <div className="relative w-full aspect-square md:aspect-[4/2] max-w-7xl mx-auto">
           <Image
             src="/teams.png"
@@ -91,7 +91,7 @@ const page = () => {
             sizes="100vw"
           />
         </div>
-      </div>
+      </div> */}
       <div className="bg-[#E4EAEE] max_screen md:py-16 py-8">
         <SectionWithContainer>
           <h3 className="heading font-bold text-[#0e0e0e] flex items-center gap-4">
