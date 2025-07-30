@@ -20,7 +20,7 @@ const FormSection = () => {
         <div className="flex flex-col justify-center">
           <hr className="w-[50px] border-b-4 border-orange-700" />
           <h1 className="text-4xl mt-5 font-bold">
-            Make a free consultation with our expert team to solve your prolems.
+            Make a free consultation with our expert team to solve your problems.
           </h1>
 
           <div className="mt-10">

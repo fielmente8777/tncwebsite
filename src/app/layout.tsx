@@ -3,6 +3,7 @@ import "./styles/globals.scss";
 import "./styles/nav&button.scss";
 import { Footer, Navbar } from "@/components";
 import { ChatDrawer } from "@/components/ContactButton/ChatDrawer";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Home - TNC immigration",
@@ -49,10 +50,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          src="https://cdn.weavely.ai/embed.js"
+          strategy="beforeInteractive"
+        />
+      </head>
       <body suppressHydrationWarning={true} className={` antialiased`}>
         <Navbar />
         {children}
-        
+
         <Footer />
         <div className="fixed bottom-4 right-4 z-50">
           <ChatDrawer />
