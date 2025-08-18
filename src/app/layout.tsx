@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./styles/globals.scss";
 import "./styles/nav&button.scss";
+import "./customForm.css";
+
 import { Footer, Navbar } from "@/components";
 import { ChatDrawer } from "@/components/ContactButton/ChatDrawer";
 import Script from "next/script";
@@ -55,6 +57,7 @@ export default function RootLayout({
           src="https://cdn.weavely.ai/embed.js"
           strategy="beforeInteractive"
         />
+        
       </head>
       <body suppressHydrationWarning={true} className={` antialiased`}>
         <Navbar />

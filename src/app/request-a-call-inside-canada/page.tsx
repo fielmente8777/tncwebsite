@@ -2,7 +2,8 @@ import { CommanBanner, SectionWithContainer } from "@/components";
 // import Form3 from "@/components/Form3";
 import { imagesLink } from "@/data/links";
 import { Metadata } from "next";
-import Form from "./components/Form";
+// import Form from "./components/Form";
+import CustomContactForm from "@/components/forms/CustomContactForm";
 
 export const metadata: Metadata = {
   title: "Home - TNC immigration",
@@ -51,7 +52,8 @@ const page = () => {
       />
 
       <SectionWithContainer>
-          <Form />
+        {/* <Form /> */}
+        <CustomContactForm formType="TNC Inside Main" />
       </SectionWithContainer>
     </main>
   );
