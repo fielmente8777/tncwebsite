@@ -45,7 +45,7 @@ const page = () => {
   const data = [
     {
       name: "Inside Canada",
-      href: "/inaside-canada", // Uncomment the line below if you want to use JotForm
+      href: "/inside-canada", // Uncomment the line below if you want to use JotForm
       // href: "https://api.mybusinesspilot.com/widget/form/4mIIinFkRqahNwPvQXCp",
     },
     {

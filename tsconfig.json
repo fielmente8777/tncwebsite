@@ -22,6 +22,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/fsw-score-calculator/components/FSWCalculator.tsx", "src/app/inaside-canada/components/Form.jsx", "src/components/forms/CustomContactFormMain.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/app/fsw-score-calculator/components/FSWCalculator.tsx", "src/app/inside-canada/components/Form.jsx", "src/components/forms/CustomContactFormMain.jsx"],
   "exclude": ["node_modules"]
 }
