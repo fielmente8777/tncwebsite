@@ -2,13 +2,16 @@
   background-color: #f3f3fd;
   padding: 20px;
   display: flex;
+  text-align: center;
 }
 
 #customForm {
-  padding-top: 20px !important;
+  padding: 20px !important;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px !important;
   align-self: center;
   margin: auto !important;
+  background-color: #ffffff;
+  border-radius: 5px;
 }
 
 #customForm input {

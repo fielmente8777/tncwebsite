@@ -53,7 +53,7 @@ const page = () => {
 
       <SectionWithContainer>
         {/* <Form /> */}
-        <CustomContactForm formType="TNC Inside Main" />
+        <CustomContactForm formType="TNC Inside" />
       </SectionWithContainer>
     </main>
   );

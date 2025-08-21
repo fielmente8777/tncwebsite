@@ -11,7 +11,7 @@ const page = () => {
       {/* <div style={{ height: "100vh", width: "100%" }}>
         <Form />
       </div> */}
-      <CustomContactFormMain formType="TNC Inside" />
+      <CustomContactFormMain formType="TNC Inside Main" />
     </div>
   );
 };

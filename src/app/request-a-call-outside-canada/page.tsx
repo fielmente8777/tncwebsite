@@ -52,7 +52,7 @@ const page = () => {
           <Form3 />
         </div> */}
         {/* <Form/> */}
-        <CustomContactForm formType="TNC Outside Main" />
+        <CustomContactForm formType="TNC Outside" />
       </SectionWithContainer>
     </main>
   );
