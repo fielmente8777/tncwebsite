@@ -323,13 +323,42 @@ export const AboutPageData = {
     src: imagesLink + "bg-slider-02.webp",
   },
   about: {
-    title: "TNC True North Consultancy",
+    title: "About TNC True North Consultancy",
     src: imagesLink + "ad5.webp",
-    desc: [
-      "TNC True North Consultancy Ltd. is one of the leading immigration consulting firms in the Lower Mainland of BC, Canada with offices to serve our clients at their best convenience.",
-      "Our main office is based in the heart of Surrey and is easily accessible to our clients. We at True North Consultancy Ltd. handle independent clients from Asia, Europe, Africa and Latin America. We are a Certified Canadian Immigration Consultant Firm (CICC) and are in good standing with CICC which can safeguard your peace of mind. We are competent and up to date with immigration rules and regulations.",
-      "The firm is led by Rhea Patel and her partner, TJ Singh and their professionally qualified team members. Presently, TNC is a team of 20+ professionals working round the clock to provide the best immigration services to their clients. TNC specializes in immigration to Canada helping independent applicants and businesses. TNC is 100% committed to giving clients our full support at every step of their immigration process. We recognize that every individual has a specific need and choice, so we provide options suiting the best interest of our clients.",
-      "We at TNC specialize in the following: work permits, study permits, visitor visas, express entry, intra company transfer, labour market impact assessments (LMIA), provincial nominee programs (PNP), spousal sponsorships, permanent residency (PR), citizenship and other immigration related services. You can reach out to us with your immigration inquiry and a professional will be in touch with you.",
+    data: [
+      {
+        desc: [
+          "TNC True North Consultancy Ltd. is a leading Canadian immigration consulting firm with offices in Surrey, Mississauga, and Kelowna. We proudly serve clients from all over the world  helping them achieve their Canadian immigration goals.",
+          "As a CICC-regulated firm in good standing, we provide peace of mind by staying current with immigration rules and handling even the most complex cases.",
+        ],
+      },
+      {
+        title: "What We Do",
+        subTitle: "Our experienced team of 20+ professionals, led by Rhea Patel and TJ Singh, specializes in:",
+        desc: [
+          "Work, Study & Visitor Permits",
+          "Express Entry & Provincial Nominee Programs (PNP)",
+          "Spousal & Family Sponsorships",
+          "Permanent Residency & Citizenship",
+          "LMIAs & Intra-Company Transfers",
+          "PFLs, ADRs & Post-Refusal Cases & more",
+        ],
+      },
+      {
+        title: "Why Choose Us",
+        desc: [
+          "✔ Offices across BC & Ontario",
+          "✔ Certified & experienced team",
+          "✔ Strong record in complex applications",
+          "At TNC, we go beyond paperwork — we build strategies to help you succeed.",
+        ],
+      },
+      {
+        title: "Contact",
+        desc: [
+          "📍 Contact us today to start your Canadian immigration journey.",
+        ],
+      },
     ],
   },
   images: [
