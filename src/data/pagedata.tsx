@@ -324,7 +324,7 @@ export const AboutPageData = {
   },
   about: {
     title: "About TNC True North Consultancy",
-    src: imagesLink + "ad5.webp",
+    src: "/DSC07500.webp",
     data: [
       {
         desc: [
@@ -447,17 +447,24 @@ export const AboutPageData = {
         name: "Vridhi",
         src: imagesLink + "Vridhi.webp",
       },
-      // {
-      //   name: "Amandeep Kaur",
-      //   src: imagesLink + "Amandeep_Kaur.webp",
-      // },
-      // {
-      //   name: "Simranjeet Singh",
-      //   src: imagesLink + "Simranjeet_Singh.webp",
-      // },
       {
         name: "Bhanu",
         src: imagesLink + "Bhanu.webp",
+      },
+      {
+        name: "Sukh Khattra",
+        src: "/sukh khattra.webp",
+        post: "RCIC",
+      },
+      {
+        name: "Prabhjot Kaur",
+        src: "/Prabhjot Kaur.webp",
+        post: "Case Manager",
+      },
+      {
+        name: "Arnolique kelly",
+        src: "/arnolique kelly.webp",
+        post: "Marketing  Manager",
       },
     ],
   },
