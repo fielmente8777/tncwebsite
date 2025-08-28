@@ -381,8 +381,8 @@ export const AboutPageData = {
         post: "RCIC",
       },
       {
-        name: "Prabhleen Sandhu",
-        src: imagesLink + "tm3.webp",
+        name: "Sukh Khattra",
+        src: "/sukh khattra.webp",
         post: "RCIC",
       },
       {
@@ -390,6 +390,12 @@ export const AboutPageData = {
         src: imagesLink + "tm4.webp",
         post: "RCIC",
       },
+      {
+        name: "Prabhleen Sandhu",
+        src: imagesLink + "tm3.webp",
+        post: "RCIC",
+      },
+      
       {
         name: "Richa Bhardwaj",
         src: imagesLink + "tm5.webp",
@@ -451,20 +457,16 @@ export const AboutPageData = {
         name: "Bhanu",
         src: imagesLink + "Bhanu.webp",
       },
-      {
-        name: "Sukh Khattra",
-        src: "/sukh khattra.webp",
-        post: "RCIC",
-      },
+      
       {
         name: "Prabhjot Kaur",
         src: "/Prabhjot Kaur.webp",
-        post: "Case Manager",
+        // post: "Case Manager",
       },
       {
         name: "Arnolique kelly",
         src: "/arnolique kelly.webp",
-        post: "Marketing  Manager",
+        // post: "Marketing  Manager",
       },
     ],
   },
