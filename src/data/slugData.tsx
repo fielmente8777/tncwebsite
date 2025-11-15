@@ -3175,132 +3175,132 @@ export const slugPageData = [
     ],
     form: true,
   },
-  {
-    slug: "canada-recovering-lost",
-    meta: {
-      title: "Canada Recovering Lost - TNC immigration",
-      desc: "Canada Recovering Lost Canada Recovering Lost Losing important documents can be a stressful experience, especially when they are essential for your immigration status or residency in Canada. At TNC Immigration, we understand how crucial it is to recover these documents promptly and efficiently.What Are Considered Lost Documents?Key documents that you may need to recover include:Permanent",
-    },
-    banner: {
-      title: "Canada Recovering Lost",
-      src: imagesLink + "chbne1.webp",
-    },
-    htm: "true",
-    links: [
-      {
-        name: "+1 (236) 818 5558",
-        href: "tel:+1(236)818 5558",
-      },
-      {
-        name: "Mail us",
-        href: "mailto:info@tncimmigration.com",
-      },
-    ],
-    pageData1: [
-      {
-        type: "heading",
-        level: 2,
-        content: "Canada Recovering Lost",
-      },
-      {
-        type: "paragraph",
-        content:
-          "Losing important documents can be a stressful experience, especially when they are essential for your immigration status or residency in Canada. At TNC Immigration, we understand how crucial it is to recover these documents promptly and efficiently.",
-      },
-      {
-        type: "heading",
-        level: 3,
-        content: "What Are Considered Lost Documents?",
-      },
-      {
-        type: "paragraph",
-        content: "Key documents that you may need to recover include:",
-      },
-      {
-        type: "list",
-        items: [
-          "Permanent Resident (PR) Card",
-          "Canadian Citizenship Certificate",
-          "Work Permit or Study Permit",
-          "Visitor Visa or Travel Documents",
-          "Passport with Canadian Immigration Stamps",
-        ],
-      },
-      {
-        type: "image",
-        src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/lost-documents.webp",
-        alt: "avt",
-        width: "{640}",
-        height: "{344}",
-        className: null,
-      },
-    ],
-    pageData2: [
-      {
-        type: "heading",
-        level: 2,
-        content: "Why It\u2019s Important",
-      },
-      {
-        type: "paragraph",
-        content:
-          "Without these documents, you may face delays in processing immigration applications, difficulty in re-entering Canada, or challenges proving your legal status in the country. Recovering these documents quickly ensures that you remain compliant with Canadian immigration laws and can move forward without interruptions.",
-      },
-      {
-        type: "heading",
-        level: 3,
-        content: "How TNC Immigration Can Help",
-      },
-      {
-        type: "paragraph",
-        content: "We offer assistance in recovering lost documents by:",
-      },
-      {
-        type: "list",
-        items: [
-          "Helping you navigate the application process for document replacement.",
-          "Guiding you through government forms and ensuring all details are accurate.",
-          "Providing support in preparing affidavits or other proof of loss.",
-          "Liaising with Canadian immigration authorities to speed up recovery.",
-        ],
-      },
-      {
-        type: "heading",
-        level: 2,
-        content: "Steps to Recover Lost Documents",
-      },
-      {
-        type: "list",
-        items: [
-          "Notify Authorities \u2013If your documents are stolen, you should immediately report the loss to local police and Canadian immigration authorities.",
-          "Complete the Necessary Forms \u2013Depending on the type of document, different application forms and supporting evidence will be required.",
-          "Submit Your Application \u2013Once the application is complete, it will be sent to the relevant government agency for review.",
-          "Follow Up \u2013We help ensure your application progresses and provide updates on its status.",
-        ],
-      },
-      {
-        type: "heading",
-        level: 2,
-        content: "Why Choose Us?",
-      },
-      {
-        type: "paragraph",
-        content:
-          "With years of experience in Canadian immigration services, TNC Immigration has the knowledge and expertise to help you recover your lost documents quickly. We offer personalized support tailored to your unique situation, making the process as smooth as possible.",
-      },
-      {
-        type: "heading",
-        level: 2,
-        content: "Need Help Recovering Your Documents?",
-      },
-      {
-        type: "paragraph",
-        content:
-          "Contact us today, and let TNC Immigration guide you through the process.",
-      },
-    ],
-    form: true,
-  },
+  // {
+  //   slug: "canada-recovering-lost",
+  //   meta: {
+  //     title: "Canada Recovering Lost - TNC immigration",
+  //     desc: "Canada Recovering Lost Canada Recovering Lost Losing important documents can be a stressful experience, especially when they are essential for your immigration status or residency in Canada. At TNC Immigration, we understand how crucial it is to recover these documents promptly and efficiently.What Are Considered Lost Documents?Key documents that you may need to recover include:Permanent",
+  //   },
+  //   banner: {
+  //     title: "Canada Recovering Lost",
+  //     src: imagesLink + "chbne1.webp",
+  //   },
+  //   htm: "true",
+  //   links: [
+  //     {
+  //       name: "+1 (236) 818 5558",
+  //       href: "tel:+1(236)818 5558",
+  //     },
+  //     {
+  //       name: "Mail us",
+  //       href: "mailto:info@tncimmigration.com",
+  //     },
+  //   ],
+  //   pageData1: [
+  //     {
+  //       type: "heading",
+  //       level: 2,
+  //       content: "Canada Recovering Lost",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       content:
+  //         "Losing important documents can be a stressful experience, especially when they are essential for your immigration status or residency in Canada. At TNC Immigration, we understand how crucial it is to recover these documents promptly and efficiently.",
+  //     },
+  //     {
+  //       type: "heading",
+  //       level: 3,
+  //       content: "What Are Considered Lost Documents?",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       content: "Key documents that you may need to recover include:",
+  //     },
+  //     {
+  //       type: "list",
+  //       items: [
+  //         "Permanent Resident (PR) Card",
+  //         "Canadian Citizenship Certificate",
+  //         "Work Permit or Study Permit",
+  //         "Visitor Visa or Travel Documents",
+  //         "Passport with Canadian Immigration Stamps",
+  //       ],
+  //     },
+  //     {
+  //       type: "image",
+  //       src: "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/lost-documents.webp",
+  //       alt: "avt",
+  //       width: "{640}",
+  //       height: "{344}",
+  //       className: null,
+  //     },
+  //   ],
+  //   pageData2: [
+  //     {
+  //       type: "heading",
+  //       level: 2,
+  //       content: "Why It\u2019s Important",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       content:
+  //         "Without these documents, you may face delays in processing immigration applications, difficulty in re-entering Canada, or challenges proving your legal status in the country. Recovering these documents quickly ensures that you remain compliant with Canadian immigration laws and can move forward without interruptions.",
+  //     },
+  //     {
+  //       type: "heading",
+  //       level: 3,
+  //       content: "How TNC Immigration Can Help",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       content: "We offer assistance in recovering lost documents by:",
+  //     },
+  //     {
+  //       type: "list",
+  //       items: [
+  //         "Helping you navigate the application process for document replacement.",
+  //         "Guiding you through government forms and ensuring all details are accurate.",
+  //         "Providing support in preparing affidavits or other proof of loss.",
+  //         "Liaising with Canadian immigration authorities to speed up recovery.",
+  //       ],
+  //     },
+  //     {
+  //       type: "heading",
+  //       level: 2,
+  //       content: "Steps to Recover Lost Documents",
+  //     },
+  //     {
+  //       type: "list",
+  //       items: [
+  //         "Notify Authorities \u2013If your documents are stolen, you should immediately report the loss to local police and Canadian immigration authorities.",
+  //         "Complete the Necessary Forms \u2013Depending on the type of document, different application forms and supporting evidence will be required.",
+  //         "Submit Your Application \u2013Once the application is complete, it will be sent to the relevant government agency for review.",
+  //         "Follow Up \u2013We help ensure your application progresses and provide updates on its status.",
+  //       ],
+  //     },
+  //     {
+  //       type: "heading",
+  //       level: 2,
+  //       content: "Why Choose Us?",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       content:
+  //         "With years of experience in Canadian immigration services, TNC Immigration has the knowledge and expertise to help you recover your lost documents quickly. We offer personalized support tailored to your unique situation, making the process as smooth as possible.",
+  //     },
+  //     {
+  //       type: "heading",
+  //       level: 2,
+  //       content: "Need Help Recovering Your Documents?",
+  //     },
+  //     {
+  //       type: "paragraph",
+  //       content:
+  //         "Contact us today, and let TNC Immigration guide you through the process.",
+  //     },
+  //   ],
+  //   form: true,
+  // },
   {
     slug: "super-visa",
     meta: {
