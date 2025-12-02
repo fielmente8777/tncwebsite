@@ -7,7 +7,7 @@ const Data = [
   {
     icon: <DrawerConsulationIcon />,
     label: "Book a Consultation with RCIC",
-    href: "https://calendly.com/tncconsult",
+    href: "https://calendly.com/tncbooking",
   },
   {
     icon: <DrawerConsulationIcon />,

@@ -258,7 +258,7 @@ export const NavbarUpperLinks = [
   },
   {
     name: "book Appointment",
-    href: "https://calendly.com/tncconsult",
+    href: "https://calendly.com/tncbooking",
   },
   {
     name: "Start Assessments",
@@ -288,7 +288,7 @@ export const FooterLinks: FooterLinksProps[] = [
       },
       {
         name: "Book Appointment",
-        href: "https://calendly.com/tncconsult",
+        href: "https://calendly.com/tncbooking",
       },
       {
         name: "FAQs",
