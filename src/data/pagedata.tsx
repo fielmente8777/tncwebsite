@@ -377,7 +377,7 @@ export const AboutPageData = {
       },
       {
         name: "TJ Singh",
-        src: imagesLink + "tm2.webp",
+        src:  "/tm2.png",
         post: "RCIC",
       },
       {
@@ -392,7 +392,7 @@ export const AboutPageData = {
       },
       {
         name: "Prabhleen Sandhu",
-        src: imagesLink + "tm3.webp",
+        src:  "/tm3.jpg",
         post: "RCIC",
       },
       
