@@ -209,10 +209,28 @@ export const homePageData = {
         isIcon: true,
       },
     ],
-    buttons: [
+    videos: [
       {
-        label: "Load More",
+        src: "video/mp4",
+        videoUrl: "https://eazotel-client-webp-images.s3.ap-south-1.amazonaws.com/tnc/TNCvideo/1765172244040.publer.com.mp4",
       },
+      {
+        src: "video/mp4",
+        videoUrl: "https://eazotel-client-webp-images.s3.ap-south-1.amazonaws.com/tnc/TNCvideo/1765172293131.publer.com.mp4",
+      },
+      {
+        src: "video/mp4",
+        videoUrl: "https://eazotel-client-webp-images.s3.ap-south-1.amazonaws.com/tnc/TNCvideo/1765172297503.publer.com.mp4",
+      },
+      {
+        src: "video/mp4",
+        videoUrl: "https://eazotel-client-webp-images.s3.ap-south-1.amazonaws.com/tnc/TNCvideo/AD-+Revised.mp4",
+      },
+    ],
+    buttons: [
+      // {
+      //   label: "Load More",
+      // },
       {
         label: "Follow on Instagram",
         icon: <InstaIcon className="w-1" />,

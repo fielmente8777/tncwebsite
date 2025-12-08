@@ -1,17 +1,18 @@
 import { LinkButton, OnlyButton, SectionWithContainer } from "@/components";
+import { LazyLoadedVideo } from "@/components/Video";
 import {
   HorizontTowLine,
   HorizontTwoLineLeft,
   InstagramIcon,
-  PlayBtnIcon,
-  StackedSquaresIcon,
 } from "@/data/icons";
-import Image from "next/image";
-import Link from "next/link";
 import React, { JSX } from "react";
 
 interface OurSocialMediaPrps {
   title: string;
+  videos: {
+    src: string;
+    videoUrl: string;
+  }[];
   content: {
     image: {
       src: string;
@@ -30,8 +31,8 @@ interface OurSocialMediaPrps {
 
 const OurSocailMedia: React.FC<OurSocialMediaPrps> = ({
   title,
-  content,
   buttons,
+  videos,
 }) => {
   return (
     <SectionWithContainer>
@@ -43,13 +44,13 @@ const OurSocailMedia: React.FC<OurSocialMediaPrps> = ({
         </div>
       </div>
 
-      <div className="mt-16">
+      <div className="mt-16 space-y-8">
         <div className="flex items-center gap-2">
           <InstagramIcon />
           <h3 className="font-bold text-3xl">tncimmigration</h3>
         </div>
 
-        <div className="grid md:grid-cols-6 grid-cols-2 gap-5 mt-6">
+        {/* <div className="grid md:grid-cols-6 grid-cols-2 gap-5 mt-6">
           {content?.map((item, index) => (
             <div className="relative max-w-48 aspect-[1/1]" key={index}>
               <Image
@@ -78,6 +79,13 @@ const OurSocailMedia: React.FC<OurSocialMediaPrps> = ({
               </div>
             </div>
           ))}
+        </div> */}
+        <div className="grid md:grid-cols-4 grid-cols-1 gap-5 mt-6">
+          {videos.map((item, index) => (
+            <div className="relative aspect-[4/6.5] w-full" key={index}>
+              <LazyLoadedVideo src={item.videoUrl} poster={item.src} />
+            </div>
+          ))}
         </div>
 
         <div className="flex justify-center items-center gap-2 mt-2">
@@ -92,7 +100,10 @@ const OurSocailMedia: React.FC<OurSocialMediaPrps> = ({
               );
             } else {
               return (
-                <OnlyButton key={index} className="bg-secondary text-white rounded-md text-xs px-4 py-2 font-medium hover:bg-secondary/70 duration-200">
+                <OnlyButton
+                  key={index}
+                  className="bg-secondary text-white rounded-md text-xs px-4 py-2 font-medium hover:bg-secondary/70 duration-200"
+                >
                   {btn.label}
                 </OnlyButton>
               );
