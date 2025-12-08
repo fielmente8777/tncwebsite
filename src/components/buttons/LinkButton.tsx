@@ -16,7 +16,7 @@ const LinkButton: React.FC<LinkButtonProps> = ({
   return (
     <Link
       href={href}
-      className={`${className} transition-all duration-300 ease-in-out text-nowrap flex items-center gap-1`}
+      className={`${className} transition-all duration-300 ease-in-out text-nowrap flex items-center gap-1 hover:scale-105 active:scale-95`}
       target={`${newTab ? "_blank" : "_self"}`}
     >
       {children}
