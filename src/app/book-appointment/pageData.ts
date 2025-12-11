@@ -2,7 +2,7 @@
 export const pageData = {
   bookAppointment: [
     {
-      src: "/Rhea.png",
+      src: "/Rhea.jpg",
       links: [
         {
           label: "30 Minutes Appointment",
@@ -15,7 +15,7 @@ export const pageData = {
       ],
     },
     {
-      src: "/Prabhleen.png",
+      src: "/Prabhleen.jpg",
       links: [
         {
           label: "30 Minutes Appointment",
