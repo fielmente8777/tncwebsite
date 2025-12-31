@@ -9,7 +9,7 @@ const TeamMemberCard: React.FC<Props> = ({ name, src, post }) => {
   return (
     <div className="w-full relative aspect-[4/5] md:aspect-[4/6]">
       <Image src={src} alt={name} fill className="object-cover" />
-      <div className="absolute inset-0 w-full h-full bg-gradient-to-t from-black/70 to-transparent p-4 flex flex-col justify-end ">
+      <div className="absolute inset-0 w-full h-full bg-gradient-to-t from-black/50 from-5 to-transparent p-4 flex flex-col justify-end ">
         <h3 className="md:text-2xl font-bold text-white">{name}</h3>
         {post && <p className="text-white max-md:text-sm">{post}</p>}
       </div>

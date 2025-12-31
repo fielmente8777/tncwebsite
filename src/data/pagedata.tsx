@@ -405,7 +405,7 @@ export const AboutPageData = {
       },
       {
         name: "Bijay Luitel",
-        src: imagesLink + "tm4.webp",
+        src: "/tm4.webp",
         post: "RCIC",
       },
       {
@@ -425,7 +425,7 @@ export const AboutPageData = {
       },
       {
         name: "Simran Kaur",
-        src: imagesLink + "tm7.webp",
+        src: "/tm7.webp",
       },
       {
         name: "Tania Kakkar",
@@ -484,6 +484,11 @@ export const AboutPageData = {
       {
         name: "Arnolique kelly",
         src: "/arnolique kelly.webp",
+        // post: "Marketing  Manager",
+      },
+      {
+        name: "Nidhi",
+        src: "/Nidhi.webp",
         // post: "Marketing  Manager",
       },
     ],
