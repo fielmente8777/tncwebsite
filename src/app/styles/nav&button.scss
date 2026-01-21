@@ -27,15 +27,17 @@
         max-width: 0;
         transform: scaleY(0);
         overflow: hidden;
-        transition: max-height 0.5s ease-in-out;
+        visibility: hidden;
+        transition: max-height 0.2s linear;
         z-index: 10;
         a {
             text-decoration: none;
-            transition: background-color 0.3s ease-in-out;
+            transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out, visibility 0.5s ease-in-out;
             display: flex;
             align-items: center;
             justify-content: space-between;
             font-size: 0rem;
+            visibility: hidden;
         }
     }
     &:hover .nav-1 {
@@ -43,10 +45,12 @@
         max-width: 500px;
         transform: scaleY(1);
         overflow: visible;
+        visibility: visible;
         a {
             padding: 0.5rem 1rem;
             text-decoration: none;
             transition: background-color 0.3s ease-in-out;
+            visibility: visible;
             display: flex;
             align-items: center;
             justify-content: space-between;

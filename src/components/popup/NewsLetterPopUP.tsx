@@ -72,7 +72,7 @@ const NewsLetterPopUP: React.FC<NewsLetterPopUPProps> = ({
 
   return (
     <div
-      className={`fixed bg-black/50 ${openNewsLetter ? "inset-0 w-full h-full scale-100 opacity-100" : "opacity-0 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-0 h-0 scale-0"} duration-300 transition-all ease-in-out flex items-center justify-center z-50`}
+      className={`fixed bg-black/50 inset-0 w-full h-full ${openNewsLetter ? " scale-100 opacity-100 visible" : "opacity-0 invisible scale-0"} duration-300 transition-all ease-in-out flex items-center justify-center z-50`}
       onClick={(e) => {
         if (e.target === e.currentTarget) closeModal();
       }}
