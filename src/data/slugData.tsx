@@ -2352,7 +2352,7 @@ export const slugPageData = [
       {
         type: "heading",
         level: 2,
-        content: "Spousal PR Sponsorship",
+        content: "Sibling PR Sponsorship",
       },
       {
         type: "paragraph",

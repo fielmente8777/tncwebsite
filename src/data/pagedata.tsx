@@ -463,10 +463,10 @@ export const AboutPageData = {
         name: "Smriti",
         src: imagesLink + "Smriti.webp",
       },
-      {
-        name: "Sonia",
-        src: imagesLink + "Sonia.webp",
-      },
+      // {
+      //   name: "Sonia",
+      //   src: imagesLink + "Sonia.webp",
+      // },
       {
         name: "Vridhi",
         src: imagesLink + "Vridhi.webp",
@@ -486,11 +486,11 @@ export const AboutPageData = {
         src: "/arnolique kelly.webp",
         // post: "Marketing  Manager",
       },
-      {
-        name: "Nidhi",
-        src: "/Nidhi.webp",
+      // {
+        // name: "Nidhi",
+        // src: "/Nidhi.webp",
         // post: "Marketing  Manager",
-      },
+      // },
     ],
   },
 };
