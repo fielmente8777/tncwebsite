@@ -26,5 +26,14 @@ export const pageData = {
         },
       ],
     },
+    {
+      src: "/BIJAY.jpeg",
+      links: [
+        {
+          label: "Book Consultation",
+          href: "https://calendly.com/bijay-tncimmigration/30min",
+        },
+      ],
+    },
   ],
 };
