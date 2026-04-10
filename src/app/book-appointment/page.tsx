@@ -28,7 +28,7 @@ export default function BookAppointment() {
                     href={link.href}
                     key={subIndex}
                     newTab
-                    className={`bg-prime-red text-white rounded-sm ${index === 2 ? "nd:px-[1.9rem] px-2 py-3 md:py-[1.43rem] w-full uppercase" : "md:pl-12 pl-5 md:pr-2 pr-3 md:py-3 py-2 w-fit capitalize"}`}
+                    className={`bg-prime-red text-white rounded-sm ${index === 2 ? "md:px-[1.9rem] px-2 py-3 md:py-[1.43rem] w-full uppercase" : "md:pl-12 pl-5 md:pr-2 pr-3 md:py-3 py-2 w-fit capitalize"}`}
                   > 
                     {link.label}
                   </LinkButton>
