@@ -491,6 +491,21 @@ export const AboutPageData = {
         // src: "/Nidhi.webp",
         // post: "Marketing  Manager",
       // },
+      {
+        name: "rashmeet kaur",
+        src: "/rashmeet.jpg",
+        // post: "Marketing  Manager",
+      },
+      {
+        name: "Jicia K",
+        src: "/Jicia.jpg",
+        // post: "Marketing  Manager",
+      },
+      {
+        name: "Navjot Kaur",
+        src: "/Navjot.jpg",
+        // post: "Marketing  Manager",
+      },
     ],
   },
 };
