@@ -482,7 +482,7 @@ export const AboutPageData = {
         // post: "Case Manager",
       },
       {
-        name: "Arnolique kelly",
+        name: "Arnolique Kelly",
         src: "/arnolique kelly.webp",
         // post: "Marketing  Manager",
       },
@@ -492,7 +492,7 @@ export const AboutPageData = {
         // post: "Marketing  Manager",
       // },
       {
-        name: "rashmeet kaur",
+        name: "Rashmeet Kaur",
         src: "/rashmeet.jpg",
         // post: "Marketing  Manager",
       },
