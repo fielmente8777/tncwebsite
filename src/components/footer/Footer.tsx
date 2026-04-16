@@ -11,10 +11,10 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   const [openNewsLetter, setOpenNewsLetter] = useState(false);
   return (
-    <footer className="max_screen md:relative md:pt-[13rem]">
-      <div className="md:absolute -top-8 left-0 w-full z-10">
-        <Container className="py-6">
-          <p className="">Disclaimer - All official TNC Immigration communications will come from an email ending in <b className="text-blue-600">@tncimmigration.com</b>. Please do not make any payments to anyone claiming to represent TNC Immigration unless verified through this domain.</p>
+    <footer className="max_screen md:relative md:pt-[13rem] pt-10">
+      <div className="md:absolute md:-top-8 left-0 w-full z-10">
+        <Container className="md:py-6 ">
+          <p className="mb-6">Disclaimer - All official TNC Immigration communications will come from an email ending in <b className="text-blue-600">@tncimmigration.com</b>. Please do not make any payments to anyone claiming to represent TNC Immigration unless verified through this domain.</p>
         </Container>
         <Container className="text-white relative after:content-[''] after:absolute after:bg-[url('/maps.webp')] after:w-full after:h-full after:inset-0 after:bg-cover after:bg-no-repeat after:bg-center after:z-[-1] after:opacity-40 before:content-[''] before:absolute before:inset-0 before:bg-[#29313C]  before:z-[-1] before:w-full before:h-full">
 
