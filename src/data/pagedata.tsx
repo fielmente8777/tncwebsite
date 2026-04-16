@@ -447,10 +447,10 @@ export const AboutPageData = {
         name: "Gaby Kaur",
         src: imagesLink + "tm12.webp",
       },
-      {
-        name: "Dilman Singh",
-        src: imagesLink + "tm13.webp",
-      },
+      // {
+      //   name: "Dilman Singh",
+      //   src: imagesLink + "tm13.webp",
+      // },
       {
         name: "Kasturi",
         src: imagesLink + "tm14.webp",
