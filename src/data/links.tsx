@@ -315,7 +315,7 @@ export const FooterLinks: FooterLinksProps[] = [
       },
       {
         title: "Mississauga,Ontario",
-        name: "1030 Kamato Rd #210, Mississauga, ON L4W 2W4",
+        name: "303 - 3660 Hurontario Street, Mississauga, ON L5B 3C4",
         icon: <FillLocationIcon />,
       },
       {
