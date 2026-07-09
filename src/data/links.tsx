@@ -197,6 +197,10 @@ export const NaveLinks: NveLinksProps[] = [
             name: "citizenship hand down",
             href: "/citizenship-hand-down",
           },
+          {
+            name: " ITA to PR Approval",
+            href: "/ita-to-pr-approval",
+          },
           // {
           //   name: "canada recovering lost",
           //   href: "/canada-recovering-lost",
