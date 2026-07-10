@@ -162,6 +162,10 @@ export const NaveLinks: NveLinksProps[] = [
         href: "/express-entry-profile-creation",
       },
       {
+        name: " ITA to PR Approval",
+        href: "/ita-to-pr-approval",
+      },
+      {
         name: "procedural Fairness Letters",
         href: "/procedural-fairness-letters",
       },
@@ -197,10 +201,7 @@ export const NaveLinks: NveLinksProps[] = [
             name: "citizenship hand down",
             href: "/citizenship-hand-down",
           },
-          {
-            name: " ITA to PR Approval",
-            href: "/ita-to-pr-approval",
-          },
+
           // {
           //   name: "canada recovering lost",
           //   href: "/canada-recovering-lost",
