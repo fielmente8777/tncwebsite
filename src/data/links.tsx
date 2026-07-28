@@ -215,6 +215,10 @@ export const NaveLinks: NveLinksProps[] = [
     href: "#",
     subLinks: [
       {
+        name: "OINP Calculator",
+        href: "/oinp-calculator",
+      },
+      {
         name: "BC PNP Score Calculator",
         href: "/bc-pnp-score-calculator",
       },

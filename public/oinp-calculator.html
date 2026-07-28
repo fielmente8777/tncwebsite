@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OINP Calculator | TNC Immigration</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+.oc-wrap{
+  --oc-red:#C8102E;
+  --oc-red-dark:#9C0D24;
+  --oc-navy:#47101B;
+  --oc-ink:#2A2226;
+  --oc-muted:#7A7378;
+  --oc-line:#EAE5E6;
+  --oc-bg:#FAF7F7;
+  --oc-white:#FFFFFF;
+  --oc-green:#0E7C4A;
+  font-family:'Poppins',system-ui,-apple-system,sans-serif;
+  background:var(--oc-bg);
+  color:var(--oc-ink);
+  padding:48px 20px 64px;
+  box-sizing:border-box;
+}
+.oc-wrap *{box-sizing:border-box;margin:0;padding:0;}
+.oc-inner{max-width:1080px;margin:0 auto;}
+
+/* Heading */
+.oc-head{text-align:center;margin-bottom:40px;}
+.oc-head h2{font-size:clamp(28px,4vw,40px);font-weight:800;color:var(--oc-navy);letter-spacing:-0.5px;}
+.oc-head h2 span{color:var(--oc-red);}
+.oc-head .oc-rule{width:64px;height:4px;background:var(--oc-red);border-radius:2px;margin:14px auto 0;}
+.oc-head .oc-tag{font-size:13px;color:var(--oc-muted);margin-top:14px;max-width:52ch;margin-left:auto;margin-right:auto;line-height:1.55;}
+
+/* Layout */
+.oc-grid{display:grid;grid-template-columns:1fr 340px;gap:28px;align-items:start;}
+@media(max-width:900px){.oc-grid{grid-template-columns:1fr;}}
+
+/* Cards */
+.oc-card{background:var(--oc-white);border:1px solid var(--oc-line);border-radius:14px;padding:26px 26px 28px;margin-bottom:20px;box-shadow:0 1px 3px rgba(71,16,27,0.06);}
+.oc-card[hidden]{display:none;}
+.oc-card-title{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:6px;}
+.oc-card-title h3{font-size:17px;font-weight:700;color:var(--oc-navy);}
+.oc-max{font-size:12px;font-weight:600;color:var(--oc-red);background:rgba(200,16,46,0.08);padding:4px 10px;border-radius:20px;white-space:nowrap;}
+.oc-card-sub{font-size:13px;color:var(--oc-muted);margin-bottom:16px;line-height:1.5;}
+
+/* Fields */
+.oc-field{margin-bottom:14px;}
+.oc-field:last-child{margin-bottom:0;}
+.oc-field label{display:block;font-size:13px;font-weight:600;color:var(--oc-ink);margin-bottom:6px;}
+.oc-wrap select.x-sel{
+  width:100%;padding:12px 14px;font-size:14px;font-family:inherit;color:var(--oc-ink);
+  border:1.5px solid var(--oc-line);border-radius:10px;background:var(--oc-white);
+  appearance:none;-webkit-appearance:none;cursor:pointer;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%237A7378' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 14px center;
+}
+.oc-wrap select.x-sel:focus{outline:none;border-color:var(--oc-red);box-shadow:0 0 0 3px rgba(200,16,46,0.12);}
+.oc-wrap optgroup{font-weight:600;color:var(--oc-navy);}
+.oc-wrap option{font-weight:400;color:var(--oc-ink);}
+
+/* Radio choice rows styled like FSW checkboxes */
+.oc-wrap .x-opts{display:flex;flex-direction:column;}
+.oc-wrap .x-opt{
+  display:flex;align-items:flex-start;gap:12px;padding:13px 14px;
+  border:1.5px solid var(--oc-line);border-radius:10px;margin-bottom:10px;cursor:pointer;
+  transition:border-color .15s, background .15s;
+}
+.oc-wrap .x-opt:last-child{margin-bottom:0;}
+.oc-wrap .x-opt:hover{border-color:#D9CFD2;}
+.oc-wrap .x-opt.on{border-color:var(--oc-red);background:rgba(200,16,46,0.04);}
+.oc-wrap .x-opt input{
+  width:18px;height:18px;margin-top:1px;accent-color:var(--oc-red);cursor:pointer;flex-shrink:0;
+  appearance:auto;-webkit-appearance:auto;
+}
+.oc-wrap .x-opt input:focus-visible{outline:2px solid var(--oc-red);outline-offset:2px;}
+.oc-opt-t{font-size:13.5px;line-height:1.45;color:var(--oc-ink);flex:1;}
+.oc-opt-s{display:block;font-size:12px;color:var(--oc-muted);margin-top:2px;}
+.oc-wrap .x-pts{margin-left:auto;font-size:12px;font-weight:700;color:var(--oc-red);white-space:nowrap;padding-left:8px;}
+
+/* Occupation search */
+.oc-wrap .x-search{position:relative;}
+.oc-wrap .x-search-in{
+  width:100%;padding:13px 40px 13px 14px;font-size:14.5px;font-family:inherit;color:var(--oc-ink);
+  border:1.5px solid var(--oc-line);border-radius:10px;background:var(--oc-white);
+}
+.oc-wrap .x-search-in::placeholder{color:#B3ABAE;}
+.oc-wrap .x-search-in:focus{outline:none;border-color:var(--oc-red);box-shadow:0 0 0 3px rgba(200,16,46,0.12);}
+.oc-wrap .x-search-x{
+  position:absolute;right:8px;top:9px;width:28px;height:28px;border:none;background:none;
+  cursor:pointer;color:var(--oc-muted);font-size:20px;line-height:1;border-radius:8px;display:none;
+}
+.oc-wrap .x-search-x:hover{background:var(--oc-bg);color:var(--oc-ink);}
+.oc-wrap .x-search.filled .x-search-x{display:block;}
+.oc-wrap .x-hits{
+  position:absolute;z-index:60;left:0;right:0;top:calc(100% + 6px);
+  background:var(--oc-white);border:1.5px solid var(--oc-line);border-radius:10px;
+  box-shadow:0 14px 34px rgba(71,16,27,0.16);max-height:320px;overflow-y:auto;display:none;
+}
+.oc-wrap .x-hits.open{display:block;}
+.oc-wrap .x-hit{
+  display:flex;gap:12px;align-items:baseline;width:100%;text-align:left;
+  border:none;border-bottom:1px solid var(--oc-line);background:none;
+  font-family:inherit;font-size:14px;color:var(--oc-ink);padding:11px 14px;cursor:pointer;line-height:1.4;
+}
+.oc-wrap .x-hit:last-child{border-bottom:none;}
+.oc-wrap .x-hit:hover,.oc-wrap .x-hit.act{background:rgba(200,16,46,0.05);}
+.oc-hit-code{font-size:12px;font-weight:700;color:var(--oc-red);flex:none;}
+.oc-hit-b{min-width:0;flex:1;}
+.oc-hit-t{display:block;font-weight:600;}
+.oc-hit-m{display:block;font-size:12px;color:var(--oc-muted);margin-top:1px;}
+.oc-nohit{padding:15px 14px;font-size:13.5px;color:var(--oc-muted);line-height:1.5;}
+
+.oc-wrap .x-picked{
+  margin-top:13px;padding:14px 16px;border-radius:10px;display:none;
+  background:rgba(14,124,74,0.07);border:1px solid rgba(14,124,74,0.25);
+}
+.oc-wrap .x-picked.on{display:block;}
+.oc-picked-t{font-size:14px;font-weight:700;color:var(--oc-green);margin-bottom:4px;line-height:1.4;}
+.oc-picked-m{font-size:12.5px;color:#2b6b4d;line-height:1.55;}
+.oc-manual-btn{
+  display:inline-block;margin-top:14px;background:none;border:none;padding:0;
+  font-family:inherit;font-size:13px;font-weight:600;color:var(--oc-red);cursor:pointer;
+  text-decoration:underline;text-underline-offset:3px;
+}
+.oc-manual-btn:hover{color:var(--oc-red-dark);}
+.oc-wrap .x-manual{display:none;margin-top:16px;}
+.oc-wrap .x-manual.open{display:block;}
+.oc-mrow{margin-bottom:14px;}
+.oc-mrow:last-child{margin-bottom:0;}
+.oc-mlab{display:block;font-size:13px;font-weight:600;color:var(--oc-ink);margin-bottom:6px;}
+
+.oc-note-inline{
+  font-size:12.5px;color:var(--oc-muted);margin-top:12px;padding:11px 14px;
+  background:var(--oc-bg);border-radius:8px;line-height:1.55;
+}
+
+/* Score panel — BLACK, matches FSW exactly */
+.oc-panel{position:sticky;top:24px;}
+@media(max-width:900px){.oc-panel{position:static;}}
+.oc-score{background:#000000;border-radius:16px;padding:30px 26px;color:var(--oc-white);text-align:center;box-shadow:0 10px 30px rgba(0,0,0,0.35);}
+.oc-score-label{font-size:12px;font-weight:600;letter-spacing:2px;text-transform:uppercase;opacity:0.7;}
+.oc-score-num{font-size:72px;font-weight:800;line-height:1.05;margin:8px 0 2px;}
+.oc-score-of{font-size:14px;opacity:0.65;margin-bottom:22px;}
+.oc-bar{position:relative;height:10px;background:rgba(255,255,255,0.15);border-radius:6px;overflow:hidden;margin-bottom:22px;}
+.oc-bar-fill{position:absolute;left:0;top:0;bottom:0;width:0%;background:var(--oc-red);border-radius:6px;transition:width .35s ease;}
+.oc-verdict{font-size:13.5px;font-weight:500;padding:12px 16px;border-radius:10px;background:rgba(255,255,255,0.08);line-height:1.5;}
+.oc-breakdown{margin-top:22px;text-align:left;}
+.oc-brow{display:flex;justify-content:space-between;gap:12px;font-size:13px;padding:8px 0;border-bottom:1px solid rgba(255,255,255,0.1);}
+.oc-brow:last-child{border-bottom:none;}
+.oc-brow span:first-child{opacity:0.8;}
+.oc-brow span:last-child{font-weight:700;white-space:nowrap;}
+.oc-brow.got span:last-child{color:#5FD79E;}
+.oc-brow-tot{display:flex;justify-content:space-between;gap:12px;font-size:14px;padding:12px 0 2px;margin-top:6px;border-top:1.5px solid rgba(255,255,255,0.25);font-weight:800;}
+.oc-reset{display:block;width:100%;margin-top:18px;background:none;border:none;font-family:inherit;font-size:12px;font-weight:600;letter-spacing:0.5px;color:rgba(255,255,255,0.55);cursor:pointer;padding:6px;text-transform:uppercase;transition:color .15s;}
+.oc-reset:hover{color:#fff;}
+
+/* Bottom note — matches FSW */
+.oc-note{max-width:1080px;margin:34px auto 0;padding:18px 22px;border-left:4px solid var(--oc-red);background:var(--oc-white);border-radius:0 12px 12px 0;border-top:1px solid var(--oc-line);border-right:1px solid var(--oc-line);border-bottom:1px solid var(--oc-line);}
+.oc-note h4{font-size:14px;font-weight:700;color:var(--oc-navy);margin-bottom:8px;}
+.oc-note p{font-size:13px;color:var(--oc-muted);line-height:1.65;margin-bottom:10px;}
+.oc-note p:last-child{margin-bottom:0;}
+.oc-note strong{color:var(--oc-navy);}
+.oc-note a{color:var(--oc-red);}
+
+@media (prefers-reduced-motion:reduce){.oc-wrap *{transition:none !important;}}
+
+/* Consultation CTA */
+.oc-cta{background:#000000;border-radius:14px;padding:24px 22px;margin-top:20px;color:var(--oc-white);}
+.oc-cta h4{font-size:17px;font-weight:700;line-height:1.3;}
+.oc-cta p{font-size:13px;line-height:1.55;opacity:0.78;margin:6px 0 16px;}
+.oc-btn{display:block;width:100%;text-align:center;text-decoration:none;cursor:pointer;font-family:inherit;
+  font-size:14px;font-weight:600;padding:13px 16px;border-radius:10px;border:1.5px solid var(--oc-red);
+  background:var(--oc-red);color:var(--oc-white);transition:background .15s,border-color .15s;}
+.oc-btn:hover{background:var(--oc-red-dark);border-color:var(--oc-red-dark);}
+.oc-btn-ghost{background:transparent;border-color:rgba(255,255,255,0.28);color:var(--oc-white);margin-top:10px;}
+.oc-btn-ghost:hover{background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.5);}
+.oc-lead{margin-top:18px;padding-top:18px;border-top:1px solid rgba(255,255,255,0.15);}
+.oc-lead-field{margin-bottom:10px;}
+.oc-lead-field label{display:block;font-size:12.5px;font-weight:600;color:var(--oc-white);opacity:0.85;margin-bottom:6px;}
+.oc-lead-field input{width:100%;padding:12px 14px;font-size:14px;font-family:inherit;border-radius:10px;
+  border:1.5px solid rgba(255,255,255,0.2);background:rgba(255,255,255,0.07);color:var(--oc-white);
+  appearance:none;-webkit-appearance:none;}
+.oc-lead-field input::placeholder{color:rgba(255,255,255,0.4);}
+.oc-lead-field input:focus{outline:none;border-color:var(--oc-red);box-shadow:0 0 0 3px rgba(200,16,46,0.25);}
+.oc-lead-note{font-size:11.5px;opacity:0.6;line-height:1.5;margin-top:9px;}
+.oc-lead-msg{font-size:12.5px;font-weight:600;margin-top:10px;line-height:1.5;}
+
+/* ---------- TNC tools nav (shared across all calculators) ---------- */
+.tncnav{background:#FFFFFF;border-bottom:1px solid #EAE5E6;font-family:'Poppins',system-ui,-apple-system,sans-serif;}
+.tncnav *{box-sizing:border-box;margin:0;padding:0;}
+.tncnav-inner{max-width:1080px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;gap:20px;}
+.tncnav-logo{display:block;flex-shrink:0;line-height:0;}
+.tncnav-logo img{height:40px;width:auto;display:block;}
+.tncnav-links{display:flex;align-items:center;gap:4px;margin-left:auto;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;}
+.tncnav-links::-webkit-scrollbar{display:none;}
+.tncnav-links a{display:block;font-size:13.5px;font-weight:600;color:#2A2226;text-decoration:none;
+  padding:9px 14px;border-radius:20px;white-space:nowrap;transition:background .15s,color .15s;}
+.tncnav-links a:hover{background:#FAF7F7;color:#47101B;}
+.tncnav-links a.tncnav-on{background:rgba(200,16,46,0.08);color:#C8102E;}
+.tncnav-links a:focus-visible{outline:2px solid #C8102E;outline-offset:2px;}
+@media(max-width:780px){
+  .tncnav-inner{flex-wrap:wrap;gap:12px;padding:12px 16px;}
+  .tncnav-logo img{height:34px;}
+  .tncnav-links{margin-left:0;width:100%;padding-bottom:2px;}
+  .tncnav-links a{font-size:13px;padding:8px 12px;}
+}
+</style>
+</head>
+<body>
+
+<!-- ============================================================
+     TNC tools nav. Hrefs are relative filenames so this folder
+     works as a standalone preview. On the live site replace each
+     with its real route, e.g. https://tncimmigration.com/crs-calculator/
+     ============================================================ -->
+<nav class="tncnav" aria-label="TNC immigration tools">
+  <div class="tncnav-inner">
+    <a class="tncnav-logo" href="https://tncimmigration.com/" aria-label="TNC Immigration home">
+      <img src="data:image/png;base64,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" alt="TNC Immigration" width="194" height="96">
+    </a>
+    <div class="tncnav-links">
+        <a href="oinp-calculator.html" class="tncnav-on" aria-current="page">OINP Calculator</a>
+        <a href="bcpnp-calculator.html">BCPNP Calculator</a>
+        <a href="fsw-calculator.html">FSW Calculator</a>
+        <a href="crs-calculator.html">CRS Calculator</a>
+        <a href="noc-finder.html">NOC Finder</a>
+    </div>
+  </div>
+</nav>
+
+
+<div class="oc-wrap">
+  <div class="oc-inner">
+
+    <div class="oc-head">
+      <h2>OINP <span>Calculator</span></h2>
+      <div class="oc-rule"></div>
+      <p class="oc-tag">
+        Estimate your points for the Ontario Workforce Priority Stream. Answer each factor and your
+        score updates as you go.
+      </p>
+    </div>
+
+    <div class="oc-grid">
+
+      <!-- LEFT: FACTORS -->
+      <form id="oinpForm" novalidate>
+
+        <!-- Pathway -->
+        <div class="oc-card">
+          <div class="oc-card-title"><h3>Pathway</h3></div>
+          <p class="oc-card-sub">This sets which factors are scored and what your maximum is.</p>
+          <div class="x-opts" data-group="pathway">
+            <label class="x-opt">
+              <input type="radio" name="pathway" value="skilled">
+              <span class="oc-opt-t">Ontario job offer, skilled occupation
+                <span class="oc-opt-s">NOC TEER 0 to 3</span></span>
+              <span class="x-pts">130 max</span>
+            </label>
+            <label class="x-opt">
+              <input type="radio" name="pathway" value="essential">
+              <span class="oc-opt-t">Ontario job offer, essential occupation
+                <span class="oc-opt-s">NOC TEER 4 or 5</span></span>
+              <span class="x-pts">130 max</span>
+            </label>
+            <label class="x-opt">
+              <input type="radio" name="pathway" value="physician">
+              <span class="oc-opt-t">Self employed physician in Ontario
+                <span class="oc-opt-s">Practice experience replaces the wage factor</span></span>
+              <span class="x-pts">115 max</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Occupation -->
+        <div class="oc-card" id="s-occ" hidden>
+          <div class="oc-card-title"><h3>Occupation</h3><span class="oc-max">Max 19 points</span></div>
+          <p class="oc-card-sub">Type a job title. Your NOC code sets both your TEER level and your occupational category, so this one answer scores two factors.</p>
+          <div class="x-search" id="occSearch">
+            <input type="text" class="x-search-in" id="occInput"
+                   placeholder="registered nurse, welder, truck driver&hellip;"
+                   autocomplete="off" role="combobox" aria-expanded="false"
+                   aria-controls="occResults" aria-autocomplete="list">
+            <button type="button" class="x-search-x" id="occClear" aria-label="Clear occupation">&times;</button>
+            <div class="x-hits" id="occResults" role="listbox"></div>
+          </div>
+          <div class="x-picked" id="occPicked">
+            <div class="oc-picked-t" id="occPickedTitle"></div>
+            <div class="oc-picked-m" id="occPickedMeta"></div>
+          </div>
+          <button type="button" class="oc-manual-btn" id="occManualToggle">Not listed? Set TEER and category yourself</button>
+          <div class="x-manual" id="occManual">
+            <div class="oc-mrow">
+              <label class="oc-mlab" for="mTeer">TEER level &mdash; second digit of your NOC code</label>
+              <select class="x-sel" id="mTeer">
+                <option value="">Select TEER level</option>
+                <option value="9">TEER 0 or 1 &mdash; management, or usually needs a university degree (9)</option>
+                <option value="6">TEER 2 or 3 &mdash; college, apprenticeship or supervisory (6)</option>
+                <option value="0">TEER 4 or 5 &mdash; high school or short term training (0)</option>
+              </select>
+            </div>
+            <div class="oc-mrow">
+              <label class="oc-mlab" for="mCat">Occupational category &mdash; first digit of your NOC code</label>
+              <select class="x-sel" id="mCat">
+                <option value="">Select category</option>
+                <option value="10">Health occupations (10)</option>
+                <option value="8">Trades, transport and equipment operators (8)</option>
+                <option value="6">Natural and applied sciences (6)</option>
+                <option value="4">Legislative and senior management (4)</option>
+                <option value="4">Business, finance and administration (4)</option>
+                <option value="4">Education, law, social, community and government services (4)</option>
+                <option value="4">Natural resources, agriculture and related production (4)</option>
+                <option value="4">Manufacturing and utilities (4)</option>
+                <option value="2">Art, culture, recreation and sport (2)</option>
+                <option value="2">Sales and service (2)</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Compensation -->
+        <div class="oc-card" id="s-wage" hidden>
+          <div class="oc-card-title"><h3>Compensation</h3><span class="oc-max">Max 15 points</span></div>
+          <p class="oc-card-sub">The hourly wage your employer states on the job offer, before deductions.</p>
+          <div class="oc-field">
+            <select class="x-sel" name="wage" data-group="wage">
+              <option value="">Select a wage band</option>
+              <option data-pts="15">$40.00 an hour or more (15)</option>
+              <option data-pts="12">$35.00 to $39.99 (12)</option>
+              <option data-pts="10">$30.00 to $34.99 (10)</option>
+              <option data-pts="8">$25.00 to $29.99 (8)</option>
+              <option data-pts="5">$20.00 to $24.99 (5)</option>
+              <option data-pts="0">Under $20.00 (0)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Experience: offer position -->
+        <div class="oc-card" id="s-expjob" hidden>
+          <div class="oc-card-title"><h3>Experience in the Offer Position</h3><span class="oc-max">Max 18 points</span></div>
+          <p class="oc-card-sub">Months worked in the exact position named on your job offer.</p>
+          <div class="oc-field">
+            <select class="x-sel" name="expjob" data-group="expjob">
+              <option value="">Select experience</option>
+              <option data-pts="18">More than 24 months (18)</option>
+              <option data-pts="15">13 to 24 months (15)</option>
+              <option data-pts="12">6 to 12 months (12)</option>
+              <option data-pts="0">Under 6 months (0)</option>
+            </select>
+          </div>
+          <p class="oc-note-inline">Ontario scores this factor and the next one, then keeps whichever is higher. They are never added together, so the breakdown shows a single experience line.</p>
+        </div>
+
+        <!-- Experience: any Ontario -->
+        <div class="oc-card" id="s-expont" hidden>
+          <div class="oc-card-title"><h3>Experience Anywhere in Ontario</h3><span class="oc-max">Max 12 points</span></div>
+          <p class="oc-card-sub">Any Ontario work experience, counted separately from the offer position above.</p>
+          <div class="oc-field">
+            <select class="x-sel" name="expont" data-group="expont">
+              <option value="">Select experience</option>
+              <option data-pts="12">More than 24 months (12)</option>
+              <option data-pts="9">13 to 24 months (9)</option>
+              <option data-pts="6">6 to 12 months (6)</option>
+              <option data-pts="0">Under 6 months (0)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Physician practice -->
+        <div class="oc-card" id="s-expphys" hidden>
+          <div class="oc-card-title"><h3>Medical Practice in Ontario</h3><span class="oc-max">Max 18 points</span></div>
+          <p class="oc-card-sub">Cumulative months of practice. It does not need to be continuous.</p>
+          <div class="oc-field">
+            <select class="x-sel" name="expphys" data-group="expphys">
+              <option value="">Select experience</option>
+              <option data-pts="18">2 years or more, cumulative (18)</option>
+              <option data-pts="15">13 to 24 months (15)</option>
+              <option data-pts="12">6 to 12 months (12)</option>
+              <option data-pts="0">Under 6 months (0)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Tax history -->
+        <div class="oc-card" id="s-earn" hidden>
+          <div class="oc-card-title"><h3>Canadian Tax History</h3><span class="oc-max">Max 8 points</span></div>
+          <p class="oc-card-sub">Your highest single year of income in the last five tax years, as assessed by the CRA.</p>
+          <div class="oc-field">
+            <select class="x-sel" name="earn" data-group="earn">
+              <option value="">Select an income band</option>
+              <option data-pts="8">$70,000 or more in a year (8)</option>
+              <option data-pts="6">$50,000 to $69,999 (6)</option>
+              <option data-pts="4">$30,000 to $49,999 (4)</option>
+              <option data-pts="0">Under $30,000, or no Canadian tax history (0)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Status -->
+        <div class="oc-card" id="s-status" hidden>
+          <div class="oc-card-title"><h3>Status in Canada</h3><span class="oc-max">Max 10 points</span></div>
+          <p class="oc-card-sub">Your current valid immigration status, if any.</p>
+          <div class="x-opts" data-group="status">
+            <label class="x-opt">
+              <input type="radio" name="status" data-pts="10">
+              <span class="oc-opt-t">Valid Canadian work permit</span>
+              <span class="x-pts">+10</span>
+            </label>
+            <label class="x-opt">
+              <input type="radio" name="status" data-pts="5">
+              <span class="oc-opt-t">Valid Canadian study permit</span>
+              <span class="x-pts">+5</span>
+            </label>
+            <label class="x-opt">
+              <input type="radio" name="status" data-pts="0">
+              <span class="oc-opt-t">Neither</span>
+              <span class="x-pts">0</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="oc-card" id="s-edu" hidden>
+          <div class="oc-card-title"><h3>Highest Credential</h3><span class="oc-max">Max 10 points</span></div>
+          <p class="oc-card-sub">Only your single highest completed credential counts.</p>
+          <div class="oc-field">
+            <select class="x-sel" name="edu" data-group="edu">
+              <option value="">Select credential</option>
+              <option data-pts="10">Doctorate, or a degree in medicine, dentistry, veterinary medicine or optometry (10)</option>
+              <option data-pts="8">Master&rsquo;s degree (8)</option>
+              <option data-pts="6">University certificate or diploma above a bachelor&rsquo;s (6)</option>
+              <option data-pts="6">Bachelor&rsquo;s degree or equivalent (6)</option>
+              <option data-pts="5">Ontario College Graduate Certificate (5)</option>
+              <option data-pts="5">University certificate or diploma below a bachelor&rsquo;s (5)</option>
+              <option data-pts="5">College, CEGEP or other non university credential (5)</option>
+              <option data-pts="5">Apprenticeship or trades certificate or diploma (5)</option>
+              <option data-pts="0">Less than a college or trade certificate (0)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Canadian credentials -->
+        <div class="oc-card" id="s-cancred" hidden>
+          <div class="oc-card-title"><h3>Canadian Credentials</h3><span class="oc-max">Max 10 points</span></div>
+          <p class="oc-card-sub">Credentials earned at a Canadian institution, scored on top of your highest credential above.</p>
+          <div class="x-opts" data-group="cancred">
+            <label class="x-opt">
+              <input type="radio" name="cancred" data-pts="10">
+              <span class="oc-opt-t">More than one Canadian post secondary credential</span>
+              <span class="x-pts">+10</span>
+            </label>
+            <label class="x-opt">
+              <input type="radio" name="cancred" data-pts="5">
+              <span class="oc-opt-t">One Canadian post secondary credential</span>
+              <span class="x-pts">+5</span>
+            </label>
+            <label class="x-opt">
+              <input type="radio" name="cancred" data-pts="0">
+              <span class="oc-opt-t">None</span>
+              <span class="x-pts">0</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Language level -->
+        <div class="oc-card" id="s-clb" hidden>
+          <div class="oc-card-title"><h3>Language Level</h3><span class="oc-max">Max 15 points</span></div>
+          <p class="oc-card-sub">Use your stronger official language, then take the lowest of your four abilities on that test: listening, reading, writing, speaking.</p>
+          <div class="oc-field">
+            <select class="x-sel" name="clb" data-group="clb">
+              <option value="">Select CLB level</option>
+              <option data-pts="15">CLB 9 or higher (15)</option>
+              <option data-pts="12">CLB 8 (12)</option>
+              <option data-pts="8">CLB 7 (8)</option>
+              <option data-pts="4">CLB 6 (4)</option>
+              <option data-pts="0">CLB 5 or lower (0)</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Official languages -->
+        <div class="oc-card" id="s-lang2" hidden>
+          <div class="oc-card-title"><h3>Official Languages</h3><span class="oc-max">Max 10 points</span></div>
+          <p class="oc-card-sub">Scored on top of your CLB level above.</p>
+          <div class="x-opts" data-group="lang2">
+            <label class="x-opt">
+              <input type="radio" name="lang2" data-pts="10">
+              <span class="oc-opt-t">Both English and French at CLB 6 or higher</span>
+              <span class="x-pts">+10</span>
+            </label>
+            <label class="x-opt">
+              <input type="radio" name="lang2" data-pts="5">
+              <span class="oc-opt-t">One official language at CLB 6 or higher</span>
+              <span class="x-pts">+5</span>
+            </label>
+            <label class="x-opt">
+              <input type="radio" name="lang2" data-pts="0">
+              <span class="oc-opt-t">Neither at CLB 6 or higher</span>
+              <span class="x-pts">0</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Work location -->
+        <div class="oc-card" id="s-region" hidden>
+          <div class="oc-card-title"><h3>Work Location</h3><span class="oc-max">Max 15 points</span></div>
+          <p class="oc-card-sub">Use the work location on the job offer, not your home address. Physicians: use the practice address registered to your OHIP billing number.</p>
+          <div class="oc-field">
+            <select class="x-sel" name="region" data-group="region">
+              <option value="">Select a census division</option>
+              <optgroup label="Northern Ontario &mdash; 15 points">
+                <option data-pts="15">Sudbury, Greater Sudbury, Thunder Bay, Nipissing, Parry Sound</option>
+                <option data-pts="15">Muskoka, Haliburton, Manitoulin, Timiskaming, Cochrane</option>
+                <option data-pts="15">Algoma, Rainy River, Kenora</option>
+              </optgroup>
+              <optgroup label="Eastern Ontario &mdash; 10 points">
+                <option data-pts="10">Ottawa, Frontenac, Lanark, Leeds and Grenville, Renfrew</option>
+                <option data-pts="10">Hastings, Kawartha Lakes, Lennox and Addington, Northumberland</option>
+                <option data-pts="10">Peterborough, Prescott and Russell, Prince Edward</option>
+                <option data-pts="10">Stormont, Dundas and Glengarry</option>
+              </optgroup>
+              <optgroup label="Southwestern Ontario &mdash; 10 points">
+                <option data-pts="10">Hamilton, Niagara, Brant, Haldimand Norfolk</option>
+                <option data-pts="10">Middlesex, Elgin, Oxford, Perth, Huron, Bruce</option>
+                <option data-pts="10">Essex, Chatham Kent, Lambton</option>
+              </optgroup>
+              <optgroup label="Central Ontario outside the GTA &mdash; 10 points">
+                <option data-pts="10">Waterloo, Wellington, Dufferin, Grey, Simcoe</option>
+              </optgroup>
+              <optgroup label="GTA outside the City of Toronto &mdash; 5 points">
+                <option data-pts="5">Peel, York, Durham, Halton</option>
+              </optgroup>
+              <optgroup label="City of Toronto &mdash; 0 points">
+                <option data-pts="0">City of Toronto</option>
+              </optgroup>
+            </select>
+          </div>
+        </div>
+
+      </form>
+
+      <!-- RIGHT: SCORE -->
+      <div class="oc-panel">
+      <div class="oc-score">
+        <div class="oc-score-label">Your OINP Score</div>
+        <div class="oc-score-num"><span id="oScore">0</span></div>
+        <div class="oc-score-of">out of <span id="oMax">130</span></div>
+
+        <div class="oc-bar">
+          <div class="oc-bar-fill" id="oBar"></div>
+        </div>
+
+        <div class="oc-verdict" id="oProgress">Choose a pathway to start scoring.</div>
+
+        <div class="oc-breakdown" id="oBreak"></div>
+        <div class="oc-brow-tot"><span>Estimated total</span><span id="oTotal">0 / 130</span></div>
+        <button type="button" id="oReset" class="oc-reset">Reset all answers</button>
+      </div>
+
+    <div class="oc-cta">
+        <h4>Get a plan for these points</h4>
+        <p>Professionals at TNC will check your profile against the Workforce Priority Stream requirements, confirm your NOC, and tell you whether this score is worth acting on.</p>
+        <a class="oc-btn" href="https://tncimmigration.com/book-appointment/" target="_blank" rel="noopener">Book a consultation</a>
+        <a class="oc-btn oc-btn-ghost" href="https://tncimmigration.com/start-assessment/">Start a free assessment</a>
+        <div class="oc-lead">
+          <div class="oc-lead-field"><label for="oc-lead-name">Name</label>
+            <input type="text" id="oc-lead-name" autocomplete="name" placeholder="Your full name"></div>
+          <div class="oc-lead-field"><label for="oc-lead-email">Email</label>
+            <input type="email" id="oc-lead-email" autocomplete="email" placeholder="you@example.com"></div>
+          <div class="oc-lead-field"><label for="oc-lead-phone">Phone</label>
+            <input type="tel" id="oc-lead-phone" autocomplete="tel" placeholder="+1"></div>
+          <button type="button" class="oc-btn oc-btn-ghost" id="oc-lead-send" style="margin-top:4px">Request a callback</button>
+          <p class="oc-lead-note">A TNC representative will call you back with your score, your full point breakdown and the gaps we can close.</p>
+          <p class="oc-lead-msg" id="oc-lead-msg" hidden></p>
+        </div>
+      </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Bottom note -->
+  <div class="oc-note">
+    <h4>Before you rely on this score</h4>
+    <p>Ontario published this scoring grid on <strong>20 July 2026</strong> and it may change. No invitation cut-off score has been announced for the Workforce Priority Stream, so a high score here does not mean you will be invited to apply.</p>
+    <p>This calculator estimates points only. It does not assess your eligibility or check the stream&rsquo;s minimum requirements for work experience, language and education, all of which must be met before any points count. It is not immigration advice and does not create a consultant client relationship. Always consult a Regulated Canadian Immigration Consultant (RCIC) at TNC Immigration before acting on any number you see here.</p>
+    <p>Occupational data adapted from the National Occupational Classification 2021, Employment and Social Development Canada and Statistics Canada, used under the Statistics Canada Open Licence. Verify every value against <a href="https://www.ontario.ca/page/ontario-workforce-priority-stream" target="_blank" rel="noopener">ontario.ca</a>. TNC Immigration is not affiliated with the Government of Ontario.</p>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  var form = document.getElementById('oinpForm');
+  var elScore = document.getElementById('oScore');
+  var elMax = document.getElementById('oMax');
+  var elBar = document.getElementById('oBar');
+  var elProgress = document.getElementById('oProgress');
+  var elBreak = document.getElementById('oBreak');
+  var elTotal = document.getElementById('oTotal');
+  var elReset = document.getElementById('oReset');
+
+  var state = {};
+
+  var ALL_STEPS = ['s-occ','s-wage','s-expjob','s-expont','s-expphys','s-earn',
+                   's-status','s-edu','s-cancred','s-clb','s-lang2','s-region'];
+
+  // Physicians keep TEER (physician NOCs are TEER 1) but have no wage factor: 130 - 15 = 115.
+  var FLOW = {
+    skilled:   ['s-occ','s-wage','s-expjob','s-expont','s-earn','s-status','s-edu','s-cancred','s-clb','s-lang2','s-region'],
+    essential: ['s-occ','s-wage','s-expjob','s-expont','s-earn','s-status','s-edu','s-cancred','s-clb','s-lang2','s-region'],
+    physician: ['s-occ','s-expphys','s-earn','s-status','s-edu','s-cancred','s-clb','s-lang2','s-region']
+  };
+
+  var LABELS = {
+    teer:    ['TEER level', 9],
+    cat:     ['Occupation category', 10],
+    wage:    ['Compensation', 15],
+    exp:     ['Work experience', 18],
+    earn:    ['Tax history', 8],
+    status:  ['Status in Canada', 10],
+    edu:     ['Highest credential', 10],
+    cancred: ['Canadian credentials', 10],
+    clb:     ['Language level', 15],
+    lang2:   ['Official languages', 10],
+    region:  ['Work location', 15]
+  };
+
+  var ORDER = ['teer','cat','wage','exp','earn','status','edu','cancred','clb','lang2','region'];
+
+  function pathway(){ return state.pathway || null; }
+  function maxScore(){ return pathway() === 'physician' ? 115 : 130; }
+
+  // Ontario scores the higher of the two experience tables, never the sum.
+  function expPoints(){
+    if(pathway() === 'physician') return state.expphys || 0;
+    return Math.max(state.expjob || 0, state.expont || 0);
+  }
+  function expAnswered(){
+    if(pathway() === 'physician') return 'expphys' in state;
+    return ('expjob' in state) || ('expont' in state);
+  }
+
+  function activeFactors(){
+    var p = pathway();
+    if(!p) return [];
+    return ORDER.filter(function(k){
+      return p === 'physician' ? k !== 'wage' : true;
+    });
+  }
+
+  function pointsFor(k){ return k === 'exp' ? expPoints() : (state[k] || 0); }
+  function answered(k){ return k === 'exp' ? expAnswered() : (k in state); }
+
+  function render(){
+    var p = pathway();
+    var shown = FLOW[p] || [];
+
+    ALL_STEPS.forEach(function(id){
+      var el = document.getElementById(id);
+      if(el) el.hidden = shown.indexOf(id) === -1;
+    });
+
+    // renumber visible steps so the sequence never skips
+    var n = 1;
+    shown.forEach(function(id){
+      var el = document.getElementById(id);
+      if(!el) return;
+      var num = el.querySelector('.oinp-num');
+      n++;
+      if(num) num.textContent = (n < 10 ? '0' : '') + n;
+    });
+
+    var factors = activeFactors();
+    var total = 0;
+    factors.forEach(function(k){ total += pointsFor(k); });
+
+    var max = maxScore();
+    elMax.textContent = max;
+    elScore.textContent = total;
+    elTotal.textContent = total + ' / ' + max;
+    elBar.style.width = (max ? (total / max * 100) : 0) + '%';
+
+    var done = factors.filter(answered).length;
+    var verdict = document.getElementById('oProgress');
+    if(!p){
+      verdict.textContent = 'Choose a pathway to start scoring.';
+    } else if(done < factors.length){
+      verdict.textContent = 'Answered ' + done + ' of ' + factors.length
+        + '. Complete every factor for an accurate estimate.';
+    } else {
+      verdict.textContent = 'All ' + factors.length + ' factors answered. '
+        + 'This is an estimate, not an eligibility decision.';
+    }
+
+    elBreak.innerHTML = '';
+    factors.forEach(function(k){
+      var pts = pointsFor(k);
+      var row = document.createElement('div');
+      row.className = 'oc-brow' + (answered(k) && pts > 0 ? ' got' : '');
+      var name = document.createElement('span');
+      name.textContent = LABELS[k][0];
+      var val = document.createElement('span');
+      val.textContent = pts + ' / ' + LABELS[k][1];
+      row.appendChild(name); row.appendChild(val);
+      elBreak.appendChild(row);
+    });
+
+    form.querySelectorAll('.x-opt').forEach(function(l){
+      var i = l.querySelector('input');
+      l.classList.toggle('on', !!(i && i.checked));
+    });
+  }
+
+  function readPts(el){
+    if(el.tagName === 'SELECT'){
+      if(el.selectedIndex <= 0) return null;
+      var o = el.options[el.selectedIndex];
+      return parseInt(o.getAttribute('data-pts'), 10) || 0;
+    }
+    return parseInt(el.getAttribute('data-pts'), 10) || 0;
+  }
+
+  form.addEventListener('change', function(e){
+    var el = e.target;
+    var holder = el.closest('[data-group]');
+    var group = el.getAttribute('data-group') || (holder ? holder.getAttribute('data-group') : null);
+    if(!group) return;
+
+    if(group === 'pathway'){
+      if(state.pathway !== el.value){
+        state = { pathway: el.value };
+        form.querySelectorAll('select').forEach(function(s){ s.selectedIndex = 0; });
+        if(typeof occInput !== 'undefined' && occInput){
+          occInput.value = '';
+          occSearch.classList.remove('filled');
+          occPicked.classList.remove('on');
+          mTeer.value = ''; mCat.value = '';
+        }
+        form.querySelectorAll('input[type=radio]').forEach(function(r){
+          if(r.name !== 'pathway') r.checked = false;
+        });
+      }
+      render();
+      return;
+    }
+
+    var pts = readPts(el);
+    if(pts === null){ delete state[group]; } else { state[group] = pts; }
+    render();
+  });
+
+  elReset.addEventListener('click', function(){
+    state = {};
+    form.reset();
+    form.querySelectorAll('select').forEach(function(s){ s.selectedIndex = 0; });
+    occInput.value = '';
+    occSearch.classList.remove('filled');
+    occPicked.classList.remove('on');
+    mTeer.value = ''; mCat.value = '';
+    mPanel.classList.remove('open');
+    mToggle.textContent = 'Cannot find your job title? Choose TEER and category manually';
+    closeResults();
+    render();
+    form.scrollIntoView({ behavior:'smooth', block:'start' });
+  });
+
+
+  /* ================= occupation search ================= */
+  var NOC = {"occupations":[["00010","Legislators","councillor|legislator|member of parliament|mp|mpp"],["00011","Senior government managers and officials","deputy minister|senior government manager"],["00012","Senior managers, financial, communications and other business services","ceo|cfo|chief executive|chief financial officer|managing director|president|senior manager business"],["00013","Senior managers, health, education, social and community services","hospital ceo|school superintendent|senior manager health"],["00014","Senior managers, trade, broadcasting and other services","senior manager broadcasting|senior manager retail"],["00015","Senior managers, construction, transportation, production and utilities","senior manager construction|senior manager utilities"],["10010","Financial managers","controller|finance manager|financial manager|treasurer"],["10011","Human resources managers","hr manager|human resources manager|people manager"],["10012","Purchasing managers","procurement manager|purchasing manager"],["10019","Other administrative services managers","administrative services manager|office services manager"],["10020","Insurance, real estate and financial brokerage managers","brokerage manager|insurance manager|real estate manager"],["10021","Banking, credit and other investment managers","bank manager|branch manager|credit manager|investment manager"],["10022","Advertising, marketing and public relations managers","advertising manager|brand manager|digital marketing manager|marketing manager|pr manager|public relations manager"],["10029","Other business services managers","business services manager|consulting manager"],["10030","Telecommunication carriers managers","telecom manager"],["11100","Financial auditors and accountants","accountant|auditor|chartered accountant|cpa|financial accountant|staff accountant|tax accountant"],["11101","Financial and investment analysts","equity analyst|financial analyst|investment analyst"],["11102","Financial advisors","financial advisor|financial planner|wealth advisor"],["11103","Securities agents, investment dealers and brokers","investment dealer|securities agent|stock broker"],["11109","Other financial officers","finance officer|financial officer"],["11200","Human resources professionals","hr business partner|hr generalist|hr specialist|human resources professional|recruiter|talent acquisition"],["11201","Professional occupations in business management consulting","business analyst|business consultant|management consultant|strategy consultant"],["11202","Professional occupations in advertising, marketing and public relations","communications specialist|digital marketing specialist|marketing analyst|marketing coordinator|marketing specialist|public relations specialist|seo specialist|social media manager"],["11209","Other professional occupations in business services","business services professional"],["12010","Supervisors, general office and administrative support workers","administrative supervisor|office supervisor"],["12011","Supervisors, finance and insurance office workers","finance office supervisor"],["12013","Supervisors, library, correspondence and related information workers","library supervisor"],["12100","Executive assistants","ea|executive assistant"],["12101","Human resources and recruitment officers","hr coordinator|hr officer|recruitment coordinator|recruitment officer"],["12102","Procurement and purchasing agents and officers","buyer|procurement officer|purchasing agent"],["12103","Conference and event planners","conference planner|event coordinator|event planner|wedding planner"],["12104","Employment insurance and revenue officers","ei officer|revenue officer"],["12110","Court reporters, medical transcriptionists and related occupations","court reporter|medical transcriptionist|transcriptionist"],["12111","Health information management occupations","health information manager|him professional"],["12112","Records management technicians","records clerk|records management technician"],["12113","Statistical officers and related research support occupations","research support|statistical officer"],["12200","Accounting technicians and bookkeepers","accounting clerk|accounting technician|accounts payable|accounts receivable|bookkeeper|payroll clerk"],["12201","Insurance adjusters and claims examiners","claims adjuster|claims examiner|insurance adjuster"],["12202","Insurance underwriters","insurance underwriter|underwriter"],["12203","Assessors, business valuators and appraisers","appraiser|assessor|business valuator"],["12204","Customs, ship and other brokers","customs broker|ship broker"],["13100","Administrative officers","admin officer|administrative officer|office manager"],["13101","Property administrators","property administrator|property manager"],["13102","Payroll administrators","payroll administrator|payroll officer|payroll specialist"],["13110","Administrative assistants","admin assistant|administrative assistant|office assistant|secretary"],["13111","Legal administrative assistants","legal administrative assistant|legal assistant|legal secretary"],["13112","Medical administrative assistants","medical administrative assistant|medical office assistant|medical secretary"],["13201","Production logistics coordinators","logistics coordinator|production coordinator|production planner"],["14100","General office support workers","general office clerk|office clerk|office support"],["14101","Receptionists","front desk|front desk agent|front desk clerk|receptionist"],["14102","Personnel clerks","hr assistant|hr clerk|personnel clerk"],["14103","Court clerks and related court services occupations","court clerk"],["14110","Survey interviewers and statistical clerks","statistical clerk|survey interviewer"],["14111","Data entry clerks","data entry clerk|data entry operator"],["14112","Desktop publishing operators and related occupations","desktop publishing operator"],["14200","Accounting and related clerks","accounting clerk|billing clerk|invoicing clerk"],["14201","Banking, insurance and other financial clerks","bank teller|financial clerk|insurance clerk|teller"],["14202","Collection clerks","collections agent|collections clerk"],["14300","Library assistants and clerks","library assistant|library clerk"],["14301","Correspondence, publication and regulatory clerks","correspondence clerk"],["14400","Shippers and receivers","receiver|shipper|shipping and receiving|shipping clerk"],["14401","Storekeepers and partspersons","inventory clerk|parts clerk|partsperson|storekeeper"],["14402","Production logistics workers","production logistics worker"],["14403","Purchasing and inventory control workers","inventory control|purchasing clerk"],["14404","Dispatchers","dispatcher|truck dispatcher"],["14405","Transportation route and crew schedulers","crew scheduler|route scheduler"],["20010","Engineering managers","engineering manager"],["20011","Architecture and science managers","architecture manager|r&d manager|science manager"],["20012","Computer and information systems managers","cto|director of engineering|engineering director|information technology manager|is manager|it manager|software development manager"],["21100","Physicists and astronomers","astronomer|physicist"],["21101","Chemists","analytical chemist|chemist"],["21102","Geoscientists and oceanographers","geologist|geoscientist|oceanographer"],["21103","Meteorologists and climatologists","climatologist|meteorologist"],["21109","Other professional occupations in physical sciences","physical scientist"],["21110","Biologists and related scientists","biologist|microbiologist|research scientist"],["21111","Forestry professionals","forester|forestry professional"],["21112","Agricultural representatives, consultants and specialists","agricultural consultant|agrologist"],["21120","Public and environmental health and safety professionals","environmental health officer|health and safety officer|occupational health and safety|public health inspector|safety officer"],["21200","Architects","architect|registered architect"],["21201","Landscape architects","landscape architect"],["21202","Urban and land use planners","city planner|land use planner|urban planner"],["21203","Land surveyors","land surveyor|surveyor"],["21210","Mathematicians, statisticians and actuaries","actuary|mathematician|statistician"],["21211","Data scientists","ai engineer|data scientist|machine learning engineer|ml engineer"],["21220","Cybersecurity specialists","cybersecurity specialist|information security analyst|infosec|security analyst"],["21221","Business systems specialists","business systems analyst|systems analyst"],["21222","Information systems specialists","information systems specialist|it specialist"],["21223","Database analysts and data administrators","database administrator|database analyst|dba"],["21230","Computer systems developers and programmers","application developer|backend developer|full stack developer|java developer|programmer|python developer|software developer|software engineer|systems developer"],["21231","Software engineers and designers","software architect|software designer|software engineer"],["21232","Software developers and programmers","android developer|coder|developer|ios developer|mobile developer|software developer"],["21233","Web designers","product designer|ui designer|ux designer|web designer"],["21234","Web developers and programmers","front end developer|frontend developer|web developer|wordpress developer"],["21300","Civil engineers","civil engineer|structural engineer"],["21301","Mechanical engineers","mechanical engineer"],["21310","Electrical and electronics engineers","electrical engineer|electronics engineer"],["21311","Computer engineers","computer engineer|hardware engineer"],["21320","Chemical engineers","chemical engineer"],["21321","Industrial and manufacturing engineers","industrial engineer|manufacturing engineer|process engineer"],["21322","Metallurgical and materials engineers","materials engineer|metallurgical engineer"],["21330","Mining engineers","mining engineer"],["21331","Geological engineers","geological engineer"],["21332","Petroleum engineers","petroleum engineer"],["21390","Aerospace engineers","aerospace engineer"],["21399","Other professional engineers","engineer|professional engineer"],["22100","Chemical technologists and technicians","chemical technologist|lab technician chemistry"],["22101","Geological and mineral technologists and technicians","geological technician"],["22110","Biological technologists and technicians","biological technologist|lab technician biology"],["22111","Agricultural and fish products inspectors","fish inspector|food inspector"],["22112","Forestry technologists and technicians","forestry technician"],["22113","Conservation and fishery officers","conservation officer|fishery officer"],["22114","Landscape and horticulture technicians and specialists","horticulture technician|landscape technician"],["22210","Architectural technologists and technicians","architectural technician|architectural technologist"],["22211","Industrial designers","industrial designer|product designer"],["22212","Drafting technologists and technicians","autocad drafter|cad technician|drafter|draftsman"],["22213","Land survey technologists and technicians","survey technician"],["22214","Technical occupations in geomatics and meteorology","geomatics technician|gis technician"],["22220","Computer network and web technicians","desktop support|help desk|it support|it technician|network administrator|network technician|sysadmin|system administrator"],["22221","User support technicians","help desk technician|support technician|technical support|user support technician"],["22222","Information systems testing technicians","qa analyst|qa tester|quality assurance analyst|software tester"],["22230","Non-destructive testers and inspection technicians","inspection technician|ndt technician"],["22231","Engineering inspectors and regulatory officers","building inspector|engineering inspector"],["22232","Occupational health and safety specialists","health and safety specialist|ohs specialist|safety coordinator"],["22233","Construction estimators","construction estimator|cost estimator|estimator|quantity surveyor"],["22300","Civil engineering technologists and technicians","civil engineering technologist|civil technician"],["22301","Mechanical engineering technologists and technicians","mechanical technician|mechanical technologist"],["22302","Industrial engineering and manufacturing technologists and technicians","industrial technologist|manufacturing technician"],["22303","Construction inspectors","construction inspector"],["22310","Electrical and electronics engineering technologists and technicians","electrical technologist|electronics technician"],["22311","Electronic service technicians","electronic service technician"],["22312","Industrial instrument technicians and mechanics","instrument mechanic|instrumentation technician"],["22313","Aircraft instrument, electrical and avionics mechanics","aircraft electrician|avionics technician"],["30010","Managers in health care","clinical manager|director of care|health care manager|nursing manager"],["31100","Specialists in clinical and laboratory medicine","clinical specialist|medical specialist|pathologist"],["31101","Specialists in surgery","neurosurgeon|orthopedic surgeon|surgeon"],["31102","General practitioners and family physicians","doctor|family doctor|family physician|general practitioner|gp|md|physician"],["31103","Veterinarians","vet|veterinarian"],["31110","Dentists","dental surgeon|dentist"],["31111","Optometrists","optometrist"],["31112","Audiologists and speech-language pathologists","audiologist|slp|speech language pathologist|speech therapist"],["31120","Pharmacists","pharmacist"],["31121","Dietitians and nutritionists","dietitian|nutritionist|registered dietitian"],["31200","Psychologists","clinical psychologist|psychologist"],["31201","Chiropractors","chiropractor"],["31202","Physiotherapists","physical therapist|physiotherapist|pt"],["31203","Occupational therapists","occupational therapist|ot"],["31204","Kinesiologists and other professional occupations in therapy and assessment","kinesiologist"],["31209","Other professional occupations in health diagnosing and treating","naturopath|podiatrist"],["31300","Nursing coordinators and supervisors","charge nurse|nurse coordinator|nursing supervisor"],["31301","Registered nurses and registered psychiatric nurses","er nurse|icu nurse|nurse|psychiatric nurse|registered nurse|rn|staff nurse"],["31302","Nurse practitioners","np|nurse practitioner"],["31303","Physician assistants, midwives and allied health professionals","allied health|midwife|physician assistant"],["32100","Opticians","dispensing optician|optician"],["32101","Licensed practical nurses","licensed practical nurse|lpn|practical nurse|rpn"],["32102","Paramedical occupations","advanced care paramedic|emt|paramedic|primary care paramedic"],["32103","Respiratory therapists and clinical perfusionists","perfusionist|respiratory therapist|rt"],["32104","Animal health technologists and veterinary technicians","animal health technologist|vet tech|veterinary technician"],["32109","Other technical occupations in therapy and assessment","rehabilitation assistant|therapy assistant"],["32110","Denturists","denturist"],["32111","Dental hygienists and dental therapists","dental hygienist|dental therapist|hygienist"],["32112","Dental technologists and technicians","dental technician|dental technologist"],["32120","Medical laboratory technologists","lab technologist|medical laboratory technologist|mlt"],["32121","Medical radiation technologists","medical radiation technologist|mri technologist|radiation therapist|x ray technologist"],["32122","Medical sonographers","medical sonographer|sonographer|ultrasound technologist"],["32123","Cardiology technologists and electrophysiological diagnostic technologists","cardiology technologist|ecg technologist"],["32124","Pharmacy technicians","pharmacy tech|pharmacy technician"],["32129","Other medical technologists and technicians","medical technologist"],["32200","Traditional Chinese medicine practitioners and acupuncturists","acupuncturist|tcm practitioner"],["32201","Massage therapists","massage therapist|registered massage therapist|rmt"],["32209","Other practitioners of natural healing","naturopathic practitioner"],["33100","Dental assistants and dental laboratory assistants","dental assistant|dental lab assistant"],["33101","Medical laboratory assistants and related technical occupations","lab assistant|medical laboratory assistant|phlebotomist"],["33102","Nurse aides, orderlies and patient service associates","care aide|hca|health care aide|nurse aide|orderly|patient service associate|personal support worker|psw"],["33103","Pharmacy technical assistants and pharmacy assistants","pharmacy assistant"],["33109","Other assisting occupations in support of health services","health services assistant"],["40010","Government managers, health and social policy development","government manager health"],["40011","Government managers, economic analysis and policy development","government manager economic"],["40012","Government managers, education policy development","government manager education"],["40019","Other managers in public administration","public administration manager"],["40020","Administrators, post-secondary education and vocational training","college administrator|registrar|university administrator"],["40021","School principals and administrators of elementary and secondary education","principal|school administrator|vice principal"],["40030","Managers in social, community and correctional services","community services manager|social services manager"],["40040","Commissioned police officers and related occupations in public protection services","commissioned officer|police inspector"],["40041","Fire chiefs and senior firefighting officers","fire chief"],["40042","Commissioned officers of the Canadian Armed Forces","military officer"],["41100","Judges","judge|justice"],["41101","Lawyers and Quebec notaries","attorney|barrister|corporate lawyer|immigration lawyer|lawyer|litigator|solicitor"],["41200","University professors and lecturers","assistant professor|lecturer|professor|university professor"],["41201","Post-secondary teaching and research assistants","research assistant|ta|teaching assistant"],["41210","College and other vocational instructors","college instructor|college professor|trainer|vocational instructor"],["41220","Secondary school teachers","high school teacher|secondary school teacher|teacher"],["41221","Elementary school and kindergarten teachers","elementary teacher|kindergarten teacher|primary teacher|teacher"],["41300","Social workers","clinical social worker|msw|social worker"],["41301","Therapists in counselling and related specialized therapies","addictions counsellor|counsellor|mental health counsellor|psychotherapist|therapist"],["41302","Religious leaders","imam|pastor|priest|rabbi|religious leader"],["41310","Police investigators and other investigative occupations","investigator|police detective"],["41311","Probation and parole officers","parole officer|probation officer"],["41320","Educational counsellors","academic advisor|educational counsellor|guidance counsellor"],["41321","Career development practitioners and career counsellors","career coach|career counsellor|employment counsellor"],["41400","Natural and applied science policy researchers, consultants and program officers","science policy officer"],["41401","Economists and economic policy researchers and analysts","economic analyst|economist"],["41402","Business development officers and market researchers and analysts","bdm|business development officer|market research analyst|market researcher"],["41403","Social policy researchers, consultants and program officers","policy analyst|program officer|social policy officer"],["41404","Health policy researchers, consultants and program officers","health policy analyst"],["41405","Education policy researchers, consultants and program officers","education policy analyst"],["41406","Recreation, sports and fitness policy researchers, consultants and program officers","recreation policy officer"],["41407","Program officers unique to government","border services officer|government program officer|immigration officer"],["41409","Other professional occupations in social science","anthropologist|sociologist"],["42100","Police officers (except commissioned)","constable|cop|police officer|rcmp officer"],["42101","Firefighters","fire fighter|firefighter"],["42102","Specialized members of the Canadian Armed Forces","armed forces member|soldier"],["42200","Paralegal and related occupations","law clerk|paralegal"],["42201","Social and community service workers","case worker|community worker|outreach worker|settlement worker|social service worker|youth worker"],["42202","Early childhood educators and assistants","childcare worker|daycare teacher|early childhood assistant|early childhood educator|ece|preschool teacher"],["42203","Instructors of persons with disabilities","disability instructor|special needs instructor"],["42204","Indigenous natural resource and environmental officers","indigenous environmental officer"],["43100","Elementary and secondary school teacher assistants","ea|educational assistant|teacher assistant|teaching assistant school"],["43109","Other instructors","driving instructor|esl instructor|instructor|language instructor"],["43200","Sheriffs and bailiffs","bailiff|sheriff"],["43201","Correctional service officers","correctional officer|corrections officer|prison guard"],["43202","By-law enforcement and other regulatory officers","bylaw officer|enforcement officer|parking enforcement"],["43203","Border services, customs, and immigration officers","border services officer|cbsa officer|customs officer"],["44100","Home child care providers","babysitter|caregiver child|home child care provider|nanny"],["44101","Home support workers, caregivers and related occupations","caregiver|home support worker|live in caregiver|personal care attendant"],["44200","Primary combat members of the Canadian Armed Forces","combat member|infantry"],["45100","Student monitors, crossing guards and related occupations","crossing guard|lunch monitor|student monitor"],["50010","Library, archive, museum and art gallery managers","gallery manager|library manager|museum manager"],["50011","Managers, publishing, motion pictures, broadcasting and performing arts","broadcasting manager|production manager film|publishing manager"],["50012","Recreation, sports and fitness program supervisors and consultants","fitness program manager|recreation supervisor"],["51100","Librarians","librarian"],["51101","Conservators and curators","conservator|curator"],["51102","Archivists","archivist"],["51110","Editors","copy editor|editor|managing editor"],["51111","Authors and writers (except technical)","author|content writer|copywriter|novelist|writer"],["51112","Technical writers","documentation specialist|technical writer"],["51113","Journalists","journalist|news reporter|reporter"],["51114","Translators, terminologists and interpreters","interpreter|terminologist|translator"],["51120","Producers, directors, choreographers and related occupations","choreographer|director|film director|producer|video producer"],["51121","Conductors, composers and arrangers","arranger|composer|conductor"],["51122","Musicians and singers","musician|singer|vocalist"],["52100","Library and public archive technicians","archive technician|library technician"],["52110","Film and video camera operators","camera operator|cinematographer|dop|videographer"],["52111","Graphic arts technicians","graphic arts technician|prepress technician"],["52112","Broadcast technicians","broadcast technician"],["52113","Audio and video recording technicians","audio engineer|audio technician|sound engineer|video editor"],["52114","Announcers and other broadcasters","announcer|broadcaster|radio host"],["52119","Other technical and coordinating occupations in motion pictures and broadcasting","film crew|production assistant"],["52120","Graphic designers and illustrators","brand designer|graphic designer|illustrator|visual designer"],["52121","Interior designers and interior decorators","interior decorator|interior designer"],["53100","Registrars, restorers, interpreters and other occupations in museums and art galleries","museum interpreter|restorer"],["53110","Photographers","photographer|wedding photographer"],["53111","Motion pictures, broadcasting, photography and performing arts assistants","broadcast assistant|photography assistant"],["53120","Dancers","dancer"],["53121","Actors, comedians and circus performers","actor|actress|comedian|performer"],["53122","Painters, sculptors and other visual artists","artist|painter artist|sculptor|visual artist"],["53200","Athletes","athlete|professional athlete"],["53201","Coaches","coach|sports coach"],["53202","Sports officials and referees","referee|sports official|umpire"],["54100","Program leaders and instructors in recreation, sport and fitness","fitness instructor|personal trainer|recreation leader|swim instructor|yoga instructor"],["55109","Other performers","performer"],["60010","Corporate sales managers","corporate sales manager|director of sales|sales manager"],["60020","Retail and wholesale trade managers","assistant store manager|retail manager|store manager|wholesale manager"],["60030","Restaurant and food service managers","cafe manager|food service manager|kitchen manager|restaurant manager"],["60031","Accommodation service managers","accommodation manager|hotel manager|motel manager"],["60040","Managers in customer and personal services","customer service manager|personal services manager|salon manager"],["62010","Retail sales supervisors","department supervisor|retail supervisor|sales supervisor"],["62020","Food service supervisors","food service supervisor|restaurant supervisor|shift supervisor restaurant"],["62021","Executive housekeepers","executive housekeeper|housekeeping manager"],["62022","Accommodation, travel, tourism and related services supervisors","hotel supervisor|tourism supervisor"],["62023","Customer and information services supervisors","call centre supervisor|customer service supervisor"],["62024","Cleaning supervisors","cleaning supervisor|janitorial supervisor"],["62029","Other services supervisors","services supervisor"],["62100","Technical sales specialists, wholesale trade","account executive|b2b sales|sales engineer|technical sales specialist"],["62101","Retail and wholesale buyers","merchandiser|retail buyer|wholesale buyer"],["62200","Chefs","chef|executive chef|head chef|sous chef"],["62201","Funeral directors and embalmers","embalmer|funeral director"],["63100","Insurance agents and brokers","insurance advisor|insurance agent|insurance broker"],["63101","Real estate agents and salespersons","real estate agent|real estate salesperson|realtor"],["63102","Financial sales representatives","financial sales representative|mortgage agent|mortgage specialist"],["63200","Cooks","cook|line cook|prep cook|short order cook"],["63201","Butchers, meat cutters and fishmongers","butcher|fishmonger|meat cutter"],["63202","Bakers","baker|pastry chef"],["63210","Hairstylists and barbers","barber|hairdresser|hairstylist|stylist"],["63211","Estheticians, electrologists and related occupations","beautician|esthetician|lash technician|nail technician"],["63220","Shoe repairers and shoemakers","cobbler|shoe repairer"],["63221","Jewellers, jewellery and watch repairers","jeweller|watch repairer"],["63222","Upholsterers","upholsterer"],["64100","Retail salespersons and visual merchandisers","retail clerk|retail sales associate|sales associate|salesperson|visual merchandiser"],["64101","Sales and account representatives, wholesale trade","account manager|account representative|inside sales|sales representative"],["64200","Tailors, dressmakers, furriers and milliners","dressmaker|seamstress|tailor"],["64201","Dry cleaning, laundry and related occupations","dry cleaner|laundry worker"],["64202","Pet groomers and animal care workers","animal care worker|dog groomer|kennel attendant|pet groomer"],["64300","Maitres d'hotel and hosts/hostesses","host|hostess|maitre d"],["64301","Bartenders","barman|bartender"],["64310","Travel counsellors","travel agent|travel consultant|travel counsellor"],["64311","Pursers and flight attendants","cabin crew|flight attendant|purser"],["64312","Airline ticket and service agents","airline agent|gate agent|ticket agent"],["64313","Ground and water transport ticket agents, cargo service representatives","cargo agent|transport ticket agent"],["64314","Hotel front desk clerks","front desk clerk|guest services agent|hotel front desk clerk"],["64320","Tour and travel guides","tour guide|travel guide"],["64321","Casino occupations","casino dealer|croupier"],["64322","Outdoor sport and recreational guides","fishing guide|outdoor guide|ski instructor"],["64400","Customer services representatives, financial institutions","bank teller|customer service representative bank"],["64401","Postal services representatives","post office clerk|postal clerk"],["64409","Other customer and information services representatives","call centre agent|contact centre agent|csr|customer service representative|customer support"],["64410","Security guards and related security service occupations","loss prevention|security guard|security officer"],["65100","Cashiers","cashier|checkout clerk"],["65101","Service station attendants","gas station attendant|service station attendant"],["65102","Store shelf stockers, clerks and order fillers","grocery clerk|order filler|shelf stocker|stock clerk"],["65109","Other sales related occupations","door to door sales|sales clerk"],["65200","Food and beverage servers","food and beverage server|server|waiter|waitress"],["65201","Food counter attendants, kitchen helpers and related support occupations","barista|dishwasher|fast food worker|food counter attendant|kitchen helper"],["65202","Meat cutters and fishmongers, retail and wholesale","meat cutter retail"],["65210","Support occupations in accommodation, travel and facilities set-up services","banquet server|bellhop|event setup|hotel porter"],["65211","Operators and attendants in amusement, recreation and sport","amusement attendant|recreation attendant"],["65220","Pet groomers and animal care workers","animal attendant"],["65229","Other service support occupations","service support worker"],["65310","Light duty cleaners","cleaner|housekeeper|janitor|light duty cleaner|room attendant"],["65311","Specialized cleaners","carpet cleaner|specialized cleaner|window cleaner"],["65312","Janitors, caretakers and heavy-duty cleaners","building cleaner|caretaker|custodian|heavy duty cleaner|janitor"],["65320","Dry cleaning and laundry support occupations","laundry attendant"],["65329","Other service support occupations","service attendant"],["70010","Construction managers","construction manager|project manager construction|site manager"],["70011","Home building and renovation managers","home builder|renovation manager"],["70012","Facility operation and maintenance managers","facility manager|maintenance manager|property operations manager"],["70020","Managers in transportation","fleet manager|logistics manager|transportation manager"],["70021","Postal and courier services managers","courier services manager"],["72010","Contractors and supervisors, machining, metal forming, shaping and erecting trades","machining supervisor|metal trades supervisor"],["72011","Contractors and supervisors, electrical trades and telecommunications","electrical contractor|electrical supervisor"],["72012","Contractors and supervisors, pipefitting trades","pipefitting supervisor|plumbing contractor"],["72013","Contractors and supervisors, carpentry trades","carpentry contractor|carpentry supervisor"],["72014","Contractors and supervisors, other construction trades, installers, repairers and servicers","construction supervisor|general contractor|site supervisor"],["72020","Contractors and supervisors, mechanic trades","mechanic supervisor|shop foreman"],["72021","Contractors and supervisors, heavy equipment operator crews","heavy equipment supervisor"],["72022","Supervisors, printing and related occupations","printing supervisor"],["72023","Supervisors, railway transport operations","railway supervisor"],["72024","Supervisors, motor transport and other ground transit operators","dispatch supervisor|transit supervisor|transport supervisor"],["72025","Supervisors, mail and message distribution occupations","mail supervisor"],["72100","Machinists and machining and tooling inspectors","cnc machinist|machinist|tool and die maker"],["72101","Tool and die makers","tool and die maker"],["72102","Sheet metal workers","sheet metal worker|tinsmith"],["72103","Boilermakers","boilermaker"],["72104","Structural metal and platework fabricators and fitters","platework fitter|structural fabricator"],["72105","Ironworkers","ironworker|structural steel worker"],["72106","Welders and related machine operators","fabricator|mig welder|tig welder|welder|welding operator"],["72200","Electricians (except industrial and power system)","construction electrician|electrician|journeyman electrician"],["72201","Industrial electricians","industrial electrician"],["72202","Power system electricians","power system electrician"],["72203","Electrical power line and cable workers","cable worker|lineman|power line technician"],["72204","Telecommunications line and cable installers and repairers","cable installer|telecom line installer"],["72205","Telecommunications equipment installation and cable television service technicians","cable technician|telecom technician"],["72300","Plumbers","journeyman plumber|plumber"],["72301","Steamfitters, pipefitters and sprinkler system installers","pipefitter|sprinkler installer|steamfitter"],["72302","Gas fitters","gas fitter"],["72310","Carpenters","carpenter|finish carpenter|framer|journeyman carpenter"],["72311","Cabinetmakers","cabinet maker|cabinetmaker"],["72320","Bricklayers","brick mason|bricklayer|mason"],["72321","Insulators","insulator"],["72400","Construction millwrights and industrial mechanics","industrial mechanic|millwright"],["72401","Heavy-duty equipment mechanics","diesel mechanic|heavy duty mechanic|heavy equipment mechanic"],["72402","Heating, refrigeration and air conditioning mechanics","hvac|hvac mechanic|hvac technician|refrigeration mechanic"],["72403","Railway carmen and carwomen","railway carman"],["72404","Aircraft mechanics and aircraft inspectors","aircraft maintenance engineer|aircraft mechanic|ame"],["72405","Machine fitters","machine fitter"],["72406","Elevator constructors and mechanics","elevator constructor|elevator mechanic"],["72410","Automotive service technicians, truck and bus mechanics and mechanical repairers","auto mechanic|automotive technician|bus mechanic|mechanic|service technician|truck mechanic"],["72411","Auto body collision, refinishing and glass technicians","auto body technician|auto glass technician|collision repair"],["72420","Small engine and equipment mechanics","small engine mechanic"],["72422","Electrical mechanics","electrical mechanic"],["72423","Motorcycle, all-terrain vehicle and other related mechanics","motorcycle mechanic"],["72500","Crane operators","crane operator|mobile crane operator|tower crane operator"],["72501","Water well drillers","water well driller"],["72600","Air pilots, flight engineers and flying instructors","airline pilot|commercial pilot|flight instructor|pilot"],["72601","Air traffic controllers and related occupations","air traffic controller"],["72602","Deck officers, water transport","deck officer|ship captain"],["72603","Engineer officers, water transport","marine engineer officer"],["72604","Railway traffic controllers and marine traffic regulators","railway traffic controller"],["72999","Other technical trades and related occupations","technical trades worker"],["73100","Concrete finishers","cement finisher|concrete finisher"],["73101","Tilesetters","tile installer|tilesetter"],["73102","Plasterers, drywall installers and finishers and lathers","drywall installer|drywaller|plasterer|taper"],["73110","Roofers and shinglers","roofer|shingler"],["73111","Glaziers","glazier"],["73112","Painters and decorators (except interior decorators)","house painter|industrial painter|painter"],["73113","Floor covering installers","carpet installer|floor covering installer|flooring installer"],["73200","Residential and commercial installers and servicers","appliance installer|door installer|installer|window installer"],["73201","General building maintenance workers and building superintendents","building maintenance|building superintendent|maintenance worker|super"],["73202","Pest controllers and fumigators","exterminator|pest control technician"],["73209","Other repairers and servicers","repairer|servicer"],["73300","Transport truck drivers","az driver|delivery driver truck|long haul driver|semi driver|tractor trailer driver|truck driver"],["73301","Bus drivers, subway operators and other transit operators","bus driver|school bus driver|subway operator|transit operator"],["73310","Railway and yard locomotive engineers","locomotive engineer"],["73311","Railway conductors and brakemen and brakewomen","brakeman|railway conductor"],["73400","Heavy equipment operators","backhoe operator|bulldozer operator|excavator operator|heavy equipment operator"],["73401","Printing press operators","press operator|printing press operator"],["73402","Drillers and blasters, surface mining, quarrying and construction","blaster|driller"],["74100","Mail and message distribution occupations","courier|letter carrier|mail carrier|postal worker"],["74101","Couriers and messengers","bike courier|courier|messenger"],["74200","Railway yard and track maintenance workers","railway track worker"],["74201","Water transport deck and engine room crew","deckhand|engine room crew"],["74202","Air transport ramp attendants","baggage handler|ramp attendant"],["74203","Automotive and heavy truck and equipment parts installers and servicers","parts installer|tire technician"],["74204","Utility maintenance workers","utility maintenance worker"],["74205","Public works maintenance equipment operators and related workers","public works operator|snow plow operator"],["75100","Longshore workers","dock worker|longshore worker"],["75101","Material handlers","forklift operator|material handler|picker packer|warehouse associate|warehouse worker"],["75110","Construction trades helpers and labourers","construction helper|construction labourer|general labourer|labourer"],["75119","Other trades helpers and labourers","trades helper"],["75200","Taxi and limousine drivers and chauffeurs","chauffeur|limousine driver|rideshare driver|taxi driver|uber driver"],["75201","Delivery service drivers and door-to-door distributors","courier driver|delivery driver|food delivery"],["75210","Boat and cable ferry operators and related occupations","boat operator|ferry operator"],["75211","Railway and motor transport labourers","transport labourer"],["80010","Managers in natural resources production and fishing","fishing manager|natural resources manager"],["80020","Managers in agriculture","agriculture manager|farm manager"],["80021","Managers in horticulture","greenhouse manager|horticulture manager"],["80022","Managers in aquaculture","aquaculture manager"],["82010","Supervisors, logging and forestry","forestry supervisor|logging supervisor"],["82020","Supervisors, mining and quarrying","mining supervisor"],["82021","Contractors and supervisors, oil and gas drilling and services","oil and gas supervisor"],["82030","Agricultural service contractors and farm supervisors","agricultural contractor|farm supervisor"],["82031","Contractors and supervisors, landscaping, grounds maintenance and horticulture services","grounds supervisor|landscaping supervisor"],["83100","Underground production and development miners","miner|underground miner"],["83101","Oil and gas well drillers, servicers, testers and related workers","oil well driller|rig worker"],["83110","Logging machinery operators","logging machine operator"],["83120","Fishing masters and officers","fishing master"],["83121","Fishermen/women","fisher|fisherman"],["84100","Machine operators in mineral and metal processing","mine machine operator"],["84101","Underground mine service and support workers","mine service worker"],["84102","Oil and gas well servicing operators","well servicing operator"],["84110","Chain saw and skidder operators","chainsaw operator|skidder operator"],["84111","Silviculture and forestry workers","forestry worker|silviculture worker|tree planter"],["84120","Specialized livestock workers and farm machinery operators","farm machinery operator|livestock worker"],["84121","Fishing vessel deckhands","fishing deckhand"],["85100","Livestock labourers","farm hand|livestock labourer"],["85101","Harvesting labourers","farm labourer|fruit picker|harvesting labourer"],["85102","Aquaculture and marine harvest labourers","aquaculture labourer"],["85103","Nursery and greenhouse labourers","greenhouse worker|nursery worker"],["85104","Trappers and hunters","hunter|trapper"],["85110","Mine labourers","mine labourer"],["85111","Oil and gas drilling, servicing and related labourers","oil field labourer|rig labourer"],["85120","Logging and forestry labourers","logging labourer"],["85121","Landscaping and grounds maintenance labourers","groundskeeper|landscaper|landscaping labourer|lawn care worker"],["90010","Manufacturing managers","manufacturing manager|plant manager|production manager"],["90011","Utilities managers","utilities manager"],["92010","Supervisors, mineral and metal processing","mineral processing supervisor"],["92011","Supervisors, petroleum, gas and chemical processing and utilities","chemical processing supervisor"],["92012","Supervisors, food and beverage processing","food processing supervisor"],["92013","Supervisors, plastic and rubber products manufacturing","plastics supervisor"],["92014","Supervisors, forest products processing","forest products supervisor"],["92015","Supervisors, textile, fabric, fur and leather products processing","textile supervisor"],["92020","Supervisors, motor vehicle assembling","motor vehicle assembly supervisor"],["92021","Supervisors, electronics and electrical products manufacturing","electronics manufacturing supervisor"],["92022","Supervisors, furniture and fixtures manufacturing","furniture manufacturing supervisor"],["92023","Supervisors, other mechanical and metal products manufacturing","metal products supervisor"],["92024","Supervisors, other products manufacturing and assembly","assembly supervisor|production supervisor"],["92100","Power engineers and power systems operators","power engineer|power systems operator|stationary engineer"],["92101","Water and waste treatment plant operators","wastewater operator|water treatment operator"],["93100","Central control and process operators, mineral and metal processing","process operator mineral"],["93101","Central control and process operators, petroleum, gas and chemical processing","process operator chemical|refinery operator"],["93102","Pulping, papermaking and coating control operators","paper mill operator"],["93200","Aircraft assemblers and aircraft assembly inspectors","aircraft assembler"],["94100","Machine operators, mineral and metal processing","machine operator metal"],["94101","Foundry workers","foundry worker"],["94102","Glass forming and finishing machine operators and glass cutters","glass machine operator"],["94103","Concrete, clay and stone forming operators","concrete forming operator"],["94104","Inspectors and testers, mineral and metal processing","metal inspector"],["94105","Metalworking and forging machine operators","metalworking machine operator"],["94106","Machining tool operators","cnc operator|machine tool operator"],["94107","Machine operators of other metal products","metal products machine operator"],["94110","Chemical plant machine operators","chemical plant operator"],["94111","Plastics processing machine operators","injection molding operator|plastics machine operator"],["94112","Rubber processing machine operators and related workers","rubber machine operator"],["94120","Sawmill machine operators","sawmill operator"],["94121","Pulp mill, papermaking and finishing machine operators","pulp mill operator"],["94122","Paper converting machine operators","paper converting operator"],["94123","Lumber graders and other wood processing inspectors and graders","lumber grader"],["94124","Woodworking machine operators","woodworking machine operator"],["94129","Other wood processing machine operators","wood processing operator"],["94130","Textile fibre and yarn, hide and pelt processing machine operators","textile machine operator"],["94131","Weavers, knitters and other fabric making occupations","knitter|weaver"],["94132","Industrial sewing machine operators","industrial sewer|sewing machine operator"],["94133","Inspectors and graders, textile, fabric, fur and leather products","textile inspector"],["94140","Process control and machine operators, food and beverage processing","food processing operator"],["94141","Industrial butchers and meat cutters, poultry preparers and related workers","industrial butcher|meat processor|poultry worker"],["94142","Fish and seafood plant workers","fish plant worker|seafood processor"],["94143","Testers and graders, food and beverage processing","food grader"],["94150","Plateless printing equipment operators","printing equipment operator"],["94151","Camera, platemaking and other prepress occupations","prepress operator"],["94152","Binding and finishing machine operators","bindery operator"],["94200","Motor vehicle assemblers, inspectors and testers","auto plant worker|automotive assembler|vehicle assembler"],["94201","Electronics assemblers, fabricators, inspectors and testers","electronics assembler|pcb assembler"],["94202","Assemblers and inspectors, electrical appliance, apparatus and equipment manufacturing","appliance assembler"],["94203","Assemblers, fabricators and inspectors, industrial electrical motors and transformers","motor assembler"],["94204","Mechanical assemblers and inspectors","mechanical assembler"],["94205","Machine operators and inspectors, electrical apparatus manufacturing","electrical apparatus operator"],["94210","Furniture and fixture assemblers, finishers, refinishers and inspectors","furniture assembler"],["94211","Assemblers and inspectors of other wood products","wood products assembler"],["94212","Plastic products assemblers, finishers and inspectors","plastics assembler"],["94213","Industrial painters, coaters and metal finishing process operators","industrial painter|powder coater"],["94219","Other products assemblers, finishers and inspectors","assembler|production assembler"],["95100","Labourers in mineral and metal processing","metal processing labourer"],["95101","Labourers in metal fabrication","metal fabrication labourer"],["95102","Labourers in chemical products processing and utilities","chemical plant labourer"],["95103","Labourers in wood, pulp and paper processing","wood processing labourer"],["95104","Labourers in rubber and plastic products manufacturing","plastics labourer"],["95105","Labourers in textile processing and cutting","textile labourer"],["95106","Labourers in food and beverage processing","food processing labourer|production worker food"],["95107","Labourers in fish and seafood processing","seafood labourer"],["95109","Other labourers in processing, manufacturing and utilities","factory worker|general labourer manufacturing|production labourer"]],"categoryPoints":{"0":4,"1":4,"2":6,"3":10,"4":4,"5":2,"6":2,"7":8,"8":4,"9":4},"categoryNames":{"0":"Legislative and senior management","1":"Business, finance and administration","2":"Natural and applied sciences","3":"Health","4":"Education, law, social, community and government services","5":"Art, culture, recreation and sport","6":"Sales and service","7":"Trades, transport and equipment operators","8":"Natural resources, agriculture and related production","9":"Manufacturing and utilities"},"teerPoints":{"0":9,"1":9,"2":6,"3":6,"4":0,"5":0}};
+
+  var occInput   = document.getElementById('occInput');
+  var occResults = document.getElementById('occResults');
+  var occClear   = document.getElementById('occClear');
+  var occSearch  = document.getElementById('occSearch');
+  var occPicked  = document.getElementById('occPicked');
+  var occPT      = document.getElementById('occPickedTitle');
+  var occPM      = document.getElementById('occPickedMeta');
+  var mToggle    = document.getElementById('occManualToggle');
+  var mPanel     = document.getElementById('occManual');
+  var mTeer      = document.getElementById('mTeer');
+  var mCat       = document.getElementById('mCat');
+
+  var TEER_PTS = { '0':9, '1':9, '2':6, '3':6, '4':0, '5':0 };
+  var TEER_LABEL = { '0':'TEER 0', '1':'TEER 1', '2':'TEER 2', '3':'TEER 3', '4':'TEER 4', '5':'TEER 5' };
+
+  // Build the search index once. Each entry: code, title, alias string.
+  var INDEX = NOC.occupations.map(function(o){
+    return { code:o[0], title:o[1], alias:o[2], hay:(o[1] + ' ' + o[2]).toLowerCase() };
+  });
+
+  function norm(s){
+    return s.toLowerCase().replace(/[^a-z0-9 ]+/g,' ').replace(/\s+/g,' ').trim();
+  }
+
+  // Score a match. Exact alias > alias prefix > title prefix > word start > substring.
+  function scoreEntry(e, q){
+    var aliases = e.alias ? e.alias.split('|') : [];
+    var t = e.title.toLowerCase();
+    var best = 0;
+    for(var i=0;i<aliases.length;i++){
+      var a = aliases[i];
+      if(a === q) return 1000;
+      if(a.indexOf(q) === 0) best = Math.max(best, 700 - a.length);
+      else if(a.indexOf(' ' + q) > -1) best = Math.max(best, 500 - a.length);
+      else if(a.indexOf(q) > -1) best = Math.max(best, 300 - a.length);
+    }
+    if(t === q) return 950;
+    if(t.indexOf(q) === 0) best = Math.max(best, 650 - t.length * 0.2);
+    else if(t.indexOf(' ' + q) > -1) best = Math.max(best, 460 - t.length * 0.2);
+    else if(t.indexOf(q) > -1) best = Math.max(best, 260 - t.length * 0.2);
+    if(e.code.indexOf(q) === 0) best = Math.max(best, 900);
+    return best;
+  }
+
+  function search(raw){
+    var q = norm(raw);
+    if(q.length < 2) return [];
+    var out = [];
+    for(var i=0;i<INDEX.length;i++){
+      var s = scoreEntry(INDEX[i], q);
+      if(s > 0) out.push({ e:INDEX[i], s:s });
+    }
+    // Multi-word fallback: require every token to appear somewhere.
+    if(out.length === 0 && q.indexOf(' ') > -1){
+      var toks = q.split(' ');
+      for(var j=0;j<INDEX.length;j++){
+        var hay = INDEX[j].hay, all = true;
+        for(var k=0;k<toks.length;k++){ if(hay.indexOf(toks[k]) === -1){ all = false; break; } }
+        if(all) out.push({ e:INDEX[j], s:100 });
+      }
+    }
+    out.sort(function(a,b){ return b.s - a.s || a.e.title.length - b.e.title.length; });
+    return out.slice(0, 8).map(function(x){ return x.e; });
+  }
+
+  var activeIdx = -1;
+  var currentHits = [];
+
+  function closeResults(){
+    occResults.classList.remove('open');
+    occInput.setAttribute('aria-expanded','false');
+    activeIdx = -1;
+  }
+
+  function renderResults(hits){
+    currentHits = hits;
+    occResults.innerHTML = '';
+    activeIdx = -1;
+
+    if(!hits.length){
+      var n = document.createElement('div');
+      n.className = 'x-nohit';
+      n.textContent = 'No match. Try a different wording, or choose TEER and category manually below.';
+      occResults.appendChild(n);
+      occResults.classList.add('open');
+      occInput.setAttribute('aria-expanded','true');
+      return;
+    }
+
+    hits.forEach(function(h, i){
+      var teer = h.code.charAt(1);
+      var cat  = h.code.charAt(0);
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'x-hit';
+      b.setAttribute('role','option');
+      b.dataset.i = i;
+
+      var t = document.createElement('span');
+      t.className = 'x-hit-t';
+      t.textContent = h.title;
+
+      var m = document.createElement('span');
+      m.className = 'x-hit-m';
+      var codeEl = document.createElement('span');
+      codeEl.className = 'x-hit-code';
+      codeEl.textContent = 'NOC ' + h.code;
+      m.appendChild(codeEl);
+      m.appendChild(document.createTextNode(
+        '  ·  ' + TEER_LABEL[teer] + '  ·  ' + NOC.categoryNames[cat]
+      ));
+
+      b.appendChild(t); b.appendChild(m);
+      b.addEventListener('click', function(){ pick(h); });
+      occResults.appendChild(b);
+    });
+
+    occResults.classList.add('open');
+    occInput.setAttribute('aria-expanded','true');
+  }
+
+  function setActive(i){
+    var nodes = occResults.querySelectorAll('.x-hit');
+    if(!nodes.length) return;
+    if(i < 0) i = nodes.length - 1;
+    if(i >= nodes.length) i = 0;
+    nodes.forEach(function(n){ n.classList.remove('act'); });
+    nodes[i].classList.add('act');
+    nodes[i].scrollIntoView({ block:'nearest' });
+    activeIdx = i;
+  }
+
+  function pick(h){
+    var teerDigit = h.code.charAt(1);
+    var catDigit  = h.code.charAt(0);
+    var teerPts   = TEER_PTS[teerDigit];
+    var catPts    = NOC.categoryPoints[catDigit];
+
+    state.teer = teerPts;
+    state.cat  = catPts;
+    state.occCode = h.code;
+
+    occInput.value = h.title;
+    occSearch.classList.add('filled');
+    closeResults();
+
+    occPT.textContent = h.title;
+    occPM.innerHTML = 'NOC <b>' + h.code + '</b> &middot; ' + TEER_LABEL[teerDigit] +
+                      ' (' + teerPts + ' points) &middot; ' + NOC.categoryNames[catDigit] +
+                      ' (' + catPts + ' points)';
+    occPicked.classList.add('on');
+
+    // manual selects follow the pick so the two never disagree
+    mTeer.value = String(teerPts);
+    mCat.value  = String(catPts);
+
+    render();
+  }
+
+  function clearOcc(){
+    delete state.teer; delete state.cat; delete state.occCode;
+    occInput.value = '';
+    occSearch.classList.remove('filled');
+    occPicked.classList.remove('on');
+    mTeer.value = ''; mCat.value = '';
+    closeResults();
+    render();
+  }
+
+  occInput.addEventListener('input', function(){
+    var v = occInput.value;
+    occSearch.classList.toggle('filled', v.length > 0);
+    if(state.occCode){
+      delete state.teer; delete state.cat; delete state.occCode;
+      occPicked.classList.remove('on');
+      render();
+    }
+    if(v.trim().length < 2){ closeResults(); return; }
+    renderResults(search(v));
+  });
+
+  occInput.addEventListener('keydown', function(e){
+    if(!occResults.classList.contains('open')){
+      if(e.key === 'ArrowDown' && occInput.value.trim().length >= 2){
+        renderResults(search(occInput.value)); e.preventDefault();
+      }
+      return;
+    }
+    if(e.key === 'ArrowDown'){ setActive(activeIdx + 1); e.preventDefault(); }
+    else if(e.key === 'ArrowUp'){ setActive(activeIdx - 1); e.preventDefault(); }
+    else if(e.key === 'Enter'){
+      if(activeIdx > -1 && currentHits[activeIdx]){ pick(currentHits[activeIdx]); e.preventDefault(); }
+      else if(currentHits.length === 1){ pick(currentHits[0]); e.preventDefault(); }
+    }
+    else if(e.key === 'Escape'){ closeResults(); }
+  });
+
+  occClear.addEventListener('click', clearOcc);
+
+  document.addEventListener('click', function(e){
+    if(!occSearch.contains(e.target)) closeResults();
+  });
+
+  mToggle.addEventListener('click', function(){
+    var open = mPanel.classList.toggle('is-open');
+    mToggle.textContent = open
+      ? 'Hide manual TEER and category'
+      : 'Cannot find your job title? Choose TEER and category manually';
+  });
+
+  function manualChange(){
+    if(mTeer.value !== ''){ state.teer = parseInt(mTeer.value,10); } else { delete state.teer; }
+    if(mCat.value  !== ''){ state.cat  = parseInt(mCat.value,10);  } else { delete state.cat;  }
+    // manual entry overrides any searched pick
+    if(state.occCode){
+      delete state.occCode;
+      occPicked.classList.remove('on');
+      occInput.value = '';
+      occSearch.classList.remove('filled');
+    }
+    render();
+  }
+  mTeer.addEventListener('change', manualChange);
+  mCat.addEventListener('change', manualChange);
+
+  render();
+})();
+</script>
+
+<script>
+/* TNC consultation CTA - callback capture */
+(function(){
+  /* Generate this key at web3forms.com using info@tncimmigration.com.
+     Web3Forms delivers to the address the key was created with, so the
+     destination is fixed by the key, not by anything in this payload. */
+  var KEY = "REPLACE-WITH-TNC-WEB3FORMS-ACCESS-KEY";
+  var RECIPIENT = "info@tncimmigration.com";
+  var SOURCE = "OINP Calculator";
+  function $(id){ return document.getElementById(id); }
+
+  /* Every visible answer in the tool, labelled, so the email carries the
+     full picture and not just the headline number. */
+  function answers(){
+    try{
+      var wrap = document.querySelector(".oc-wrap");
+      if(!wrap) return "";
+      var nodes = wrap.querySelectorAll("select, input");
+      var lines = [], seen = {};
+      for(var i = 0; i < nodes.length; i++){
+        var el = nodes[i], val = "";
+        if(el.id && el.id.indexOf("oc-lead-") === 0) continue;
+        if(el.type === "button" || el.type === "submit") continue;
+        if(el.closest("[hidden]")) continue;          /* section not applicable */
+        if(el.tagName === "SELECT"){
+          if(el.selectedIndex < 0) continue;
+          val = el.options[el.selectedIndex].text;
+        } else if(el.type === "checkbox" || el.type === "radio"){
+          if(!el.checked) continue;
+          val = "yes";
+        } else {
+          if(!el.value || !String(el.value).trim()) continue;
+          val = el.value;
+        }
+        var lab = "", l;
+        if(el.id && (l = wrap.querySelector('label[for="' + el.id + '"]'))) lab = l.textContent;
+        if(!lab && (l = el.closest("label"))) lab = l.textContent;
+        if(!lab && (l = el.closest("[class*=field],[class*=check],[class*=row]"))){
+          var l2 = l.querySelector("label,span");
+          if(l2) lab = l2.textContent;
+        }
+        if(!lab && (l = el.closest("[class*=card]"))){   /* card heading is the label */
+          var l3 = l.querySelector("h3,h4");
+          if(l3) lab = l3.textContent;
+        }
+        lab = (lab || el.id || el.name || "field").replace(/\s+/g," ").trim();
+        var line = lab + ": " + String(val).replace(/\s+/g," ").trim();
+        if(seen[line]) continue;
+        seen[line] = 1;
+        lines.push(line);
+      }
+      return lines.join("\n");
+    } catch(e){ return ""; }
+  }
+  function result(){ var e=$("oTotal"); return e ? "OINP estimated total " + e.textContent : "no score"; }
+  var btn = $("oc-lead-send");
+  if(!btn) return;
+  btn.addEventListener("click", function(){
+    var msg = $("oc-lead-msg");
+    var name = $("oc-lead-name").value.trim();
+    var email = $("oc-lead-email").value.trim();
+    var phone = $("oc-lead-phone").value.trim();
+    if(!name || !phone){
+      msg.hidden = false; msg.style.color = "#FF9AA8";
+      msg.textContent = "Add your name and phone number so a TNC representative can call you back.";
+      return;
+    }
+    var res = result();
+    btn.disabled = true; btn.textContent = "Requesting\u2026";
+    fetch("https://api.web3forms.com/submit",{
+      method:"POST",
+      headers:{"Content-Type":"application/json",Accept:"application/json"},
+      body:JSON.stringify({
+        access_key:KEY,
+        subject:SOURCE + " callback request \u2014 " + res,
+        from_name:"TNC " + SOURCE,
+        name:name, email:email, phone:phone,
+        source:SOURCE, result:res,
+        replyto:(email || undefined),
+        to_display:RECIPIENT,
+        answers:answers(),
+        message:"Tool: " + SOURCE + "\nResult: " + res +
+                "\n\nCONTACT\nName: " + name + "\nEmail: " + (email || "not given") +
+                "\nPhone: " + phone + "\n\nANSWERS\n" + answers()
+      })
+    }).then(function(r){ return r.json(); }).then(function(d){
+      msg.hidden = false;
+      if(d.success){
+        msg.style.color = "#7FE6B6";
+        msg.textContent = "Requested. A TNC representative will call you back and walk through your result.";
+        btn.textContent = "Callback requested";
+      } else {
+        msg.style.color = "#FF9AA8";
+        msg.textContent = "That did not go through. Email info@tncimmigration.com or call +1 236 818 5558 and we will take it from there.";
+        btn.disabled = false; btn.textContent = "Request a callback";
+      }
+    }).catch(function(){
+      msg.hidden = false; msg.style.color = "#FF9AA8";
+      msg.textContent = "That did not go through. Email info@tncimmigration.com or call +1 236 818 5558 and we will take it from there.";
+      btn.disabled = false; btn.textContent = "Request a callback";
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
