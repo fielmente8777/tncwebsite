@@ -215,6 +215,10 @@ export const NaveLinks: NveLinksProps[] = [
     href: "#",
     subLinks: [
       {
+        name: "CRS Calculator",
+        href: "/crs-calculator",
+      },
+      {
         name: "OINP Calculator",
         href: "/oinp-calculator",
       },

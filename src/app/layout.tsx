@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./styles/globals.scss";
 import "./styles/nav&button.scss";
 import "./customForm.css";
+import "./styles/tools.css";
 
 import { Footer, Navbar } from "@/components";
 import { ChatDrawer } from "@/components/ContactButton/ChatDrawer";
