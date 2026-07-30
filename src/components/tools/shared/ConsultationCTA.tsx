@@ -1,6 +1,6 @@
 import { ASSESSMENT_URL, BOOKING_URL } from "@/lib/env";
 import LeadCaptureForm from "./LeadCaptureForm";
-import type { LeadAnswer, ToolId } from "@/types/tools";
+import type { LeadAnswer, ToolId } from "@/@types/tools";
 
 interface ConsultationCTAProps {
   heading: string;

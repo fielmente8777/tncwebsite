@@ -1,7 +1,7 @@
 // NOC 2021 Version 1.0 code list with TEER category, used by the NOC Finder table.
 // Adapted from ESDC / Statistics Canada, used under the Statistics Canada Open Licence.
 
-import type { NocRow } from "@/types/noc";
+import type { NocRow } from "@/@types/noc";
 
 export const NOC_ROWS: NocRow[] = [
   { teer: "0", code: "00010", title: "Legislators" },

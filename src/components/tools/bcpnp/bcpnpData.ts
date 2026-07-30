@@ -1,4 +1,4 @@
-import type { PointOption } from "@/types/tools";
+import type { PointOption } from "@/@types/tools";
 
 export const BCPNP_MAX = 200;
 

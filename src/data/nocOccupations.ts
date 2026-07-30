@@ -2,7 +2,7 @@
 // Adapted from the National Occupational Classification 2021 (ESDC / Statistics Canada),
 // used under the Statistics Canada Open Licence.
 
-import type { NocOccupation, TeerDigit, CategoryDigit } from "@/types/noc";
+import type { NocOccupation, TeerDigit, CategoryDigit } from "@/@types/noc";
 
 export const CATEGORY_POINTS: Record<CategoryDigit, number> = {
   "0": 4,
