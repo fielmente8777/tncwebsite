@@ -1008,10 +1008,11 @@
   /* Generate this key at web3forms.com using info@tncimmigration.com.
      Web3Forms delivers to the address the key was created with, so the
      destination is fixed by the key, not by anything in this payload. */
-  var KEY = "REPLACE-WITH-TNC-WEB3FORMS-ACCESS-KEY";
+  var KEY = process.env.NEXT_PUBLIC_OINP_Calculator;
   var RECIPIENT = "info@tncimmigration.com";
   var SOURCE = "OINP Calculator";
   function $(id){ return document.getElementById(id); }
+  console.log("key" , key)
 
   /* Every visible answer in the tool, labelled, so the email carries the
      full picture and not just the headline number. */

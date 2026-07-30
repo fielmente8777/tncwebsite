@@ -223,6 +223,14 @@ export const NaveLinks: NveLinksProps[] = [
         href: "/crs-calculator",
       },
       {
+        name: "BCPNP Calculator",
+        href: "/bcpnp-calculator",
+      },
+      {
+        name: "FSW Calculator",
+        href: "/fsw-calculator",
+      },
+      {
         name: "BC PNP Score Calculator",
         href: "/bc-pnp-score-calculator",
       },
