@@ -37,7 +37,7 @@
     "src/app/inside-canada/components/Form.jsx",
     "src/components/forms/CustomContactFormMain.jsx",
     ".next/dev/types/**/*.ts"
-  ],
+, "src/components/tools/bcpnp/BcpnpCalculator.jsx", "src/components/tools/bcpnp/BcpnpCalculator.jsx", "src/components/tools/bcpnp/BcpnpCalculator.jsx"  ],
   "exclude": [
     "node_modules"
   ]

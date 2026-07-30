@@ -231,6 +231,10 @@ export const NaveLinks: NveLinksProps[] = [
         href: "/fsw-calculator",
       },
       {
+        name: "NOC Finder",
+        href: "/noc-finder",
+      },
+      {
         name: "BC PNP Score Calculator",
         href: "/bc-pnp-score-calculator",
       },
