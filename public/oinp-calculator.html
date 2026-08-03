@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>OINP Calculator | TNC Immigration</title>
+<meta name="description" content="Free OINP Workforce Priority Stream points calculator. Check your Ontario nomination score in under two minutes, then request a callback from TNC Immigration.">
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 
@@ -126,7 +127,7 @@
 }
 .oc-manual-btn:hover{color:var(--oc-red-dark);}
 .oc-wrap .x-manual{display:none;margin-top:16px;}
-.oc-wrap .x-manual.open{display:block;}
+.oc-wrap .x-manual.is-open{display:block;}
 .oc-mrow{margin-bottom:14px;}
 .oc-mrow:last-child{margin-bottom:0;}
 .oc-mlab{display:block;font-size:13px;font-weight:600;color:var(--oc-ink);margin-bottom:6px;}
@@ -215,7 +216,7 @@
      works as a standalone preview. On the live site replace each
      with its real route, e.g. https://tncimmigration.com/crs-calculator/
      ============================================================ -->
-<!-- <nav class="tncnav" aria-label="TNC immigration tools">
+<nav class="tncnav" aria-label="TNC immigration tools">
   <div class="tncnav-inner">
     <a class="tncnav-logo" href="https://tncimmigration.com/" aria-label="TNC Immigration home">
       <img src="data:image/png;base64,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" alt="TNC Immigration" width="194" height="96">
@@ -228,7 +229,7 @@
         <a href="noc-finder.html">NOC Finder</a>
     </div>
   </div>
-</nav> -->
+</nav>
 
 
 <div class="oc-wrap">
@@ -980,7 +981,7 @@
     var open = mPanel.classList.toggle('is-open');
     mToggle.textContent = open
       ? 'Hide manual TEER and category'
-      : 'Cannot find your job title? Choose TEER and category manually';
+      : 'Not listed? Set TEER and category yourself';
   });
 
   function manualChange(){
@@ -1005,59 +1006,156 @@
 <script>
 /* TNC consultation CTA - callback capture */
 (function(){
-  /* Generate this key at web3forms.com using info@tncimmigration.com.
-     Web3Forms delivers to the address the key was created with, so the
-     destination is fixed by the key, not by anything in this payload. */
-  var KEY = process.env.NEXT_PUBLIC_OINP_Calculator;
+  /* Live Web3Forms key for this tool. Web3Forms delivers to the address
+     the key was registered with, so the destination is fixed by the key,
+     not by anything in this payload. */
+  var KEY = "42d84466-5af7-4685-80e2-fc66bca0870a";
   var RECIPIENT = "info@tncimmigration.com";
   var SOURCE = "OINP Calculator";
-  function $(id){ return document.getElementById(id); }
-  console.log("key" , key)
 
-  /* Every visible answer in the tool, labelled, so the email carries the
-     full picture and not just the headline number. */
-  function answers(){
+  /* Google Apps Script web app URL that appends each submission as a row in
+     the spreadsheet. Setup steps are in SHEETS-SETUP.md. Leave it empty and
+     the sheet copy is simply skipped - the Web3Forms email is unaffected. */
+  var SHEET_URL = "https://script.google.com/macros/s/AKfycby_gXLwXo6XkXSj3Gc_-_PBlVTR7dyLGEitkNGqzuDZccKtv34VTFKCuA0nRq7aUu5W/exec";
+
+  /* Set to true to also get one column per scored factor (Points: TEER level,
+     Points: Compensation and so on) beside the answers. Off by default - it
+     adds about eleven columns to the sheet. */
+  var SHEET_POINTS = false;
+
+  function $(id){ return document.getElementById(id); }
+
+  function txt(el){ return el ? el.textContent.replace(/\s+/g," ").trim() : ""; }
+
+  /* Rendered on screen right now. The hidden attribute alone is not enough:
+     the manual TEER panel is hidden by CSS, and the NOC search keeps its two
+     selects in sync behind it, so an input check would report answers the
+     visitor never gave. */
+  function onScreen(el){ return !!(el && el.getClientRects().length); }
+
+  /* Placeholder options are the only ones carrying value="", every real
+     option falls back to its own text. */
+  function chosen(sel){
+    if(!sel || sel.selectedIndex < 0) return "";
+    var opt = sel.options[sel.selectedIndex];
+    return opt.value === "" ? "" : txt(opt);
+  }
+
+  /* The checked radio's own wording, without the points chip beside it. */
+  function picked(card){
+    var opts = card.querySelectorAll(".x-opt");
+    for(var i = 0; i < opts.length; i++){
+      var input = opts[i].querySelector("input");
+      if(!input || !input.checked) continue;
+      var t = opts[i].querySelector(".oc-opt-t");
+      if(!t) return txt(opts[i]);
+      var sub = txt(t.querySelector(".oc-opt-s")), main = txt(t);
+      if(sub && main.slice(-sub.length) === sub) main = main.slice(0, -sub.length).trim();
+      return sub ? main + " (" + sub + ")" : main;
+    }
+    return "";
+  }
+
+  /* Occupation is one card holding two scored factors, answered either by
+     the NOC search or by the manual selects - never meaningfully by both. */
+  function occPairs(out){
+    var pick = document.getElementById("occPicked");
+    var input = document.getElementById("occInput");
+    if(pick && pick.classList.contains("on")){
+      out.push(["Occupation", txt(document.getElementById("occPickedTitle"))]);
+      var parts = txt(document.getElementById("occPickedMeta")).split("·");
+      var code = (parts[0] || "").match(/(\d{5})/);
+      if(code) out.push(["NOC code", code[1]]);
+      if(parts[1]) out.push(["TEER level", parts[1].trim()]);
+      if(parts[2]) out.push(["Occupation category", parts[2].trim()]);
+      return;
+    }
+    /* Typing over a chosen NOC drops its points but leaves the manual selects
+       showing the old pick, so text in the box with no pick behind it means
+       nothing here is scored - say that rather than repeat stale values. */
+    var typed = input ? input.value.trim() : "";
+    if(typed){ out.push(["Occupation", typed + " (typed, no NOC matched)"]); return; }
+    var teer = chosen(document.getElementById("mTeer"));
+    var cat  = chosen(document.getElementById("mCat"));
+    if(teer) out.push(["TEER level", teer]);
+    if(cat)  out.push(["Occupation category", cat]);
+  }
+
+  /* One answer per card the visitor could actually see, keyed by the heading
+     they read. Pathway decides which cards exist, so a physician submission
+     simply has no Compensation column rather than an empty one. */
+  function answerPairs(){
+    var out = [];
     try{
-      var wrap = document.querySelector(".oc-wrap");
-      if(!wrap) return "";
-      var nodes = wrap.querySelectorAll("select, input");
-      var lines = [], seen = {};
-      for(var i = 0; i < nodes.length; i++){
-        var el = nodes[i], val = "";
-        if(el.id && el.id.indexOf("oc-lead-") === 0) continue;
-        if(el.type === "button" || el.type === "submit") continue;
-        if(el.closest("[hidden]")) continue;          /* section not applicable */
-        if(el.tagName === "SELECT"){
-          if(el.selectedIndex < 0) continue;
-          val = el.options[el.selectedIndex].text;
-        } else if(el.type === "checkbox" || el.type === "radio"){
-          if(!el.checked) continue;
-          val = "yes";
-        } else {
-          if(!el.value || !String(el.value).trim()) continue;
-          val = el.value;
-        }
-        var lab = "", l;
-        if(el.id && (l = wrap.querySelector('label[for="' + el.id + '"]'))) lab = l.textContent;
-        if(!lab && (l = el.closest("label"))) lab = l.textContent;
-        if(!lab && (l = el.closest("[class*=field],[class*=check],[class*=row]"))){
-          var l2 = l.querySelector("label,span");
-          if(l2) lab = l2.textContent;
-        }
-        if(!lab && (l = el.closest("[class*=card]"))){   /* card heading is the label */
-          var l3 = l.querySelector("h3,h4");
-          if(l3) lab = l3.textContent;
-        }
-        lab = (lab || el.id || el.name || "field").replace(/\s+/g," ").trim();
-        var line = lab + ": " + String(val).replace(/\s+/g," ").trim();
-        if(seen[line]) continue;
-        seen[line] = 1;
-        lines.push(line);
+      var form = document.getElementById("oinpForm");
+      if(!form) return out;
+      var cards = form.querySelectorAll(".oc-card");
+      for(var i = 0; i < cards.length; i++){
+        var card = cards[i];
+        if(card.hidden || !onScreen(card)) continue;
+        if(card.id === "s-occ"){ occPairs(out); continue; }
+        var label = txt(card.querySelector(".oc-card-title h3")) || card.id || "Question";
+        var val = card.querySelector(".x-opts")
+          ? picked(card)
+          : chosen(card.querySelector("select"));
+        if(val) out.push([label, val]);
       }
-      return lines.join("\n");
-    } catch(e){ return ""; }
+    } catch(e){}
+    return out;
+  }
+
+  /* The scored breakdown beside the form, so the row shows where the points
+     came from and not just the total. */
+  function scorePairs(){
+    var out = [];
+    try{
+      var rows = document.querySelectorAll("#oBreak .oc-brow");
+      for(var i = 0; i < rows.length; i++){
+        var s = rows[i].querySelectorAll("span");
+        if(s.length >= 2) out.push(["Points: " + txt(s[0]), txt(s[1])]);
+      }
+    } catch(e){}
+    return out;
+  }
+  function answers(){
+    return answerPairs().map(function(p){ return p[0] + ": " + p[1]; }).join("\n");
   }
   function result(){ var e=$("oTotal"); return e ? "OINP estimated total " + e.textContent : "no score"; }
+
+  /* Second delivery: append the same submission as a spreadsheet row. Fired
+     alongside the email and deliberately not awaited - a sheet outage must
+     never change what the visitor sees, the email is the source of truth. */
+  function toSheet(row){
+    if(!SHEET_URL) return;
+    try{
+      fetch(SHEET_URL,{
+        method:"POST",
+        mode:"no-cors",
+        keepalive:true,
+        /* text/plain keeps it a simple request, so no CORS preflight that
+           Apps Script would answer with a redirect it cannot sign. */
+        headers:{"Content-Type":"text/plain;charset=utf-8"},
+        body:JSON.stringify(row)
+      }).catch(function(){});
+    } catch(e){}
+  }
+  function sheetRow(name, email, phone, res){
+    var row = {
+      "Submitted": new Date().toISOString(),
+      "Name": name,
+      "Email": email || "",
+      "Phone": phone,
+      "Result": res
+    };
+    var pairs = answerPairs();
+    if(SHEET_POINTS) pairs = pairs.concat(scorePairs());
+    for(var i = 0; i < pairs.length; i++){
+      var key = pairs[i][0], n = 2;
+      while(Object.prototype.hasOwnProperty.call(row, key)) key = pairs[i][0] + " (" + (n++) + ")";
+      row[key] = pairs[i][1];
+    }
+    return row;
+  }
   var btn = $("oc-lead-send");
   if(!btn) return;
   btn.addEventListener("click", function(){
@@ -1072,6 +1170,7 @@
     }
     var res = result();
     btn.disabled = true; btn.textContent = "Requesting\u2026";
+    toSheet(sheetRow(name, email, phone, res));
     fetch("https://api.web3forms.com/submit",{
       method:"POST",
       headers:{"Content-Type":"application/json",Accept:"application/json"},
@@ -1081,7 +1180,7 @@
         from_name:"TNC " + SOURCE,
         name:name, email:email, phone:phone,
         source:SOURCE, result:res,
-        replyto:(email || undefined),
+        replyto:(/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email) ? email : undefined),
         to_display:RECIPIENT,
         answers:answers(),
         message:"Tool: " + SOURCE + "\nResult: " + res +

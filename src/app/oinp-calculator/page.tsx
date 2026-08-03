@@ -1,9 +1,8 @@
-import OinpCalculator from "@/components/tools/oinp/OinpCalculator";
 
 export default function OinpCalculatorPage() {
   return (
     <main>
-      {/* <iframe
+      <iframe
         id="oinp-calculator"
         title="TNC Main Inside"
         src="/oinp-calculator.html"
@@ -13,8 +12,8 @@ export default function OinpCalculatorPage() {
           maxWidth: "100%",
           border: "none",
         }}
-      /> */}
-      <OinpCalculator />
+      />
+      {/* <OinpCalculator /> */}
     </main>
   );
 }
