@@ -520,6 +520,11 @@ export const AboutPageData = {
         src: "/Aninder-Baidwan.webp",
         post: "Case Manager",
       },
+      {
+        name: "Nibha Jain",
+        src: "/DSC09152.webp",
+        post: "Administrative Assistant",
+      },
     ],
   },
 };
