@@ -422,18 +422,22 @@ export const AboutPageData = {
       {
         name: "Megha Sharma",
         src: imagesLink + "tm6.webp",
+        post: "Client Representative",
       },
       {
         name: "Simran Kaur",
         src: "/tm7.webp",
+        post: "Client Representative",
       },
       {
         name: "Tania Kakkar",
         src: imagesLink + "tm8.webp",
+        post: "Case Manager",
       },
       {
         name: "Harminder Kaur",
         src: imagesLink + "tm9.webp",
+        post: "Case Manager",
       },
       {
         name: "Deep Simran Kaur",
@@ -442,6 +446,7 @@ export const AboutPageData = {
       {
         name: "Maneet Longia",
         src: imagesLink + "tm11.webp",
+        post: "Client Representative",
       },
       {
         name: "Gaby Kaur",
@@ -458,22 +463,26 @@ export const AboutPageData = {
       {
         name: "Sejal Oberoi",
         src: imagesLink + "tm15.webp",
+        post: "Case Manager",
       },
       {
-        name: "Smriti",
+        name: "Smriti Khullar",
         src: imagesLink + "Smriti.webp",
+        post: "Administrative Assistant",
       },
       // {
       //   name: "Sonia",
       //   src: imagesLink + "Sonia.webp",
       // },
       {
-        name: "Vridhi",
+        name: "Vridhi Shetty",
         src: imagesLink + "Vridhi.webp",
+        post: "Administrative Assistant",
       },
       {
         name: "Bhanu",
         src: imagesLink + "Bhanu.webp",
+        post: "Client Representative",
       },
       
       {
@@ -484,7 +493,7 @@ export const AboutPageData = {
       {
         name: "Arnolique Kelly",
         src: "/arnolique kelly.webp",
-        // post: "Marketing  Manager",
+        post: "Social Media Coordinator",
       },
       // {
         // name: "Nidhi",
@@ -494,17 +503,22 @@ export const AboutPageData = {
       {
         name: "Rashmeet Kaur",
         src: "/rashmeet.jpg",
-        // post: "Marketing  Manager",
+        post: "Case Manager",
       },
       {
         name: "Jicia K",
         src: "/Jicia.jpg",
-        // post: "Marketing  Manager",
+        post: "Case Manager",
       },
       {
         name: "Navjot Kaur",
         src: "/Navjot.jpg",
-        // post: "Marketing  Manager",
+        post: "Administrative Assistant",
+      },
+      {
+        name: "Aninder Baidwan",
+        src: "/Aninder-Baidwan.webp",
+        post: "Case Manager",
       },
     ],
   },
