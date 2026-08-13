@@ -413,7 +413,11 @@ export const AboutPageData = {
         src:  "/tm3.jpg",
         post: "RCIC",
       },
-      
+      {
+        name: "Aninder Baidwan",
+        src: "/Aninder-Baidwan.webp",
+        post: "RCIC",
+      },
       {
         name: "Richa Bhardwaj",
         src: imagesLink + "tm5.webp",
@@ -439,10 +443,10 @@ export const AboutPageData = {
         src: imagesLink + "tm9.webp",
         post: "Case Manager",
       },
-      {
-        name: "Deep Simran Kaur",
-        src: imagesLink + "tm10.webp",
-      },
+      // {
+      //   name: "Deep Simran Kaur",
+      //   src: imagesLink + "tm10.webp",
+      // },
       {
         name: "Maneet Longia",
         src: imagesLink + "tm11.webp",
@@ -451,6 +455,7 @@ export const AboutPageData = {
       {
         name: "Gaby Kaur",
         src: imagesLink + "tm12.webp",
+        post: "Client Representative",
       },
       // {
       //   name: "Dilman Singh",
@@ -515,11 +520,7 @@ export const AboutPageData = {
         src: "/Navjot.jpg",
         post: "Administrative Assistant",
       },
-      {
-        name: "Aninder Baidwan",
-        src: "/Aninder-Baidwan.webp",
-        post: "Case Manager",
-      },
+      
       {
         name: "Nibha Jain",
         src: "/DSC09152.webp",
