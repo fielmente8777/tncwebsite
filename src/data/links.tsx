@@ -6,7 +6,7 @@ import { FillCallIcon, FillLocationIcon, FillMailIcon } from "./icons";
 export const imagesLink =
   // "https://eazotel-client-webp-image.s3.ap-south-1.amazonaws.com/tnc/";
 
-  "https://eazotel-client-webp-images.s3.ap-south-1.amazonaws.com/tnc/";
+  "https://d2t379r2u8q011.cloudfront.net/tnc/";
 interface NveLinksProps {
   name: string;
   href?: string;
@@ -72,6 +72,11 @@ export const NaveLinks: NveLinksProps[] = [
   {
     name: "About Us",
     href: "/about-us",
+  },
+
+  {
+    name: "Our RCICs",
+    href: "/our-rcics",
   },
   {
     name: "our services",
@@ -302,6 +307,10 @@ export const FooterLinks: FooterLinksProps[] = [
       {
         name: "about us",
         href: "/about-us",
+      },
+      {
+        name: "Our RCICs",
+        href: "/our-rcics",
       },
       {
         name: "Assessment",

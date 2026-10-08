@@ -212,19 +212,19 @@ export const homePageData = {
     videos: [
       {
         src: "video/mp4",
-        videoUrl: "https://eazotel-client-webp-images.s3.ap-south-1.amazonaws.com/tnc/TNCvideo/1765172244040.publer.com.mp4",
+        videoUrl: "https://d2t379r2u8q011.cloudfront.net/tnc/TNCvideo/1765172244040.publer.com.mp4",
       },
       {
         src: "video/mp4",
-        videoUrl: "https://eazotel-client-webp-images.s3.ap-south-1.amazonaws.com/tnc/TNCvideo/1765172293131.publer.com.mp4",
+        videoUrl: "https://d2t379r2u8q011.cloudfront.net/tnc/TNCvideo/1765172293131.publer.com.mp4",
       },
       {
         src: "video/mp4",
-        videoUrl: "https://eazotel-client-webp-images.s3.ap-south-1.amazonaws.com/tnc/TNCvideo/1765172297503.publer.com.mp4",
+        videoUrl: "https://d2t379r2u8q011.cloudfront.net/tnc/TNCvideo/1765172297503.publer.com.mp4",
       },
       {
         src: "video/mp4",
-        videoUrl: "https://eazotel-client-webp-images.s3.ap-south-1.amazonaws.com/tnc/TNCvideo/AD-+Revised.mp4",
+        videoUrl: "https://d2t379r2u8q011.cloudfront.net/tnc/TNCvideo/AD-+Revised.mp4",
       },
     ],
     buttons: [
@@ -416,6 +416,11 @@ export const AboutPageData = {
       {
         name: "Aninder Baidwan",
         src: "/Aninder-Baidwan.webp",
+        post: "RCIC",
+      },
+      {
+        name: "Chakshu Kapur",
+        src: "/images/our-rcics/chakshu-kapur.webp",
         post: "RCIC",
       },
       {
