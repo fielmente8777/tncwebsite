@@ -44,50 +44,36 @@ const rcics = [
     name: "Rhea Patel",
     image: "/images/our-rcics/rhea-patel.png",
     licence: "R530163",
-    registerId: "22275",
-    registerName: "Rhea Patel",
   },
   {
     name: "TJ Singh",
     image: "/images/our-rcics/tj-singh.webp",
     licence: "R731275",
-    registerId: "8241",
-    registerName: "Tejasavbir Singh Thind",
   },
   {
     name: "Bijay Luitel",
     image: "/images/our-rcics/bijay-luitel.webp",
     licence: "R731518",
-    registerId: "6268",
-    registerName: "Bijay Luitel",
   },
   {
     name: "Prabhleen Sandhu",
     image: "/images/our-rcics/prabhleen-sandhu.webp",
     licence: "R709754",
-    registerId: "16133",
-    registerName: "Prabhleen Sandhu",
   },
   {
     name: "Aninder Baidwan",
     image: "/images/our-rcics/aninder-baidwan.webp",
     licence: "R1056289",
-    registerId: "56289",
-    registerName: "Aninder Jit Kaur Baidwan",
   },
   {
     name: "Chakshu Kapur",
     image: "/images/our-rcics/chakshu-kapur.webp",
     licence: "R706391",
-    registerId: "17229",
-    registerName: "Chakshu Kapur Chadha",
   },
   {
     name: "Sukh Khattra",
     image: "/images/our-rcics/sukh-khattra.webp",
     licence: "R710355",
-    registerId: "21476",
-    registerName: "Sukhdeep Khattra",
   },
 ];
 
@@ -136,14 +122,7 @@ const page = () => {
                     <h3>{person.name}</h3>
                     <p className={styles.role}>RCIC</p>
                     <p className={styles.lic}>
-                      <a
-                        href={`https://register.college-ic.ca/Public-Register-EN/Licensee/Profile.aspx?ID=${person.registerId}`}
-                        target="_blank"
-                        rel="noopener"
-                        aria-label={`View CICC register record for ${person.registerName}, College ID ${person.licence}`}
-                      >
-                        Licence Number: {person.licence}
-                      </a>
+                      Licence Number: {person.licence}
                     </p>
                   </div>
                 </article>
