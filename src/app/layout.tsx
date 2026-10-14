@@ -67,6 +67,8 @@ export default function RootLayout({
         <div className="fixed bottom-28 right-4 z-50">
           <ChatDrawer />
         </div>
+
+        
         <Script
           src="https://mira.tncimmigration.com/mira/tnc-mira-widget.js?v=1"
           strategy="afterInteractive"
