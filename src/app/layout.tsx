@@ -58,16 +58,23 @@ export default function RootLayout({
           src="https://cdn.weavely.ai/embed.js"
           strategy="beforeInteractive"
         />
-        
       </head>
       <body suppressHydrationWarning={true} className={` antialiased`}>
         <Navbar />
         {children}
 
         <Footer />
-        <div className="fixed bottom-4 right-4 z-50">
+        <div className="fixed bottom-28 right-4 z-50">
           <ChatDrawer />
         </div>
+        <Script
+          src="https://mira.tncimmigration.com/mira/tnc-mira-widget.js?v=1"
+          strategy="afterInteractive"
+        />
+        <Script
+          src="https://mira.tncimmigration.com/mira/mira-addons.js?v=1"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
